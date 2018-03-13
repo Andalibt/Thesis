@@ -1,0 +1,118 @@
+\chapter{Current UCN Facility at TRIUMF}
+% Based on simulations, a 40~$\mu$A of current produces a background of
+% XXX mSev.
+
+The current vertical UCN cryostat at TRIUMF is the same UCN cryostat
+developed and tested at RCNP, Japan between 19xx and
+2012(?)~\cite{masuda2002spallation,masuda2012spallation}.  In 2016,
+the cryostat was shipped to triumf for further UCN experiments. These
+experiments were essential for better understanding of the cryostat
+and design of the next generation UCN source.  The vertical source was
+modified to fulfill the safety requirements at TRIUMF (find where and
+what those are.)  The current location of the vertical source is at
+the meson hall experimental area.  A picture of the UCN facitity is
+shown below.
+
+The unique feature of the UCN source at TRIUMF is the combination of
+spallation neutrons and superfluid helium for UCN production. This
+will be discussed in detail in the following sections.
+
+\section{UCN beamline}
+TRIUMF's proton beam is provided by a 520 Mev cyclotron. The
+120~$\mu$A beam (BL1A) enters the meson hall. This amout of current
+creates a lot of heat load on the vertical crystat which makes its
+operation impossible. As a result, only part of this beam goes to the
+UCN experimental area and it is called BL1U. To be more precise, 1/3 of the beam from BL1A is being 'kicked' away by a kicker magnet.
+The structure of the BL1U is shown in Fig.~(\ref{fig:bl1u}).
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{bl1u.png}
+  \caption{a nice plot}
+  \label{fig:bl1u}
+\end{figure}
+
+
+\section{Stages of UCN Production}
+At TRIUMF, UCN is produced in three stages: spallation, moderation and
+conversion. Each stage is explained below. Fig.~(?) shows a schematic
+of this process.
+
+\subsection{Neutron Spallation Target}
+
+A 1~$\mu$A proton beam hits the Tungsten target. The target is
+surrounded by several blocks of lead and graphite to slow down the
+fast neutrons. The fast neutrons get reflected from these blocks and
+enter the warm D$_2$O moderator~(300 K) and become thermal neutrons with an
+energy range of ? and speed range of ?.
+
+\subsection{Neutron Moderation}
+Iced heavy water at 20~K is used as the cold moderator. After passing
+through the warm D$_2$O, thermal neutrons enter the the cold moderator
+and becom fast neutrons. At this stage, the neutrons have an enery
+range of ? and the speed range of ?.
+
+
+\subsection{Neutron Conversion}
+The last stage is when the fast neutrons enter the superfluid helium at 0.84 to 0.92~K. UCN is produced as a result of phonon transitions inside the superfluid helium.
+
+
+\section{D$_2$O Condensation}
+
+
+\section{Helium Circulation}
+
+\subsection{4 Kelvin Reservoir}
+
+\subsection{1 Kelvin Pot}
+
+\subsection{$^3$He Pot}
+
+\subsection{Isopure Helium}
+
+\section{Data Acquisition}
+
+
+\section{UCN Detectors}
+
+
+
+
+\begin{description}
+\item{An intro to whatever goes into this chapter}
+
+\item{Start by showing a nice drawing and then talk about each
+  componet of the facility:}
+  
+\item{about proton beam that we get, the magnets and basically how the
+  beam reaches the target and how it looks like (Where can I get this
+  information? Is it written somewhere?)}
+  
+\item{A short introduction to say the stages of UCN production and why
+  we need the vertical cryostat (Link to the next stage)}
+  
+\item{It also has to be mention that it is the same vertical sourcse
+  as was used at the RCNP and some modifications were made to meet the
+  requirements at triumf. (Where can I find what modifications were
+  made?) Agian this has to be just as a link to the next chapter(maybe?)}
+  
+\item{The target and shielding (with pictures?), only a few
+  paragraphs}
+  
+\item{Moderation: D2O system (I can use Ryohei's thesis I guess)}
+  
+\item{conversion. There is a whole chapter dedicated to the UCN
+  cryogenics. I have to go through details (not too much) of how the
+  cryostat works. I can borrow some infromation from Ryohei's
+  thesis. I am not sure how much of it is related to the next
+  chapter.}
+ 
+
+\item{Data acquisition system, epics and plc, I guess there are useful
+  informaion in Sean Vanbergen's report that I can use for this
+  section}
+  
+\item{what else?}
+
+\end{description}

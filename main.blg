@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: muoftemp.aux
+A level-1 auxiliary file: UCNattriumf.aux
+The style file: apsrev4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: mybib.bib
+I was expecting a `,' or a `}'---line 228 of file mybib.bib
+ : 
+ : @article{baker2011search,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (72) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Warning--missing journal in Cline
+You've used 28 entries,
+            5847 wiz_defined-function locations,
+            1787 strings with 19907 characters,
+and the built_in function-call counts, 31239 in all, are:
+= -- 1773
+> -- 1013
+< -- 213
++ -- 325
+- -- 256
+* -- 5120
+:= -- 2974
+add.period$ -- 28
+call.type$ -- 28
+change.case$ -- 112
+chr.to.int$ -- 27
+cite$ -- 29
+duplicate$ -- 2878
+empty$ -- 2281
+format.name$ -- 592
+if$ -- 6218
+int.to.chr$ -- 2
+int.to.str$ -- 36
+missing$ -- 362
+newline$ -- 138
+num.names$ -- 84
+pop$ -- 1168
+preamble$ -- 1
+purify$ -- 140
+quote$ -- 0
+skip$ -- 1059
+stack$ -- 0
+substring$ -- 644
+swap$ -- 2819
+text.length$ -- 122
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 435
+warning$ -- 1
+while$ -- 77
+width$ -- 0
+write$ -- 276
+(There was 1 error message)

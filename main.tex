@@ -1,0 +1,170 @@
+
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+%\usepackage{cite}
+\usepackage[sort&compress,numbers]{natbib}
+\usepackage{doi}
+\usepackage{hyperref}
+\usepackage[nottoc,notlof,notlot]{tocbibind} 
+\renewcommand\bibname{References}
+\usepackage[toc,page]{appendix}
+
+
+\begin{document}
+%%\title{This is the title of my amazing thesis!}
+%%\author{Taraneh Andalib}
+%%\date{}
+%%A Thesis submitted to the Faculty of Graduate Studies of \\
+%%The University of Manitoba \\
+%%in partial fulfilment of the requirements of the degree of
+
+%\maketitle
+\noindent
+\begin{titlepage}
+  \begin{center}
+         \includegraphics[width=0.3\textwidth]{university.eps}\\
+        \vspace*{1cm}
+        
+        \textbf{UCN Production and Analysis and Magnetic Stability
+          Studies for the Future neutron Electric Dipole Moment
+          Experiment at TRIUMF(?)}
+        
+        \vspace{0.5cm}
+        what is the subtitle?
+        
+        \vspace{1.5cm}
+        
+        by\\
+        \vspace{1.0cm}
+        Taraneh Andalib
+        %\text{Taraneh Andalib}
+
+        \vspace{2.5cm}
+        A Thesis submitted to the Faculty of Graduate Studies of\\
+        \vspace{0.5cm}
+        The University of Manitoba\\
+        \vspace{0.5cm}
+        in partial fulfilment of the requirements of the degree of
+        
+        \vspace{2.0cm}
+        
+       
+        Doctor of Philosophy\\
+       \vspace{0.5cm}
+        
+   
+        \vspace{0.5cm}
+        Department of Physics and Astronomy\\
+        University of Manitoba\\
+        Winnipeg
+
+        \vspace{3.0cm}
+        Copyright © 2018 by Taraneh Andalib
+        
+    \end{center}
+\end{titlepage}
+
+\renewcommand{\thepage}{\roman{page}}
+\chapter*{Abstract}
+
+text of the abstract
+
+
+\chapter*{Acknowledgment}
+
+text of the acknowledgment
+
+\cleardoublepage
+\thispagestyle{empty}
+\vspace*{\stretch{1}}
+\begin{flushright}
+\itshape
+Dedicated to myself!!
+\end{flushright}
+\vspace{\stretch{3}}
+\cleardoublepage
+
+%\mainmatter
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%   CHAPTERS
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% THE FOLLOWING IS THE INTRODUCTION CHAPTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{intro}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SUPERTHERMAL SOURCES OF UCN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{superthermal}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% THE FOLLOWING IS THE nEDM CHAPTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{nedm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% THE FOLLOWING IS THE \MU OF TEMP CHAPTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{muoftemp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% UCN SOURCE AT TRIUMF
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{UCNattriumf}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% UCN PRODUCTION AND DETECTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{UCNresults}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  UCN CRYOGENICS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{cryogenics}
+
+
+
+
+
+\chapter{Conclusion}
+
+
+%\chapter{Regular Chapter}
+\begin{appendices}
+\chapter{Some Appendix}
+The contents...
+\end{appendices}
+
+testing my bibliography\cite{pendlebury2015revised}
+
+
+%\nocite{apsrev41Control}
+%\bibliography{my-bib,revtex-custom}
+\bibliography{mybib}
+\bibliographystyle{apsrev4-1}
+\end{document}

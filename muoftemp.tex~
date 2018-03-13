@@ -1,0 +1,25 @@
+\chapter{Temperature Dependence of Magnetic Permeability(?)}
+
+\begin{description}
+\item{This chapter I think should be very similar to the paper. It
+  should be just the extended version of that with more detail (not a
+  lot more though! It means I should not include every single data
+  that I took!)}
+  \item{Motivation: Why are we interested in the temperature
+    dependence of mu. The idea of coupling the field of an internal
+    coil to the shield and that is because the shield act as a return
+    yoke. Then it makes sense to have a stable shield so that the
+    internal field does not change. And then explain that one of the
+    factors are actually the changes in the temperature that affects
+    the magnetic permeability.}
+  \item{The main part of this has to be about the measurements,
+    explain the technique, show several picture of the setup. Look at
+    the long version of the paper on github to remember what we did
+    and why and then include the data that made sense.}
+  \item{Another relevant part is to make the connection between these
+    measurements and the actual changes in the $B$ field and for that
+    I have to include the simulations. An explanation of the OPERA
+    simulations and FEMM. Explain what each one is and what I did.}
+\end{description}
+
+
