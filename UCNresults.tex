@@ -391,8 +391,8 @@ difference from the sensors and their propagated error.
 The other parameters are
 \begin{align}
 \label{eq:b}
-b =& \frac{f_\mathrm{He,3} B}{\tau_\mathrm{wall,2}^{-1} + \tau_d^{-1}} = 0.0995 \pm 0.0007_\mathrm{stat.} \pm 0.0298_\mathrm{syst.} \\
-c =& \frac{P \tau_d^{-1}}{\tau_\mathrm{wall,2}^{-1} + \tau_d^{-1}} = (1610 \pm 1_\mathrm{stat.} \pm 75_\mathrm{syst.}) \, \si{\per\second}
+  b =& \frac{f_\mathrm{He,3} B}{\tau_\mathrm{wall,2}^{-1} + \tau_d^{-1}} = 0.0995 \pm 0.0007_\mathrm{stat.} \pm 0.0298_\mathrm{syst.} \\
+  c =& \frac{P \tau_d^{-1}}{\tau_\mathrm{wall,2}^{-1} + \tau_d^{-1}} = (1610 \pm 1_\mathrm{stat.} \pm 75_\mathrm{syst.}) \, \si{\per\second}
 \end{align}
 
 
@@ -411,25 +411,34 @@ Fig.~\ref{fig:UCNCounts_time}.
     the experimental run. }
   \label{fig:UCNCounts_time}
 \end{figure}
+The source volume is connected to a long UCN guide sealed with an
+O-ring. It is expected that the rest gas to contaminate the source
+every time the UCN valve is opened. This caused a reduction in the UCN
+yield over the course of the measurement as shown in
+Fig.~\ref{fig:UCNCounts_time}. In addition, the changes in the UCN
+guide geometry in the latter half of the run pottentially affected
+this drop.
 
-\section{Storage Lifetime Measurements\label{storagelifetime}}
+\section{Storage Lifetime: Measurements And
+  Simulations\label{storagelifetime}}
+
 The total number of detected UCN strongly depends on the storage
 lifetime of the source $\tau_1$~(See Eqn.~\ref{eqn:tau1}) which
-indicates the performance of the UCN source. The storage lifetime is
-determined by measuring the detected UCN at different delay times
-right after the irradiation stops. The typical chosen values are 0~s,
-10~s, 20~s, 30~s, 60~s, 80~s, 120~s and 170~s. The exponential decay
-constant of the fit of the total UCN counts for different delay times
-is the storage lifetime in the source.
+indicates the performance of the UCN source. The storage lifetime of
+UCN is determined by measuring the detected UCN at different valve
+open delay times right after the irradiation stops. The typical chosen
+values are 0~s, 5~s, 10~s, 20~s, 30~s, 60~s, 80~s, 120~s and
+170~s. The exponential decay constant in the fit function to the total
+UCN counts for different valve open delay times is the total storage
+lifetime in the source.
 
-Fig.~\ref{fig:storage_exmaple} shown the total UCN counts versus the
-valve open delay time for 1~$\mu$A beam current and 60~s irradiation
+Fig.~\ref{fig:storage_exmaple} shows the total UCN counts versus the
+valve open delay time for 1~$\mu$A proton beam current and 60~s irradiation
 time. The longer delay times give rise to lower UCN counts due to the
 loss mechanisms. The one exponential fit function
 \begin{equation}
 \text{UCN counts} = A e^{-t/\tau_1}
 \end{equation}
-
 determines the storage lifetime $\tau_1$. At 170~s valve open delay
 time, the total UCN counts are not consistent with what the fit
 function predicts. However, the result of the fit is not driven by
@@ -447,12 +456,13 @@ storage lifetime.
 
 
 The storage lifetime of the UCN source is measured at different proton
-beam currents and different irradiation times. The result of those
-measurements is shown in Fig.~\ref{fig:storage_beam_irrad}.  The UCN
-production rate increases at higher proton beam current. However, this
-creates a higher heat load on the UCN source which gives rise to
-higher upscattering rate. The higher proton beam currents and longer
-irradiation times give rise to lower storage lifetimes.
+beam currents and different irradiation times for better
+optimization. The result of those measurements is shown in
+Fig.~\ref{fig:storage_beam_irrad}. The UCN production rate increases at higher
+proton beam current. However, this creates a higher heat load on the
+UCN source which leads to higher upscattering rate. The higher
+proton beam currents and longer irradiation times give rise to lower
+storage lifetimes.
 
 \begin{figure}[h]
   \centering
@@ -466,8 +476,45 @@ irradiation times give rise to lower storage lifetimes.
   \label{fig:storage_beam_irrad}
 \end{figure}
 
+\subsubsection{PENTrack Simulations}
+
+For better understanding the loss mechanisms the experiment was also
+simulated in PENTrack~\cite{schreyer2017pentrack}. PENTrack is a
+particle tracking simulation software which simulates the trajectories
+of UCN and their decay products (e.g. Protons and Electrons) and their
+spin precession in complex geometries in Electric and Magnetic fields
+by solving the relativistic equation of motion. As discussed in
+Chapter one, UCN interacts with all four fundamental forces. To
+describe the interaction of UCN with matter, a complex optical
+potential is used to describe matters~\cite{ucnbook}:
+
+\begin{equation}
+  \label{eqn:fermipotential}
+  U = V - iW
+\end{equation}
+where the real part, $V$, depends on the number densities and bound
+coherent scattering lenghtes of each nucleus species. The imaginary
+part of, $W$, depends on the loss cross-section for a given velocity.
+Upon the incidence of the UCN on a surface, it can be scatterd either
+specularly or diffusely. PENTrack uses two models to calculate the
+scattering distribution of the UCN impinging on the material surface:
+Lambert model or the Microroughness.
+
+Experimental geometries imported in PENTrack are the StL files made
+through CAD models. For these simulations, the exact model of the
+vertical UCN source was used including the burst disk, the actual
+shape of the UCN valve, in the open and close state, pinhole foil and
+the detector. 
+
+The abosorption in the foil is set according to the measurements
+in~\cite{atchison2009transmission}. The main decetor is modeled with
+its two scintillator layes~\cite{jamieson2017characterization} and
+their corresponding Fermi potentials and absorption cross section, as
+stated in~\cite{Ban2016};
+
+
+
 % for tomorrow:
-% read the rest of the paper and include it here
 % read florian rehm's thesis and include his thesis stuff in one section
 % add the storage lifetime of the source over time.
 % start the detector data quality check part
