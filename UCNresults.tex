@@ -123,6 +123,8 @@ comparisons and the UCN guide transmission measurements.
 
 \section {Data Quality Checks}
 
+
+
 \section{UCN Count Measurement \label{UCNCounts}}
 
 The total number of produced UCN in the vertical source, $N$, at a
@@ -478,32 +480,31 @@ storage lifetimes.
 
 \subsubsection{PENTrack Simulations}
 
-For better understanding the loss mechanisms the experiment was also
-simulated in PENTrack~\cite{schreyer2017pentrack}. PENTrack is a
+For better understanding of the loss mechanisms, the experiment was
+also simulated in PENTrack~\cite{schreyer2017pentrack}. PENTrack is a
 particle tracking simulation software which simulates the trajectories
 of UCN and their decay products (e.g. Protons and Electrons) and their
 spin precession in complex geometries in Electric and Magnetic fields
 by solving the relativistic equation of motion. As discussed in
-Chapter one, UCN interacts with all four fundamental forces. To
+Chapter~\ref{chap:intro}, UCN interacts with all four fundamental forces. To
 describe the interaction of UCN with matter, a complex optical
 potential is used to describe matters~\cite{ucnbook}:
-
 \begin{equation}
   \label{eqn:fermipotential}
   U = V - iW
 \end{equation}
 where the real part, $V$, depends on the number densities and bound
 coherent scattering lenghtes of each nucleus species. The imaginary
-part of, $W$, depends on the loss cross-section for a given velocity.
+part, $W$, depends on the loss cross-section for a given velocity.
 Upon the incidence of the UCN on a surface, it can be scatterd either
 specularly or diffusely. PENTrack uses two models to calculate the
 scattering distribution of the UCN impinging on the material surface:
-Lambert model or the Microroughness.
-
+Lambert model or the Microroughness~\cite{Steyerl1972}.
+  
 Experimental geometries imported in PENTrack are the StL files made
 through CAD models. For these simulations, the exact model of the
 vertical UCN source was used including the burst disk, the actual
-shape of the UCN valve, in the open and close state, pinhole foil and
+shape of the UCN valve in the open and close state, pinhole foil and
 the detector. 
 
 The abosorption in the foil is set according to the measurements
@@ -512,12 +513,111 @@ its two scintillator layes~\cite{jamieson2017characterization} and
 their corresponding Fermi potentials and absorption cross section, as
 stated in~\cite{Ban2016};
 
+In the simulations, it is assumed that the spectrum of produced UCN is
+proportional to $\sqrt{E}$. The wall loss parameters were tuned to
+give a storge lifetime of $\tau_1 = 34.9 \pm .8$~s with an
+upscattering lifetime in the superfluid of
+$\tau_{\mathrm{He}}^{-1} = (390~\mathrm{s})^{-1} =
+0.008~\mathrm{s}^{-1}\cdot 0.85^{7}$, resulting in material parameters
+shown in Table~\ref{tab:materials}.
 
 
-% for tomorrow:
-% read florian rehm's thesis and include his thesis stuff in one section
-% add the storage lifetime of the source over time.
-% start the detector data quality check part
+\begin{table}
+  \centering
+\begin{tabular}{|c|c|c|}
+  \hline
+Material & Fermi pot. (neV) & Diffusivity \\
+\hline
+He-II ($\tau_\mathrm{He} = \SI{390}{\second}$) & $18.8 - 8.44\cdot10^{-10} i$ & 0.16 \\
+Prod. volume (NiP) & $213 - 0.100 i$ & 0.05 \\
+Guides (stainl. steel) & $183 - 0.120 i$ & 0.03 \\
+%Pinhole (copper) & $171 - 0.0726 i$ & 0.20 \\
+Foil (aluminium) & $54.1 - 0.00281 i$ & 0.20 \\
+GS30 scintillator & $83.1 - 0.000123 i$ & 0.16 \\
+  GS20 scintillator & $103 - 1.24 i$ & 0.16 \\
+  \hline
+\end{tabular}
+\caption{Material parameters used in the PENTrack simulation.~\cite{atchison2009transmission,Ban2016,sears1992neutron}}
+\label{tab:materials}
+\end{table}
+
+The simulation and the measurement data are both fitted with the fucntion
+
+\begin{equation}
+R(t) = R_0 \left[ 1 - \exp \left( -\frac{t - \Delta t}{\tau_\mathrm{rise}} \right) \right] \exp \left( -\frac{t - \Delta t}{\tau_2} \right) + R_B.
+\end{equation}
+
+after opening the valve at $t=0$. In this equation, $\Delta t$ is the
+delay time between opening the valve and detecting the first UCN and
+it is 2 to 3~s. The parameter $ R_B$ is the background UCN rate in the
+experimental data and is zero in simulations.  The Lambert model is
+used to tune the probablity of UCN being diffusely reflected on the
+guide walls to match the rise time $\tau_{mathrm{rise}}$ and fall
+time~$\tau_2$ of the UCN rate in the storage lifetime
+measurements~(See Fig.~\ref{fig:falltime} and~\ref{fig:risetime}).
+The experimental data is best described by the diffusivity of 3~\% and 5~\%. The
+
+
+\begin{figure}[h!]
+  \centering \includegraphics[width=0.9\textwidth]{falltime.pdf}
+  \caption{Comparison of fall time $\tau_2$ in the experimental data
+    and the simulations with different diffuse-reflection
+    probabilities. The boxes indicate the second and third quartile of
+    the experimental data.}
+\label{fig:falltime}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\textwidth]{risetime.pdf}
+\caption{Comparison of rise time $\tau_{\mathrm{rise}}$ in
+  experimental data and simulations with different diffuse-reflection
+  probabilities. The boxes indicate the second and third quartile of
+  the experimental data.}
+\label{fig:risetime}
+\end{figure}
+
+The simulations are also used to determine the parameter
+$f_{\mathrm{He}}$ or the fraction of time that UCN spends in the
+superfluid helium in the detectable range of 120~neV to 200~neV. For
+the steady-state measurements, this fraction turned out to be almost
+constant over a range of upscattering lifetime in the superfluid
+giving
+
+\begin{equation}
+f_\mathrm{He,3} = 0.464 \pm 0.001_\mathrm{stat.} \pm 0.003_\mathrm{syst.},
+\end{equation}
+where the systematic uncertainty is the variation in simulations with
+$\tau_{\mathrm{He}}$ from 3.05~s to 390~s. 
+The Eqn.~\ref{eqn:tau2} could be rewritten as
+\begin{equation}
+  \label{eqn:tau2rewritten}
+\tau_d^{-1} + \tau_\mathrm{wall,2}^{-1} = \tau_2^{-1}(T_0) - f_\mathrm{He,2} B \left( T_0 \right)^a
+\end{equation}
+where the value for $\tau_2$ is
+\begin{equation}
+\tau_2^{-1}(T_0) = (19.3 \pm 0.8_\mathrm{stat.})\,~\si{\second}
+\end{equation}
+comes from fall time in the storage lifetime measurements at the
+temperature $T_0$ which is
+\begin{equation}
+T_0 = 0.92 \pm 0.005_\mathrm{stat.} \pm 0.05_\mathrm{syst.}.
+\end{equation}
+Replacing Eqn.~\ref{eqn:tau2rewritten} in Eqn.~\ref{eq:b}, $B$ can be written as
+\begin{equation}
+B = \frac{b \tau_2^{-1}(T_0)}{f_\mathrm{He,3} + f_\mathrm{He,2} b \left( \frac{T_0}{\SI{1}{\kelvin}} \right)^a}.
+\end{equation}
+Here all the parameters are known except for $ f_\mathrm{He,2}$ which
+does not significantly affect the result, and hence, it is assumed to
+lie between 0 and 1. As a result
+\begin{equation}
+B = (10.4 \pm 0.4_\mathrm{stat.} \pm 4.1_\mathrm{syst.}) \cdot 10^{-3} \, \si{\per\second}.
+\end{equation}
+which is consistent with the result in~\cite{Leung2016}.
+
+
+%add UCN production simulation result here.
+
 
 \section{Heater Tests of The Source}
 
