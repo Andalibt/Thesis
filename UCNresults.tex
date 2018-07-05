@@ -1,4 +1,4 @@
-\chapter{UCN Production and Detection}
+\chapter{UCN Production and Detection\label{chap:UCNresult}}
 
 The first UCN at TRIUMF (Nov.~2017) were produced by using the
 vertical UCN source described in Sec.~\ref{vertical_source}. The
@@ -108,7 +108,7 @@ while irradiating the target. This is called the {\it{ steady-state}}
 mode where we have a constant stream of UCN to the main detector.
 
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=1.1\textwidth]{Source_all.png}
   \caption{The UCN source and the guide geometry at TRIUMF }
@@ -122,8 +122,42 @@ comparisons and the UCN guide transmission measurements.
 
 
 \section {Data Quality Checks}
+The main detector for most of the collected data is the
+$^6\mathrm{Li}$ glass based scintillator detector which described in
+Sec.~\ref{sec:Li6detector}. Before using the collected data to
+extract the desired information, it is critical to make sure that the
+detector was working as expected.
 
+The PSD versus $Q_L$ distribution from a UCN data run is shown in
+Fig.~\ref{fig:psd_vs_ql} for all the PMTs combined. This is the most useful
+way of separating the signal and background.
+% The graph is for run 541
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{PSD_vs_QL.pdf}
+  \caption{PSD versus $Q_L$ for all of the PMTs for a standard
+    1~$\mu$A proton beam current and 60~s target irradiation storage
+    lifetime measurement. }
+  \label{fig:psd_vs_ql}
+\end{figure}
+Here the UCN events are mainly around the PSD value of 0.5 and $Q_L$
+between 3000 and 12000. The events at PSD~$\sim 0$ represent the
+$\gamma$-rays in the lightguides. To get the actual UCN counts, a PSD
+cut of 0.3 and a $Q_L$ cut of 2000 were applied. This ensures that
+only the UCN events are counted represented by the central oval-shaped
+region. Out of all 9 channels, the centeral channel counts the most
+number of UCN events while the corner channels receive the least as
+expected. Fig.~\ref{fig:channelcounts}.
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{channelcounts.pdf}
+  \caption{Number of UCN events for each channel. The total number of
+    UCN events decrease as we move toward the corner channels.  }
+  \label{fig:channelcounts}
+\end{figure}
+
+% should add a bit more about the dead time and stuff
 
 \section{UCN Count Measurement \label{UCNCounts}}
 
@@ -620,6 +654,22 @@ which is consistent with the result in~\cite{Leung2016}.
 
 
 \section{Heater Tests of The Source}
+
+The curent neutron EDM measurements suffer from low UCN
+statistics. The total number of produced UCN depends significantly on
+the storage lifetime in the source which in fact depends strongly to
+the temperature of the isotopically pure superfluid helium. The
+cooling process of the spallation neutrons create a heat input on the
+cryostat including the superfluid helium which then must be removed to
+keep the temperature constant. The temperature gradient in the
+superfluid helium is described by its heat conductivity. The
+temperature dependence of the heat conductivity in the superfluid
+helium is describe by theorical models to temperatures as low as 1.4~K
+which is above the temperature for the UCN production~($<~1$~K). To
+check the validity of such models, the extrapolation to lower
+temperatures is compared to acquired data.
+
+
 
 \section{Detector Comparison}
 Using the rotary valve

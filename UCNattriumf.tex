@@ -130,8 +130,94 @@ stuff from student's reports.
 
 \section{UCN Detectors}
 Talk about how each detector works.
-\subsection{$^6$He Detector}
-\subsection{$^6$Li Detector}
+\subsection{$^6$Li Detector\label{sec:Li6detector}}
+The main detector used during the UCN measurements~(See
+Chapter~\ref{chap:UCNresult}) is a $^6\mathrm{Li}$ glass based scintillator
+detector designed and built at the University of Winnipeg for the
+TUCAN nEDM experiment at
+TRIUMF~\cite{jamieson2017characterization}. Since $^6\mathrm{Li}$ has a high
+neutron capture cross-section~(order of $10^5$ bn) at UCN energies,
+the scintillator glass is doped with it. The charged particles in the
+reaction
+\begin{equation}
+^6Li + n \rightarrow \alpha (2.05~\mathrm{MeV}) + t (2.73~\mathrm{MeV})
+\end{equation}
+are detected. To reduce the effect of $\alpha$ or triton escaping the
+glass, a layer of 60~$\mu$m thick depleted $^6\mathrm{Li}$ glass (GS30), on top
+of a layer of 120~$\mu$m thick dopped $^6\mathrm{Li}$ (GS20) were optically
+bonded. This design allows the resultant particles to deposit all of
+their energy within the scintillating
+glass. Table~\ref{tab:scintillator} shows the content and density of
+those $^6\mathrm{Li}$ scintillators.
+
+\begin{table}[h!]
+  \centering
+  \label{tab:scintillator}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Scintillator & GS20~($^6\mathrm{Li}$ Enriched) & GS30~( $^6\mathrm{Li}$ depleted) \\
+    \hline
+    Total Li content (\%) & 6.6 & 6.6 \\
+    \hline
+    $^6\mathrm{Li}$ fraction (\%) & 95 & 0.01 \\
+    \hline
+    $^6\mathrm{Li}$ desity~(cm$^{-3}$) & $1.716 \times 10^{22}$ & $1.806 \times 10^{18}$ \\
+    \hline
+  \end{tabular}
+  \caption{Properties of the glass scintillators}
+\end{table}
+
+
+Making the scintillating Li glass as thin as possible reduces the
+sensitivity to $\gamma$-ray scintillating backgrounds and and thermal
+neutron captures. The mean range of the $\alpha$ is 5.3~$\mu$m and the
+mean range of the triton is 34.7~$\mu$m. This means that if the
+thickness of the scintillator is less than 50~$\mu$m, the resultant
+particles escape before stopping which gives rise to an efficiency
+loss.  In order to handle high UCN rates of up to \~1~MHz, the
+$^6\mathrm{Li}$ detector face is segmented into 9 tiles~(See
+Fig.~\ref{fig:Li6detector}). The scintillation light is then guided
+through ultra-violet transmitting acrylic light-guide to its
+corresponding Photomultiplier Tube~(PMT) outside the vaccum region of
+the detector.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Li6detector.png}
+  \caption{3D drawing of the $^6$Li detector and its enclosure. The
+    enclosure is made of Al, and the rim of the adapter flange which
+    UCN can hit is ccoated with 1~$\mu$m Ni by thermal evaporation. }
+  \label{fig:Li6detector}
+\end{figure}
+
+The data acquisition with this detector includes a CAEN V1720
+digitizer which has a Pulse-Shape Discrimination~(PSD) firmware that
+triggers on pulses below a certain threshold for each channel. Every
+4~ns the digitizer samples the waveform which is then digitized to a
+voltage on a 2~V scale into an ADC value between 0 and 4096. Each
+channel of the digitizer sends a trigger whenever the number of counts
+in the ADC goes below a certain baseline~(pedestal) value. The PSD
+calculates the sum of the signal below the baseline for two time
+windows: $t_s = 40$~ns (short gate) and $t_L = 200$~ns~(long
+gate). The short gate is chosen in a way to contain all of the charge
+for the $\gamma$-ray interactions in the light-guide. The ADC sum for
+during the long gate below the baseline is calle $Q_L$~(read charge
+long) and for during the short gate below the baseline is called
+$Q_S$. Charge long has the total charge deposti for the neutron
+capture events. The PSD value is defined as
+\begin{equation}
+  \label{eq:psd}
+  \mathrm{PSD} = \frac{\left( Q_L - Q_S\right)}{Q_L}
+\end{equation}  
+which is the amount of charge in the tail of an event.
+
+Jamieson {\it{et al.}} showed that the absolute efficiency of this
+detector is $89.7^{+1.3}_{-1.9}$~\% with a background contamination of
+$0.3 \pm 0.1$~\%~\cite{jamieson2017characterization}. The detector is
+stable at the 0.06~\% level or better, and that the variation in the
+efficiency between the detector tiles is less than 5~\%.
+\subsection{$^3$He Detector}
+
 
 
 
