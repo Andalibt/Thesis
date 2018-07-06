@@ -5,8 +5,8 @@ vertical UCN source described in Sec.~\ref{vertical_source}. The
 spallation neutrons were converted to UCN through phonon excitation in
 the isotopically pure superfluid helium.  During data taking several
 measurements were performed for better understandting of the vertical
-UCN source and to help design the next generation UCN source. In this chapter,
-the experiments are described and the result are shown.
+UCN source and to help design the next generation UCN source. In this
+chapter, the experiments are described and the result are shown.
 
 Fig.~\ref{fig:volume_schematic} is a simple schematic of the UCN
 production and detection volume.  Here volume $V_1$ is the production
@@ -655,50 +655,57 @@ which is consistent with the result in~\cite{Leung2016}.
 
 \section{Heater Tests of The Source}
 The cooling process of the spallation neutrons create a heat input on
-the cryostat including the superfluid helium which then must be
-removed to keep the temperature constant. The temperature gradient in
-the superfluid helium is described by its heat conductivity. The
-temperature dependence of the heat conductivity in the superfluid
-helium is describe by theorical models to from the lambda point 2.17~K
-down to around 1.4~K which is above the temperature for the UCN
-production~($<~1$~K).  Because of the difficulty to reach such low
-temperatures, the mechanism of heat transfer in that region is not
-fully understood.  To check the validity of theoretical models, the
-extrapolation to lower temperatures is compared to acquired data.
+the cryostat including the superfluid helium. This heat input must be
+removed to keep the temperature of the superfluid helium constant. The
+temperature gradient in the superfluid helium is described by its heat
+conductivity. The bigger the temperature difference, the lower the
+heat conductivity. The temperature dependence of the heat conductivity
+in the superfluid helium is describe by theorical models from the
+lambda point 2.17~K down to around 1.4~K which is above the
+temperature for the UCN production~($<~1$~K).  Because of the
+difficulty to reach such low temperatures, the mechanism of heat
+transfer in that region is not fully understood.  To check the
+validity of theoretical models, the extrapolation to lower
+temperatures is compared to acquired data.
 
 
 In order to create excess heat load on the superfluid helium, there
 are heater tapes wrapped around the superfluid helium bottle. These
 heaters can create a temperature gradient between the heat exchanger
-and the superfluid helium bottle. This temperature gradient can be
+and the superfluid helium bottle~(See
+Sec.~\ref{sec:vertical_source}). This temperature gradient can be
 measured using the temperature sensors shown in Fig.~\ref{fig:TSs}.
 
-The heater test procedure is the following. The heater around the
+The heater test procedure is the following. The heater tape around the
 superfluid helium bottle is turned on when the temperature of the
-superfluid is stable. This is called the base temperature. The applied
-heat load could easily be calculated since the applied current and
-voltage are known. After the heater is turned on, the temperature of
-the superfluid helium starts to increase. This causes the flow rate in
-the $^3$He pot to increase. After some time, the temperature of the
-superfluid starts to settle and reach a new equilibrium. This
-temperature is referred to as the saturation temperature. At this
-point, the heater could be turned off which causes the superfluid
-temperature and the flow rate to go back to base conditions.
+superfluid helium is stable. This is called the {\it{base}}
+temperature. The applied heat load could easily be calculated since
+the applied current and voltage are known. After the heater is turned
+on, the temperature of the superfluid helium starts to increase. This
+causes the flow rate in the $^3$He pot to increase. After some time,
+the temperature of the superfluid starts to settle and reach a new
+equilibrium. Here this temperature is referred to as the
+{\it{saturation}} temperature. At this point, the heater could be
+turned off which causes the superfluid temperature and the flow rate
+of the $^3$He to go back to the base conditions.
 
 In 2017 two sets of heat tests were performed on the vertical UCN
-source: April heat test and November heat test. In April the base
-temperature of the superfluid helium was slightly higher than in
-November. In addition, there was no beam during the April cooling and
-it was purely a cryostat cooling test. Table.~\ref{tab:aprilheattest}
-shows the heat load and the temperatures of the April heat test.
-
+source: The April heat test and the November heat test. In April the
+base temperature of the superfluid helium was slightly higher than in
+November. In addition, there was no proton beam during the April
+cooling and it was purely a cryostat cooling
+test. Table.~\ref{tab:heattest} shows the heat load and the
+temperatures of those tests.
 
 \begin{sidewaystable}
-  \centering
+  %\centering
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
     \hline
     Heater Power & T$_{\mathrm{base, TS10}}$ &  T$_{\mathrm{sat., TS10}}$ & T$_{\mathrm{base, TS11}}$ &  T$_{\mathrm{sat., TS11}}$ & T$_{\mathrm{base, TS12}}$ &  T$_{\mathrm{sat., TS12}}$ & T$_{\mathrm{base, TS14}}$ &  T$_{\mathrm{sat., TS14}}$ & T$_{\mathrm{base, TS16}}$ &  T$_{\mathrm{sat., TS16}}$ \\
     (mW) & (K) & (K) & (K) & (K) & (K) & (K) & (K) & (K) & (K) & (K) \\
+    \hline
+    \hline
+    \multicolumn{11}{|c|}{\textbf{April Heat Test}}\\
     \hline
    2.5 & 0.717 & 0.718 & 0.93 & 0.931 & 0.926 & 0.9271 & 0.93 & 0.931 & 1.012 & 1.013 \\
     \hline
@@ -706,11 +713,124 @@ shows the heat load and the temperatures of the April heat test.
     \hline
     25 & 0.719 & 0.723 & 0.928 & 0.931 & 0.919 & 0.929 & 0.928 & 0.931 & 1.008 & 1.015 \\
     \hline
+    75 & 0.7195 & 0.7255 & 0.9285 & 0.937 & 0.922 & 0.952 & 0.928 & 0.937 & 1.01 & 1.03 \\
+    \hline
+    250 & 0.7175 & 0.7375 & 0.93 & 0.9475 & 0.93 & 1 & 0.93 & 0.947 & 1.01 & 1.065 \\
+    \hline
+    \multicolumn{11}{|c|}{\textbf{November Heat Test}}\\
+    \hline
+   25 & 0.724 & 0.73 & 0.892 & 0.9 & 0.84 & 0.86 & 0.92 & 0.923 & 0.96 & 0.97 \\
+    \hline
+    50 & 0.741 & 0.75 & 0.895 & 0.91 & 0.84 & 0.9 & 0.92 & 0.93 & 0.96 & 0.99 \\
+    \hline
+    75 & 0.73 & 0.74 & 0.9 & 0.91 & 0.85 & 0.92 & 0.92 & 0.93 & 0.96 & 1 \\
+    \hline
+    100 & 0.73 & 0.769 & 0.9 & 0.936 & 0.85 & 0.96 & 0.92 & 0.952 & 0.96 & 1.04 \\
+    \hline
+    150 & 0.73 & 0.755 & 0.9 & 0.93 & 0.84 & 0.99 & 0.92 & 0.945 & 0.96 & 1.06 \\
+    \hline
+    200 & 0.73 & 0.9 & 0.9 & 1.26 & 0.84 & 1.23 & 0.92 & 1.25 & 0.96 & 1.26 \\
+    \hline
+    250 & 0.73 & 0.94 & 0.895 & 1.385 & 0.84 & 1.345 & 0.92 & 1.363 & 0.97 & 1.375 \\
+    \hline
   \end{tabular}
-  \caption{}
-  \label{tab:aprilheattest}
+  \caption{The heater power and the base and saturation temperature of the 
+    temperature sensors in the superfluid helium and in the $^3$He pot for
+    the April and November heat tests.~\cite{Florian_thesis}}
+  \label{tab:heattest}
+\end{sidewaystable}
 
-  \end{sidewaystable}
+
+\subsubsection{Theoretical Models}
+The relationship between the heat flux and the temperature gradient in
+a one dimentional channel is written as following
+
+\begin{equation}
+  \label{eq:q_dT}
+  q^m = f^{-1}\left(T, p \right) \frac{dT}{dx}
+\end{equation}
+Where $q$ is the input heat flux, $T$ is the temperature, $p$ is the
+pressure and $\frac{dT}{dx}$ is the temperature gradient along the
+channel and $f\left(T, p \right)$ is the heat conductivity fucntion
+which controls the temperature gradient of the heat flux and could be
+written as
+\begin{equation}
+  \label{eq:f}
+f \left( T, p \right) = \frac{A_\mathrm{GM}\rho_n}{\rho_s^{3}s^4T^3}
+\end{equation}
+where $\rho_n$ is the density of the normal fluid component, $\rho_s$
+is the density of the superfluid component, $s$ is the specific
+entropy, $T$ is the temperature and $A_\mathrm{GM}$ is the
+Gorter-Mellink parameters which describes the friction between the
+normal fluid component and the superfluid component.
+
+Since the Gorter-Mellink parameter is not known, he calculation of
+$f \left( T, p \right)$ in the form of Eq.~\ref{eq:f} is difficult
+because. However, there are other models to describe the behaviour of
+the heat conductivity functions. There are two models that are
+considered here at the saturated vapour pressure. As a result, the
+pressure dependence could be neglected. There models are the theory
+model from Van Sciver~\cite{van2012helium} and the HEPAK
+model~\cite{arp2005hepak}. Fig.~\ref{fig:VanSciver_vs_HEPAK}
+
+\begin{figure}[h!]
+  \centering \includegraphics[width=0.8\textwidth]{VanSciver_vs_HEPAK.png}
+  \caption{The heat conductivity function of the Van Sciver and HEPAK
+    models. The vertical axis shows the temperature gradiant along the
+    channel and the horizonal axis shows the input heat
+    flux~\cite{Florian_thesis}. The arrows on the graph indicate the
+    temperature of the superfluid helium}
+\label{fig:VanSciver_vs_HEPAK}
+\end{figure}
+
+As Fig.~\ref{fig:VanSciver_vs_HEPAK} shows, at higher heat input both
+models tend to agree. However, at lower heat inputs, the heat
+conductivity function values for the Van Sciver model lie below the
+values for the HEPAK model. In addition, as the temperature of the
+superfluid helium increases, the heat conductivity function tends to
+look more linear. Since the Van Sciver model is more well known, it is
+used for comparision with experimental data.
+
+\subsubsection{Measurement Result}
+The data that is shown in Table.~\ref{tab:heattest} is a collection of
+cleaned data. These measurements showed that the heat input should not
+be higher than the cryostat cooling power otherwise the temperature of
+the superfluid helium would increase linearly without reaching an
+equilibrium.
+
+For a given heat input, the temperature difference between the base
+and the saturated temperature for each temperature sensor is
+calculated~(See table~\ref{tab:heattest}). The average of all of those
+temperature differences give the overall $\Delta T$ across the
+channel. Those are shown with black dots in Fig.~\ref{fig:April_Data}
+as the raw data. However, the heat input for those data points should
+be corrected since the heat input is consisted only of the added heat
+from the heater tapes and the background heat is not taken into
+account.
+
+% For Monday or Tuesday July 9 or 10
+% write about the JT and the other background heat
+% describe the graphs for April and November tests
+% Make a conclusion
+% Add your heater test graphs and say that it is all bullshit
+
+
+
+Fig.~\ref{fig:April_Data} shows the result of the April heat test.
+
+\begin{figure}[h!]
+  \centering \includegraphics[width=0.8\textwidth]{April_Data.png}
+  \caption{The comparison between the April heat test data and the Van
+    Sciver model. The lines show the Van Sciver model's heat
+    conductivity function at different superfluid helium bath
+    temperatures. The black data points show the measured raw data of
+    the heat tests. The blue points are the Joule Thomson values,
+    which are the raw data plus the calculated background heat
+    (included JT effect) and the red points show the raw data with the
+    assumed 50 mW background heat input. }
+\label{fig:April_Data}
+\end{figure}
+
 
 
 
