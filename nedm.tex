@@ -123,16 +123,46 @@ give access to the neutron EDM
   \label{eqn:fitteddn}
   d_n = \frac{\hbar (\omega_0 ^{\uparrow \uparrow} - \omega_0 ^{\uparrow \downarrow})}{2(E^{\uparrow \uparrow} - E^{\uparrow \downarrow})} = \frac{\hbar \Delta \omega}{4E}.
 \end{equation}
-with the assumption that the magnetic field is constant~(See
+with the assumption that the magnetic field is constant~(see
 Eqn.~\ref{eqn:dn}).
-The statistical sensitivity of nEDM measurement is
+
+
+\section{Statistical and Systematic Errors}
+\subsection{Statistical Sensitivity}
+The statistical sensitivity of nEDM measurement per cycle is
 \begin{equation}
   \label{eqn:dnsensitivity}
 \sigma(d_n) = \frac{\hbar}{2 \alpha T E \sqrt{\bar{N}}}
 \end{equation}
-where $\bar{N}$ is the average total number of detected UCN.
+where visibility $\alpha$ is a factor related to the neutrons
+polarization, $\bar{N}$ is the average total number of detected UCN,
+$T$ is the free precession time and $E$ is the electric field. The
+visibility depends on the longitudinal and transverse spin relaxation
+times $T_1$ and $T_2$ respectively. The transverse spin relaxation
+time $T_2$ arises from inhomogeneities in the magnetic field as well
+as the $T_1$ relaxation time as
+\begin{equation}
+\frac{1}{T_2} = \frac{1}{T_2^{\prime}}+\frac{1}{T_1}
+\end{equation}
+where $T_2^{\prime}$ is the transverse relaxation time only
+due to the field inhomogeneities.
 
-\section{ TRIUMF nEDM Components}
+\subsection{Systematic Errors}
+The dominant systematic errors in the previous best experiment arose
+due to magnetic field instability (uncorrelated with the electric
+field E), and magnetic field inhomogeneity through the geometric phase
+effect~(GPE). The GPE arises due to a combination of magnetic field
+inhomogeneity and motion of the particles in the electric field during
+the measurement time, when the neutrons and co-magnetometer atoms are
+confined in the trap. The spins of the species in the trap acquire
+phases relative to one another resulting in a false EDM
+signal~\cite{pendlebury2004}~(see Appendix~\ref{app:GPE}).
+
+%left at page 54 of the old 2015 CDR
+
+
+
+\section{TRIUMF nEDM Components}
 The future nEDM experiment at TRIUMF will use a room-temperature nEDM
 apparatus, connected to a horizontal cryogenic UCN
 source~Fig~\ref{fig:triumfEDM}. 
@@ -166,6 +196,8 @@ Chapter~\ref{chap:UCNresult}.
 
 A brief description of each nEDM component is presented below.
 
+\subsection{Neutron Handling}
+\subsection{UCN Detection}
 
 
 
@@ -181,6 +213,8 @@ A brief description of each nEDM component is presented below.
 % For after I am back
 % I can use the old CDR and my thesis proposal to write some components
 % I can use another CDR to write about high voltage and stuff
+
+
 
 
 
@@ -270,22 +304,22 @@ the field perterbations induced by changes in the magnetic
 permeability of the passive shields arising from temperature
 fluctuations~(See Chapter~\ref{chap:muofT}).  High-precision current
 supplies ($\sim$~1~ppm) will be used to drive all internal coils,
-regardless of design.  AC coils will apply π/2 pulses for the UCN and
+regardless of design. AC coils will apply $\pi/2$ pulses for the UCN and
 comagnetometer species, to initiate free spin precession.
 
+\textbf{also add field mapping and magnetometers???}
 
 
 
 
-
-\subsection{High Voltage EDM Cells}
+\subsection{ EDM Cells and High Voltage System}
 The nEDM measurement volume, consists of two storage cells to enable
 simultaneous measurements with both up and down orientations of the
 electric field~(See Fig.~\ref{fig:HVcell}). Each cell consists of
 electrodes separated by a cylindrical wall of dielectric insulator,
 appropriately coated for UCN compatibility. An electric field of
 12~kV/cm will be created between the electrodes with minimal leakage
-current~($\<$~10 pA).  The storage cells will be housed inside a
+current~($<$~10 pA).  The storage cells will be housed inside a
 non-magnetic vacuum chamber providing insulating vacuum for the high
 voltage applied to the central electrode which separates the two
 cells.
@@ -316,7 +350,7 @@ compensation of magnetic field drifts and a measurement of the
 magnetic field gradient.
 
 
-\subsection{Dual Comagnetometer}
+\subsection{Comagnetometry}
 To measure any changes in the precesion $B_0$ field, a dual-species
 $^{129}$Xe/ $^{199}$Hg Comagnetometer will be used. Here, polarized
 $^{129}$Xe and $^{199}$He are simultaneously introduced along with the
@@ -376,6 +410,11 @@ of UCN expected with the TRIUMF source has been developed and tested
 in the highest rate UCN beam available at
 PSI~\cite{jamieson2017characterization}~(See
 Chapter~\ref{chap:UCNattriumf}).
+
+
+\subsection{UCN Source}
+
+\subsection{DAQ?}
 %\begin{description}
 %\item{An introduction about the long term nEDM effort at TRIUMF, what
 % the plan is, when it will start (roughly). I guess I can probably

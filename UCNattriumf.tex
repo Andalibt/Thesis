@@ -4,24 +4,40 @@
 % XXX mSev.
 
 The current vertical UCN cryostat at TRIUMF is the same UCN cryostat
-developed and tested at RCNP, Japan between 19xx and
-2012(?)~\cite{masuda2002spallation,masuda2012spallation}.  In 2016,
-the cryostat was shipped to triumf for further UCN experiments. These
-experiments were essential for better understanding of the cryostat
-and design of the next generation UCN source.  The vertical source was
-modified to fulfill the safety requirements at TRIUMF (find where and
-what those are.)  The current location of the vertical source is at
-the meson hall experimental area.  A picture of the UCN facitity is
-shown below.
+developed and tested at RCNP,
+Japan~\cite{masuda2002spallation,masuda2012spallation}.  In 2016, the
+cryostat was shipped to triumf and in 2017 it was installed at a
+dedicated a dedicated spallation neutron source for further UCN
+experiments. The main purpose of such experiments were for better
+understanding of the vertical UCN source and the design of the next
+generation UCN source. The 520~MeV cyclotron at TRIUMF provides up to
+40~$\mu$A of proton beam that can be diverted onto a tungsten
+spallation target. The vertical UCN source is placed above the target
+and is surrounded by graphite blocks serving as neutron reflectors.
+
+
+The vertical source was modified to fulfill the Canadian safety
+requirements at TRIUMF. Those include installing pressure relief
+valves on the cryostat and the UCN guides and additional radiation
+shielding requiring much longer UCN guides compared to RCNP. The
+current location of the vertical source is at the meson hall
+experimental area. A map of TRIUMF is shown in Fig.~\ref{fig:sitemap}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1.0\textwidth]{sitemap.png}
+  \caption{A map of TRIUMF. The UCN facility is located at the Meson
+    Hall area shown in Blue.}
+  \label{fig:sitemap}
+\end{figure}
 
 The unique feature of the UCN source at TRIUMF is the combination of
-spallation neutrons and superfluid helium for UCN production. This
-will be discussed in detail in the following sections.
+spallation neutrons and superfluid helium for UCN production. Diffenet
+elements of the UCN facility at TRIUMF are presented below.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{UCN beamline}
-%TRIUMF's proton beam is provided by a 520~Mev cyclotron.
+\section{UCN Beam Line}
 TRIUMF produces negatively charged hydrogen ions from an ion
 source. These ions are then accelerated in the 520~Mev cyclotron in an
 outward spiral trajectory. A thin graphite stripper foil removes the
@@ -32,25 +48,13 @@ proton beam line. TRIUMF has four independent extraction probes with
 various sizes of foils to provide protons simultaneously to up to four
 beam lines.
 
-
 The 120~$\mu$A beam (BL1A) enters the Meson Hall where the UCN
-facility is located. The vertical UCN source was designed for a
+facility is located. The vertical UCN source is designed for a
 maximum of 40~$\mu$A beam on target. As a result, only one third of
 the beam can go to the UCN experimental area and the rest is shared
 with different experimental facilities.
 
-The microstructure of BL1A is in pulses with approximately 1~ms
-periods of beam followed by a 50-100~$\mu$s periods of no beam.  This
-is shown in Fig.~(\ref{fig:bl1u})~\cite{Nick_thesis}. A
-kicker magnet kicks away 1/3 of the beam to BL1U. For most of the UCN
-data taking, the beam was on for 1~min and off for 4~min. These times
-are adjustable.
-
-After the kicker magnet, the septum magnet bends the beam to the
-target and the quadropoles focus the beam to the target.
-
-
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{bl1u.png}
   \caption{UCN beam structure. The top graph shows the 120~$\mu$A BL1A
@@ -60,6 +64,76 @@ target and the quadropoles focus the beam to the target.
     to the UCN area.}
   \label{fig:bl1u}
 \end{figure}
+
+The microstructure of BL1A is in pulses with approximately 1~ms
+periods of beam followed by a 50-100~$\mu$s periods of no beam.  This
+is shown in Fig.~(\ref{fig:bl1u})~\cite{Nick_thesis}. A kicker magnet
+and the septum magnet kick away 1/3 of the beam from BL1A to BL1U and
+transport it to a conventional dipole (bender) magnet~(See
+Fig.~\ref{fig:magnets}).
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{magnets.png}
+  \caption{The kicker, septum and dipole (bender) magnets define the
+    front two sections of BL1U.}
+  \label{fig:magnets}
+\end{figure}
+
+After the bender magnet, the beam then passes through a cored
+shielding block and reaches the two quadrupole magnets providing the
+final focus of the beam onto a 12 cm thick tungsten spallation target.
+The target is located inside a hermetically-sealed target crypt, which
+also envelops the beamline exit window that defines the end of BL1U.
+Upstream of the beamline window, there is a collimator to reduce the
+halo from the proton beam, as well as to help reduce the amount of
+neutrons and photons streaming back into the beamline from the target
+region (the collimator also increases the impedance for the passage of
+gas arising from any target or window failure, to allow time for the
+cyclotron fast valves to close). This last part of the beamline also
+contains a variety of beam position and current monitors. The
+spallation target and UCN source, located downstream of the
+beamline-exit window, are enclosed in a large shielding
+pyramid~Fig~\ref{fig:pyramid}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{pyramid.png}
+  \caption{Two quadrupole magnets which focus the proton beam onto a
+    12~cm thick tungsten spallation target, located inside a
+    hermetically-sealed target crypt. Also shown is the UCN shielding
+    pyramid, which encases both the spallation target and the UCN
+    source, and is designed to meet the dose rate requirements
+    specified by the TRIUMF Safety Group.}
+  \label{fig:pyramid}
+\end{figure}
+\section{Tungsten Spallation Target}
+The spallation target is located at the downstream end of BL1U. The
+UCN spallation target comprises a series of rectangular blocks, adding
+up to roughly one stopping length (11 cm) of tungsten, with a
+cross-section of $\sim6 \times 8$~cm$^2$~(see
+Fig.~\ref{fig:target}). This geometry is very similar to (and
+motivated by) the neutron spallation target design used at KEK (KENS
+facility)~\cite{kawai2001fabrication}. The target requires a support
+and cooling system, and is designed to allow for remote-handling and
+ease of servicing. The target-cooling and remote-handling systems are
+designed for an instantaneous proton current of 40~$\mu$A (10~$\mu$A
+time-averaged).
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{target.png}
+  \caption{(a) Tungsten Target Blocks from the spallation target at
+    KEK. The target blocks are plated with tantalum. (b) Present
+    design for the tungsten spallation target at the TRIUMF UCN
+    facility. The target blocks have a cross-section of
+    $5.7 \times 7.8$~cm$^2$ , and thicknesses of 2.0, 2.0, 3.0, and
+    5.0~cm, respectively.}
+  \label{fig:target}
+\end{figure}
+The target is being water-cooled. A coating of tantalum prevents
+corrosion by the water cooling system. An extraction system allows to
+exchange the target when necessary.
+
+\textbf{Stuff still need to be added here}.
 
 \section{Radiation Sheilding}
 
