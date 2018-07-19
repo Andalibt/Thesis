@@ -98,12 +98,14 @@ Eqn.~\ref{eqn:spinup} simplifies to
 \begin{equation}
   P(T, \omega_{rf}) = \frac{1}{2} \left( 1 - \cos(T\Delta) \right).
 \end{equation}
-In a real measurement with $N$ UCN inside a magnetic field region this becomes
+In a real measurement with $N$ UCN inside a magnetic field region this
+becomes
 \begin{equation}
   \label{eqn:Nup}
 N^{\uparrow} = \frac{N}{2} \left\lbrace 1 - \alpha(T) \cos \left[ (\omega_{rf} - \gamma_n B_0 ) \cdot \left(T+\frac{T+4t_{\pi/2}}{\pi}\right)\right]\right\rbrace,
 \end{equation}
-where $\alpha$ is the visibility of the central fringe with spin either up or down
+where $\alpha$ is the visibility of the central fringe with spin
+either up or down
 \begin{equation}
   \label{eqn:visibility}
   \alpha^{\uparrow /\downarrow} = \frac{N_{max}^{\uparrow /\downarrow} - N_{min}^{\uparrow /\downarrow}}{N_{max}^{\uparrow /\downarrow}+ N_{min}^{\uparrow /\downarrow}}.
@@ -172,41 +174,60 @@ EDM effects arise from cross-terms between the radial component of the
 applied $B_0$ field and $B_v$ in the 2nd order perturbation.
 
 The false EDM could be corrected by the frequency ratio of the
-neutrons to the co-magnetometer atoms~(Xe) used to sense the
+neutrons to the co-magnetometer atoms~($^{199}$Hg) used to sense the
 gradient. Graphing the measured neutron EDM as a function of this
 ratio then allows to correct to zero gradient and hence discover the
-true neutron EDM. This method can be calibrated for larger applied
-gradient fields. However, If the neutron resonant frequency is
-corrected by the co-magnetometer resonant frequency in the usual way,
-this results to false EDM for the neutrons induced by the
-co-magnetometer atoms. This type of false EDM could be reduced by
-using the buffer-gas effects to limit the mean free path λ of the
-co-magnetometer atoms. If the mean free path of the atoms is limited,
-with interparticle collision times becoming small, a suppression
-factor may reduce the false EDM. If no buffer gas effect can be
-obtained for Xe, the simultaneous introduction of Hg and Xe atoms into
-the vessel can cancel out the GPE~(dual co-magnetometer).
+true neutron EDM. This is also supplemented by gradient determination
+using surrounding Cs magnetometers.
+
+
+%This method can be calibrated for larger applied
+%gradient fields. However, If the neutron resonant frequency is
+%corrected by the co-magnetometer resonant frequency in the usual way,
+%this results to false EDM for the neutrons induced by the
+%co-magnetometer atoms. This type of false EDM could be reduced by
+%using the buffer-gas effects to limit the mean free path $\lambda$ of
+%the co-magnetometer atoms. If the mean free path of the atoms is
+%limited, with interparticle collision times becoming small, a
+%suppression factor may reduce the false EDM. If no buffer gas effect
+%can be obtained for Xe, the simultaneous introduction of Hg and Xe
+%atoms into the vessel can cancel out the GPE~(dual co-magnetometer).
 
 
 
 \section{TRIUMF nEDM Components}
 The future nEDM experiment at TRIUMF will use a room-temperature nEDM
 apparatus, connected to a horizontal cryogenic UCN
-source~Fig~\ref{fig:triumfEDM}. 
-The cyclotron at TRIUMF produces a~$\sim$~500~MeV proton beam. Protons
-are guided to the spallation target using a variety of
-magnets. Spallation neutrons are moderated and converted to UCN in a
-superfluid He-II volume, which diffuse through UCN guides to the nEDM
-measurement cell.
+source~Fig~\ref{fig:triumfEDM}.
 
-In 2016 the vertical UCN source from RCNP in Japan was shipped to TRIUMF for
-the resarch towards the developement of the new horizontal UCN source.
-The UCN beamline and the current vertical UCN source
-are described in Chapter~\ref{chap:UCNattriumf}. The result of the
-first set of UCN experiments with the vertical source is available in
+A proton beam at 480~MeV and 40~$\mu$A impinges on a tungsten
+spallation target liberating neutrons. Over the target a
+room-temperature neutron moderator/reflector system composed of Pb,
+graphite, and D$_2$O thermalizes the neutrons. Liquid
+deuterium~(LD$_2$) at 20~K creates a large flux of cold neutrons~(CN)
+in a bottle containing superfluid $^4$He below 1~K. In the superfluid,
+the CN excite phonon and roton transitions, losing virtually all their
+kinetic energy to become UCN. Once a sufficient density of UCN has
+built up, the proton beam is turned off, and a cryogenic UCN valve
+opens. The UCN are transported out of the source by specular
+reflection on the surfaces of UCN guides. A superconducting
+magnet~(SCM) accelerates polarized UCN through barrier foils to a
+vacuum volume at room temperature. The UCN are then transported to the
+nEDM experiment by additional guides.
+%The cyclotron at TRIUMF produces a~$\sim$~500~MeV proton beam. Protons
+%are guided to the spallation target using a variety of
+%magnets. Spallation neutrons are moderated and converted to UCN in a
+%superfluid He-II volume, which diffuse through UCN guides to the nEDM
+%measurement cell.
+
+In 2016 the vertical UCN source from RCNP in Japan was shipped to
+TRIUMF for the resarch towards the developement of the new horizontal
+UCN source.  The current UCN facility at TRIUMF is presented in
+Chapter~\ref{chap:UCNattriumf}. The result of the first set of UCN
+experiments with the vertical source is available in
 Chapter~\ref{chap:UCNresult}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=1.0\textwidth]{edmtriumf.png}
   \caption{Conceptual design of the proposed UCN source and nEDM
@@ -221,9 +242,39 @@ Chapter~\ref{chap:UCNresult}.
   \label{fig:triumfEDM}
 \end{figure}
 
-A brief description of each nEDM component is presented below.
+A brief description of the main
+components of the future nEDM aparatus at TRIUMF is presented below.
 
-\subsection{Neutron Handling}
+\subsection{New UCN Source}
+The future nEDM experiment at TRIUMF will use a new UCN source which
+has quite some differences with the vertical UCN source described in
+Chapter~\ref{chap:UCNattriumf}. A schematic overview of the proposed
+UCN source upgrades and the nEDM experiment is presented in
+Fig.~\ref{fig:triumfEDM}. The new UCN source uses an LD$_2$ cryostat
+to produce cold neutrons during the experiment as opposed to the solid
+D$_2$O in the vertical source. LD$_2$ increases the UCN production by
+factors, and reduces the uncertainty in the UCN source performance. An
+engineering diagram of the LD$_2$ cryostat connected to the superfluid
+$^4$He cryostat is shown in Fig.~\ref{fig:newUCNsource}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1.0\textwidth]{newUCNsource.png}
+  \caption{The proposed UCN source and LD$_2$ cryostat. Protons strike
+    a tungsten spallation target liberating neutrons, which are
+    moderated in surrounding volumes of graphite (not shown), D$_2$O,
+    and LD$_2$. Neutrons are downscattered in the UCN production
+    volume containing superfluid $^4$He. They are bottled within a
+    horizontal guide up to a UCN valve. When the valve is opened UCN
+    are transported to room temperature UCN guides.}
+  \label{fig:newUCNsource}
+\end{figure}
+
+
+
+
+
+\subsection{UCN Handling and Transport}
 
 Efficient transport of polarized UCN is one of the major requirements
 for the measurement of the neutron EDM. This efficiency depends mainly
@@ -235,7 +286,7 @@ solid matter~(50 to 130~nm compared to 0.3~nm). Therefore, during a
 scattering process, a UCN interacts with hundreds of nuclei. The mean
 nuclear potential experienced during the scattering, which is referred
 to as the Fermi potential, depends on the material. In order to store
-UCNs, the Fermi potential must be as high as possible.
+UCN, the Fermi potential must be as high as possible.
 
 The second parameter is the roughness of the surface. Indeed,
 transportation is more efficient if the roughness is low. Then, the
@@ -248,39 +299,88 @@ depolarized during a collision because of different processes.
 %large magnetic field gradients.
 When selecting materials for UCN components, the mean depolarization
 rate per bounce should be as small as possible.
-
-he parts that come in contact with ultra-cold neutrons on the way from
-the UCN source to the EDM experiment and the UCN detectors constitute
-the neutron handling hardware: UCN guides, valves, switches, spin
-polarizers, flippers and analyzers. Their main task is to transport a
-large phase-space fraction of the ultra-cold neutrons most efficiently
-to achieve the highest statistical sensitivity in the experiments as
-possible.  Suitable guides and valves have optimized geometries, wall
-materials with large Fermi potentials, low upscattering and absorption
-cross sections for neutrons, low roughness and
-depolarization.
-
-
-
-
-
-
-\subsection{UCN Detection}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1.0\textwidth]{UCNdelivery.png}
+  \caption{UCN delivery and the nEDM experiment. UCN exit the source
+    by passing through the SCM spin polarizer and UCN switch and
+    detector system, where they then enter the proposed nEDM
+    experiment. UCN are loaded into the measurement cells within a
+    MSR/coil system. At the end of the measurement cycle, UCN are
+    counted by simultaneous spin analyzers (SSA’s) including
+    detectors. An ambient magnetic compensation system and thermally
+    controlled room which will surround the nEDM apparatus (not
+    shown). For scale, the innermost layer of the MSR is a 1.8~m
+    side-length cube.}
+  \label{fig:UCNdelivery}
+\end{figure}
 
 
 
+The main task of the UCN handling parts is to transport a large
+phase-space fraction of the UCN most efficiently to achieve the
+highest statistical sensitivity in the experiments as possible.
+
+The parts that come in
+contact with UCN on the way from the UCN source to the EDM experiment
+and the UCN detectors constitute the neutron handling hardware: UCN
+guides, valves, switches and simultaneous spin
+analzer~(SSA) system. Fig.~\ref{fig:UCNdelivery} shows the neutron handling
+parts for the nEDM experiment at TRIUMF.  UCN exiting the source are
+polarized by the SCM, and then enter the nEDM experiment.
+
+Suitable guides and valves have optimized geometries, wall materials
+with large Fermi potentials, low upscattering and absorption cross
+sections for neutrons, low roughness and depolarization. The plan is
+to use Be for the UCN production volume, and NiMo coatings for most
+other surfaces, on glass and Cu substrates where non-magnetic
+polarization preserving guides are required.  
+
+UCN spins will be measured by two separate simultaneous spin analyzer
+(SSA) systems (one for each cell). Its configuration allows
+simultaneous counting of both UCN spin states and maximizes the
+visibility of the Ramsey fringes and counting efficiency.  The UCN
+switches load UCN into the nEDM experiment, and divert UCN exiting the
+experiment into the detectors.  A prototype detector, based on
+scintillating lithium glass, and capable of handling the highest rates
+of UCN expected with the TRIUMF source has been developed and tested
+in the highest rate UCN beam available at
+PSI~\cite{jamieson2017characterization}~(See
+Chapter~\ref{chap:UCNattriumf}).
+%This detector is based on the detector used
+%in the PSI UCN experiments~\cite{Ban2009}.
 
 
 
+%The cold neutron guides contain liquid helium (shown in purple in
+%Fig.~\ref{fig:UCNhandling}) at a temperature of less than 1~K. A cold
+%UCN gate valve partitions this volume. Upstream of it, the neutrons
+%are stored/accumulated while the proton beam irradiates the
+%target. Three aluminum foils constitute the end of the 1~K neutron
+%guide section, sitting inside a 3.5~T superconducting magnet, the UCN
+%polarizer. A transition region of guides bridges between temperatures
+%from 100~K to room temperature, which is the temperature of all
+%downstream neutron handling equipment.
 
-%Based on the previous measurements of nEDM, the dominant systematic
-%uncertainty is due to the magnetic field insability and
-%inhomogeneity. As a result, different types of magnetic shielding is
-%needed to meet the magnetic requirements.
+%At TRIUMF, the room temperature UCN guide will be split between the
+%EDM experiment and the second experiment port via a Y-switch. Towards
+%the EDM cell(s), the UCNs pass another UCN switch (aka. rotary valve
+%or EDM detector switch) which can either guide neutrons from the
+%source to the EDM cell or from the EDM cell to the UCN detectors. Each
+%EDM cell itself is closed by a plug (or door valve) to store the
+%neutrons during the Ramsey cycle. The vertical section of the UCN
+%guides towards the UCN detectors contains spin flippers and spin
+%analyzers and the UCN detectors at the bottom.
 
-% For after I am back
-% I can use the old CDR and my thesis proposal to write some components
-% I can use another CDR to write about high voltage and stuff
+%To systematically check all possible alignments of electric field,
+%magnetic field and neutron spin in the EDM experiment, a spin flipper
+%can be added to the UCN guide system after the Y-switch and before it
+%is possibly split to serve the two EDM cells. In this way, both
+%neutron spin states can be loaded into the experiment. The spin
+%analyzer uses a magnetic potential of 60 neV/T to analyze the neutron
+%spin direction, deter- mining whether it’s spin is aligned~(low field
+%seekers), or anti-aligned~(high field seekers) with the analyzer
+%magnetic field.
 
 
 
@@ -288,14 +388,17 @@ depolarization.
 
 \subsection{Magnetic Components}
 To chieve the desired sensitivity of ~$10^{-27}$~e$\cdot$cm an
-extremely stable and homogeneuos $B_0$ magnetic field is required. The
-magnetic stability upper limit for TUCAN's nEDM measurement is 1~pT
-and the homogeneity of 1~nT/m. Because of the challenges to achieve
-this level of magnetic stability co-magnetometers will be used to
-correct for the $B_0$ field fluctuations. To achieve these
-specifications, both active and passive shielding will be utilized to
-nullify the uncontrolled and time-varying external fields. The desired
-internal magnetic field will be generated by using uniform and shim
+extremely stable and homogeneuos $B_0$ magnetic field is required.
+The magnetic stability upper limit for TUCAN's nEDM
+measurement is 1~pT and the homogeneity of 1~nT/m.
+%beyond which a comagnetometer must be
+%used to correct the field to the $\sim$∼10~fT level.
+Because of the challenges to achieve this level of magnetic stability,
+a $^{199}$Hg co-magnetometer will be used to correct for the $B_0$
+field fluctuations. To achieve these specifications, both active and
+passive shielding will be utilized to nullify the uncontrolled and
+time-varying external fields. The desired internal magnetic field will
+be generated by using uniform and shim
 coils. Fig.~\ref{fig:magneticscheme} shows the schematic drawing of
 the magnetic components of the TUCAN nEDM experiment. Each magnetic
 component is explained below.
@@ -320,7 +423,7 @@ component is explained below.
 
 The magnetic environment at the location of the planned nEDM
 experiment at TRIUMF is dominated by a 400~$\mu$T static field due to
-the main cyclotron at TRIUMF with 1 to 100-nT fluctuations due to the
+the main cyclotron at TRIUMF with 1 to 100~nT fluctuations due to the
 other external magnetic sources such as the electrical equipment or
 the displacement of large magnetic objects~(e.g., vehicle traffic).
 The TUCAN's plan is to reduce the static field to less than 1~$\mu$T
@@ -342,27 +445,36 @@ the level of tens of nT over the volume of the nEDM cell.
 
 \subsubsection{Passive Shielding}
 The passive shielding system nullifies the residual background fields
-to the pT level. It will be a two-stage system: (1) a 2-layer
-magnetically shielded room~(MSR) with (2) a smaller 3-layer shield
-that fits inside the room and surrounds the nEDM apparatus. The
-innermost layer also serves as a return yoke for the magnetic flux
-generated by the internal coils for the shield-coupled coil desings. A
-degaussing~(idealization) system will be used to stabilize the
-shields. A combined DC shielding factor of the order of $10^6$ is
-expected. In principle, by utilizing both active and passive
-shielding, the magnetic field from external sources will be reduced to
-the level of tens of fT over the volume of the nEDM cell.  There are
-two prototype four-layer passive shields at the University of
-Winnipeg. The shields are now used to facilitate a variety of magnetic
-field R\&D. These are made of high permeability material. In addition,
-there are three small witness cylinders which are made of the same
-material and annealed in the same oven as the large passive
-shields. The design principles behind the small shield, shielding
-factor measurements, and comparison to simulation are described in
-Ref.~\cite{martin2015large}.  The witness cylinders are used to
-evaluate the temperature dependence of the shield material properties,
-which could be an important consideration for internal field
-stability~(See Chapter~\ref{muofT}).
+to the pT level. It will be a two-stage system: (1) a
+magnetically shielded room~(MSR) with (2) a set of smaller shields
+that fit inside the room and surround the nEDM apparatus.
+
+A magnetically shielded room~(MSR) with quasi-static
+shielding factor of $\sim$~100,000 is sufficient to reduce the magnetic
+fluctuations to the $\sim$~pT level. A four-layer MSR with an inner
+cubic space of side-length 1.8~m and outer side-length 2.8~m produces
+this shielding factor, with mu-metal wall thicknesses 2~mm, 6~mm,
+4~mm, 4~mm (inner to outer), equally spaced.
+
+
+The innermost layer of the ineternal passive shields also serves as a
+return yoke for the magnetic flux generated by the internal coils for
+the shield-coupled coil desings. A degaussing~(idealization) system
+will be used to stabilize the shields. A combined DC shielding factor
+of the order of $10^6$ is expected. In principle, by utilizing both
+active and passive shielding, the magnetic field from external sources
+will be reduced to the level of tens of fT over the volume of the nEDM
+cell.  There are two prototype four-layer passive shields at the
+University of Winnipeg. The shields are now used to facilitate a
+variety of magnetic field R\&D. These are made of high permeability
+material. In addition, there are three small witness cylinders which
+are made of the same material and annealed in the same oven as the
+large passive shields. The design principles behind the small shield,
+shielding factor measurements, and comparison to simulation are
+described in Ref.~\cite{martin2015large}.  The witness cylinders are
+used to evaluate the temperature dependence of the shield material
+properties, which could be an important consideration for internal
+field stability~(See Chapter~\ref{chap:muofT}).
 
 
 \subsubsection{Internal Coils}
@@ -375,22 +487,24 @@ supplies ($\sim$~1~ppm) will be used to drive all internal coils,
 regardless of design. AC coils will apply $\pi/2$ pulses for the UCN and
 comagnetometer species, to initiate free spin precession.
 
-\textbf{also add field mapping and magnetometers???}
-
-
+%\textbf{also add field mapping and magnetometers???}
 
 
 \subsection{ EDM Cells and High Voltage System}
 The nEDM measurement volume, consists of two storage cells to enable
 simultaneous measurements with both up and down orientations of the
-electric field~(See Fig.~\ref{fig:HVcell}). Each cell consists of
-electrodes separated by a cylindrical wall of dielectric insulator,
-appropriately coated for UCN compatibility. An electric field of
+electric field~(See Fig.~\ref{fig:HVcell}). The storage cells will be
+housed inside a non-magnetic vacuum chamber providing insulating
+vacuum for the high voltage applied to the central electrode which
+separates the two cells.  The cells are separated by a cylindrical
+wall of dielectric insulator.  The insulator must have a large
+dielectric strength and low permittivity.  An electric field of
 12~kV/cm will be created between the electrodes with minimal leakage
-current~($<$~10 pA).  The storage cells will be housed inside a
-non-magnetic vacuum chamber providing insulating vacuum for the high
-voltage applied to the central electrode which separates the two
-cells.
+current~($<$~10 pA).  The optical readout of the comagnetometer
+requires UV-transparent windows in the insulating side wall. The use
+of two cells with a central electrode allows first-order compensation
+of magnetic field drifts and a measurement of the magnetic field
+gradient.
 
 \begin{figure}[h!]
   \centering
@@ -402,87 +516,56 @@ cells.
 
 
 
-There are two grounded electrodes integrated into the lids of a vacuum
-chamber. These electrodes are separated by an insulating side wall,
-containing the particles of interest, with inlets for UCN, Xe and
-Hg. The insulator must have a large dielectric strength and low
-permittivity. Therefore, it is designed to be made of deuterated
-polystyrene with quartz windows to allow optical access, coated by
-deuterated polyethylene. These materials combine high Fermi
-potentials, UV transparency as well as good dielectric strength.
-Ports will allow the introduction of the $^{199}$Hg comagnetometer
-atoms and UCN into the cell. The optical readout of the
-comagnetometers requires UV-transparent windows in the insulating side
-wall. The use of two cells with a central electrode allows first-order
-compensation of magnetic field drifts and a measurement of the
-magnetic field gradient.
-
-
 \subsection{Comagnetometry}
-To measure any changes in the precesion $B_0$ field, a dual-species
-$^{129}$Xe/ $^{199}$Hg Comagnetometer will be used. Here, polarized
-$^{129}$Xe and $^{199}$He are simultaneously introduced along with the
-UCN in the nEDM cell. Comagnetometry offers the only way to correct
-for false EDMs caused by leakage currents.  Each atomic species is
+A false nEDM signal may arise due to a combination of a magnetic field
+gradient $\partial {B_z}/\partial z$ and motion in the electric field when
+species (neutrons and $^{199}$ Hg atoms) are confined in the
+measurement cells. Comagnetometry offers the only way to correct for
+false EDMs caused by leakage currents.  Each $^{199}$Hg atom is
 polarized using optical pumping techniques. Polarized atoms are
 introduced into the nEDM cell at the same time as UCN, and the
-spin-precession frequencies of both species are measured
-simultaneously. The atoms are expected to have smaller EDMs than the
-neutrons, and so their precession frequencies may be used to normalize
-magnetic field drifts.  The design of the $^{199}$Hg comagnetometer
-will be similar to that employed in the previous ILL
-experiment~\cite{Baker2006,Griffith2009}. The nuclear magnetization of
-Xe will be measured by sensing decay light after two-photon
-excitation~\cite{momose2014development}.
+spin-precession frequencies of them are measured simultaneously. The
+atoms are expected to have smaller EDMs than the neutrons, and so
+their precession frequencies may be used to normalize magnetic field
+drifts.  The design of the $^{199}$Hg comagnetometer will be similar
+to that employed in the previous ILL
+experiment~\cite{Baker2006,Griffith2009}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% repeating myself
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{UCN Handling and Transport}
+%Fig.~\ref{fig:UCNdelivery} shows the UCN transport to the EDM cell.
+%UCN will be transported out of the source by specular reflection via
+%guides with special coatings compatible with UCN transport and
+%polarization. Special coatings such as NiMo, NiP and DLC are top
+%candidates because of their high Fermi potential , small absorption
+%and inelastic upscattering, and good specularity.  A superconducting
+%magnet (SCM) accelerates polarized UCN through barrier foils to a
+%vacuum volume at room temperature. The UCN are then transported to the
+%nEDM experiment by additional guides.
 
 
-\subsection{UCN Handling and Transport}
-Fig.~\ref{fig:UCNdelivery} shows the UCN transport to the EDM cell.
-UCN will be transported out of the source by specular reflection via
-guides with special coatings compatible with UCN transport and
-polarization. Special coatings such as NiMo, NiP and DLC are top
-candidates because of their high Fermi potential , small absorption
-and inelastic upscattering, and good specularity.  A superconducting
-magnet (SCM) accelerates polarized UCN through barrier foils to a
-vacuum volume at room temperature. The UCN are then transported to the
-nEDM experiment by additional guides.
+
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=1.0\textwidth]{UCNdelivery.png}
+%  \caption{UCN delivery and the nEDM experiment. UCN exit the source
+%    by passing through the SCM spin polarizer and UCN switch and
+%    detector system, where they then enter the proposed Phase 2 nEDM
+%    experiment. UCN are loaded into the measurement cells within a
+%    MSR/coil system. At the end of the measurement cycle, UCN are
+%    counted by simultaneous spin analyzers (SSA’s) including
+%    detectors. An ambient magnetic compensation system and thermally
+%    controlled room which will surround the nEDM apparatus~(not
+%    shown). For scale, the innermost layer of the MSR is a 1.8~m
+%    side-length cube.}
+%  \label{fig:UCNdelivery}
+%\end{figure}
 
 
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1.0\textwidth]{UCNdelivery.png}
-  \caption{UCN delivery and the nEDM experiment. UCN exit the source
-    by passing through the SCM spin polarizer and UCN switch and
-    detector system, where they then enter the proposed Phase 2 nEDM
-    experiment. UCN are loaded into the measurement cells within a
-    MSR/coil system. At the end of the measurement cycle, UCN are
-    counted by simultaneous spin analyzers (SSA’s) including
-    detectors. An ambient magnetic compensation system and thermally
-    controlled room which will surround the nEDM apparatus~(not
-    shown). For scale, the innermost layer of the MSR is a 1.8~m
-    side-length cube.}
-  \label{fig:UCNdelivery}
-\end{figure}
-
-\subsection{UCN Detection}
-The detector system will consist of a split UCN guide, two magnetized
-iron foils, adiabatic-fast- passage spin-flippers, and UCN counters
-based on $^6$Li scintillating glass coupled to photomultiplier
-tubes. This is based on the detector used in the PSI UCN
-experiments~\cite{Ban2009}. This configuration allows simultaneous
-counting of both UCN spin states and hence extraction of the UCN
-polarization with maximum efficiency. A prototype detector, based on
-scintillating lithium glass, and capable of handling the highest rates
-of UCN expected with the TRIUMF source has been developed and tested
-in the highest rate UCN beam available at
-PSI~\cite{jamieson2017characterization}~(See
-Chapter~\ref{chap:UCNattriumf}).
-
-
-\subsection{UCN Source}
-
-\subsection{DAQ?}
+%\subsection{DAQ?}
 %\begin{description}
 %\item{An introduction about the long term nEDM effort at TRIUMF, what
 % the plan is, when it will start (roughly). I guess I can probably
