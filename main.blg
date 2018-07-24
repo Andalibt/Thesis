@@ -2,8 +2,37 @@ This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: nedm.aux
+White space in argument---line 58 of file nedm.aux
+ : \citation{altarev2014magnetically,altarev2015large,altarev2015minimizing
+ :                                                                          }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: muoftemp.aux
+Case mismatch error between cite keys baker2006 and Baker2006
+---line 4 of file muoftemp.aux
+ : \citation{baker2006
+ :                    ,Pendlebury2015}
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys baker2006 and Baker2006
+---line 6 of file muoftemp.aux
+ : \citation{baker2006
+ :                    ,brys2005magnetic,afach2014dynamic}
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys baker2006 and Baker2006
+---line 9 of file muoftemp.aux
+ : \citation{baker2006
+ :                    ,Kirch_talk,altarev2012next}
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys baker2006 and Baker2006
+---line 25 of file muoftemp.aux
+ : \citation{baker2006
+ :                    ,knecht}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: UCNattriumf.aux
+A level-1 auxiliary file: UCNresults.aux
+A level-1 auxiliary file: overall.aux
+A level-1 auxiliary file: Ramsey.aux
+A level-1 auxiliary file: GPE.aux
 The style file: apsrev4-1.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -12,12 +41,74 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated field_info (elt_size=4) to 11179 items from 5000.
 Database file #1: mybib.bib
-I was expecting a `,' or a `}'---line 228 of file mybib.bib
+I was expecting a `,' or a `}'---line 234 of file mybib.bib
  : 
  : @article{baker2011search,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 605 of file mybib.bib
+ :   
+ :   title={Experimental search for neutron--mirror neutron oscillations using storage of ultracold neutrons},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1188 of file mybib.bib
+ :     year     = {2012}, 
+ :                        %other attributes omitted
+I'm skipping whatever remains of this entry
+Warning--entry type for "Nick_thesis" isn't style-file defined
+--line 1364 of file mybib.bib
+You're missing a field name---line 1371 of file mybib.bib
+ : 
+ : %type = "{B.S. Thesis}"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "Florian_thesis" isn't style-file defined
+--line 1551 of file mybib.bib
+You're missing a field name---line 1557 of file mybib.bib
+ : 
+ : %type = "{B.S. Thesis}"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1575 of file mybib.bib
+ :  
+ :  % title={Adiabatic flow of superfluid he ii: I. thermohydrodynamic
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "UCNreport" isn't style-file defined
+--line 1587 of file mybib.bib
+Warning--entry type for "femm" isn't style-file defined
+--line 1828 of file mybib.bib
+Warning--entry type for "bartman" isn't style-file defined
+--line 1891 of file mybib.bib
+Warning--entry type for "lockin" isn't style-file defined
+--line 1900 of file mybib.bib
+Warning--entry type for "Sean_manual" isn't style-file defined
+--line 2336 of file mybib.bib
+You're missing a field name---line 2341 of file mybib.bib
+ : 
+ : %type = "{B.S. Thesis}"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Ben2007"
+Warning--I didn't find a database entry for "Jenke2014"
+Warning--I didn't find a database entry for "ucnbook"
+Warning--I didn't find a database entry for "S_func2"
+Warning--I didn't find a database entry for "Atchison2005"
+Warning--I didn't find a database entry for "Yu1985"
+Warning--I didn't find a database entry for "Sturm_thesis"
+Warning--I didn't find a database entry for "thiel2007demagnetizaion"
+Warning--I didn't find a database entry for "urankar1996desing"
+Warning--I didn't find a database entry for "bozorth"
+Warning--I didn't find a database entry for "bidinostimartin"
+Warning--I didn't find a database entry for "urankar"
+Warning--I didn't find a database entry for "thiel"
+Warning--I didn't find a database entry for "altarev2015"
+Warning--I didn't find a database entry for "jiles"
+Warning--I didn't find a database entry for "ramsey1955resonance"
+Warning--I didn't find a database entry for "pignol2012electric"
+Warning--I didn't find a database entry for "lamoreaux2005detailed"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 Control: key (0) 
@@ -28,45 +119,58 @@ Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
 Warning--missing journal in Cline
-You've used 28 entries,
+Warning--empty author in Serebrov2008
+Warning--missing journal in Serebrov2008
+Warning--empty year in Serebrov2008
+Warning--can't use both volume and number fields in Kirch_talk
+Warning--can't use both volume and number fields in ito2007plans
+Warning--empty year in femm
+Warning--empty year in bartman
+Warning--empty year in lockin
+Warning--empty title in bethUSpatent
+Warning--empty year in hidalgo
+Warning--empty year in brideson
+Warning--empty year in crawford
+Warning--empty note in crawford
+You've used 149 entries,
             5847 wiz_defined-function locations,
-            1787 strings with 19907 characters,
-and the built_in function-call counts, 31239 in all, are:
-= -- 1773
-> -- 1013
-< -- 213
-+ -- 325
-- -- 256
-* -- 5120
-:= -- 2974
-add.period$ -- 28
-call.type$ -- 28
-change.case$ -- 112
-chr.to.int$ -- 27
-cite$ -- 29
-duplicate$ -- 2878
-empty$ -- 2281
-format.name$ -- 592
-if$ -- 6218
-int.to.chr$ -- 2
-int.to.str$ -- 36
-missing$ -- 362
-newline$ -- 138
-num.names$ -- 84
-pop$ -- 1168
+            2588 strings with 48662 characters,
+and the built_in function-call counts, 179901 in all, are:
+= -- 9375
+> -- 6597
+< -- 1285
++ -- 2065
+- -- 1720
+* -- 30661
+:= -- 16490
+add.period$ -- 159
+call.type$ -- 149
+change.case$ -- 617
+chr.to.int$ -- 146
+cite$ -- 171
+duplicate$ -- 16411
+empty$ -- 12988
+format.name$ -- 3827
+if$ -- 36042
+int.to.chr$ -- 10
+int.to.str$ -- 157
+missing$ -- 2077
+newline$ -- 502
+num.names$ -- 435
+pop$ -- 6358
 preamble$ -- 1
-purify$ -- 140
+purify$ -- 736
 quote$ -- 0
-skip$ -- 1059
+skip$ -- 5869
 stack$ -- 0
-substring$ -- 644
-swap$ -- 2819
-text.length$ -- 122
+substring$ -- 3375
+swap$ -- 16733
+text.length$ -- 821
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 435
-warning$ -- 1
-while$ -- 77
+type$ -- 2494
+warning$ -- 14
+while$ -- 406
 width$ -- 0
-write$ -- 276
-(There was 1 error message)
+write$ -- 1202
+(There were 12 error messages)

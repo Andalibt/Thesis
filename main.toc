@@ -2,49 +2,102 @@
 \contentsline {section}{\numberline {1.1}History of Fundamental Symmetries }{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Neutron Electric Dipole Moment}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Baryon Asymmetry of the Universe}{2}{subsection.1.2.1}
-\contentsline {subsubsection}{Sakharov criteria}{3}{section*.6}
+\contentsline {subsubsection}{Sakharov criteria}{3}{section*.5}
 \contentsline {subsection}{\numberline {1.2.2}The nEDM Measurement Technique}{3}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}neutron Electric Dipole Moment Status Worldwide}{3}{subsection.1.2.3}
 \contentsline {section}{\numberline {1.3}Ultracold Neutrons}{4}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Ultracold Neutrons Interaction with Fundamental Forces}{4}{subsection.1.3.1}
-\contentsline {subsubsection}{The Gravitational Interaction:}{4}{section*.7}
-\contentsline {subsubsection}{The Weak Interaction:}{4}{section*.8}
-\contentsline {subsubsection}{The Electromagnetic Interaction:}{4}{section*.9}
-\contentsline {subsubsection}{The strong Interaction:}{5}{section*.10}
+\contentsline {subsubsection}{The Gravitational Interaction:}{4}{section*.6}
+\contentsline {subsubsection}{The Weak Interaction:}{4}{section*.7}
+\contentsline {subsubsection}{The Electromagnetic Interaction:}{4}{section*.8}
+\contentsline {subsubsection}{The strong Interaction:}{5}{section*.9}
 \contentsline {subsection}{\numberline {1.3.2}Superthermal Sources of Ultracold Neutrons}{5}{subsection.1.3.2}
-\contentsline {chapter}{\numberline {2}Future nEDM Measurement at TRIUMF}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Magnetic Stability Requirements}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Active Shielding}{7}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Magnetically Shielded room}{7}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Passive Shielding}{7}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}High Voltage EDM Cells}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Dual Comagnetometer}{7}{section.2.3}
-\contentsline {chapter}{\numberline {3}Temperature Dependence of Magnetic Permeability(?)}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Shield Coupled Coils}{9}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Spherical Geometry}{9}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Cylindrical Geometry}{9}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Method one: Measurement with (How did I used to call it???) }{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Method two: Measurements with a transformer}{9}{section.3.3}
-\contentsline {chapter}{\numberline {4}Current UCN Facility at TRIUMF}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}UCN beamline}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Stages of UCN Production}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}D$_2$O Condensation}{13}{section.4.3}
-\contentsline {section}{\numberline {4.4}Helium Circulation}{13}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}4 Kelvin Reservoir}{13}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}1 Kelvin Pot}{13}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}$^3$He Pot}{13}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Isopure Helium}{13}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}Data Acquisition}{13}{section.4.5}
-\contentsline {section}{\numberline {4.6}UCN Detectors}{13}{section.4.6}
-\contentsline {chapter}{\numberline {5}UCN Production and Detection}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}UCN Counts Measurement}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Storage Lifetime Measurements}{15}{section.5.2}
-\contentsline {section}{\numberline {5.3}Detector Comparison}{15}{section.5.3}
-\contentsline {section}{\numberline {5.4}Background Measurements}{15}{section.5.4}
-\contentsline {section}{\numberline {5.5}UCN guide Transmission Measurements}{15}{section.5.5}
-\contentsline {chapter}{\numberline {6}UCN cryogenics}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}Heat tests}{17}{section.6.1}
-\contentsline {chapter}{\numberline {7}Conclusion}{19}{chapter.7}
-\contentsline {chapter}{Appendices}{21}{section*.11}
-\contentsline {chapter}{\numberline {A}Some Appendix}{23}{Appendix.1.A}
-\contentsline {chapter}{References}{25}{chapter*.12}
+\contentsline {subsection}{\numberline {1.3.3}Properties of UCN}{5}{subsection.1.3.3}
+\contentsline {subsubsection}{The Gravitational Interaction}{5}{section*.10}
+\contentsline {subsubsection}{The Nuclear Weak Interaction}{6}{section*.11}
+\contentsline {subsubsection}{The Electromagnetic Interaction}{6}{section*.12}
+\contentsline {subsubsection}{The Nuclear Strong Interaction}{6}{section*.13}
+\contentsline {section}{\numberline {1.4}Superthermal UCN sources}{7}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Basic Idea of Superthermal UCN Sources}{7}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}UCN Production by Superfluid $^4$He}{8}{subsection.1.4.2}
+\contentsline {subsubsection}{Superfluid $^4$He Definition}{8}{section*.14}
+\contentsline {subsubsection}{Superfluid Helium Converter}{8}{section*.15}
+\contentsline {subsubsection}{UCN Production Rate with Single Phonon scattering in Superfluid helium\nobreakspace {}\cite {Korobkina2002,Schmidt2009,Golub77}}{9}{section*.16}
+\contentsline {subsubsection}{Multiphonon Scattering Contribution in UCN Production in Superfluid helium\nobreakspace {}\cite {Korobkina2002,Schmidt2009}}{11}{section*.17}
+\contentsline {subsubsection}{UCN upscattering and UCN lifetime in superfluid helium\nobreakspace {}\cite {Leung2016}}{12}{section*.18}
+\contentsline {subsection}{\numberline {1.4.3}UCN production by Solid Deuterium}{14}{subsection.1.4.3}
+\contentsline {subsubsection}{UCN Production Cross-Section and UCN Production Rate in Solid Deuterium\nobreakspace {}\cite {ucnbook,Frei2010,Frei2009}}{14}{section*.19}
+\contentsline {paragraph}{UCN production cross-section: Incoherent approximation.}{14}{section*.20}
+\contentsline {paragraph}{UCN production cross-section: Direct determination.}{15}{section*.21}
+\contentsline {subsubsection}{UCN upscattering and UCN lifetime in sD$_2$\nobreakspace {}\cite {Liu2000,Morris2002}}{17}{section*.22}
+\contentsline {subsection}{\numberline {1.4.4}Comparison between sD$_2$ and superfluid helium sources}{18}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {1.4.5}Other UCN Sources\nobreakspace {}\cite {Salvat2013,Atchison2009,Liu_thesis}}{19}{subsection.1.4.5}
+\contentsline {section}{\numberline {1.5}Current Status of UCN sources Worldwide}{20}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}It needs to be modified}{20}{subsection.1.5.1}
+\contentsline {section}{\numberline {1.6}Conclusion}{21}{section.1.6}
+\contentsline {chapter}{\numberline {2}Future nEDM Measurement at TRIUMF}{23}{chapter.2}
+\contentsline {section}{\numberline {2.1}Ramsey Method of Separated Oscillating Fields}{24}{section.2.1}
+\contentsline {section}{\numberline {2.2}Statistical and Systematic Errors}{25}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Statistical Sensitivity}{25}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Systematic Errors}{25}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}TRIUMF nEDM Components}{26}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}New UCN Source}{27}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}UCN Handling and Transport}{27}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Magnetic Components}{29}{subsection.2.3.3}
+\contentsline {subsubsection}{Active Shielding}{29}{section*.23}
+\contentsline {subsubsection}{Passive Shielding}{30}{section*.24}
+\contentsline {subsubsection}{Internal Coils}{31}{section*.25}
+\contentsline {subsection}{\numberline {2.3.4} EDM Cells and High Voltage System}{31}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Comagnetometry}{32}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4} nEDM Measurement Worldwide}{32}{section.2.4}
+\contentsline {chapter}{\numberline {3}Temperature Dependence of Magnetic Permeability}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{35}{section.3.1}
+\contentsline {section}{\numberline {3.2}Sensitivity of Internally Generated Field to Permeability of the Shield $B_0(\mu )$}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}Measurements of $\mu (T)$}{39}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Previous Measurements and their Relationship to nEDM Experiments}{39}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Axial Shielding Factor Measurements}{40}{subsection.3.3.2}
+\contentsline {subsubsection}{Experimental Apparatus for Axial Shielding Factor Measurements}{41}{section*.26}
+\contentsline {subsubsection}{Data and Interpretation}{42}{section*.27}
+\contentsline {subsubsection}{Geometry correction and determination of $\mu (T)$}{45}{section*.28}
+\contentsline {subsection}{\numberline {3.3.3}Transformer Core Measurements}{46}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Relationship to nEDM experiments}{50}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclusion}{51}{section.3.5}
+\contentsline {chapter}{\numberline {4}Current UCN Facility at TRIUMF}{53}{chapter.4}
+\contentsline {section}{\numberline {4.1}UCN Beam Line\nobreakspace {}(BL1U)}{53}{section.4.1}
+\contentsline {section}{\numberline {4.2}Tungsten Spallation Target}{56}{section.4.2}
+\contentsline {section}{\numberline {4.3}Vertical UCN Source at TRIUMF}{56}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Neutron D$_2$O Moderators}{57}{subsection.4.3.1}
+\contentsline {subsubsection}{D$_2$O Solidification}{57}{section*.29}
+\contentsline {subsection}{\numberline {4.3.2}Helium Circulation and Superfluid Helium Condensation}{57}{subsection.4.3.2}
+\contentsline {subsubsection}{4 Kelvin Reservoir}{58}{section*.30}
+\contentsline {subsubsection}{1 Kelvin Pot}{59}{section*.31}
+\contentsline {subsubsection}{$^3$He Pot}{60}{section*.32}
+\contentsline {subsubsection}{Isopure Helium}{60}{section*.33}
+\contentsline {section}{\numberline {4.4}Data Acquisition System}{60}{section.4.4}
+\contentsline {section}{\numberline {4.5}UCN Detectors}{61}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}$^6$Li Detector}{63}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}$^3$He Detector}{64}{subsection.4.5.2}
+\contentsline {chapter}{\numberline {5}UCN Production and Detection}{67}{chapter.5}
+\contentsline {section}{\numberline {5.1}Data Quality Checks}{69}{section.5.1}
+\contentsline {section}{\numberline {5.2}UCN Count Measurement }{69}{section.5.2}
+\contentsline {section}{\numberline {5.3}Storage Lifetime: Measurements And Simulations}{76}{section.5.3}
+\contentsline {subsubsection}{PENTrack Simulations}{77}{section*.34}
+\contentsline {section}{\numberline {5.4}Heater Tests of The Source}{80}{section.5.4}
+\contentsline {subsubsection}{Theoretical Models}{81}{section*.35}
+\contentsline {subsubsection}{Measurement Result}{83}{section*.36}
+\contentsline {subsection}{\numberline {5.4.1}Heater Test Versus Proton Beam Current}{85}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Detector Comparison}{86}{section.5.5}
+\contentsline {section}{\numberline {5.6}Background Measurements}{86}{section.5.6}
+\contentsline {section}{\numberline {5.7}UCN guide Transmission Measurements}{86}{section.5.7}
+\contentsline {section}{\numberline {5.8}Result And Conclusion}{86}{section.5.8}
+\contentsline {chapter}{\numberline {6}Final Notes}{87}{chapter.6}
+\contentsline {chapter}{Appendices}{89}{section*.37}
+\contentsline {chapter}{\numberline {A}Derivation of Ramsey's Method}{91}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}Geometric phase effect}{97}{Appendix.1.B}
+\contentsline {subsection}{\numberline {B.0.1}Geometric phase effect as a Bloch-Siegert shift}{97}{subsection.1.B.0.1}
+\contentsline {subsection}{\numberline {B.0.2}T1,T2, GPE redux}{100}{subsection.1.B.0.2}
+\contentsline {subsection}{\numberline {B.0.3}Why is it called a geometric phase?}{101}{subsection.1.B.0.3}
+\contentsline {subsubsection}{Adiabatic Approximation}{101}{section*.38}
+\contentsline {subsubsection}{Berry's Phase}{102}{section*.39}
+\contentsline {subsubsection}{Example:Berry's Phase for Spin-1/2}{103}{section*.40}
+\contentsline {chapter}{References}{105}{chapter*.41}
