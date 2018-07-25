@@ -5,24 +5,29 @@
 
 
 
-This thesis is focused on two important factors of successfully
-measuring the neutron Electric Dipole Moment~(nEDM) at TRIUMF. Those
-include having a very stable magnetic field environment as well as a
-very high density Ultra Cold Neutron~(UCN) source.
+The work presented in this thesis is focused on two important factors
+of successfully measuring the neutron Electric Dipole Moment~(nEDM) at
+TRIUMF. Those include having a very stable magnetic field environment
+as well as high Ultra Cold Neutron~(UCN) statistics. The sensitivity
+goal of TRIUMF Advanced Ultracold Neutron source~(TUCAN) collaboration
+to measure the nEDM is $10^{-27}$~e$\cdot$cm.
 
-For the future nEDM measurement at triumf several types of shielding
-will be used.  Magnetic shielding is vital to create a quiet magnetic
-environment. An important component of the magnetic shielding system
-is the large magnetic shields that are made of highly permeable
-materials. A prototype of such shields exists at the University of
-Winnipeg. the first half of the thesis is related on magnetic field
-stability studies on the prototype shields at the University of
-Winnipeg.
 
-The The second half of the thesis is dedicated to the UCN production
-and analysis at TRIUMF using the vertical UCN cryostat which was
-previously used at RCNP ~(reference).
- 
+This chapter provides some information on why neutron EDM is
+interesting to measure and how finding a nonzero nEDM would answer
+questions regarding the matter-antimatter or Baryon asymmetry of the
+universe. Chapter~\ref{chap:nedm} gives a brief description of the
+future nEDM measurement at TRIUMF and its experimental setup
+components. The method of measurement is also presented in that
+chapter. Chapter~\ref{chap:muofT} presents the work towards the
+dependence of the ambient temperature fluctuations to the internal
+magnetic field measured inside the magnetic shielding and find an
+upper limit on the temperature stability of the nEDM measurement
+environment. Chapter~\ref{chap:UCNattriumf} presents the current UCN
+facility at TRIUMF where the where the first UCN was produced with the
+vertical UCN source from RCNP and chapter~\ref{chap:UCNresult}
+presents the reult of those measurements with UCN. The final remarks
+and notes are available in chapter~\ref{chap:overall}.
 
 
 
@@ -34,58 +39,119 @@ internal structure of the elementary particles and helped develop the
 underlying theories.
 
 There are three significant symmetries in physics as Charge
-conjugation~($C$), Parity~($P$) and Time-reversal~($T$). $C$-symmetry simply
-decribes physical laws under a charge-conjugation
+conjugation~($C$), Parity~($P$) and Time-reversal~($T$). $C$-symmetry
+simply decribes physical laws under a charge-conjugation
 transformation. Parity transformation, is simply the inversion of
 spatial coordinates and Time-reversal transformation is changing the
-direction of time.
-Tests of Charge $C$,$P$ and $T$ symmetries established the structure
-of the Standard Model~(SM)~\cite{pospelov2005electric}.  \\
+direction of time.  Tests of Charge $C$,$P$ and $T$ symmetries
+established the structure
+of the Standard Model~(SM)~\cite{pospelov2005electric}.
 
 In 1956, fall of discrete symmetries started with the famous
-$\theta-\tau$ paradox in the K-mesons decay. Yang and Lee suggested
-that the paradox is originated from a $P$ violation in the weak
+$\theta-\tau$ paradox in the K-mesons decay. The paradox was that two
+particles previously known as $\theta^+$ and $\tau^+$ which had the
+same mass and lifetime decayed into products with different parities
+\begin{equation}
+  \begin{split}
+    \theta^+ &\rightarrow \pi^+ + \pi^0 \\
+    \tau^+ &\rightarrow \pi^+ + \pi^+ + \pi^-.
+  \end{split}
+\end{equation}
+Initially it was thought that the initial states should also have
+different parities but precise measurements revealed that this is not
+the case. Yang and Lee suggested that the paradox is originated from
+a $P$ violation in the weak
 interactions~\cite{lee1957parity}. Immediately after, an experimental
 search was suggested by Ramsey for Parity violation in the $\beta$
 decay of Co-60. Within a few months, $P$ violation was demonstrated by
 three different experiments
-~\cite{PhysRev.105.1413,PhysRev.105.1415,friedman1957nuclear}.  After
+~\cite{PhysRev.105.1413,PhysRev.105.1415,friedman1957nuclear}. After
 the observation of $P$ violation, Landau showed that Electric Dipole
 Moments~(EDMs) are forbidden by $T$
 symmetry~\cite{landau1957conservation} and then it was suggested that
 $T$ symmetry should also be checked experimentally
-\cite{PhysRev.106.517}.  \\
+\cite{PhysRev.106.517}. 
 %In 1964 it was discovered that the $C$ and $P$ symmetries are broken in
 %the $K$-meson decay~\cite{christenson1965regeneration}. 
 
 One of the most fundamental symmetries in physics is the
-$CPT$~(Charge-Parity-Time) symmetry. The simultaneous operation of of
+$CPT$~(Charge-Parity-Time) symmetry. The simultaneous operation of
 $C$, $P$ and $T$ leaves the system unchanged. To date there is no
 experimental evindence for $CPT$ symmetry breaking.  Because of the
 $CPT$ invariance, breakdown of $CP$ symmetry should be accompanied by
-violation of Time-reversal symmetry.  \\
+violation of Time-reversal symmetry. 
 
 A finite EDM provides a good source of $CP$ violation. EDMs caused by
-$CP$ violation in the SM are negligible. But most extensions of SM
-such as supersymmetry naturally produces EDMs that are comparable to
-or larger than present experimental limits~\cite{romalis2001new}.  The
-search for EDMs can be traced back to 1950 when Purcell and Ramsey
+$CP$ violation in the Standard Model are negligible. But most
+extensions of Standard Model such as supersymmetry naturally produces EDMs that
+are comparable to or larger than present experimental limits.
+% ~\cite{romalis2001new}.
+The search for EDMs can be traced back to 1950 when Purcell and Ramsey
 tested the possibility of finding EDMs for particles and
 nuclei. Smith, Purcell and Ramsey started an experiment to search for
-neutron EDM $d_n$ and they achieved the upper limit of $d_n < 5 \times
-10^{-20}$~e $\cdot$ cm~\cite{smith1957experimental}.  Over the years
-the upper limit on the neutron EDM has been improved by many orders of
-magnitude. Measurement of particle EDMs provide some of the tightest
-constraints on extensions to the SM to probe $CP$ violation. The most
-recent upper limit on the neutron EDM is found to be $|d_n| < 3.0
-\times 10^{-26} $~e$\cdot$ cm~\cite{pendlebury2015revised}.
+neutron EDM $d_n$ and they achieved the upper limit of
+$d_n < 5 \times 10^{-20}$~e $\cdot$ cm~\cite{smith1957experimental}.
+Over the years the upper limit on the neutron EDM has been improved by
+many orders of magnitude. Measurement of particle EDMs provide some of
+the tightest constraints on the extensions to the Standard Model to
+probe $CP$ violation. The most recent upper limit on the neutron EDM
+is found to be $\vert d_n\vert < 3.0 \times 10^{-26} $~e$\cdot$
+cm~\cite{pendlebury2015revised}.
 
-\section{Neutron Electric Dipole Moment}
 
-A permanent neutron electric dipole moment is an intrinsic property of
-a neutron. This fundamental property is a measure for the separation
-of positive and negative charges internal to the neutron. However no
-nEDM has been measured so far.
+
+\section{Baryon Asymmetry of the Universe}
+The neutron EDM provides a highly sensitive diagnostic for $CP$
+violation which is an important element for the observed
+baryon asymmetry in the universe.  The dominance of matter over
+antimatter in the universe can be characterized by~\cite{Cline}
+\begin{equation}
+\eta = \frac{n_b-\bar{n_b}}{n_{\gamma}} \simeq 6 \times 10^{10}
+\end{equation}
+where $n_b$ is the number of baryons, $\bar{n_b}$ is the number of
+anti-baryons and $n_{\gamma}$ is the number of photons in the Cosmic
+Microwave Backgorund.
+
+It is possible to assume that, maybe, the universe is baryon symmetric
+in a very large scale and it is split into regions that are made of
+only baryons or anti-baryons. If that was the case, an excess of gamma
+rays in between these separated regions was expected to be observed
+due to annihilation. But, even in the least dense regions of the
+space, there is hydrogen gas cloud.
+
+\subsubsection{Sakharov criteria}
+There are three key ingredients needed to
+create baryon asymmetry known as Sakharov conditions~\cite{Sakharov:1967dj}:
+\begin{center}
+\begin{description}
+\item[$\bullet$]Baryon number violation
+\item[$\bullet$] $C$ and $CP$ violation
+\item[$\bullet$] Departure from the thermal equilibrium.
+\end{description}
+\end{center}
+
+The first condition is obvious. It simply means in a reaction, if the
+net baryon number is zero, there would be no baryon asymmetry. In the
+reactions that violate baryon number, if there is no $C$ and $CP$
+violation, the net baryon number would be zero and this is because the
+reactions that create excessive baryons will be counter-balanced by
+the reactions that create excessive
+ani-baryongs.~\cite{theearlyuniverse}.  The third condition is
+essential for a net nonzero baryon asymmetry since the equilibrium
+average of $B$ vanishes. Sakharov suggested that baryogenesis took
+place immediately after the big bang, at a temperature not far below
+the Planck scale of $10^{19}$~GeV, when the universe was expanding so
+rapidly that many processes were out of thermal
+equilibrium~\cite{cohen1993progress}.
+
+
+
+
+\section{Neutron Electric Dipole Moment and Symmetry Breaking}
+A permanent neutron EDM is an intrinsic property of a neutron. This
+fundamental property is a measure for the separation of positive and
+negative charges internal to the neutron. However, no nEDM has been
+measured so far.
 
 The interaction of a nonrelativistic neutron with
 the electromagnetic field can be descibed by the follwoing
@@ -93,24 +159,22 @@ hamiltonian:
 
 \begin{equation}
   \label{eqn:hamiltonian}
- \begin{split}
- H&= -\boldsymbol{\mu_n} \cdot \textbf{B} - \bf{d}_n \cdot \textbf{E}
- \end{split}
+ H= -\boldsymbol{\mu_n} \cdot \bf{B} - \bf{d}_n \cdot \bf{E}
  \end{equation}
 where $\boldsymbol{\mu}_n$ is the magnetic moment of the neutron
-interacting with the magnetc field \textbf{B} and $\bf{d}_n$ is
+interacting with the magnetc field $\bf{B}$, and $\bf{d}_n$ is
 the electric dipole moment of the neutron interacting with the
-electric field \textbf{E}.
+electric field $\bf{E}$.
 
 The properties of the Hamiltonian under discrete symmetries is
-summarized in table.~\ref{Hsymmetry}. Based on this, the first term is
-$CP$-even and $T$-even and the second term is $cp$-odd and $T$-odd
-where both terms are $CPT$-invariant. Therefore, a nonzero EDM may
-exists if both Parity and Time-reversal symmetries are broken.
+summarized in Tab.~\ref{tab:Hsymmetry}. Based on this, the first term
+is $CP$-even and $T$-even and the second term is $cp$-odd and
+$T$-odd. Because of the $CPT$-invariance, a nonzero EDM may exists if
+both Parity and Time-reversal symmetries are broken.
 
 
-\begin{table}
-  \label{Hsymmetry}
+\begin{table}[h!]
+  \label{tab:Hsymmetry}
 \begin{center}
 \begin{tabular}{| l | l | l | l |} 
 \hline
@@ -124,98 +188,14 @@ $\boldsymbol{\mu}$ &- &+ &- \\ \hline
 \end{center}
 \end{table}
   
+The nEDM measurement technique and a breif survey of the current nEDM
+measurement sites worldwide are presented in chapter~\ref{chap:nedm}.
 
-
-\subsection{Baryon Asymmetry of the Universe}
-The neutron EDM provides a highly sensitive diagnostic for $CP$
-violation which is an important element for the observed
-baryon asymmetry in the universe.  The dominance of matter over
-antimatter in the universe can be characterized by~\cite{Cline}
-\begin{equation}
-\eta = \frac{n_b-\bar{n_b}}{n_{\gamma}} \simeq 6 \times 10^{10}
-\end{equation}
-where $n_b$ is the number of baryons, $\bar{n_b}$ is the number of
-anti-baryons and $n_{\gamma}$ is the number of photons in the Cosmic
-Microwave Backgorund.
-
-It is possible to assume that maybe the universe is baryon symmetric
-in a very large scale and it is split into regions that are made of
-only baryons or anti-baryons. If that was the case, an excess of gamma
-rays in between these separated regions was expected due to
-annihilation. But, even in the least dense regions of the space,
-there is hydrogen gas cloud.  \\
-
-\subsubsection{Sakharov criteria}
-There are three ingredients needed to
-create baryon asymmetry known as Sakharov conditions~\cite{Sakharov:1967dj}:
-\begin{center}
-\begin{description}
-\item[$\bullet$]Baryon number violation
-\item[$\bullet$] $C$(Charge) and $CP$(Charge-Parity) violation
-\item[$\bullet$] Departure from thermal equilibrium.
-\end{description}
-\end{center}
-
-The first condition is obvious which means in a reaction, if the net
-baryon number is zero, there would be no baryon asymmetry. In the
-reactions that violate baryon number, if there is no $C$ and $CP$
-violation, the net baryon number would be zero~\cite{theearlyuniverse}.
-The third condition is essential for a net nonzero baryon asymmetry
-since the equilibrium average of $B$ vanishes. Sakharov suggested that
-baryogenesis took place immediately after the big bang, at a
-temperature not far below the Planck scale of $10^{19}$ GeV, when the
-universe was expanding so rapidly that many processes were out of
-thermal equilibrium~\cite{cohen1993progress}.
 
 
 %\subsection{Physics Beyond the Standard Model}
 
-\subsection{The nEDM Measurement Technique}
-
-\subsection{neutron Electric Dipole Moment Status Worldwide}
-
-The most recent neutron electric dipole moment measurement at ILL
-found that be $d_n< 3.0 \times 10^{-26}$ e$\cdot$cm (90\% CL)
-\cite{pendlebury2015revised}. The new $^{199}$Hg EDM
-measurement constrains the nEDM better than direct nEDM measurements,
-$d_n < 1.6 \times 10^{-26}$ e$\cdot$cm although subject to uncertainty
-from Schiff screening~\cite{graner2016reduced}.\\
-
-There are several ongoing experiments seeking to measure the
-nEDM. Most groups are aiming initially for an improvement of the
-uncertainty on $d_n$ to the $10^{-27}$ e$\cdot$cm level, ultimately
-improving to the $10^{-28}$ e$\cdot$cm level over time.
-
-The PSI nEDM measurement aims for a measurement at the $5 \times
-10^{-28}$ e$\cdot$cm level~\cite{baker2011search}.  (Add some
-  detail about how they are going to measure it, what their technique
-  is, reactor or spallation, solid deuterium or superfluid helium)
-
-The nEDM collaboration at SNS plans to measure $\ d_n\approx 2 \times
-10^{-28} $ e$\cdot$cm, two orders of magnitude improvement from the
-current limit~\cite{peng2008neutron}.  (Add some detail about how
-  they are going to measure it, what their technique is, reactor or
-  spallation, solid deuterium or superfluid helium)
-
-The room temperature nEDM measurement at Munich also aims for nEDM
-measurement of $10^{-27}$ e$\cdot$cm level, and is a world leader in
-active and passive magnetic
-shielding~\cite{altarev2014magnetically,altarev2015large,altarev2015minimizing,altarev2012next}.
-(Add some detail about how they are going to measure it, what their
-technique is, reactor or spallation, solid deuterium or superfluid
-helium)
-
-(I am sure there are other places as well. They should be included here).
-
-The nEDM experiment at TRIUMF is aiming for a determination of nEDM at
-the $10^{-27}$ e$\cdot$cm level. A key
-factor for success is a unique high density ultracold neutron (UCN)
-source.
-The TRIUMF's approach is unique in a
-sense that it is the only place that is comibining a spallation method
-with superfluid helium for UCN production.
-Another novel feature is a dual comagnetometer ($^{129}$Xe and
-$^{199}$Hg) to characterize systematic errors.
+%%%% GOT UP TO HERE
 
 
 \section{Ultracold Neutrons}
