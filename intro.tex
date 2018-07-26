@@ -195,92 +195,54 @@ measurement sites worldwide are presented in chapter~\ref{chap:nedm}.
 
 %\subsection{Physics Beyond the Standard Model}
 
-%%%% GOT UP TO HERE
 
 
 \section{Ultracold Neutrons}
-(This section needs to be expanded)
-Ultracold neutrons (UCN) are neutrons with kinetic energy $\lesssim
-300$ neV corresponding to velocity~$\lesssim 8$ m/s or temperatures
-$\lesssim 3$ mK. Because of their low energy, UCN can be reflected
-from many materials under arbitrary angles of incident and therefore,
-it makes UCN storable in a material bottle. UCN are subjected to all
-four fundamental forces in the following
-ways~\cite{beatrice,knecht,golub1994neutron,golub1991ultra}:
-
-\subsection{Ultracold Neutrons Interaction with Fundamental Forces}
-
-\subsubsection{The Gravitational Interaction:}
-The interaction of UCN with the earth's gravitation field is described by
+The measurement of the nEDM is strongly correlated with having high
+neutron statistics. Table~\ref{tab:ucnenergy} shows the energy regime
+of neutrons and their corresponding velocity, temperature and de
+Broglie wavelength via
 \begin{equation}
-V_g=mgh
+  \label{eqn:ucnenergy}
+  E = \frac{1}{2} m v^2 = \frac{3}{2} k_B T = \frac{h^2}{2m \lambda^2}
 \end{equation}
-where
-\begin{equation}
-mg=102\; \text{neV/m}
-\end{equation}
-which is comparable to the UCN kinetic energy. This means a UCN of
-energy 200~neV can rise by at most 2~m.
+where $m$ is the mass of the neutron, $v$ is the neutron velocity,
+$k_B$ is Boltzmann constant, $T$ is the equivalent temperature, $h$ is
+Planck's constant and $\lambda$ is de Broglie wavelength.
 
- \subsubsection{The Weak Interaction:}
-UCN decay via
-\label{neutrondecay}
-\begin{equation}
-n\longrightarrow p+e^{-}+\bar{\nu_{e}}.
-\end{equation}
-with a lifetime of $880.3\pm 1.1$ S~\cite{PDG}. UCN can be bottled for
-times comparable to this time.
-
-\subsubsection{The Electromagnetic Interaction:} Although a neutron is
-electrically neutral, it possesses a magnetic dipole moment which
-interacts with a magnetic field \textbf{B} by the interaction
-\begin{equation}
-V_m=-\boldsymbol{\mu}_n \cdot \textbf{B}
-\end{equation}
-where
-\begin{equation}
-\vert \boldsymbol{\mu}_n \vert =60 \; \text{neV/T}.
-\end{equation}
-\indent UCN of anti-parallel spin to the magnetic field ( high field
-seeker) have negative $V_m$, accelerate toward higher fields and are
-attracted and UCNs with parallel spin (low field seeker) have positive
-$V_m$ and are repelled. If the UCN spin adiabatically traces the
-magnetic field, it will be fully polarized which can be achieved by
-passing UCN through a strong~$\sim 6$~T magnetic field.
-
- \subsubsection{The strong Interaction:} The strong interaction governs the
- UCN interaction with material walls. It can be described by the Fermi
- potential $V_F$ which arises from the coherent elastic scattering
- from nuclei. The highest known value ($V_F=335$~neV) is measured for
- $^{58}$Ni and it sets the upper limit of the UCN kinetic energy,
- since UCN are normally defined by the property of total reflection
- from materials.
-
-\subsection{Superthermal Sources of Ultracold Neutrons}
-\label{sec:ucn_with_heII}
-
-%%%\include{Andalibt_candidacy_report}
-%%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-%% paste the candidacy report here
-%% $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+\begin{table}
+  \label{tab:ucnenergy}
+  \centering
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Name & Energy $E$ & Velocity $v$ & Temperature $T$ & Wavelength $\lambda$ \\
+    \hline
+    \hline
+    Fast & 10~MeV & $4.4 \times 10^7$~m/s & $7.7 \times 10^{10}$~MK & 9.0~pm \\
+    \hline
+    Thermal & 0.0254~eV & $ 2.2 \times 10^3$~m/s & 290~K & 0.2~nm \\
+    \hline
+    Cold & 1~meV & 500~m/s & 8~K & 3~nm \\
+    \hline
+    Ultracold & 300~neV & 8~m/s & 3~mK & 50~nm \\
+    \hline
+  \end{tabular}
+  \caption{Commonly used names for neutrons in different energy ranges
+    and their corresponding velocity, temperature and wavelenght}
+\end{table}
 
 
 
-Ultracold neutrons (UCN) move so slowly that they can populate traps
-made of matter, magnetic and gravitational fields. UCN can be stored
-and manipulated for several hundreds of seconds in such traps. Because
-of this property, UCN are a valuable tool for precise measurements in
-fundamental physics.
-%For instance, studies of quantum states of the neutron in the Earth's
-%gravitational field attract much current interest as a tool to search
-%for deviations from Newton's gravity law at the micrometer length
-%scale.~\cite{Jenke,Nesvizhevsky} Such investigations take
-%advantage of the neutron being a neutral, massive probe without
-%atomic structure.
+Ultracold Neutrons~(UCN) are neutrons with kinetic energy
+$\lesssim 300$~neV corresponding to a velocity of~$\lesssim 8$~m/s or
+temperatures $\lesssim 3$~mK. UCN move so slowly that they can
+populate traps made of matter, magnetic and gravitational fields and
+can be stored and manipulated for several hundreds of seconds in such
+traps. Because of this property, UCN are a valuable tool for precise
+measurements in fundamental physics.
 
-%The internal quark structure of neutrons offers access to many
-%different physics phenomena. These are investigated with cold and
-%ultracold neutrons by a growing community of researchers.
+% such as studies of quantum states of the neutron in the Earth's
+% gravitational field or the measurement of the neutron EDM.
 High precision studies of the static and decay properties of the
 neutron and its interactions provide important data for particle
 physics and cosmology. In addition, they enable sensitive searches for
@@ -290,15 +252,13 @@ moment (EDM) of the
 neutron~\cite{Baker2006,Serebrov2009,Lam_Gol,Altarev2010,Pendlebury2015},
 precision measurements of the neutron
 lifetime~\cite{Paul2009,Wietfeldt2011,Arzumanov2000,Serebrov2005,Huffman},
-and $\beta$-decay correlation
-parameters~\cite{Mendenhall,Broussard}, as well as quests for
-dark matter
-candidates~\cite{Ben2007,Serebrov2008,Zimmer2010},
-axion-like
-particles~\cite{Baessler,Serebrov2010,Jenke2014,Afach2015},
-Lorentz invariance violations~\cite{Altarev2009} and the
-measurements of the quantum states of UCN in the gravitational field
-of the earth~\cite{Nesvizhevsky2003}.
+and $\beta$-decay correlation parameters~\cite{Mendenhall,Broussard},
+as well as quests for dark matter
+candidates~\cite{Ben2007,Serebrov2008,Zimmer2010}, axion-like
+particles~\cite{Baessler,Serebrov2010,Jenke2014,Afach2015}, Lorentz
+invariance violations~\cite{Altarev2009} and the measurements of the
+quantum states of UCN in the gravitational field of the
+earth~\cite{Nesvizhevsky2003}.
 
 %Among recent new topics addressed with UCN feature searches for
 %‘‘mirror matter’’ as a viable candidate for dark matter, a sensitive
@@ -316,14 +276,177 @@ of the earth~\cite{Nesvizhevsky2003}.
 %scrutinized in view of a ‘‘reactor antineutrino anomaly’’ hinting at
 %the existence of sterile neutrinos [17,18].
 
-The search for a nonzero neutron EDM provides a promising route to
-investigate new mechanisms of CP violation beyond the standard
-model. These in theory could help explain the matter-antimatter
-asymmetry in the Universe. At the present best level of sensitivity
-$d_n = 3.0 \times 10^{-26}$~e$\cdot$cm (90\%
-C.L)~\cite{Pendlebury2015} which was limited by counting
-statistics, severe constraints on new sources of CP violation were
-placed.
+The neutron is an electrically neutral hadron and participates in all
+of the four fundamental interactions as described below.
+
+
+
+%~\cite{beatrice,knecht,golub1994neutron,golub1991ultra}:
+
+
+\subsubsection{The Gravitational Interaction}
+The neutron has a mass $m_n\approx 940$~MeV/c$^2$ and therefore has a
+potential in the Earth's gravitational field
+\begin{equation}
+V_g=mgh
+\end{equation}
+where $h$ is the vertical displacement and $g=9.8$~m/s$^2$ is the
+acceleration due to the earth's gravitational field.  In experiments
+using thermal or cold neutrons, the effects of gravity can usually be
+negligible due to the short survival times of the neutrons. However,
+with UCN experiments, since they are confined for up to several
+hundred seconds, gravity has a significant influence.
+
+Here
+\begin{equation}
+mg=102\; \text{neV/m}
+\end{equation}
+which is comparable to the UCN kinetic energy. This means a UCN of
+energy 200~neV can rise by at most 2~m.
+
+\subsubsection{The Weak Interaction}
+The weak interaction governs the radioactive $\beta$-decay of
+neutrons. UCN decay into a proton, an electron and an electron
+antineutrino via
+\label{neutrondecay}
+\begin{equation}
+n\longrightarrow p+e^{-}+\bar{\nu_{e}}.
+\end{equation}
+The value of neutron lifetime sets the maximum time constant with
+which UCNs can be stored for. The current value of the neutron
+lifetime is $880.3 \pm 1.1$~s~\cite{PDG2016}.
+
+\subsubsection{The Electromagnetic Interaction}
+
+Neutron is an electrically neutral, spin-1/2 particle that possesses a
+magnetic dipole moment due to its internal structure through which it
+interacts with a magnetic field \textbf{B} as
+\begin{equation}
+  \label{eqn:vmag}
+V_m=-\boldsymbol{\mu}_n \cdot \textbf{B}
+\end{equation}
+where
+\begin{equation}
+\vert \boldsymbol{\mu}_n \vert =60 \; \text{neV/T}.
+\end{equation}
+
+In an inhomogeneous magnetic field, UCN experience a force described
+by the following equation
+\begin{equation}
+  \label{eqn:fmag}
+  \bf{F_m} = - \boldsymbol{\nabla}V_m = \pm \vert \boldsymbol{\mu_n} \vert \boldsymbol{\nabla} \bf{B}.
+\end{equation}
+In the nEDM measurement, the interaction of UCN with the magnetic
+field is used to polarize UCN and to measure its polarization at the
+end of the measurement cycle~(see Sec.~\ref{sec:Ramsey}).  In
+Eqn.~\ref{eqn:fmag} the sign $\pm$ corresponds to the relative
+orientation between the magnetic moment and the magnetic field.  UCN
+of anti-parallel spin to the magnetic field~(magnetic moment parallel)
+called {\it{high field seekers}} have negative $V_m$, accelerate
+towards strong magnetic fields and are attracted to it and UCN with
+parallel spin~(and thus magnetic moment anti-parallel) to the magnetic
+field called {\it{low field seekers}} have positive $V_m$ and are
+repelled by it.  Eqn.~\ref{eqn:fmag} is true only if UCN moves
+adiabatically through the magnetic fields. This condition will be
+fulfilled when the Larmor precession frequency of UCN is smaller than
+the changes in the magnetic field in the rest fram of UCN. However,
+since UCN have low speeds, this condition is easily fulfilled.  If the
+UCN spin adiabatically traces the magnetic field, it will be fully
+polarized which can be achieved by passing UCN through a
+strong~$\sim 6$~T magnetic field.
+
+%If the magnetic field $\textbf{\textit{B}}$ is inhomogeneous and the
+%neutron spin traces the magnetic field adiabatically, the neutron will
+%experience a force given by:
+
+%\begin{equation}
+%\label{eqn:emforce}
+%\textbf{\textit{F}}_{mag}= - \mathbf{\mathit{\nabla}} V_{mag}=\pm
+%\mu_n \mathbf{\mathit{\nabla}} \vert \textbf{\textit{B(r)}} \vert.
+%\end{equation}
+%The neutrons that experience a force towards regions of higher
+%magnetic field strength are called high-field seekers. Conversely if
+%the neutrons experience a force towards regions of lower magnetic
+%field (a 3D minimum in the $\textbf{\textit{B}}$ field) strength they
+%are called low-field seekers. It is this force that allows UCN with
+%sufficiently low energy to be confined by magnetic field gradients.
+%%If the UCN spin adiabatically traces the magnetic field, it will be fully polarized
+%%which can be achieved by passing UCN through a strong $\sim$~6~T magnetic field.
+%Furthermore, Nuclear Magnetic Resonance (NMR) experiments can be
+%conducted on UCN. For example, NMR is used to measure the EDM of
+%neutrons (the Ramsey technique) where UCN are placed in aligned
+%electric and magnetic fields.
+
+
+\subsubsection{The strong Interaction}
+The neutrons and protons are bound in the nucleus by the strong
+interaction. However, this interaction has a short range and it only
+affects the neighbouring nuclei.
+The Woods-Saxon potential approximately
+describes the nucleons interaction inside the atomic nucleous
+\begin{equation}
+  \label{eqn:woodsax}
+  V(r) = - \frac{V_0}{1+\exp(\frac{r-R}{a})}
+\end{equation}
+where $V_0$ represents the potential well depth, $a$ represents the
+surface thickness of the nucleous and $R = r_0 A^{1/3}$ where
+$r_0 = 1.25$~fm and $A$ is the mass number. For neutrons and protons
+the depth is $V \approx -40$~MeV. The UCN energy and its binding
+energy and the depth of the potential differ by many orders of
+magnitude. As a result, it is not possible to use perturbation theory
+to describe neutron scattering. Fermi realized that it is possible to
+introduce an equivalent potential which can be used to calculate the
+small changes in the wavefunction outside the range of the interaction
+by perturbation theory.
+
+The interaction of an incident neutron with a liquid or a solid could
+be described by sum of $\delta$ functions
+
+\begin{equation}
+  \label{eqn:vFermi}
+  V(r) = \frac{2\pi \hbar^2}{m_N} \sum_i a_i \delta (r - r_i)
+\end{equation}
+where $m_N$ is the mass of neutron, $r_i$ is the position of ith
+nucleus and $a_i$ is the scattering length with the ith
+nucleus. Because of UCN's large wavelength this equation can be
+written as
+\begin{equation}
+V(r) = \frac{2\pi \hbar^2}{m_N}\sum_i N_ia_i
+\end{equation}
+where $N_i$ is the number density in the material i. In UCN physics
+this potential is typically called neutron optical potential since if
+the energy of the neutron is less than the optical potential $E < V$
+the neutron will be fully reflected from the material surface under
+any angle of incidence. This sets a limit on the UCN velocity.
+
+UCN can be lost when it is reflected from the material walls and the
+it is because of the upscattering in which UCN absorbs energy or
+absorption in which UCN gets absorbed by the nucleus of the reflecting
+material. To include the losses in the potential, the optical
+potential is usually written as
+\begin{equation}
+  U(r) = V(r) - iW.
+\end{equation}
+The ratio $\eta = V/W$ is a measure of the loss per bounce probability
+of the material. 
+
+The strong interaction plays a crucial role in the nEDM
+measurement. Choosing certian materials enables us to store and guide
+UCN to the measurement cell.  The highest known value for the optical
+potential is $V_F=335$~neV and is measured for $^{58}$Ni.
+
+%\subsection{Superthermal Sources of Ultracold Neutrons}
+
+
+
+%The search for a nonzero neutron EDM provides a promising route to
+%investigate new mechanisms of CP violation beyond the standard
+%model. These in theory could help explain the matter-antimatter
+%asymmetry in the Universe. At the present best level of sensitivity
+%$d_n = 3.0 \times 10^{-26}$~e$\cdot$cm (90\%
+%C.L)~\cite{Pendlebury2015} which was limited by counting
+%statistics, severe constraints on new sources of CP violation were
+%placed.
 
 %As most other experiments with UCNs, the EDM search has been
 %performed using a long-serving source~\cite{Steyerl1986} at the
@@ -338,13 +461,14 @@ placed.
 %configuration of the UCN extraction from the turbine [23], the ILL
 %source has defined the state of the art for more than 25
 %years. However, notably,
-
-The prospect to make an important discovery in refining the neutron
-EDM search has strongly motivated many research groups to develop next
-generation UCN sources~\cite{Golub75,Zimmer2011} which aim to
-improve the available UCN densities by more than 2 orders of
-magnitude.
-\subsection{Properties of UCN}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%The prospect to make an important discovery in refining the neutron
+%EDM search has strongly motivated many research groups to develop next
+%generation UCN sources~\cite{Golub75,Zimmer2011} which aim to
+%improve the available UCN densities by more than 2 orders of
+%magnitude.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%\subsection{Properties of UCN}
 %expand the first two paragraphs of Leung's paper. Also look at
 %Leung's thesis.  Neutron energy and its velocity are related as
 %$E_n=\frac{m_n v^2}{2}= \frac{\hbar^2 k^2}{2 m_n}=\frac{h^2}{2 m_n
@@ -353,128 +477,19 @@ magnitude.
 %kinetic energy is related to temperate as $E_n=k_B T_n$ where $k_B$
 %is the Boltzmann constant.
 
-UCN have velocities less than 8~m/s and energies about 260~neV which
-corresponds to temperatures below 2~mK.  The kinetic energy of UCN is
-less than the neutron optical potential of well-chosen materials and
-so they can reflect from material surfaces at all incident angles,
-allowing them to be stored in a vessel and studied for times
-approaching the neutron lifetime.
-
-The neutron is an electrically neutral hadron and participates in all
-of the four fundamental interactions as described below.
-
-\subsubsection{The Gravitational Interaction}
-The neutron has a mass $m_n\approx 940$~MeV/c$^2$ and therefore has a
-potential in the Earth's gravitational field
-
-\begin{equation}
-\label{egn:gravity}
-V_{g}= m_n g h= (102 ~\textrm{neV/m}) h 
-\end{equation}
-where $h$ is the vertical displacement and $g=9.8$~m/s$^2$ is the
-acceleration due to the earth's gravitational field.
-%In experiments using thermal or cold neutrons, the effects of gravity
-%can usually be negligible due to the short survival times of the
-%neutrons. However, with UCN experiments, since they are confined for
-%up to several hundred seconds, gravity has a significant influence.
+%UCN have velocities less than 8~m/s and energies about 260~neV which
+%corresponds to temperatures below 2~mK.  The kinetic energy of UCN is
+%less than the neutron optical potential of well-chosen materials and
+%so they can reflect from material surfaces at all incident angles,
+%allowing them to be stored in a vessel and studied for times
+%approaching the neutron lifetime.
 
 
-UCN with the kinetic energies $<$~260~neV can go $<$~2.5~m high. This
-may be contrasted with the case for cold neutrons at 20~K which have
-velocities $\sim$600~m/s.
-\subsubsection{The Nuclear Weak Interaction}
-%Since neutron has a larger mass than proton, therefore the weak
-%interaction let the neutron to decay into a proton.  However, because
-%of the small mass difference between neutrons and protons, the only
-%possible decay channel is through the production of the electron via
-%the exchange of a virtual W boson.
-In the standard $\beta$-decay of a neutron, the neutron decays into a
-proton, an electron and an electron antineutrino:
-
-
-\begin{equation}
-n \rightarrow p + e^- + \overline{\nu_e}.
-\end{equation}
-
-The value of neutron lifetime sets the maximum time constant with
-which UCNs can be stored for.  The current value of the neutron
-lifetime is $880.3 \pm 1.1$~s~\cite{PDG2016}. Other loss processes
-are described in Sec.~\ref{sec:basic_idea}.
-
-%%%%% Discuss fundamental physics interests of beta decay
-\subsubsection{The Electromagnetic Interaction}
-
-The neutron is an electrically neutral, spin-1/2 particle that
-possesses a magnetic dipole moment due to its internal structure
-including electrically charged quarks. The magnetic moment is
-antiparallel to the spin of the neutron; its magnitude is $\mu_n=60.3$
-neV/T.
-
-
-When the neutron experiences an external magnetic field
-$\textbf{\textit{B}}$, its spin has two possible eigenstates with
-their interaction energy given by:
-
-\begin{equation}
-\label{eqn:magn}
-V_{mag}= - \mu_n \cdot \textbf{\textit{B}} = \pm (60.3\textrm{neV/T}) \vert B \vert
-\end{equation}
-where the higher interaction energy (i.e. positive value) is for the
-neutron spin parallel to the external field (and thus magnetic moment
-anti-parallel) and the lower interaction energy is for the neutron
-spin anti-parallel (magnetic moment parallel) to the external field.
-If the magnetic field $\textbf{\textit{B}}$ is inhomogeneous and the
-neutron spin traces the magnetic field adiabatically, the neutron will
-experience a force given by:
-
-\begin{equation}
-\label{eqn:emforce}
-\textbf{\textit{F}}_{mag}= - \mathbf{\mathit{\nabla}} V_{mag}=\pm
-\mu_n \mathbf{\mathit{\nabla}} \vert \textbf{\textit{B(r)}} \vert.
-\end{equation}
-The neutrons that experience a force towards regions of higher
-magnetic field strength are called high-field seekers. Conversely if
-the neutrons experience a force towards regions of lower magnetic
-field (a 3D minimum in the $\textbf{\textit{B}}$ field) strength they
-are called low-field seekers. It is this force that allows UCN with
-sufficiently low energy to be confined by magnetic field gradients.
-%If the UCN spin adiabatically traces the magnetic field, it will be fully polarized
-%which can be achieved by passing UCN through a strong $\sim$~6~T magnetic field.
-Furthermore, Nuclear Magnetic Resonance (NMR) experiments can be
-conducted on UCN. For example, NMR is used to measure the EDM of
-neutrons (the Ramsey technique) where UCN are placed in aligned
-electric and magnetic fields.
-
-\subsubsection{The Nuclear Strong Interaction}
-%Neutrons and protons are bound in the nucleus by the nuclear strong force.
-The strong interaction governs the UCN interaction with the material
-walls.  Neutrons can be totally reflected from material surfaces under
-grazing angles of incidence. To each material, a critical angle for
-total reflection exists. This angle becomes larger for smaller neutron
-velocities.  The reflection is caused by coherent elastic scattering
-of the neutron with material walls which can be described by the
-neutron optical potential.  The highest known value of the neutron
-optical potential is measured for $^{58}$Ni (335~neV) and it sets the
-upper limit of the UCN kinetic energy, since UCN are normally defined
-by the property of total reflection from materials at all angles of
-incidence.
-%The neutron's energy is small compared to the nuclear potential,
-%therefore its wavefunction is strongly altered in the vicinity of the
-%nuclei. However, since the range over which this occurs is very
-%small, the wavefunction is only slightly altered outside of this
-%small. range.
-
-%Because of their low velocities (v$\sim$5~m/s) and the long times
-%they can spend in media or fields chosen by an experiment, UCNs have
-%become a valuable tool for high precision studies of the fundamental
-%properties of the neutron and its interactions.
-
-%These experiments would benefit from an increased density of UCN,
-%which has motivated the development of next generation UCN
-%sources. They convert cold neutrons to the UCN energy range by
-%allowing them to
+%%%%%%% UP TO HERE
 
 \section{Superthermal UCN sources}
+\label{sec:ucn_with_heII}
+
 %\subsection{Goals of Superthermal UCN Sources}
 In 1975 it was shown that, it is possible to achieve higher steady
 state UCN densities corresponding to temperatures much lower than the
