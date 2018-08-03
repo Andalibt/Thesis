@@ -1,14 +1,19 @@
 \chapter{Future nEDM Measurement at TRIUMF\label{chap:nedm}}
 
 Finding a non-zero neutron EDM is directly linked to the extra sources
-of CP violation beyond the standard model. The TUCAN collaboration
-proposes a world-leading experiment to measure the nEDM, improving the
-precision by a factor of thirty compared to the present world’s best
-experimental result. The current nEDM experiments suffer from low UCN
-statistics. As a result, TUCAN has intended to build the strongest UCN
-source in the world. To achieve this goal extensive studies of the
-current vertical UCN source have been conducted~(See
-Chapters~\ref{chap:UCNattriumf} and ~\ref{chap:UCNresult}).
+of CP violation beyond the standard model.  The next generation of
+neutron electric dipole moment~(nEDM) experiments aim to measure the
+nEDM $d_n$ with proposed precision
+$\delta d_n\lesssim
+10^{-27}~e\cdot$cm~\cite{serebrov2014new,serebrov2011supersource,Kirch_talk,baker2011search,altarev2012next,golub1994neutron,ito2007plans,picker2017minuscule}.
+The TUCAN collaboration proposes a world-leading experiment to measure
+the nEDM, improving the precision by a factor of thirty compared to
+the present world’s best experimental result. The current nEDM
+experiments suffer from low UCN statistics. As a result, TUCAN has
+intended to build the strongest UCN source in the world. To achieve
+this goal extensive studies of the current vertical UCN source have
+been conducted~(See Chapters~\ref{chap:UCNattriumf} and
+~\ref{chap:UCNresult}).
 
 To measure the neutron EDM, an ensemble of polarized UCN are put in
 the presence of aligned electric and magnetic fields. The hamiltonian
@@ -452,6 +457,40 @@ the level of tens of nT over the volume of the nEDM cell.
 \end{figure}
 
 \subsubsection{Passive Shielding}
+The passive magnetic shield is generally composed of a multi-layer
+shield formed from thin shells of material with high magnetic
+permeability~({\it e.g} mu-metal).  The outer layers of the shield are
+normally cylindrical~\cite{serebrov2014new,baker2011search} or form
+the walls of a magnetically shielded
+room~\cite{altarev2014magnetically,altarev2015minimizing}.  The
+innermost magnetic shield is normally a specially shaped shield, where
+the design of the coil in relation to shield is carefully taken into
+account to achieve adequate homogeneity
+\cite{baker2006,Kirch_talk,altarev2012next}. Fig.~\ref{fig:prototype_shields}
+shows a picture of a prototype passive shields at the University of
+Winnipeg which is in support of the precision magnetic field research
+for the future nEDM experiment to be conducted at TRIUMF.  The shield
+system is a four-layer mu-metal shield formed from nested
+right-circular cylindrical shells with endcaps.  The inner radius of
+the innermost shield is 18.44~cm, equal to its half-length. The radii
+and half-lengths of the progressively larger outer shields increase
+geometrically by a factor of 1.27.  Each cylinder has two endcaps
+which possess a 7.5~cm diameter central hole.  A stove-pipe of length
+5.5~cm is placed on each hole was designed to minimize leakage of
+external fields into the progressively shielded inner volumes.  The
+design is similar to another smaller prototype shield discussed in
+Ref.~\cite{martin2015large}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{prototype_shields.png}
+  \caption{The 3 layer prototype passive magnetic shields at the
+    University of Winnipeg. The 4th layer is not
+    shown in this picture.}
+  \label{fig:prototype_shields}
+\end{figure}
+
+
 The passive shielding system nullifies the residual background fields
 to the pT level. It will be a two-stage system: (1) a
 magnetically shielded room~(MSR) with (2) a set of smaller shields
@@ -525,6 +564,26 @@ gradient.
 
 
 \subsection{Comagnetometry}
+A problem in a typical nEDM experiment is that if the magnetic field $B_0$
+drifts over the course of the measurement period, it degrades the
+statistical precision with which $d_n$ can be determined.  If the
+magnetic field over one measurement cycle is determined to
+$\delta B_0=10$~fT, it implies an additional statistical error of
+$\delta d_n\sim 10^{-26}$~e$\cdot$cm~(assuming an electric field of
+$E=10$~kV/cm which is reasonable for a neutron EDM experiment). Over
+100 days of averaging, this would make a
+$\delta d_n\sim 10^{-27}$~e$\cdot$cm measurement possible.
+Unfortunately the magnetic field in the experiment is never stable to
+this level.  For this reason, experiments use a comagnetometer and/or
+surrounding atomic magnetometers to measure and correct the magnetic
+field to this
+level~\cite{Baker2006,brys2005magnetic,afach2014dynamic}. Drifts of
+1-10~pT in $B_0$ may be corrected using the comagnetometer technique,
+setting a goal magnetic stability for the $B_0$ field generation
+system in a typical nEDM experiment.
+
+
+
 A false nEDM signal may arise due to a combination of a magnetic field
 gradient $\partial {B_z}/\partial z$ and motion in the electric field when
 species (neutrons and $^{199}$ Hg atoms) are confined in the
