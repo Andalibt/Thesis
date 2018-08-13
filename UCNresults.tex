@@ -363,6 +363,10 @@ at higher temperatures.
   \label{fig:counts_vs_temp}
 \end{figure}
 
+
+
+
+
 \subsection{Steady-state UCN Production}
 
 The result shown so far are achieved in the batch mode of operation. In
@@ -416,6 +420,7 @@ Fig.~\ref{fig:UCNRate_temp}.
     starts to go down. }
   \label{fig:UCNRate_temp}
 \end{figure}
+
 
 The steady-state UCN rate measurements were conducted at different
 proton beam currents leading to different temperature changes for all
@@ -505,6 +510,12 @@ The other parameters are
 
 
 
+
+
+
+
+
+
 \subsection{UCN Yield Over Experiment Period}
 
 The total UCN counts for 1~$\mu$A beam current and 60~s irradiation
@@ -521,7 +532,7 @@ this drop.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{UCNCounts_vs_Time.png}
+  \includegraphics[width=0.9\textwidth]{UCNCounts_vs_time.pdf}
   \caption{The total UCN counts extracted from the source for 1~$\mu$A
     beam current and 60~s irradiation time at different days during
     the experimental run. }
@@ -596,53 +607,106 @@ lower storage lifetimes.
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% UP TO HERE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Storage Lifetime Vs Isopure Helium Temperature}
+The storage lifetime of UCN was also measured at different
+temperatures of superfluid helium. In this experiment, the temperature
+of superfluid was increased by using the heater tapes around the UCN
+bottle. The heater powers were set to increase the temperature to a
+certain level and once it reached a stable state the target
+irradiation started. The result are shown in
+Fig.~\ref{fig:storagelifetime_vs_temp}. An increase in the superfluid
+helium temperature gives rise to a decrease in the UCN storage
+lifetime due to higher upscattering rates. A variation between the
+readings in the temperature sensors is observed for a given storage
+lifetime. The horizontal error bars simply show a
+($T_{\mathrm{max}} - T_{\mathrm{min}}$)/2.
 
-\subsection{Storage Lifetime Over Experiment Period}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{StorageLifetime_vs_temp.png}
+  \caption{Storage lifetime of UCN at different isopure helium
+    temperature. In this experiment the temperature of superfluid
+    helium was set using heater tapes around the UCN bottle. The
+    vertical axis shows the storage lifetime in seconds and the
+    vertical axis is the superfluid helium temperature in Kelvin. As
+    the temperature increases, the storage lifetime decreases. This is
+    due to the higher upscattering rate in the superfluid at higher
+    temperatures.}
+  \label{fig:storagelifetime_vs_temp}
+\end{figure}
 
 
-\subsection{PENTrack Simulations\label{sec:pentrack}}
 
-For better understanding of the loss mechanisms, the experiment was
-also simulated in PENTrack~\cite{schreyer2017pentrack}. PENTrack is a
-particle tracking simulation software which simulates the trajectories
-of UCN and their decay products (e.g. Protons and Electrons) and their
-spin precession in complex geometries in Electric and Magnetic fields
-by solving the relativistic equation of motion. As discussed in
-Chapter~\ref{chap:intro}, UCN interacts with all four fundamental forces. To
-describe the interaction of UCN with matter, a complex optical
-potential is used to describe matters~\cite{ucnbook}:
+\subsection{Storage Lifetime Over Experimental Period}
+
+The standard storage lifetime measurement was performed on a daily
+basis over the course of the experimental run. This includes the
+irradiation of the target at 1~$\mu$A proton beam current for 60~s
+irradiation time. The result of those measurements are shown in
+Fig.~\ref{fig:storagelifetime_overall}. Over a two week period, the
+storage lifetime decreased from 37~s to 27~s. This is possibly due to
+the contamination in the UCN source after opening the UCN valve.
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{storageLifetime_vs_time.pdf}
+  \caption{Storage lifetime of the source over the experimental run. A
+    2\% daily decrease in the storage lifetime is observed possibly
+    due to the contamination in the source after opening the UCN
+    valve.}
+  \label{fig:storagelifetime_overall}
+\end{figure}
+
+
+
+\section{PENTrack Simulations\label{sec:pentrack}}
+
+For better understanding of the loss mechanisms of UCN, the
+experiments were also simulated in
+PENTrack~\cite{schreyer2017pentrack}. PENTrack is a particle tracking
+simulation software which simulates the trajectories of UCN and their
+decay products~({\it{e.g.}} Protons and Electrons) and their spin
+precession in complex geometries in Electric and Magnetic fields by
+solving the relativistic equation of motion. Here the result of such
+simulations are presented.
+
+\subsection{UCN Guide Diffusivity\label{sec:diffusivity}}
+As discussed in Chapter~\ref{chap:intro}, UCN interacts with all four
+fundamental forces. To describe the interaction of UCN with matter, a
+complex optical potential is used to describe matters:
 \begin{equation}
   \label{eqn:fermipotential}
   U = V - iW
 \end{equation}
 where the real part, $V$, depends on the number densities and bound
-coherent scattering lenghtes of each nucleus species. The imaginary
+coherent scattering lengthes of each nucleus species. The imaginary
 part, $W$, depends on the loss cross-section for a given velocity.
 Upon the incidence of the UCN on a surface, it can be scatterd either
-specularly or diffusely. PENTrack uses two models to calculate the
-scattering distribution of the UCN impinging on the material surface:
-Lambert model or the Microroughness~\cite{Steyerl1972}.
-  
-Experimental geometries imported in PENTrack are the StL files made
-through CAD models. For these simulations, the exact model of the
-vertical UCN source was used including the burst disk, the actual
-shape of the UCN valve in the open and close state, pinhole foil and
-the detector. 
+specularly or diffusely. The specular reflection by definition is the
+reflection of light from a smooth surface at a defined angle and the
+diffuse reflection is the reflection by rough surfaces that tend to
+reflect light in all directions.
+
+PENTrack simulations were performed to extract the diffusivity of the
+UCN guides. PENTrack uses two models to calculate the scattering
+distribution of the UCN impinging on the material surface: Lambert
+model and the Microroughness~\cite{Steyerl1972}. Experimental
+geometries imported in PENTrack are the StL files made through CAD
+models. For these simulations, the exact model of the vertical UCN
+source was used including the burst disk, the actual shape of the UCN
+valve in the open and close state, pinhole foil and the detector.
 
 The abosorption in the foil is set according to the measurements
 in~\cite{atchison2009transmission}. The main decetor is modeled with
 its two scintillator layes~\cite{jamieson2017characterization} and
-their corresponding Fermi potentials and absorption cross section, as
-stated in~\cite{Ban2016};
-
-In the simulations, it is assumed that the spectrum of produced UCN is
-proportional to $\sqrt{E}$. The wall loss parameters were tuned to
-give a storge lifetime of $\tau_1 = 34.9 \pm .8$~s with an
-upscattering lifetime in the superfluid of
+their corresponding Fermi potentials and absorption cross-section, as
+stated in~\cite{Ban2016}.  In the simulations, it is assumed that the
+spectrum of produced UCN is proportional to $\sqrt{E}$. The wall loss
+parameters were tuned to give a storge lifetime of
+$\tau_1 = 34.9 \pm .8$~s with an upscattering lifetime in the
+superfluid of
 $\tau_{\mathrm{He}}^{-1} = (390~\mathrm{s})^{-1} =
 0.008~\mathrm{s}^{-1}\cdot 0.85^{7}$, resulting in material parameters
 shown in Table~\ref{tab:materials}.
@@ -670,18 +734,31 @@ GS30 scintillator & $83.1 - 0.000123 i$ & 0.16 \\
 The simulation and the measurement data are both fitted with the fucntion
 
 \begin{equation}
-R(t) = R_0 \left[ 1 - \exp \left( -\frac{t - \Delta t}{\tau_\mathrm{rise}} \right) \right] \exp \left( -\frac{t - \Delta t}{\tau_2} \right) + R_B.
+R(t) = R_0 \left[ 1 - \exp \left( -\frac{t - \Delta t}{\tau_\mathrm{rise}} \right) \right] \exp \left( -\frac{t - \Delta t}{\tau_2} \right) + R_B
 \end{equation}
-
-after opening the valve at $t=0$. In this equation, $\Delta t$ is the
+After opening the valve at $t=0$. In this equation, $\Delta t$ is the
 delay time between opening the valve and detecting the first UCN and
 it is 2 to 3~s. The parameter $ R_B$ is the background UCN rate in the
-experimental data and is zero in simulations.  The Lambert model is
-used to tune the probablity of UCN being diffusely reflected on the
-guide walls to match the rise time $\tau_{mathrm{rise}}$ and fall
-time~$\tau_2$ of the UCN rate in the storage lifetime
-measurements~(See Fig.~\ref{fig:falltime} and~\ref{fig:risetime}).
-The experimental data is best described by the diffusivity of 3~\% and 5~\%. The
+experimental data and is zero in simulations.  The rise time
+$\tau_{\mathrm{rise}}$ and fall time~$\tau_2$ are shown in
+Fig.~\ref{fig:risefalltime} for a given UCN cycle.  The Lambert model
+is used to tune the probablity of UCN being diffusely reflected on the
+guide walls to match the rise time and fall
+time of the UCN rate in the storage lifetime
+measurements~(See Fig.~\ref{fig:falltime} and~\ref{fig:risetime}). The
+data is shown by the boxes and the simulation result for different UCN
+guide diffusivity is shown by different markers. The experimental data
+is best described by the diffusivity of 3~\% and 5~\%.
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{risefalltime.png}
+  \caption{UCN rate with two exponential fit shown in red. The rise
+    time and fall time are labled.}
+  \label{fig:risefalltime}
+\end{figure}
+
 
 
 \begin{figure}[h!]
@@ -691,10 +768,9 @@ The experimental data is best described by the diffusivity of 3~\% and 5~\%. The
     probabilities. The boxes indicate the second and third quartile of
     the experimental data.}
 \label{fig:falltime}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
+%\end{figure}
+%\begin{figure}[h!]
+%\centering
 \includegraphics[width=0.9\textwidth]{risetime.pdf}
 \caption{Comparison of rise time $\tau_{\mathrm{rise}}$ in
   experimental data and simulations with different diffuse-reflection
@@ -703,12 +779,15 @@ The experimental data is best described by the diffusivity of 3~\% and 5~\%. The
 \label{fig:risetime}
 \end{figure}
 
+
+\subsection{UCN Upscattering Coefficient}
 The simulations are also used to determine the parameter
 $f_{\mathrm{He}}$ or the fraction of time that UCN spends in the
-superfluid helium in the detectable range of 120~neV to 200~neV. For
-the steady-state measurements, this fraction turned out to be almost
-constant over a range of upscattering lifetime in the superfluid
-giving
+superfluid helium in the detectable range of 120~neV to 200~neV.
+%%%%How???
+For the steady-state measurements, this fraction turned out to be
+almost constant over a range of upscattering lifetime in the
+superfluid helium giving
 
 \begin{equation}
 f_\mathrm{He,3} = 0.464 \pm 0.001_\mathrm{stat.} \pm 0.003_\mathrm{syst.},
@@ -745,7 +824,11 @@ which is consistent with the result in~\cite{Leung2016}.
 %add UCN production simulation result here.
 
 
-\section{Heater Tests of The Source}
+\subsection{Storage Lifetime Simulations???}
+
+
+
+\section{Heater Tests of The Source\label{sec:heattest}}
 The cooling process of the spallation neutrons create a heat input on
 the cryostat including the superfluid helium. This heat input must be
 removed to keep the temperature of the superfluid helium
@@ -769,7 +852,7 @@ temperatures is compared to acquired data.
 In order to create excess heat load on the superfluid helium, there
 are heater tapes wrapped around the superfluid helium bottle. These
 heaters can create a temperature gradient between the heat exchanger
-and the superfluid helium bottle~(See
+and the superfluid helium bottle~(see
 Sec.~\ref{sec:vertical_source}). This temperature gradient can be
 measured using the temperature sensors shown in Fig.~\ref{fig:TSs}.
 
@@ -900,7 +983,7 @@ result, that data is discarded.
 Fig.~\ref{fig:April_Data} shows the result of the April heat test.
 For a given heat input, the temperature difference between the base
 and the saturation temperature for each temperature sensor is
-calculated~(See table~\ref{tab:heattest}). The average of all of those
+calculated~(see table~\ref{tab:heattest}). The average of all of those
 temperature differences give the overall $\Delta T$ across the
 channel. Those are shown with black dots in Fig.~\ref{fig:April_Data}
 as the raw data. However, the heat input for each data point should be
@@ -969,7 +1052,7 @@ theory could be the fact that these theoretical models are only
 measured down to 1.4~K and they are extrapolated to lower
 temperatures. Another reason could lie in the geometry difference. The
 theoretical models are valid for a one-dimensional channel while there
-is a 90$^\circ$ bend in the experimental setup~(See
+is a 90$^\circ$ bend in the experimental setup~(see
 Fig.~\ref{what???}) which can cause a higher temperature differnece
 across the channel. One other reason might be the uncertainty in the
 measured temperature due to the calibration of the temperature
@@ -990,17 +1073,46 @@ affecting the measurements.
 
 \subsection{Heater Test Versus Proton Beam Current}
 One of the UCN experiments was designed to match the heater power from
-the heaters with the proton beam current. The measurement procedure is
-to measure the steady-state UCN yield at different proton beam current
-and match the temperature difference in the superfluid helium with the
-heater tests measurements described above. However, the result of this
-experiment did not look as expected. One main reason was that some UCN
-runs were conducted during the autofil of the 4~K $^4$He
+the heaters wrapped around the UCN bottle with the proton beam
+current.
+
+The result of the heater tests were disscused in
+Section~\ref{sec:heattest}. The application of the heat on the
+superfluid helium bottle gives rise to a temperature increase in the
+superfluid helium as well as a flow rate increase in the $^3$He
+pot. The amount of this heat load is known simply by knowing the the
+applied current to the heater tapes. However the input heat load is
+not known in the case of the target irradiation. As a result, the
+steady-state UCN yield were measured at different proton beam
+current. The target irradiation at higher beam currents give rise to a
+temperature change in the superfluid helium. In addition, the increase
+in the heat load increases the $^3$He flow rate in the $^3$He pot.
+The comparison of the temperature and flow rate increase between these
+experiments give an idea of the amount of applied heat load on the
+superfluid helium bottle for each given proton beam current.
+
+Even though the result of the data analysis for this experiment was
+not conclusive, it gave an idea of the stability and the behaviour of
+the helium cryostat and a better experimental plan for the future.
+
+Some unexpected anomalies were observed during the measurement. For
+instance, when the 4~K resorvior was being filled, the flow rate in
+the $^3$He pot as well as the temperature in the superfluid helium was
+not stable. 
+
+%%%%%%%%%%%%%%%%%%%%%%
+% UP TO HERE
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+ However, the result of
+this experiment did not look as expected. One main reason was that
+some UCN runs were conducted during the autofil of the 4~K $^4$He
 reservoir. This process causes an increase in the $^3$He flow rate due
 to an increased heat load. As a result, the superfluid helium
 temperature could not steadily increase and it affected the UCN
 yield. Such measurement requires a stable cryostat which could not be
-achieved~(See Ref.~\cite{UCNreport}). Another reason was that the
+achieved~(see Ref.~\cite{UCNreport}). Another reason was that the
 irradiation time was not long enough so that the superfluid helium
 temperature or the $^3$He pot flow rate could reach an
 equilibrium. Proton beam trips was also an additional reason for the
