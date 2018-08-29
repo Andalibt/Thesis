@@ -262,19 +262,22 @@ detected by the detector. At low and moderate UCN counts, the
 statistical uncertainty is available by taking the square root of the
 number of measured events, as follows conveniently from Poisson
 statistics~\cite{pomme2015uncertainty}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{UCN Yield Vs Proton Beam Current}
-Fig.~\ref{fig:counts_vs_beam} shows the total UCN counts versus the
-applied proton beam current in $\mu$A at 60~s irradiation time. At
-lower beam currents, the total UCN counts increase linearly with the
-proton beam current. The dashed line shows the extrapolation to higher
-beam current in an ideal case. However, at higher beam currents the
-total UCN counts deacreses due to the increase in the heat load on the
-isotopically pure superfluid helium and therefore its
-temperature. Theoretically, the upscattering rate in the superfluid
-helium is proportional to its temperature as $T^7$~(see
-Section~\ref{sec:upscattering}). To confirm with data, PENTrack
-simulations were performed~(see Section~\ref{sec:pentrack}).
+%%%%%%%%%%
+\subsection{UCN Yield Versus Proton Beam Current}
+The UCN yield at different proton beam currents is also
+studied. Fig.~\ref{fig:counts_vs_beam} shows the total UCN counts
+versus the applied proton beam current in $\mu$A at 60~s irradiation
+time. The background UCN is subtracted off from the detected UCN
+counts as explained earlier. At lower beam currents, the total UCN
+counts increase linearly with the proton beam current. The dashed line
+shows the extrapolation to higher beam currents in an ideal
+case. However, at higher beam currents, the total UCN counts deacrese
+due to an increase in the heat load on the isotopically pure
+superfluid helium and therefore its temperature. Theoretically, the
+upscattering rate in the superfluid helium is proportional to its
+temperature as $T^7$~(see Section~\ref{sec:upscattering}). This has
+been confirmed by performing PENTrack simulations and comparing the
+result to the acquired data~(see Section~\ref{sec:pentrack}).
 
 
 
@@ -282,53 +285,66 @@ simulations were performed~(see Section~\ref{sec:pentrack}).
   \centering
   \includegraphics[width=0.8\textwidth]{UCNCounts_vs_Beam.pdf}
   \caption{The total UCN counts versus the applied proton beam
-    current. The labelas show the average superfluid helium
+    current. The labelas show the full range of the superfluid helium
     temperature for that measurement. The dashed line is fit to the
-    UCN counts at low beam current. }
+    UCN counts at low beam currents.}
   \label{fig:counts_vs_beam}
 \end{figure}
 
 
-
-The labels in the graph show the full range of temperatures during the
-measurement cycle. Four temperature sensors were used to measure the
-superfluid helium temperature: TS11, TS12, TS14 and TS16. The location
-of these sensors are shown in Fig.~\ref{fig:TSs}. Temperature sensor
-TS11 is located at the UCN heat exchanger bottom, the temperature
-sensor TS14 is located at the UCN heat exchanger top, the temperature
-sensor TS12 is located at the UCN double tube bottom and the
-temperature sensor TS16 is located at the UCN double tube top. At low
-temperature around 0.8~K these temperature sensors show a maximum of
-0.1~K discrepancy with TS16 showing the highest value and TS12 showing
-the lowest value.
+The labels in the graph show the full range of the isopure helium
+temperatures during the measurement cycle. Four temperature sensors
+were used to measure the superfluid helium temperature with the
+following names in our EPICS system: TS11, TS12, TS14 and TS16. The
+location of these sensors are shown in Fig.~\ref{fig:TSs}. The temperature
+sensor TS11 is located at the UCN heat exchanger bottom, the
+temperature sensor TS14 is located at the UCN heat exchanger top, the
+temperature sensor TS12 is located at the UCN double tube bottom and
+the temperature sensor TS16 is located at the UCN double tube top. At
+low temperatures around 0.8~K these temperature sensors show a maximum
+of 0.1~K discrepancy with TS16 showing the highest value and TS12
+showing the lowest value.
 
 
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{TSs.png}
-  \caption{Screenshot of the Epics temperature monitoring screen. TS11
-    is located at the UCN head exchanger bottom, TS12 is located at
-    the UCN double tube bottom, TS14 is located at the heat exchanger
-    double tube top and TS16 is located at the UCN double tube
-    top. For further information about the source schematic see
-    Sec.~\ref{sec:vertical_source} }
+  \caption{Zoomed in screenshot of the EPICS temperature monitoring
+    screen~\ref{fig:epics}. TS11 is located at the UCN heat exchanger
+    bottom, TS12 is located at the UCN double tube bottom, TS14 is
+    located at the heat exchanger double tube top and TS16 is located
+    at the UCN double tube top. For further information about the
+    source schematic see Sec.~\ref{sec:vertical_source} }
   \label{fig:TSs}
 \end{figure}
 
+In summary, at lower beam currents, because of the low heat load on the
+superfliud helium its temperature change is not significant and it
+gives rise to linear increase in the UCN counts versus the applied
+proton beam current. However, at higher proton beam currents, the
+temperature of the superfluid increases due to higher heat load and it
+gives rise to higher upscattering rate in the superfluid and lower UCN
+counts.
 
 
-
-
-\subsection{UCN Yield Vs Irradiation Times}
-The total UCN count is optimized by irradiating the target with
+\subsection{UCN Yield Versus Target Irradiation Times}
+The total UCN counts is optimized by irradiating the target at
 different proton beam currents and different irradiation times. The
-result is shown in Fig.~\ref{fig:counts_vs_irrad}. At higher beam
-currents, the saturation time constant decreases due to the higher
-heat load and faster temperature increase in the superfluid helium. At
-higher beam currents and longer irradiation times the total measured
-UCN counts are below the exponential extrapolation due to the higher
-temperature and higher upscattering rate in the superfluid helium.
+result is shown in Fig.~\ref{fig:counts_vs_irrad}.  In this graph the
+vertical axis shows the total number of UCN counts where the
+background UCN are subtracted and the horizontal axis shows the target
+irradiation times in seconds. Each marker represents a proton beam
+current and the dashed line is an exponential fit to those data
+points. The proton beam current and the extracted time constant from
+the fit are shown in the Figure.
+
+At higher beam currents, the saturation time constant decreases due to
+the higher heat load and faster temperature increase in the superfluid
+helium. At higher beam currents and longer irradiation times the total
+measured UCN counts are below the exponential extrapolation due to the
+higher temperature and higher upscattering rate in the superfluid
+helium.
 
 \begin{figure}[h!]
   \centering
@@ -342,65 +358,71 @@ temperature and higher upscattering rate in the superfluid helium.
 \end{figure}
 
 
-\subsection{UCN Yield Vs Isopure Helium Temperature}
+\subsection{UCN Yield Versus Isopure Helium Temperature}
 The UCN counts were also measured at different superfluid helium
 temperature~(see Fig.~\ref{fig:counts_vs_temp}). The vertical axis
 shows the number of UCN counts and the horizontal axis shows the
-temperature of the superfluid helium for all four temperature
-sensors. As the temperature of the superfluid helium increases, the
+temperature of the superfluid helium for all four temperature sensors.
+The horizontal error bars are calculated as
+$(T_{\mathrm{max}}-T_{\mathrm{min}})/2$ for each temperature sensor
+where $T_{\mathrm{max}}$ is the maximum value of the superfluid helium
+temperature reading by one temperature sensor and $T_{\mathrm{min}}$
+is the minimum value read for the same sensor.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{counts_vs_temp.pdf}
+  \caption{UCN yield versus the superfluid helium temperature. At a
+    particular UCN ounts, there are several values for the temperature
+    of superfluid helium. It is due to the discrepancy in the
+    temperature sensor readings.}
+  \label{fig:counts_vs_temp}
+\end{figure}
+
+As the temperature of the superfluid helium increases, the
 number of UCN counts in the detector decreases as expected. This is
 mainly due to the high UCN upscattering rate in the superfluid helium
 at higher temperatures.
 
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.9\textwidth]{counts_vs_temp.pdf}
-  \caption{UCN yield as a function of superfluid helium
-    temperature. At a particular UCN ounts, there are several values
-    for the temperature of superfluid. It is due to the different
-    readings in the temperature sensors. The horizontal error bars is
-    the $(T_{\mathrm{max}}-T_{\mathrm{min}})/2$ for each temperature sensor.}
-  \label{fig:counts_vs_temp}
-\end{figure}
-
-
-
-
-
 \subsection{Steady-state UCN Production\label{sec:steadystate}}
 
-The result shown so far are achieved in the batch mode of operation. In
-addition to such measurements, the UCN rate at higher beam currents in
-the steady-state mode were measured. In these measurements, the UCN valve
-was left open and the target was irradiated for about 10~min. A typicall UCN
-rate graph for 0.3~$\mu$A beam current and 10 minute irradiation time is
-shown in Fig.~\ref{fig:UCNRate_steadystate}.
+The result shown so far are achieved in the batch mode of
+operation. In addition to such measurements, the UCN rate was also
+measured at different beam currents in the steady-state mode of
+operation. In these measurements, the UCN valve was left open and the
+target was irradiated for about 10~min. A typicall UCN rate graph for
+0.3~$\mu$A beam current and 10~min target irradiation time is shown in
+Fig.~\ref{fig:UCNRate_steadystate}.
 
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{steadystate_point3muA.png}
-  \caption{The steady-state UCN production at 0.3~$\mu$A proton beam
-    current. The UCN rate is almost constant at 450 UCN counts/s.}
+  \caption{UCN rate at the steady-state production mode with 0.3~$\mu$A proton beam
+    current. The UCN rate reaches a constant value of 450 UCN counts/s.}
   \label{fig:UCNRate_steadystate}
 \end{figure}
 
-At lower beam current such as what shown on
-Fig.~\ref{fig:UCNRate_steadystate} the UCN rate remains constant
-throughout the whole target irradiation time. An example of a
-steady-state UCN production at 3~$\mu$A is shown in
-Fig.~\ref{fig:UCNRate_steadystate_highbeam}. In this case, the maximum UCN rate is
-achieved at the start of target irradiation. As the irradiation
-continues, the heat load on the cryostat increases the temperature and
-the upscattering rate in the superfluid helium. As a result, the UCN
-rate decreases. The change in the temperature is shown in
-Fig.~\ref{fig:UCNRate_temp}.
+At lower beam currents such as 0.3~$\mu$A the UCN rate remains
+constant throughout the whole target irradiation time as shown in
+Fig.~\ref{fig:UCNRate_steadystate}. An example of a steady-state UCN
+production at 3~$\mu$A is shown in
+Fig.~\ref{fig:UCNRate_steadystate_highbeam}. Since the proton beam
+current is high, the UCN rate does not remain a constant. Here the
+maximum UCN rate is observed near the start of the target
+irradiation. As the target irradiation continues, the heat load on the
+cryostat increases the temperature and the upscattering rate in the
+superfluid helium. As a result, the UCN rate decreases. The change in
+the temperature is shown in Fig.~\ref{fig:UCNRate_temp}. Throughout
+the target irradiation time the temperature of the superfluid helium
+increases and once the irradiation stops the temperature starts to go
+down.
 
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.9\textwidth]{654_UCNRate.png}
+  \includegraphics[width=0.9\textwidth]{654_UCNRate.pdf}
   \caption{The UCN rate at 3~$\mu$A beam current at 10~min irradiation
     time at the steady-state mode of operation. The UCN valve is left
     open throughout the measurement cycle. Quickly after the start of
@@ -414,7 +436,7 @@ Fig.~\ref{fig:UCNRate_temp}.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.7\textwidth]{UCNRate_temp.png}
+  \includegraphics[width=0.9\textwidth]{UCNRate_temp.pdf}
   \caption{ The temperature of the superfluid helium~(TS12) for the
     steady state mode of operation at 3~$\mu$A beam current and 10~min
     target irradiation. After the irradiation stops, the temperature
@@ -425,110 +447,109 @@ Fig.~\ref{fig:UCNRate_temp}.
 
 The steady-state UCN rate measurements were conducted at different
 proton beam currents leading to different temperature changes for all
-temperature sensors. The result of all those measurements are shown in
-Fig.~\ref{fig:rate_vs_temp}. Here the vertical axis is the measured
-UCN rate normalized to the proton beam current and the horizontal axis
-is the temperature of the superfluid helium for all temperature
-sensors.
+temperature sensors. The result of all those measurements and
+comparison to simulations are discussed in Section~\ref{sec:pentrack}.
 
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.7\textwidth]{rate_vs_temp.pdf}
-  \caption{Histogram of measured UCN rates and temperatures from all
-    four temperature sensors while the target is continuously
-    irradiated with the UCN valve open. The four solid lines are fits
-    of equation~\ref{eq:steadystaterate} to the data for each individual temperature
-    sensor.}
-  \label{fig:rate_vs_temp}
-\end{figure}
+%are shown in
+%Fig.~\ref{fig:rate_vs_temp}. Here the vertical axis is the measured
+%UCN rate normalized to the proton beam current and the horizontal axis
+%is the temperature of the superfluid helium for all temperature
+%sensors.
 
 
-The rate of the detected UCN is given by
-
-\begin{equation}
-  \label{eqn:rate}
-  R = \frac{P \tau_3}{\tau_d} = \frac{P \tau_d^{-1}}{\tau_\mathrm{wall,2}^{-1} + \tau_d^{-1} + f_\mathrm{He,3}\tau_\mathrm{He}^{-1}}
-\end{equation}
-where $\tau_d^{-1}$ is the loss rate in the detector,
-${\tau_\mathrm{wall,2}}^{-1}$ is the UCN guide wall loss and
-$\tau_\mathrm{He}^{-1}$ is the loss rate in the superfluid helium.
-Assuming $\tau_\mathrm{He}^{-1} = B \left( T \right)^a$ the
-Eqn.~\ref{eqn:rate} could be written as
-
-\begin{equation}
-R(T) = \frac{c}{1 + b \left( \frac{T}{\SI{1}{\kelvin}} \right)^{a}}
-\label{eq:steadystaterate}
-\end{equation}
-where \large
-$b = \frac{f_{\mathrm{He,3}}B}{\tau^{-1}_{\mathrm{wall,2}}
-  +\tau^{-1}_d}$ \normalsize and \large
-$c = \frac{P\tau^{-1}_d}{\tau^{-1}_{\mathrm{wall,2}} +\tau^{-1}_d}$
-\normalsize.  Eqn.~\ref{eq:steadystaterate} can be used to fit the
-data shown in Fig.~\ref{fig:rate_vs_temp}.  Since the four temperature
-sensors in the superfluid helium deviate by up to \SI{0.1}{\kelvin},
-the rate for each temperature sensor is fitted individually (see
-table~\ref{tab:steadystateparams}). The exponent $a$ can be directly
-determined this way, giving
-\begin{equation}
-a = 7.02 \pm 0.02_\mathrm{stat.} \pm 0.53_\mathrm{syst.},
-\label{eq:a}
-\end{equation}
-which is in good agreement with the theoretical prediction of $a = 7$
-(see Sec.\ref{sec:upscattering}). Here the statistical error comes
-from the fit and the systematic error comes from the temperature
-difference from the sensors and their propagated error.
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=0.7\textwidth]{rate_vs_temp.pdf}
+%  \caption{Histogram of measured UCN rates and temperatures from all
+%    four temperature sensors while the target is continuously
+%    irradiated with the UCN valve open. The four solid lines are fits
+%    of equation~\ref{eq:steadystaterate} to the data for each individual temperature
+%    sensor.}
+%  \label{fig:rate_vs_temp}
+%\end{figure}
 
 
-The other parameters are
-\begin{align}
-\label{eq:b}
-  b =&  0.0995 \pm 0.0007_\mathrm{stat.} \pm 0.0298_\mathrm{syst.} \\
-  c =& (1610 \pm 1_\mathrm{stat.} \pm 75_\mathrm{syst.}) \, \si{\per\second}
-\end{align}
+%The rate of the detected UCN is given by
 
-\begin{table}[h!]
-  \centering
-  \begin{tabular}{|c|c|c|c|}
-    \hline
-      Temp. sensor & $a$ & $b$ & $c$ (\si{\per\second}) \\
-      \hline
-      TS11 & $7.55 \pm 0.03$ & $0.0697 \pm 0.0009$ & $1535 \pm 1$ \\
-      \hline
-      TS12 & $6.48 \pm 0.03$ & $0.1293 \pm 0.0016$ & $1606 \pm 2$ \\
-      \hline
-      TS14 & $7.34 \pm 0.03$ & $0.0832 \pm 0.0011$ & $1555 \pm 2$ \\
-      \hline
-      TS16 & $6.67 \pm 0.04$ & $0.1215 \pm 0.0019$ & $1685 \pm 3$ \\
-      \hline
-    \end{tabular}
-  \caption{Parameters determined by fitting equation
-    \ref{eq:steadystaterate} to the measured rates shown in
-    fig. \ref{fig:rate_vs_temp} for each individual temperature
-    sensor.}
-  \label{tab:steadystateparams}
-\end{table}
+%\begin{equation}
+%  \label{eqn:rate}
+%  R = \frac{P \tau_3}{\tau_d} = \frac{P \tau_d^{-1}}{\tau_\mathrm{wall,2}^{-1} + \tau_d^{-1} + f_\mathrm{He,3}\tau_\mathrm{He}^{-1}}
+%\end{equation}
+%where $\tau_d^{-1}$ is the loss rate in the detector,
+%${\tau_\mathrm{wall,2}}^{-1}$ is the UCN guide wall loss and
+%$\tau_\mathrm{He}^{-1}$ is the loss rate in the superfluid helium.
+%Assuming $\tau_\mathrm{He}^{-1} = B \left( T \right)^a$ the
+%Eqn.~\ref{eqn:rate} could be written as
+
+%\begin{equation}
+%R(T) = \frac{c}{1 + b \left( \frac{T}{\SI{1}{\kelvin}} \right)^{a}}
+%\label{eq:steadystaterate}
+%\end{equation}
+%where \large
+%$b = \frac{f_{\mathrm{He,3}}B}{\tau^{-1}_{\mathrm{wall,2}}
+%  +\tau^{-1}_d}$ \normalsize and \large
+%$c = \frac{P\tau^{-1}_d}{\tau^{-1}_{\mathrm{wall,2}} +\tau^{-1}_d}$
+%\normalsize.  Eqn.~\ref{eq:steadystaterate} can be used to fit the
+%data shown in Fig.~\ref{fig:rate_vs_temp}.  Since the four temperature
+%sensors in the superfluid helium deviate by up to \SI{0.1}{\kelvin},
+%the rate for each temperature sensor is fitted individually (see
+%table~\ref{tab:steadystateparams}). The exponent $a$ can be directly
+%determined this way, giving
+%\begin{equation}
+%a = 7.02 \pm 0.02_\mathrm{stat.} \pm 0.53_\mathrm{syst.},
+%\label{eq:a}
+%\end{equation}
+%which is in good agreement with the theoretical prediction of $a = 7$
+%(see Sec.\ref{sec:upscattering}). Here the statistical error comes
+%from the fit and the systematic error comes from the temperature
+%difference from the sensors and their propagated error.
 
 
+%The other parameters are
+%\begin{align}
+%\label{eq:b}
+%  b =&  0.0995 \pm 0.0007_\mathrm{stat.} \pm 0.0298_\mathrm{syst.} \\
+%  c =& (1610 \pm 1_\mathrm{stat.} \pm 75_\mathrm{syst.}) \, \si{\per\second}
+%\end{align}
 
-
-
-
+%\begin{table}[h!]
+%  \centering
+%  \begin{tabular}{|c|c|c|c|}
+%    \hline
+%      Temp. sensor & $a$ & $b$ & $c$ (\si{\per\second}) \\
+%      \hline
+%      TS11 & $7.55 \pm 0.03$ & $0.0697 \pm 0.0009$ & $1535 \pm 1$ \\
+%      \hline
+%      TS12 & $6.48 \pm 0.03$ & $0.1293 \pm 0.0016$ & $1606 \pm 2$ \\
+%      \hline
+%      TS14 & $7.34 \pm 0.03$ & $0.0832 \pm 0.0011$ & $1555 \pm 2$ \\
+%      \hline
+%      TS16 & $6.67 \pm 0.04$ & $0.1215 \pm 0.0019$ & $1685 \pm 3$ \\
+%      \hline
+%    \end{tabular}
+%  \caption{Parameters determined by fitting equation
+%    \ref{eq:steadystaterate} to the measured rates shown in
+%    fig. \ref{fig:rate_vs_temp} for each individual temperature
+%    sensor.}
+%  \label{tab:steadystateparams}
+%\end{table}
 
 
 
-\subsection{UCN Yield Over Experiment Period}
+\subsection{UCN Yield Over the Experiment Period}
 
-The total UCN counts for 1~$\mu$A beam current and 60~s irradiation
-time over the course of the experimental run is shown in
-Fig.~\ref{fig:UCNCounts_time}. 
-The source volume is connected to a long UCN guide sealed with an
-O-ring. It is expected that the rest gas to contaminate the source
-every time the UCN valve is opened. This caused a reduction in the UCN
-yield over the course of the measurement as shown in
-Fig.~\ref{fig:UCNCounts_time}. In addition, the changes in the UCN
-guide geometry in the latter half of the run pottentially affected
-this drop.
+The total UCN counts for our standard measurements at 1~$\mu$A beam
+current and 60~s irradiation time over the course of the experimental
+run is shown in Fig.~\ref{fig:UCNCounts_time}. The graph shows an
+overall decrease of about $\sim$~40\% over the course of the
+experimental run.  The source volume is connected to a long UCN guide
+sealed with an O-ring. It is expected that the rest gas to contaminate
+the source every time the UCN valve is opened. This caused a reduction
+in the UCN yield~(and storage lifetime as shown later in
+Section~\ref{sec:storage_overall}) over the course of the
+measurement. In addition, the changes in the UCN guide geometry in the
+latter half of the run pottentially affected this drop.
 
 
 \begin{figure}[h]
@@ -546,35 +567,40 @@ The total number of detected UCN strongly depends on the storage
 lifetime of the source $\tau_1$~(See Eqn.~\ref{eqn:tau1}) which
 indicates the performance of the UCN source. The storage lifetime of
 UCN is determined by measuring the detected UCN at different valve
-open delay times right after the irradiation stops. The typical chosen
-values are 0~s, 5~s, 10~s, 20~s, 30~s, 60~s, 80~s, 120~s and
-170~s. The exponential decay constant in the fit function to the total
-UCN counts for different valve open delay times is the total storage
-lifetime in the source.
+open delay times right after the irradiation stops.  The typical
+chosen values are 0~s, 5~s, 10~s, 20~s, 30~s, 60~s, 80~s, 120~s and
+170~s.
+% For most of the experiments, the order in which the delay to the
+% valve open time was applied was as following: 0~s, 170~s, 20~s,
+% 120~s, 50~s, 80~s, 30~s and 5~s.
+The exponential decay constant in the fit function to the total UCN
+counts without the background for different valve open delay times is
+the total storage lifetime in the source.
 
-Fig.~\ref{fig:storage_all} shows several UCN cycles for 1~$\mu$A
-proton beam current and 60~s target irradiation time. The difference
-in the maximum detected UCN rate is due to different valve open delay
-time.
+Fig.~\ref{fig:storage_all} shows several UCN cycles for the standard
+1~$\mu$A proton beam current and 60~s target irradiation time. The
+difference in the maximum detected UCN rate is due to different valve
+open delay times.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{storagetime_all.png}
   \caption{UCN cycles at different valve open delay time for 1~$\mu$A
-    beam current and 60~s irradiation time.}
+    beam current and 60~s target irradiation time.}
   \label{fig:storage_all}
 \end{figure}
-Fig.~\ref{fig:storage_example} shows the total UCN counts versus the
-valve open delay time for 1~$\mu$A proton beam current and 60~s irradiation
-time. The longer delay times give rise to lower UCN counts due to the
-loss mechanisms. The one exponential fit function
+Fig.~\ref{fig:storage_example} shows the total UCN counts~(background
+subtracted) versus the valve open delay time for 1~$\mu$A proton beam
+current and 60~s target irradiation time. The longer delay times give rise to
+lower UCN counts due to the loss mechanisms. The one exponential fit
+function
 \begin{equation}
 \text{UCN counts} = A e^{-t/\tau_1}
 \end{equation}
 determines the storage lifetime $\tau_1$. At 170~s valve open delay
 time, the total UCN counts are not consistent with what the fit
-function predicts. However, the result of the fit is not driven by
-this inconsistency as it has a negligible effect on the extrected
-storage lifetime.
+function predicts due to low statistics. However, the result of the
+fit is not driven by this inconsistency as it has a negligible effect
+on the extrected storage lifetime.
 
 \begin{figure}[h!]
   \centering
@@ -585,15 +611,24 @@ storage lifetime.
   \label{fig:storage_example}
 \end{figure}
 
-\subsection{Storage Lifetime Vs Beam Current and Irradiation Time}
+Below the result of the storage lifetime measurements are presented.
+
+\subsection{Storage Lifetime Versus Beam Current and Irradiation Time}
 The storage lifetime of the UCN source is measured at different proton
-beam currents and different irradiation times for better
-optimization of the source. The result of those measurements is shown in
-Fig.~\ref{fig:storage_beam_irrad}. The UCN production rate increases
-at higher proton beam current. However, this creates a higher heat
-load on the UCN source which leads to higher upscattering rates. The
-higher proton beam currents and longer irradiation times give rise to
-lower storage lifetimes.
+beam currents and different target irradiation times for better
+optimization of the source. The result of those measurements is shown
+in Fig.~\ref{fig:storage_beam_irrad}. Here the vertical axis shows the
+storage lifetime in the source in seconds and the horizontal axis
+shows the proton beam current in $\mu$A. Each marker represents a
+target irradiation time. At lower beam currents, the duration of the
+target irradiation does not make a significant difference in the
+storage lifetime. At higher proton beam currents, the longer the
+irradiation time, the lower the storage lifeimte.
+
+In summary, irradiating the target at high proton beam currents for
+longer irradiation times creates a higher heat load on the UCN source
+which leads to higher upscattering rates and as a result lower UCN
+storage lifetime in the source.
 
 \begin{figure}[h!]
   \centering
@@ -602,46 +637,55 @@ lower storage lifetimes.
     times and proton beam currents. Different markers refer to
     different target irradiation times. At longer irradiation times
     and higher beam currents the storge lifetime decreases due to the
-    increase heat load in the cryostat and increase in the superfluid
-    helium temperature. }
+    increased heat load in the source and an increase in the
+    superfluid helium temperature. }
   \label{fig:storage_beam_irrad}
 \end{figure}
 
 
-
-\subsection{Storage Lifetime Vs Isopure Helium Temperature}
+\subsection{Storage Lifetime Versus Isopure Helium Temperature}
 The storage lifetime of UCN was also measured at different
-temperatures of superfluid helium. In this experiment, the temperature
-of superfluid was increased by using the heater tapes around the UCN
-bottle. The heater powers were set to increase the temperature to a
-certain level and once it reached a stable state the target
-irradiation started. The result are shown in
-Fig.~\ref{fig:storagelifetime_vs_temp}. An increase in the superfluid
-helium temperature gives rise to a decrease in the UCN storage
-lifetime due to higher upscattering rates. A variation between the
-readings in the temperature sensors is observed for a given storage
-lifetime. The horizontal error bars simply show a
-($T_{\mathrm{max}} - T_{\mathrm{min}}$)/2.
+temperatures of the superfluid helium. In this experiment, the
+temperature of superfluid was increased by using the heater tapes
+wrapped around the UCN bottle. The heater powers were set to increase
+the temperatures by a certain amount. Once the temperatures reached a
+stable state, the target irradiation started.
 
+The result of this measurement is shown in
+Fig.~\ref{fig:storagelifetime_vs_temp}. The vertical axis is the
+storage lifetime of UCN in seconds and the horizontal axis is the
+temperature of the superfluid helium. As mentioned earlier, the four
+temperature sensors that measure the temperature of the superfluid
+show some discrepancy. As a result, for a given value of the storage
+lifetime there are four different values for the temperature of the
+superfluid. The horizontal error bars are set as
+($T_{\mathrm{max}} - T_{\mathrm{min}}$)/2 as discussed earlier. The
+data shows a downward trend. As the temperature of the superfluid
+helium increases, the storage lifetime in the source decreases. This
+is due to the higher upscattering rate in the superfluid helium at
+higher temperatures.
+
+
+%TCN17014
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.9\textwidth]{StorageLifetime_vs_temp.png}
+  \includegraphics[width=0.9\textwidth]{StorageLifetime_vs_temp.pdf}
   \caption{Storage lifetime of UCN at different isopure helium
-    temperature. In this experiment the temperature of superfluid
+    temperatures. In this experiment the temperature of superfluid
     helium was set using heater tapes around the UCN bottle. The
     vertical axis shows the storage lifetime in seconds and the
-    vertical axis is the superfluid helium temperature in Kelvin. As
-    the temperature increases, the storage lifetime decreases. This is
-    due to the higher upscattering rate in the superfluid at higher
-    temperatures.}
+    horizontal axis shows the superfluid helium temperature in
+    Kelvin. As the temperature increases, the storage lifetime
+    decreases. This is due to the higher upscattering rate in the
+    superfluid helium at higher temperatures.}
   \label{fig:storagelifetime_vs_temp}
 \end{figure}
 
 
+%%%%%%%%%%%%%%
+\subsection{Storage Lifetime Over Experimental Period\label{sec:storage_overall}}
 
-\subsection{Storage Lifetime Over Experimental Period}
-
-The standard storage lifetime measurement was performed on a daily
+The standard storage lifetime measurements were performed on a daily
 basis over the course of the experimental run. This includes the
 irradiation of the target at 1~$\mu$A proton beam current for 60~s
 irradiation time. The result of those measurements are shown in
@@ -670,9 +714,14 @@ PENTrack~\cite{schreyer2017pentrack}. PENTrack is a particle tracking
 simulation software which simulates the trajectories of UCN and their
 decay products~({\it{e.g.}} Protons and Electrons) and their spin
 precession in complex geometries in Electric and Magnetic fields by
-solving the relativistic equation of motion. Here the result of such
-simulations are presented.
+solving the relativistic equation of motion.
 
+To simulate the UCN storage and transport, an exact model of the UCN
+guides for PENTrack was build by the TUCAN team including the burst
+disk, the actual shape of the UCN valve in open and closed state,
+pinhole, foil and detector. Here the result of such simulations are
+presented.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{UCN Guide Diffusivity\label{sec:diffusivity}}
 As discussed in Chapter~\ref{chap:intro}, UCN interacts with all four
 fundamental forces. To describe the interaction of UCN with matter, a

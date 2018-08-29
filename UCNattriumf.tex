@@ -316,19 +316,18 @@ volume of 8.5~L and gets cooled down to $\sim$~0.83~K.
 
 
 \section{Data Acquisition System\label{sec:DAQ}}
-The TUCAN UCN DAQ sets parameters for the UCN operation and
-accumulates data from different sources. For the 2017 data
-acquisition, almost all the sensors such as temperature sensors, flow
-meteres, pressure gaugas and ... were connected to a Programmable
-Logic Controller~(PLC) which and monitored by EPICS and MIDAS
-systems. Here each component is briefly described.
+The TUCAN UCN DAQ system accumulates data from different devices and
+integrates them into a MIDAS file.
 
-The PLC receives information from the connected sensors or input
-devices, processes the data, and triggers outputs based on
-pre-programmed parameters.  Depending on the inputs and outputs, a PLC
-can monitor and record data, automatically start and stop processes,
-generate alarms based on the applied limits, and more. A picture of
-the PLC is shown in Fig.~\ref{fig:PLC}.
+For the 2017 data acquisition, almost all the sensors such as
+temperature sensors, flow meteres, pressure gaugas and {\it{etc.}}
+were connected to a Programmable Logic Controller~(PLC).  The PLC
+receives information from the connected sensors or input devices,
+processes the data, and triggers outputs based on pre-programmed
+parameters.  Depending on the inputs and outputs, a PLC can monitor
+and record data, automatically start and stop processes, generate
+alarms based on the applied limits, and more. A picture of the PLC is
+shown in Fig.~\ref{fig:PLC}.
 
 \begin{figure}[h!]
   \centering
@@ -341,7 +340,7 @@ the PLC is shown in Fig.~\ref{fig:PLC}.
     fuses are positioned. {\bf{insert a new photo}} }
   \label{fig:PLC}
 \end{figure}
-
+The communication between the PLC and the screen is handled by EPICS.
 The EPICS screen defines the user interface for the controls. It
 provides readouts of variables, indications of device status, and
 various user input controls for turning devices on/off, resetting
@@ -349,9 +348,10 @@ devices, etc. The screen shows the approximate physical layout of the
 apparatus being controlled, with each device and its controls placed
 in its actual location. The colours of the devices are used to
 indicate their current status~\cite{Sean_manual}. Fig.~\ref{fig:epics}
-shows the thermal EPICS screen for the TUCAN vertical UCN source. The
-EPICS The gas flow screen~(not shown) is intended to contain all
-information about pressures, flows, levels, and controls for pumps and
+shows the thermal EPICS screen for the TUCAN vertical UCN source
+during the November 2017 experimental run. The gas flow screen~(not
+shown, very similar to the thermal screen) is intended to contain all
+the information about pressures, flows, levels, and controls for pumps and
 valves.
 
 \begin{figure}[h!]
@@ -381,7 +381,10 @@ the top section.
   \label{fig:midas}
 \end{figure}
 
-
+For the 2017 experimental run, each expriment had a unique MIDAS
+number. The MIDAS files were then converted to ROOT files for data
+analysis. The result of the analysis is presented in
+Chapter~\ref{chap:UCNresult}.
 
 \section{UCN Detectors\label{sec:detectors}}
 For the TUCAN experimental runs in 2017, a $^6$Li and a $^3$He
