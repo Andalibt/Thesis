@@ -211,48 +211,39 @@ or equivalently
 \end{align}
 
 These are the general solutions for a system with energy eigenstates
-$p$ and $q$.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-As a comparison, if $C_p(t_1+T)=a(t)$ ,
+$p$ and $q$.  As a comparison, if $C_p(t_1+T)=a(t)$ ,
 $C_q(t_1+T)=b(t)$, $a= \omega'$ , $2b=\omega_1$ then
-equation (1.31). In this case, $W_p$ and $W_q$ are energies of the
+Eqn.~\ref{eqn:aNb}. In this case, $W_p$ and $W_q$ are energies of the
 spin up and spin down configurations.
 
-As a special case, if b=0 (no perturbation), then $\cos \theta=1$ and
+As a special case, if $b=0$~(no perturbation), then $\cos \theta=1$ and
 $\sin \theta=0$. Hence, the solutions would be
-\begin{equation}
-\left\lbrace
-\begin{array}{c}
-C_p(t_1+T)= e^{-i \frac{W_p}{\hbar} T} C_p(t_1) \\
-C_q(t_1+T)=e^{-i \frac{W_q}{\hbar}T} C_q(t_1)
-\end{array}
-\right. .
-\end{equation}
-%
+\begin{align}
+C_p(t_1+T) &= e^{-i \frac{W_p}{\hbar} T} C_p(t_1) \\ \nonumber
+C_q(t_1+T) &=e^{-i \frac{W_q}{\hbar}T} C_q(t_1).
+\end{align}
+
 Now, consider a system which is subjected to perturbation for time
 $\tau$ and length $l$, then the perturbation goes off for time $T$ and
 length $L$ and again the perturbation goes on for another time
 $\tau$. To achieve greater generality, corresponding to the
 experimental impossibility of attaining completely uniform magnetic
-fields, we assume that energy levels $p$ and $q$ are not constant in
-the intermediate state when b=0, which means it is divided to
+fields, it is assumed that energy levels $p$ and $q$ are not constant in
+the intermediate state when $b=0$, which means, it is divided to
 sub-regions with duration $\Delta t_k$ and energies are $W_{p,k}$ and
-$W_{q,k}$ respectively. We assume
+$W_{q,k}$ respectively. Assuming
 \begin{equation}
 C_p(0)=1 , \, \, C_q(0)=0 ,
 \end{equation}
-which means the system is at state $p$ before it enters the first
+it means, the system is at state $p$ before it enters the first
 perturbation region. Hence, the amplitudes would be
-\begin{equation}
-\left\lbrace
-\begin{array}{c}
-C_p(\tau)=\left[i \cos \theta \sin \frac{a\tau}{2}+ \cos \frac{a\tau}{2}\right]
-e^{i\left[\frac{\omega}{2}-\left(\frac{W_p+W_q}{2\hbar}\right)\right]\tau}\\
-C_q(\tau)=\left[ -i \sin \theta \sin \frac{a\tau}{2} \right] 
-e^{i \left[ -\frac{\omega}{2} - \left( \frac{W_p+W_q}{2\hbar}\right)\right]\tau}
-\end{array}\right. .
-\end{equation}
-After entering the intermediate region we would get
+\begin{align}
+C_p(\tau) &=\left[i \cos \theta \sin \frac{a\tau}{2}+ \cos \frac{a\tau}{2}\right]
+e^{i\left[\frac{\omega}{2}-\left(\frac{W_p+W_q}{2\hbar}\right)\right]\tau}\\ \nonumber
+C_q(\tau) &=\left[ -i \sin \theta \sin \frac{a\tau}{2} \right] 
+e^{i \left[ -\frac{\omega}{2} - \left( \frac{W_p+W_q}{2\hbar}\right)\right]\tau} .
+\end{align}
+And after entering the intermediate region,
 \begin{align}
 C_p(\tau+T)&=\Pi_k e^{-i W_{p,k} \Delta \frac{t_k}{\hbar}}  C_p(\tau)\nonumber \\
 &=e^{-\frac{i}{\hbar} \Sigma_k W_{p,k} \Delta t_k}  C_p(\tau) \nonumber\\
@@ -260,33 +251,27 @@ C_p(\tau+T)&=e^{-i \frac{\bar{W_p}T}{\hbar}} C_p(\tau) \\
 \nonumber\\
 C_q(\tau+T)&=e^{-i \frac{\bar{W_q}T}{\hbar}} C_q(\tau) .
 \end{align}
-%
+
 It is impossible to have completely uniform magnetic fields in the
-experiment. Hence, we assume that the energies of the $p$ and $q$
+experiment. Therefore, it is assumed that the energies of the $p$ and $q$
 states are not constant in this region, and the region is divided into
 a number of sub-regions such that in the $k^{th}$ sub-region of
 duration $\Delta t_k$ the energies are $W_{p,k}$ and $W_{q,k}$.
-
-Here we have,
+In addition,
 $\bar{W_p}=\frac{1}{T}\Sigma_k W_{p,k}\Delta t_k=\frac{1}{L}\Sigma_k
 W_{p,k} \Delta L_k$, which is the space mean value of $W_p$. There is
 a similar interpretation for $W_q$ as well. After entering the final
 perturbation region,
-\begin{equation}
-\left\lbrace
-\begin{array}{c}
-  C_p(2\tau+T)=\left\lbrace \left[i \cos \theta \sin \frac{a\tau}{2}+\cos \frac{a\tau}{2}\right]C_p(\tau+T) -
-  \left[i \sin \theta \sin \frac{a\tau}{2} e^{i \omega (\tau+T)}\right]C_q(\tau+T)\right\rbrace \times
-  \\
-  e^{i\left[\frac{\omega}{2}-\frac{(W_p+W_q)}{2\hbar}\right]\tau}\\
-  \,
-  \\
-  C_q(2\tau+T)=\left\lbrace -\left[i \sin \theta \sin \frac{a\tau}{2} e^{-i \omega (\tau+T)}\right]C_p(\tau+T)+\left[ -i \cos \theta \sin \frac{a\tau}{2}+ \cos \frac{a\tau}{2}\right] C_q(\tau+T)\right\rbrace \times \\
+\begin{align}
+  C_p(2\tau+T) &=\left\lbrace \left[i \cos \theta \sin \frac{a\tau}{2}+\cos \frac{a\tau}{2}\right]C_p(\tau+T) \right. \\ \nonumber
+                 &-
+ \left. \left[i \sin \theta \sin \frac{a\tau}{2} e^{i \omega (\tau+T)}\right]C_q(\tau+T)\right\rbrace \times
+  e^{i\left[\frac{\omega}{2}-\frac{(W_p+W_q)}{2\hbar}\right]\tau}\\ \nonumber
+  C_q(2\tau+T) &=\left\lbrace -\left[i \sin \theta \sin \frac{a\tau}{2} e^{-i \omega (\tau+T)}\right]C_p(\tau+T) \right . \\ \nonumber
+  &+ \left . \left[ -i \cos \theta \sin \frac{a\tau}{2}+ \cos \frac{a\tau}{2}\right] C_q(\tau+T)\right\rbrace \times
   e^{i \left[\frac{-\omega}{2}-\frac{(W_p+W_q)}{2\hbar}\right]\tau}
-\end{array}
-\right.
-\end{equation}
-We can rewrite the above equation as
+\end{align}
+or it could be rewritten as
 \begin{align}
   C_q(2\tau+T)&= 2i\sin \theta \left[ \cos \theta \sin^2 \frac{a\tau}{2}\sin \frac{\lambda T}{2} -\frac{1}{2}\sin a\tau \cos \frac{\lambda T}{2} \right] \nonumber \\ &\times e^{-i \left[\frac{\omega}{2} + \frac{(W_p+W_q)}{2\hbar}\right]}(2\tau+T) +
                                                                                                                                                                         \left[ \frac{\bar{W_p}-W_p+\bar{W_q}-W_q}{2\hbar} 
@@ -296,16 +281,15 @@ where
 \begin{equation}
 \lambda= \left( \frac{\bar{W_q}-\bar{W_p}}{\hbar} \right)- \omega .
 \end{equation}
-Therefore, the probability that the system changes from state p to
-state q is
+Therefore, the probability that the system changes from state $p$ to
+state $q$ is
 %
 \begin{equation}
 P_{p,q}=|C_q|^2 =4 \sin ^2 \theta \sin ^2 \frac{a\tau}{2} \left[
 \cos \frac{\lambda T}{2} \cos \frac{a\tau}{2} -
 \cos \theta \sin \frac{\lambda T}{2} \sin \frac{a\tau}{2} \right] ^2 .
 \end{equation}
-%
-We can define a dimensionless parameter
+Defining a dimensionless parameter $x$ as
 %
 \begin{equation}
 x:= \frac{\omega_0 - \omega}{2b} , 
@@ -314,14 +298,16 @@ and therefore, $a$ would take the form
 \begin{equation}
 a= 2b \sqrt{1+x^2} .
 \end{equation}
-If we set $b\tau = \frac{\pi}{4}$ (which is similar to the previous
-section which $\omega_1 t= \pi$) and $T=8\tau$, then
+Setting $b\tau = \frac{\pi}{4}$~(which is similar to
+Section.~\ref{sec:rfpulse} where $\omega_1 t= \pi$) and $T=8\tau$,
+then
 %
-\begin{equation}
-P(x)= \frac{4}{1+x^2} \left[ \sin ( \sqrt{1+x^2 \frac{\pi}{4}}) \right]^2
+\begin{align}
+  P(x) &= \frac{4}{1+x^2} \left[ \sin ( \sqrt{1+x^2 \frac{\pi}{4}}) \right]^2 \\ \nonumber
+  & \times
 \left[
 \cos (2 \pi x) \cos (\sqrt{1+x^2 \frac{\pi}{4}}) - \frac{x}{1+x^2} \sin ( \sqrt{1+x^2 \frac{\pi}{4}}) \right] ^2 ,
-\end{equation}
+\end{align}
 %
 and is plotted in Fig. \ref{fig:transprob}.
 \begin{figure}[h!]
