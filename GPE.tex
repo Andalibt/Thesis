@@ -1,4 +1,4 @@
-\chapter{Geometric phase effect\label{app:GPE}}
+\chapter{Geometric phase effect\label{app:GPE}~\cite{NMR_Notes}}
 
 \section{Geometric phase effect as a Bloch-Siegert shift}
 
@@ -247,53 +247,54 @@ d_{af} = -\frac{J \hbar}{2} \left( \frac{\partial B_{0z} / \partial z}{B_{0z}^2}
 %
 for particles moving in peripheral orbits.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%
 \subsection{T1,T2, GPE redux}
 
 An alternative approach to determining the geometric phase effect
 provides a more general theory, valid for an arbitrary shape of the
 magnetic field as well as for arbitrary geometry of the confinement
-cell \cite{pignol2012electric}.
+cell~\cite{pignol2012electric}.
 
 The frequency shift induced by a fluctuating transverse field is given
-by the Lamoreaux-Golub expression \cite{LamGol2005}:
+by the Lamoreaux-Golub expression~\cite{LamGol2005}:
 %
-\begin{equation}
-\delta \omega = \frac{1}{2}\int_{0}^{\infty}d\tau \cos(\omega_0 t) \langle\omega_x(0) \omega_y(\tau) - \omega_y(0) \omega_x(\tau)\rangle + \frac{1}{2}\int_{0}^{\infty}d\tau \sin(\omega_0 t) \langle\omega_x(0) \omega_x(\tau) - \omega_y(0) \omega_y(\tau)\rangle ,
-\end{equation}
+\begin{align}
+  \delta \omega &= \frac{1}{2}\int_{0}^{\infty}d\tau \cos(\omega_0 t) \langle\omega_x(0) \omega_y(\tau) - \omega_y(0) \omega_x(\tau)\rangle \\ \nonumber
+  &+ \frac{1}{2}\int_{0}^{\infty}d\tau \sin(\omega_0 t) \langle\omega_x(0) \omega_x(\tau) - \omega_y(0) \omega_y(\tau)\rangle ,
+\end{align}
 %
 where the bracket refers to the ensemble average of the quantity of
 particles in the trap.
-
 We can write the frequency shift in powers of the magnetic and electric field:
 %
 \begin{equation}
 \delta \omega = \delta \omega_{B^2} + \delta \omega_{E^2} + \delta \omega_{BE}.
 \end{equation}
 %
-If we flip the direction of the electric field, only the linear term in E 
+If we flip the direction of the electric field, only the linear term in $E$ 
 %
 \begin{equation}
 \label{eqn:deltawBE}
 \delta \omega_{BE} = \frac{\gamma^2 E}{c^2} \int_{0}^{\infty} d\tau \cos(\omega_0 \tau) \langle B_x(0) v_x(\tau) + B_y(0) V_y(\tau)\rangle
 \end{equation}
 %
-generates a frequency shift (as long as the field amplitude doesn't
-change).  Therefore, it generates a false EDM of:
+generates a frequency shift~(as long as the field amplitude doesn't
+change).  Therefore, it generates a false EDM of the form
 %
 \begin{equation}
-d_{False} = \frac{\hbar}{4E}[\delta \omega(E) - \delta \omega (-E)] = \frac{\hbar}{4E}\delta \omega_{BE}(E) ,
+d_\mathrm{False} = \frac{\hbar}{4E}[\delta \omega(E) - \delta \omega (-E)] = \frac{\hbar}{4E}\delta \omega_{BE}(E).
 \end{equation}
 %
 The frequency shifts $\delta \omega_{B^2}$, $\delta \omega_{E^2}$, and
-$\delta \omega_{BE}$ involve Fourier transforms (evaluated at the
+$\delta \omega_{BE}$ involve Fourier transforms~(evaluated at the
 Larmor frequency) of correlation functions involving field and
 velocity components.  In the adiabatic regime these can be expanded in
-perturbation series using integration by parts:
+perturbation series using integration by parts
 %
-\begin{equation}
-\int_{0}^{\infty} d\tau \cos(\omega_0 \tau)\langle B_x(0) v_x(\tau)\rangle = [\cos(\omega_0 \tau)\langle B_x(0)x(\tau)\rangle]_{0}^{\infty} + \omega_0 \int_{0}^{\infty} d\tau \sin(\omega_0 \tau)\langle B_x(0) x(\tau)\rangle ,
-\end{equation}
+\begin{align}
+  \int_{0}^{\infty} d\tau \cos(\omega_0 \tau)\langle B_x(0) v_x(\tau)\rangle &= [\cos(\omega_0 \tau)\langle B_x(0)x(\tau)\rangle]_{0}^{\infty} \\ \nonumber
+  &+ \omega_0 \int_{0}^{\infty} d\tau \sin(\omega_0 \tau)\langle B_x(0) x(\tau)\rangle ,
+\end{align}
 %
 where the second term vanishes in the nonadiabatic limit
 ($\omega_0 \tau_c \ll 1$).  Using this expansion with
@@ -313,22 +314,22 @@ In the nEDM experiment, it is important to understand how UCN move
 adiabatically through a magnetic field gradient.  In the frame of
 reference of the UCN, the magnetic field is changing with time, which
 results in a Berry phase shift as the particle moves through a closed
-curve.  Since the UCN is moving slowly with respect to the change in
+curve. Since the UCN is moving slowly with respect to the change in
 magnetic field, its spin will follow the field adiabatically.  The
 change in field strength with time is then reflected in the geometry
-of the container that the UCN are moving in, and therefore the phase
+of the container that the UCN are moving in, and therefore, the phase
 accrued is geometric in origin.
  
 
 \subsubsection{Adiabatic Approximation}
 Consider a Hamiltonian that depends on some set of parameters. If
-these parameters change ``slowly" with time, then the energy
-eigenvalues will also change as the parameters themselves change. By
-slowly, we mean that the parameters change on a time scale T that is
-much greater than $\frac{2\pi \hbar}{E_{ab}}$ for some difference
-$E_{ab}$ in energy eigenstates.
+these parameters change ``slowly'' with time, then the energy
+eigenvalues will also change as the parameters themselves change. Here
+slowly means that the parameters change on a time scale $T$ that is much
+greater than $\frac{2\pi \hbar}{E_{ab}}$ for some difference $E_{ab}$
+in energy eigenstates.
 
-Starting from the eigenvalue equation for Hamiltonian :
+Starting from the eigenvalue equation for Hamiltonian
 %
 \begin{equation}
 \label{eqn:Hamiltonian-eigenkets}
@@ -341,7 +342,7 @@ the Schr\"{o}dinger equation can be written as
 i \hbar \frac{d}{dt} |\alpha ; t \rangle = H(t) |\alpha ; t\rangle .
 \end{equation}
 %
-We can write $|\alpha;\rangle$ in terms of Hamiltonian eigenkets
+Here $|\alpha;\rangle$ could be written in terms of Hamiltonian eigenkets
 %
 \begin{equation}
 \label{eqn:alpha-ket}
@@ -354,40 +355,41 @@ where
 \theta_n(t)\equiv-\frac{1}{\hbar} \int_0^t E_n(t') dt'.
 \end{equation}
 %
-By substituting equation \ref{eqn:alpha-ket} into
-\ref{eqn:alpha-schrodinger} we find
+Substituting Eqn.~\ref{eqn:alpha-ket} into
+Eqn.~\ref{eqn:alpha-schrodinger} gives
 %
 \begin{equation}
 \sum_n e^{i \theta_n(t)} \left[ \dot{c}_n(t) |n;t \rangle +c_n(t) \frac{\partial}{\partial t} |n;t \rangle \right]=0.
 \end{equation}
 %
-If we multiply the above equation with $\langle m;t|$ and use
-orthonormality of Hamiltionian eigenstates at equal times, we get
+Multiplying the above equation with $\langle m;t|$ and using
+orthonormality of Hamiltionian eigenstates at equal times gives
 %
 \begin{equation}
+  \label{eqn:cmdot}
 \dot{c}_m(t)=-\sum_n c_n(t)e^{i \left[ \theta_n(t)-\theta_m(t)\right]} \langle m;t| \left[ \frac{\partial}{\partial t} |n;t \rangle \right] .
 \end{equation}
 %
-Now, we need to calculate
+The next step is to calculate
 $\langle m;t| \left[ \frac{\partial}{\partial t} |n;t \rangle \right]$
-in terms of the Hamiltonian and its eigenvalues. To do this, we should
-take the time derivative of Equation \ref{eqn:Hamiltonian-eigenkets},
-and then multiply it on the left by $\langle m;t|$:
+in terms of the Hamiltonian and its eigenvalues. Taking the time
+derivative of Eqn.~\ref{eqn:Hamiltonian-eigenkets}, and then
+multiplying it on the left by $\langle m;t|$ gives
 
 \begin{equation}
 \langle m;t|\dot{H}|n;t \rangle =\left[ E_n(t)-E_m(t)\right] \langle m;t| \left[ \frac{\partial}{\partial t} |n;t \rangle \right] .
 \end{equation}
 %
-Therefore, we obtain
+Therefore, Eqn.~\ref{eqn:cmdot} becomes
 %
 \begin{equation}
 \dot{c}_m(t) =-c_m(t) \langle m;t| \left[ \frac{\partial}{\partial t} |n;t \rangle \right]-\sum_{n\neq m}c_n(t) e^{i(\theta_n-\theta_m)} \frac{ \langle m;t|\dot{H}|n;t \rangle }{E_n-E_m} .
 \end{equation}
 %
-This is the solution to the general time-dependent problem and it
+This is the solution to the general time-dependent problem. It
 means, as time goes on, states with $n \neq m$ will mix with
 $|m;t \rangle $ because of the time dependence of the Hamiltonian. In
-the adiabatic limit, we can neglect the second term which means,
+the adiabatic limit, the second term could be neglected which means,
 %
 \begin{equation}
 \frac{ \langle m;t|\dot{H}|n;t \rangle }{E_{nm}} \equiv \frac{1}{\tau} \ll \langle m;t| \left[ \frac{\partial}{\partial t} |m;t \rangle \right] \sim \frac{E_m}{\hbar} .
@@ -407,13 +409,13 @@ where,
 \gamma_n(t) \equiv i \int_0^t \langle n;t'| \left[ \frac{\partial}{\partial t'} |n;t' \rangle   \right] dt' ,
 \end{equation}
 is a real quantity. This is called the geometric phase, and it is the
-result of the adiabatic approximation.  So, we can rewrite equation
-\ref{eqn:alpha-ket} as
+result of the adiabatic approximation.  So, Eqn.~\ref{eqn:alpha-ket}
+could be written as
 %
 \begin{equation}
 |\alpha^{(n)};t \rangle= e^{i \gamma_n(t)} e^{i \theta_n(t)} |n;t \rangle .
 \end{equation}
-
+%%%%%%%%%
 \subsubsection{Berry's Phase}
 
 The accumulated phase for systems that travel in a closed loop is
@@ -430,8 +432,7 @@ $|n;t \rangle =|n(\vec{R}(t))\rangle$, and also
 <n;t| \left[\frac{\partial}{\partial t} |n;t>\right]=<n;t|\left[\vec{\nabla_R}|n;t>\right]\cdot\frac{d\vec{R}}{dt} .
 \end{equation}
 %
-Combining equation \ref{eqn:geo-phase} and \ref{eqn:n-derivative} we
-get,
+Combining equation \ref{eqn:geo-phase} and \ref{eqn:n-derivative} gives
  
 \begin{equation}
 \begin{split}
@@ -440,15 +441,15 @@ get,
 \end{split}
 \end{equation}
 %
-If $T$ is the period for one full cycle then $\vec{R}(0)=\vec{R}(t)$
-and therefore, we can calculate the geometric phase for a closed loop
-in which the vector $\vec{R}$ traces a curve C:
+If $T$ is the period for one full cycle, then $\vec{R}(0)=\vec{R}(t)$
+and therefore, the geometric phase for a closed loop could be calculated
+in which the vector $\vec{R}$ traces a curve C
 %
 \begin{equation}
 \gamma_n(C)=i \oint <n;t| \left[ \vec{\nabla_R} |n;t>\right] \cdot d\vec{R}.
 \end{equation}
 %
-Let's define,
+Defining
 %
 \begin{equation}
 \vec{A}_n(\vec{R})\equiv i \langle n;t| \left[ \vec{\nabla_R} |n;t \rangle \right],
@@ -460,7 +461,7 @@ and so, the geometric phase will take the form
 \gamma_n(C)=\oint_c \vec{A}_n(\vec{R}) \cdot d\vec{R}  .
 \end{equation}
 %
-Using Stokes' theorem we get
+Using Stokes' theorem gives
 %
 \begin{equation}
 \gamma_n(C)= \int \left[ \vec{\nabla}_R \times \vec{A}_n(\vec{R}) \right]  \cdot d\vec{a} .
@@ -471,45 +472,45 @@ Thus, Berry's Phase is determined by the ``flux" of a generalized field
 \vec{B}_n(\vec{R}) \equiv \vec{\nabla}_R \times \vec{A}_n(\vec{R}) .
 \end{equation}
 %
-Equation \ref{eqn:gamma(c)} has an interesting property. If you
-multiply the energy eigenkets by an arbitrary phase, the value of
-$\gamma_n(c)$ will not be affected because the curl of a gradient is
+Eqn.~\ref{eqn:gamma(c)} has an interesting property. If the energy
+eigenkets are multiplied by an arbitrary phase, the value of
+$\gamma_n(c)$ will not be affected, because the curl of a gradient is
 zero. This means, the geometric phase does not depend on the phase
-behavior along the path and it only depends on the geometry of the
+behaviour along the path and it only depends on the geometry of the
 path traced out by $\vec{R}(t)$, which is why it is called a
 ``geometric phase".
 \\
-By doing a little math, we can rewrite Berry's phase as
+By doing a little math Berry's phase could be written as
 %
 \begin{equation}
 \vec{B}_n(\vec{R}) = i \sum_{n \neq m} \frac{ \langle n;t| \vec{\nabla}_R H |m;t \rangle \times  \langle m;t| \vec{\nabla}_R H |n;t \rangle }{(E_m-E_n)^2}.
 \end{equation}
 
 
-\subsubsection{Example:Berry's Phase for Spin-1/2}
-We can easily calculate the geometric phase for a spin-$\frac{1}{2}$
-particle manipulated slowly through a time-varying magnetic field. As
-before, we can write the Hamiltonian as
+\subsubsection{Example: Berry's Phase for Spin-1/2}
+The geometric phase for a spin-$\frac{1}{2}$ particle manipulated
+slowly through a time-varying magnetic field could be easily
+calculated. As before, the Hamiltonian could be written as
 %
 \begin{equation}
 H= - \frac{2 \mu}{\hbar} \vec{S}.\vec{R}(t)=-\gamma \vec{S} \cdot \vec{R}(t) .
 \end{equation}
 %
-$R(t)$ represents the magnetic field to avoid confusion with Berry's
-phase $\vec{B}_n(\vec{R})$.  We can consider $|\pm ; t \rangle$ to be
-the eigenstates of $S_z$. If we write
+Here $R(t)$ represents the magnetic field to avoid confusion with Berry's
+phase $\vec{B}_n(\vec{R})$.  Consider $|\pm ; t \rangle$ to be
+the eigenstates of $S_z$. Writing
 %
 \begin{equation}
 \vec{S}= \frac{1}{2} (S_++S_-)\hat{x}+\frac{1}{2i} (S_+-S_-) \hat{y} +S_z \hat{z} ,
 \end{equation}
 %
-then we can write
+then
 %
 \begin{equation}
 \langle \pm ; t|\vec{S}|\mp;t \rangle = \frac{\hbar}{2} (\hat{x} \mp i \hat{y}).
 \end{equation}
 %
-Combining these results we finally get
+Combining these results finally gives
 %
 \begin{equation}
 \gamma_{\pm} (C)= \mp \frac{1}{2} \int \frac{\hat{\vec{R}}\cdot d\vec{a}}{R^2}=\mp \frac{1}{2} \Omega,
