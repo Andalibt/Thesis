@@ -1,4 +1,5 @@
-\chapter{Heat Conductivity in Superfluid Helium and Heater Tests~\label{sec:heattest}~\cite{Florian_thesis}}
+\chapter{Heat Conductivity in Superfluid
+  Helium~\label{sec:heattest}~\cite{Florian_thesis}}
 
 %The cooling process of the spallation neutrons creates a heat input on
 %the cryostat. This heat input must be removed to keep the temperature
@@ -150,103 +151,108 @@ increases, the heat conductivity function tends to look more
 linear. Since the Van Sciver model is more well known, it is used for
 comparision with experimental data.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
 \section{Measurement Result}
-The data shown in Table.~\ref{tab:heattest} is a set of cleaned data
-from all the heat tests in 2017. If the heat load on the cryostat is
-higher than its cooling power, the temperature of the superfluid
-helium would increase linearly without reaching an equilibrium. This
-phenomena has been observed for higher heater powers e.g. 1~W. As a
-result, that data is discarded.
+The data shown in Table.~\ref{tab:heattest} is from all the heater
+tests in 2017. If the heat load on the cryostat is higher than its
+cooling power, the temperature of the superfluid helium would increase
+linearly without reaching an equilibrium. This phenomena has been
+observed for higher heater powers {\it{e.g.}} 1~W. As a result, that
+data is discarded.
 
 
 Fig.~\ref{fig:April_Data} shows the result of the April heat test.
-For a given heat input, the temperature difference between the base
-and the saturation temperature for each temperature sensor is
-calculated~(see table~\ref{tab:heattest}). The average of all of those
-temperature differences give the overall $\Delta T$ across the
-channel. Those are shown with black dots in Fig.~\ref{fig:April_Data}
-as the raw data. However, the heat input for each data point should be
-corrected since the total heat input is a combination of the added
-heat from the heater tapes and the background heat load on the
-cryostat which is not taken into account.
+For a given heat input to the superfluid helium, the temperature
+difference between the base and the saturation temperatures for each
+temperature sensor is calculated~(see table~\ref{tab:heattest}). The
+average of all of those temperature differences give the overall
+$\Delta T$ across the channel~(see Ref.~\cite{Florian_thesis} for more
+information on this). Those are shown with black dots in
+Fig.~\ref{fig:April_Data} as the raw data. However, the heat input for
+each data point should be corrected since the total heat input is a
+combination of the added heat from the heater tapes and the background
+heat load on the cryostat which has not been taken into account.
 
 
 \begin{figure}[h!]
   \centering \includegraphics[width=0.8\textwidth]{April_Data.png}
-  \caption{The comparison between the April heat test data and the Van
-    Sciver model. The lines show the Van Sciver model's heat
-    conductivity function at different superfluid helium bath
-    temperatures. The black data points show the measured raw data of
-    the heat tests. The blue points are the Joule Thomson values,
-    which are the raw data plus the calculated background heat
-    (included Joule-Thomson effect) and the red points show the raw
-    data with the assumed 50 mW background heat input. }
+  \caption{The comparison between the April heater test data and the
+    Van Sciver theoretical model of heat conductivity. The lines show
+    the Van Sciver model's heat conductivity function at different
+    superfluid helium bath temperatures. The black data points show
+    the measured raw data of the heater tests. The blue points are the
+    the values where the Joule-Thomson effect is considered and its
+    heat input is added to the raw data plus the calculated background
+    heat. The red points show the raw data with the assumed 50~mW
+    background heat input.}
 \label{fig:April_Data}
 \end{figure}
 
 
 The two other sources of heat input to be considered are the
-Joule-Thomson expansion and the the background heat load to the $^3$He
-pot due to the thermal readiation and to the superfluid helium
-bottle. The Joule-Thomson expansion happens when a gas or liquid
-passes through a valve which has different temperature and pressures
-on both sides while there is no heat exchange to the environment. Here
-$^3$He flows into the heat exchanger and passes through a valve with
-different pressures and temperatures on two sides. Because of the
-Joule-Thomson expansion some liquid changes into vapor which is then
-directly pumped out of the system and does not contribute to the
-cooling process. For the backround heat load, based on estimations of
-the sources of the background heat to the bottle alone, combined with
-the measurements of the mass flow of $^4$He from the top of the bottle
-when the $^3$He system is switched off, a heat of $\simeq$~50~mW is a
-reasonable estimate of the true background heat to the bottle
-alone. In Fig.~\ref{fig:April_Data}, the assumed values are the sum of
-the 50~mW background heat and the heat input from the heaters and the
+{\it{Joule-Thomson}} expansion, and the the background heat load on
+the $^3$He pot, due to the thermal radiation, and to the superfluid
+helium bottle. The Joule-Thomson expansion happens when a gas or
+liquid passes through a valve which has different temperatures and
+pressures on both sides while there is no heat exchange to the
+environment. Here, in the vertical UCN source, the $^3$He flows into
+the heat exchanger and passes through a valve with different pressures
+and temperatures on two sides. Because of the Joule-Thomson expansion,
+some liquid changes into vapor, which is then directly pumped out of
+the system, and does not contribute to the cooling process.  For the
+backround heat load, based on the estimations of the heat sources to
+the bottle alone, combined with the measurements of the mass flow of
+$^4$He from the top of the bottle when the $^3$He system is switched
+off, a heat load of $\simeq$~50~mW is a reasonable estimatation. In
+Fig.~\ref{fig:April_Data}, the assumed values are the sum of the 50~mW
+background heat and the heat input from the heaters, and the
 Joule-Thomson values are the sum of the heat input from the heaters
-plus the calculated 232~mW calculated background
-heat~\cite{Florian_thesis}.
+plus the calculated 232~mW background heat from the Joule-Thomson
+effect~\cite{Florian_thesis}.
 
 
 
-Fig.~\ref{fig:November_Data} shows the data with the heaters in
-November as well as the theoretical model of Van Sciver for the heat
-conductivity. Each color represents a temperature range. The markers
-are the actual data taken in November 2017.
+Fig.~\ref{fig:November_Data} shows the measured data In November 2017
+with the heaters as well as the theoretical model of Van Sciver for
+the heat conductivity. Each color represents a temperature range. The
+markers are the measured data points.
 
-At all the temperture ranges, the acquired data shows lower heat load
-compared to the theoretical model. At the range of 1.2-1.3~K, the data
-point with the smaller $\Delta$T is acquired at a higher He-II base
-temperature, whereas the data point with higher $\Delta$T is acquired
-at standard He-II base temperature. The data points which are closer
-to the theoretical models are acquired at lower base temperature for
-the superfluid helium. Since the measured data show bigger temperature
-differences compared to the theoretical model of Van Sciver, it
-suggests that the theory is assuming higher heat conductivity. Looking
-back at Fig.~\ref{fig:VanSciver_vs_HEPAK}, it shows that using the
-HEPAK model might solve this problem since the HEPAK model shows lower
-heat conductivity.
+At all the temperture ranges, the acquired data shows a lower heat
+load compared to the theoretical model. At the range of 1.2-1.3~K, the
+data point with the smaller $\Delta$T is acquired at a higher He-II
+base temperature, whereas the data point with higher $\Delta$T is
+acquired at the standard He-II base temperature. However, the large
+error bars indicate that these values could be anywhere in
+between. For a complete discussion on how the error bars are
+calculated see Ref.~\cite{Florian_thesis}. The data points which are
+closer to the theoretical models are acquired at lower base
+temperature for the superfluid helium. Since the measured data show
+bigger temperature differences compared to the theoretical model of
+Van Sciver, it suggests that the theory is assuming higher heat
+conductivity. Looking back at Fig.~\ref{fig:VanSciver_vs_HEPAK}, it
+shows that using the HEPAK model might solve this problem since the
+HEPAK model shows lower heat conductivity.
 
-One reason between the disagreement between the measurements and
+One reason for the disagreement between the measurements and the
 theory could be the fact that these theoretical models are only
 measured down to 1.4~K and they are extrapolated to lower
 temperatures. Another reason could lie in the geometry difference. The
 theoretical models are valid for a one-dimensional channel while there
-is a 90$^\circ$ bend in the experimental setup~(see
-Fig.~\ref{what???}) which can cause a higher temperature differnece
-across the channel. One other reason might be the uncertainty in the
-measured temperature due to the calibration of the temperature
-sesnors. There might be other unknown sources of systematic error
-affecting the measurements.
+is a 90$^\circ$ bend in the vertical UCN source setup which can cause
+a higher temperature differnece across the
+channel~\cite{Florian_thesis}. One other reason might be the
+uncertainty in the measured temperature due to the calibration of the
+temperature sesnors. There might be other unknown sources of
+systematic error affecting the measurements.
 
 
 \begin{figure}[h!]
   \centering \includegraphics[width=0.8\textwidth]{November_Data.png}
-  \caption{Theoretical model of Van Sciver for the heat conductivity
-    at different temperature ranges and the November data. The
-    vertical axis shows the temperature difference between the base
-    and the saturation temperature for temperature sensors. The
-    horizontal axis shows the heat input from the heaters plus the
-    background heat.}
+  \caption{Theoretical model of Van Sciver for the supefluid helium
+    heat conductivity at different temperature ranges and the November
+    heater test data. The vertical axis shows the temperature
+    difference between the base and the saturation temperature for
+    temperature sensors. The horizontal axis shows the heat input from
+    the heaters plus the background heat.}
 \label{fig:November_Data}
 \end{figure}
