@@ -303,7 +303,7 @@ mg=102\; \text{neV/m}
 \end{equation}
 which is comparable to the UCN kinetic energy. This means, a UCN of
 energy 200~neV can rise by at most 2~m.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Fix the et al issue in the bib
+%%%%%%%%%%%%
 \subsubsection{The Weak Interaction}
 The weak interaction governs the radioactive $\beta$-decay of
 neutrons. UCN decay into a proton, an electron, and an electron
@@ -314,7 +314,7 @@ n\longrightarrow p+e^{-}+\bar{\nu_{e}}.
 \end{equation}
 The value of the neutron lifetime sets the maximum time constant with
 which UCN can be stored. The current value of the neutron lifetime is
-$880.2 \pm 1.0$~s~\citep{PDG2018}.
+$880.2 \pm 1.0$~s~\cite{PDG2018}.
 
 \subsubsection{The Electromagnetic Interaction}
 
@@ -331,29 +331,31 @@ where
 \end{equation}
 
 In an inhomogeneous magnetic field, UCN experience a force described
-by the following equation
+by
 \begin{equation}
   \label{eqn:fmag}
-  \bf{F_m} = - \boldsymbol{\nabla}V_m = \pm \vert \boldsymbol{\mu_n} \vert \boldsymbol{\nabla} \bf{B}.
+  {\bf{F}}_m = - {\boldsymbol{\nabla}V}_m = \pm \vert {\boldsymbol{\mu}}_n \vert \boldsymbol{\nabla} \bf{B}.
 \end{equation}
-In the nEDM measurement, the interaction of UCN with the magnetic
+In the nEDM measurements, the interaction of UCN with the magnetic
 field is used to polarize UCN and to measure its polarization at the
-end of the measurement cycle~(see Sec.~\ref{sec:Ramsey}).  In
-Eqn.~\ref{eqn:fmag} the sign $\pm$ corresponds to the relative
+end of the measurement cycle~(see Section~\ref{sec:Ramsey}).  In
+Eqn.~\ref{eqn:fmag}, the sign $\pm$ corresponds to the relative
 orientation between the magnetic moment and the magnetic field.  UCN
 of anti-parallel spin to the magnetic field~(magnetic moment parallel)
-called {\it{high field seekers}} have negative $V_m$, accelerate
-towards strong magnetic fields and are attracted to it and UCN with
+are called {\it{high field seekers}}, have negative $V_m$, accelerate
+towards strong magnetic fields, and are attracted to it. UCN with
 parallel spin~(and thus magnetic moment anti-parallel) to the magnetic
-field called {\it{low field seekers}} have positive $V_m$ and are
-repelled by it.  Eqn.~\ref{eqn:fmag} is true only if UCN moves
-adiabatically through the magnetic fields. This condition will be
-fulfilled when the Larmor precession frequency of UCN is smaller than
-the changes in the magnetic field in the rest fram of UCN. However,
-since UCN have low speeds, this condition is easily fulfilled.  If the
-UCN spin adiabatically traces the magnetic field, it will be fully
-polarized which can be achieved by passing UCN through a
-strong~$\sim 6$~T magnetic field.
+field, are called {\it{low field seekers}}, have positive $V_m$, and
+are repelled by the magnetic field.
+
+Eqn.~\ref{eqn:fmag} is true only if UCN move adiabatically through the
+magnetic field. This condition will be fulfilled when the Larmor
+precession frequency of UCN is smaller than the changes in the
+magnetic field in the rest fram of UCN. However, since UCN have low
+speeds, this condition is easily fulfilled.  If the UCN spin
+adiabatically traces the magnetic field, it will be fully polarized,
+which can be achieved by passing UCN through a strong~$\sim 6$~T
+magnetic field.
 
 %If the magnetic field $\textbf{\textit{B}}$ is inhomogeneous and the
 %neutron spin traces the magnetic field adiabatically, the neutron will
@@ -379,7 +381,7 @@ strong~$\sim 6$~T magnetic field.
 
 
 \subsubsection{The strong Interaction}
-The neutrons and protons are bound in the nucleus by the strong
+Neutrons and protons are bound in the nucleus by the strong
 interaction. However, this interaction has a short range and it only
 affects the neighbouring nuclei.
 The Woods-Saxon potential approximately
@@ -391,13 +393,13 @@ describes the nucleons interaction inside the atomic nucleous
 where $V_0$ represents the potential well depth, $a$ represents the
 surface thickness of the nucleous and $R = r_0 A^{1/3}$ where
 $r_0 = 1.25$~fm and $A$ is the mass number. For neutrons and protons
-the depth is $V \approx -40$~MeV. The UCN energy and its binding
+the depth is $V \approx -40$~MeV. The UCN energy and their binding
 energy and the depth of the potential differ by many orders of
 magnitude. As a result, it is not possible to use perturbation theory
 to describe neutron scattering. Fermi realized that it is possible to
 introduce an equivalent potential which can be used to calculate the
 small changes in the wavefunction outside the range of the interaction
-by perturbation theory.
+by the perturbation theory.
 
 The interaction of an incident neutron with a liquid or a solid could
 be described by sum of $\delta$ functions
@@ -407,21 +409,21 @@ be described by sum of $\delta$ functions
   V(r) = \frac{2\pi \hbar^2}{m_N} \sum_i a_i \delta (r - r_i)
 \end{equation}
 where $m_N$ is the mass of neutron, $r_i$ is the position of ith
-nucleus and $a_i$ is the scattering length with the ith
-nucleus. Because of UCN's large wavelength this equation can be
-written as
+nucleus and $a_i$ is the scattering length with the ith nucleus. This
+is the so-called Fermi pseudopotential. Because of UCN's large
+wavelength, this equation could be written as
 \begin{equation}
 V(r) = \frac{2\pi \hbar^2}{m_N}\sum_i N_ia_i
 \end{equation}
-where $N_i$ is the number density in the material i. In UCN physics
-this potential is typically called neutron optical potential since if
+where $N_i$ is the number density in the material $i$. In UCN physics,
+this potential is typically called neutron optical potential, since if
 the energy of the neutron is less than the optical potential $E < V$
 the neutron will be fully reflected from the material surface under
 any angle of incidence. This sets a limit on the UCN velocity.
 
-UCN can be lost when it is reflected from the material walls and the
-it is because of the upscattering in which UCN absorbs energy or
-absorption in which UCN gets absorbed by the nucleus of the reflecting
+UCN can be lost when it is reflected from the material walls.
+This is because of the upscattering in which UCN absorb energy or
+absorption in which UCN get absorbed by the nucleus of the reflecting
 material. To include the losses in the potential, the optical
 potential is usually written as
 \begin{equation}
@@ -431,7 +433,7 @@ The ratio $\eta = V/W$ is a measure of the loss per bounce probability
 of the material. 
 
 The strong interaction plays a crucial role in the nEDM
-measurement. Choosing certian materials enables us to store and guide
+measurements. Choosing certian materials enables us to store and guide
 UCN to the measurement cell.  The highest known value for the optical
 potential is $V_F=335$~neV and is measured for $^{58}$Ni.
 
@@ -491,17 +493,17 @@ potential is $V_F=335$~neV and is measured for $^{58}$Ni.
 
 
 
-In thermal UCN sources neutrons are extracted from a
-distribution almost in thermal equilibrium with a moderation system.
-The UCN turbine source at the Institute Laue-Langevin~(ILL) extracted
-very cold neutrons vertically from a cold source~(liquid deuterium)
-and slowed them down using the mechanical action of a
-turbine~\cite{Steyerl1986,Steyerl1975}. Here cold neutrons
-with velocities of $\sim$~40~m/s are decelerated by reflection from a
-set of curved turbine blades moving with a velocity $\sim$~20~m/s in
-the same direction as the neutrons. A UCN density $\sim$~40~UCN/cm$^3$
-was achieved with this method~\cite{ucnbook,Albert_talk}. %The
-current UCN density of this source is 110~UCN/cm$^3$ for neutrons with
+In thermal UCN sources, neutrons are extracted from a distribution
+almost in thermal equilibrium with a moderation system.  The UCN
+turbine source at the Institute Laue-Langevin~(ILL) extracted very
+cold neutrons vertically from a cold source~(liquid deuterium) and
+slowed them down using the mechanical action of a
+turbine~\cite{Steyerl1986,Steyerl1975}. Here cold neutrons with
+velocities of $\sim$~40~m/s are decelerated by reflection from a set
+of curved turbine blades moving with a velocity $\sim$~20~m/s in the
+same direction as the neutrons. A UCN density of $\sim$~40~UCN/cm$^3$
+was achieved with this method~\cite{ucnbook,Albert_talk}. The current
+UCN density of this source is 110~UCN/cm$^3$ for neutrons with
 velocities $<$~7m/s\cite{Steyerl1986}.
 
 
@@ -511,11 +513,11 @@ state UCN densities corresponding to temperatures much lower than the
 temperature of the moderator~\cite{Golub75}. These are called
 superthermal converters. Here thermal or cold neutrons are
 inelastically scattered and transfer their kinetic energy to an
-excitation of the converter medium ({\it{e.g.}} to a phonon).
+excitation of the converter medium~(e.g., to a phonon).
 Superthermal sources have the ability to provide much higher UCN
-densitys (i.e. more UCN) than conventional sources such as the ILL
-turbine source.  The best candidates for superthermal converters to
-date are solid deuterium and liquid $^4$He.
+densitys~(i.e., more UCN) than conventional sources such as the
+ILL turbine source.  The best candidates for the superthermal
+converters to date are solid deuterium and liquid $^4$He.
 
 
 %UCN are a powerful tool to study new physics and the properties of
@@ -546,11 +548,11 @@ date are solid deuterium and liquid $^4$He.
 \subsection{Basic Idea of Superthermal UCN Sources\label{sec:basic_idea}}
 The mechanism of a superthermal UCN source is the following.  An
 incident neutron can lose almost its entire energy in a single
-scattering event by creating excitations ({\it e.g.} phonons) in a
-converter medium~\cite{ucnbook, Golub75}. Because of the loss
-in the kinetic energy, this process is called downscattering. The
-reverse process is called upscattering where a UCN absorbs kinetic
-energy from the medium.
+scattering event by creating excitations~( e.g., phonons) in a
+converter medium~\cite{ucnbook, Golub75}. Because of the loss in the
+kinetic energy, this process is called downscattering. The reverse
+process is called upscattering, where a UCN absorbs kinetic energy from
+the medium.
 
 
 Consider a simple model for the medium as a two-level system with an
@@ -570,16 +572,16 @@ e^{-\frac{E_0^*}{k_B T}}\sigma(E_{\text{UCN}}+E_0^* \rightarrow E_{\text{UCN}})
 where $T$ is the temperature of the medium, $E_{\text{UCN}}$ is the
 energy of the UCN, and $k_B$ is the Boltzmann constant.
 
-In general $\sigma(E_{\text{UCN}}+E_0^* \rightarrow E_{\text{UCN}})$ is practically
-independent of $T$ so that for $E_0^* \gg k_B T \gg E_{\text{UCN}}$ the
-upscattering cross-section for UCN can be made arbitrarily small by
-decreasing the temperature. If the converter is now placed in a
-neutron flux at a temperature $T_n \geq E_0^*$ there will be a
-significant number of downscattering events and a negligible number of
-upscattering events.
+In general, $\sigma(E_{\text{UCN}}+E_0^* \rightarrow E_{\text{UCN}})$
+is practically independent of $T$, so that for
+$E_0^* \gg k_B T \gg E_{\text{UCN}}$, the upscattering cross-section
+for UCN can be made arbitrarily small by decreasing the
+temperature. If the converter is now placed in a neutron flux at a
+temperature $T_n \geq E_0^*$, there will be a significant number of
+downscattering events, and a negligible number of upscattering events.
 
 If the converter is contained in a vessel whose walls are good UCN
-reflectors with potential $V \gg V_m$ where $V_m$ is the UCN potential
+reflectors with potential $V \gg V_m$, where $V_m$ is the UCN potential
 of the converter, and the walls are transparent to the neutrons of
 energy $E_0^*$, then UCN will build up in the moderator to a density
 until the rate of loss is equal to the rate of UCN production.
@@ -598,17 +600,17 @@ until the rate of loss is equal to the rate of UCN production.
 %bottle wall has to have a much higher effective potential than the
 %converter medium to prevent UCN loss.
 
-The steady state UCN density in the source is given by
+The steady-state UCN density in the source is given by
 \begin{equation}
 \label{ucndensity}
-\rho_{\text{UCN}}=P_{\text{UCN}} \tau
+\rho_{\text{UCN}}=P_{\text{UCN}} \tau,
 \end{equation}
-where $P_{\text{UCN}}$~(UCN/cm$^3 \cdot$s) is the UCN production rate
+where $P_{\text{UCN}}$~(UCN/cm$^3 \cdot$s) is the UCN production rate,
 and $\tau$~(s) is the UCN mean lifetime in the system.  The mean
 lifetime $\tau$ of the UCN in the vessel is restricted by a variety of
 possible loss mechanisms
 \begin{equation}
-\frac{1}{\tau} = \frac{1}{\tau_a}+ \frac{1}{\tau_W}+\frac{1}{\tau_{up}}+\frac{1}{\tau_{\beta}}
+\frac{1}{\tau} = \frac{1}{\tau_a}+ \frac{1}{\tau_W}+\frac{1}{\tau_{up}}+\frac{1}{\tau_{\beta}},
 \end{equation}
 where $1/\tau_a$ is the UCN absorption rate in the medium, $1/\tau_W$
 is the rate of the UCN loss on the walls, $1/\tau_{up}$ is the neutron
@@ -625,16 +627,16 @@ neutron absorption cross-section and upscattering rate.
 
 \subsubsection{Superfluid $^4$He Definition}
 
-$^4$He is an isotop of helium with two protons and two neutrons. It
-has an integer spin of zero which makes it a boson. As a result, it
+$^4$He is an isotope of helium with two protons and two neutrons. It
+has an integer spin of zero, which makes it a boson. As a result, it
 follows the Bose-Einstein statistics. It has two liquid states known
-as He-I and H-II. The He-I phase is the normal fluid phase and He-II
-is the superfluid phase with zero viscosity and zero
+as He-I and H-II. The He-I phase is the normal fluid phase, and the
+He-II phase is the superfluid phase with zero viscosity, and zero
 entropy. Fig.~\ref{fig:phasetransition} shows the phase transition
-diagram of $^4$He. These two phases are separated out by the
+diagram of $^4$He. The two phases are separated out by the
 $\lambda$-line. The phase transition happens at 2.172~K.  Below the
-lambda line the liquid can be described by the so-called two-fluid
-model which consists of both phases. Below 1~K the liquid is mostly
+lambda line, the liquid can be described by the so-called two-fluid
+model, which consists of both phases. Below 1~K the liquid is mostly
 superfluid.
 
 \begin{figure}[h!]
@@ -647,20 +649,19 @@ superfluid.
 Because of its zero viscosity, superfluid helium has the ability to
 flow through very small capillaries or narrow channels without
 experience any friction at all. The flow of liquid helium along the
-surface is called {\it{film flow}}.
+surface is called film flow.
 
- 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsubsection{Superfluid Helium Converter}
 
-The superfluid $^4$He is an attractive candidate as a UCN source and
+The superfluid $^4$He is an attractive candidate as a UCN source, and
 was studied in Ref.~\cite{Golub77}.  It has zero neutron absorption
-cross-section resulting in $\tau_a \rightarrow \infty$ which makes it
-a good candidate as a UCN source.  In superfluid helium, upscattering
+cross-section, resulting in $\tau_a \rightarrow \infty$, which makes it
+a good candidate as a UCN source.  In superfluid helium the upscattering
 losses become smaller than $\beta$-decay losses below $T \sim 0.7$~K.
 The dominant production mechanism is the excitation of a single phonon
 at the crossing of the free neutron and phonon dispersion curves, with
-a momentum $q\sim 0.7$/\AA~\cite{Brome2001} and energy 1~meV
+a momentum $q\sim 0.7$/\AA~\cite{Brome2001}, and energy 1~meV
 corresponding to a neutron wavelength 8.9~\AA. The availability of
 8.9~\AA~cold neutrons is crucial and their flux must be maximized.
 %For a long UCN lifetime in superfluid helium, besides the low
@@ -668,9 +669,9 @@ corresponding to a neutron wavelength 8.9~\AA. The availability of
 %($^3$He/$^4$He $\le 10^{-12}$), due to its large absorption
 %cross-section, which requires $^4$He purification.
 There are two types of UCN sources based on superfluid helium: sources
-where experiment and source are combined in one apparatus and the
+where experiment and source are combined in one apparatus, and the
 measurement is performed inside the superfluid helium, and
-extracted-UCN sources where the source is an apparatus on its own and
+extracted-UCN sources where the source is an apparatus on its own, and
 delivers neutrons to experiments at room temperature connected to it
 by UCN guides.
 
@@ -691,7 +692,7 @@ UCN by creating one-phonon excitations in the converter medium.
 \begin{center}
    \includegraphics[width=0.7\textwidth]{FIG1_2.PNG}
     \caption{\cite{PSI_news} Dispersion relation of superfluid
-      helium (c) and of the free neutron (a). Neutrons with $E\simeq
+      helium~(c) and of the free neutron~(a). Neutrons with $E\simeq
       1$~meV and wavenumber $q \simeq 0.7$/\AA~can excite a single
       phonon with the same energy and momentum and be downscattered to
       UCN energy range. The UCN production rate (b)(circles) shows the
@@ -709,9 +710,9 @@ helium and a free neutron. A neutron at rest can absorb energy $\hbar
 \omega$ and momentum $\hbar q$ with
 \begin{equation}
 \label{neutron_energy}
-\omega=\frac{\hbar q^2}{2m}
+\omega=\frac{\hbar q^2}{2m},
 \end{equation}
-where $m$ is its mass of the neutron. A neutron with this energy and momentum can
+where $m$ is the mass of the neutron. A neutron with this energy and momentum can
 come to rest after transferring its energy and momentum to the
 superfluid $^4$He. For single phonon interactions, which are usually
 dominant, the superfluid can only exchange quantities of energy and
@@ -719,18 +720,18 @@ momentum that are related by the dispersion curve
 
 \begin{equation}
 \label{dispersion_helium}
-\omega=\omega(q)= cq
+\omega=\omega(q)= cq,
 \end{equation}
 where $\omega$ is the energy of the phonon, $q$ is the phonon's
 momentum, and $c$ is the speed of sound in the moderator. The second
 equal sign in Eqn.~(\ref{dispersion_helium}) is an approximation to
 simplify the discussion. The neutrons can only come to rest by
-emission of a single phonon if they have the resonant energy $E_0^*$
+emission of a single phonon, if they have the resonant energy $E_0^*$
 given by the intersection of Eqns.~(\ref{neutron_energy}) and
 (\ref{dispersion_helium})
 
 \begin{equation}
-\omega(q)=cq=\frac{\hbar q^2}{2m}
+\omega(q)=cq=\frac{\hbar q^2}{2m},
 \end{equation}
 and so
 \begin{equation}
@@ -745,15 +746,15 @@ q^*=\frac{2mc}{\hbar}.
 %$k_0^*=2mc/ \hbar$.
 
 The differential cross-section for neutron scattering is given by the
-dynamic scattering function $S(q,\omega)$ which is the Fourier
+dynamic scattering function $S(q,\omega)$, which is the Fourier
 transform of the Van Hove correlation function $G(r,t)$ in space and
 time of the superfluid helium~\cite{Squires}:
 
 \begin{equation}
-\frac{d\sigma}{d\omega}=b^2 \frac{k_2}{k_1}S(q,\omega) d\Omega
+\frac{d\sigma}{d\omega}=b^2 \frac{k_2}{k_1}S(q,\omega) d\Omega,
 \end{equation}
 where $b$ is the bound neutron scattering length for $^4$He,
-$\hbar k_1$ is the momentum of the incident neutrons and
+$\hbar k_1$ is the momentum of the incident neutrons, and
 $\hbar k_2=\hbar k_{\text{UCN}}$ is the momentum of UCN. The quantity
 $S(q,\omega)$ has been measured in great
 detail~\cite{S_func1,gibbs1999collective,S_func3}. Performing the
@@ -775,7 +776,7 @@ k_1-k_2 < q < k_1+k_2.
 \end{equation}
 Since
 \begin{equation}
-k_2=k_{\text{UCN}} \ll k_1, \; \; \; \; q\sim k_1 
+k_2=k_{\text{UCN}} \ll k_1, \; \; \; \; q\sim k_1 ,
 \end{equation}
 we may write $dq=2k_{\text{UCN}}$. This results in the cross-section
 being related to $S(q,\omega)$ evaluated on the incident neutron's
@@ -785,7 +786,7 @@ dispersion curve:
 \frac{d\sigma}{d\omega}=4\pi b^2 \frac{k_{\text{UCN}}}{k_1}S \left(
 k_1, \omega=\frac{\alpha k_1^2}{2} \right),
 \end{equation}
-where $\alpha=\frac{\hbar}{m}=4.14$~meV/\AA$^2$ and $S(q,\omega)$
+where $\alpha=\frac{\hbar}{m}=4.14$~meV/\AA$^2$, and $S(q,\omega)$
 assumed to be constant over the narrow range $dq$. The approximation
 
 \begin{equation}
@@ -799,14 +800,14 @@ The UCN production rate is given by
 \label{UCN_production}
 P(E_{\text{UCN}}) dE_{\text{UCN}} = N_{\text{He}} \int \frac{d\Phi
   (E_1)}{dE}\cdot \frac{d \sigma}{d \omega}(E_1 \rightarrow
-E_{\text{UCN}}) dE_1 dE_{\text{UCN}}
+E_{\text{UCN}}) dE_1 dE_{\text{UCN}},
 \end{equation}
 where $\frac{d\Phi (E_1)}{dE}$ is the differential incident neutron
-flux, $N_{\text{He}}$ is the atomic density in the liquid helium and $\frac{d
-  \sigma}{d \omega}(E_1 \rightarrow E_{\text{UCN}})$ is the energy
-differential cross-section for the inelastic neutron scattering or the
-probability of the incident neutrons with energy $E_1$ to scatter from
-the helium nucleus and become UCN.  Then
+flux, $N_{\text{He}}$ is the atomic density in the liquid helium, and
+$\frac{d \sigma}{d \omega}(E_1 \rightarrow E_{\text{UCN}})$ is the
+energy differential cross-section for the inelastic neutron scattering
+or the probability of the incident neutrons with energy $E_1$ to
+scatter from the helium nucleus and become UCN.  Then
 
 \begin{equation}
 \label{eqn:He_P_rate}
@@ -822,14 +823,14 @@ k_{\text{UCN}}^2dk_{\text{UCN}} \\ &=N_{\text{He}} 4 \pi b^2 \alpha^2 \left[
 \end{equation}
 where $E_c$ and $k_c$ are the critical UCN energy and wave vector of
 the walls of the storage chamber. This way of writing the UCN
-production rate is more general and it is useful to calculate the
+production rate is more general, and it is useful to calculate the
 single phonon and multiphonon contributions to the UCN production
 rate. The one phonon production rate is found by evaluating
 Eqn.~(\ref{eqn:He_P_rate}) over the one phonon peak ($q^*=0.7$/\AA).
 Thus
 \begin{equation}
 P_{\text{UCN}}=9.44 \times 10^{-9}\frac{d\Phi (E_1^*)}{dE_1^*} \;
-\text{UCN}/\text{cm}^3
+\text{UCN}/\text{cm}^3,
 \end{equation}
  where $E_1^*$ is the energy of the incident neutrons at the one phonon peak.
 %\begin{equation} P_{1p}=N4\pi b^2 S^* \alpha \beta
@@ -907,27 +908,28 @@ P_{\text{UCN}}=9.44 \times 10^{-9}\frac{d\Phi (E_1^*)}{dE_1^*} \;
 
 
 
-\subsubsection{Multiphonon Scattering Contribution in UCN Production in Superfluid helium~\cite{Korobkina2002,Schmidt2009}}
+ \subsubsection{Multiphonon Scattering Contribution in UCN Production
+   in Superfluid helium~\cite{Korobkina2002,Schmidt2009}}
 %So far, the UCN production was demonstrated by single phonon emission. Even though one phonon emission is the predominant process in UCN production for a monochromatic UCN beam, the
-For polychromatic neutron sources, UCN can also be produced by
-multiphonon processes in superfluid $^4$He. Multiphonon production of
-UCN with various energy spectrum of the neutron flux has been studied
-in Ref.~\cite{Korobkina2002}.  Fig.~\ref{fig:Korobkina2002} shows
-the energy spectrum of neutron flux $\frac{d\phi}{dE}$ for three
-sources as a function of momentum $q$ and are compared to the dynamic
-scattering function $S(q,\omega=\hbar q^2/2m)$. The peak at
-$q=0.7$/\AA~corresponds to the one phonon excitation by superfluid
-helium. The values of $S$ above 1.2/\AA~are extrapolated. The value of
-$S$ above 2/\AA~are essentially zero.  The UCN production from one
-phonon and multiphonon processes have been calculated for three input
-neutron spectrums: SNS ballistic guide, PULSTAR MC flux and HMI
-polarized flux.  The multiphonon contribution to UCN production is
-calculated by using Eqn.~(\ref{eqn:He_P_rate}) and calculating $\int
-\Phi(E_1)S(k_1,\omega=\frac{\alpha k_1^2}{2}) dk_1$.  The result
-showed that, for sources where helium is exposed to the total thermal
-flux or at a dedicated spallation source, the multiphonon contribution
-can amount to slightly more than a factor of 2 increase in the UCN
-production.
+ For polychromatic neutron sources, UCN can also be produced by
+ multiphonon processes in superfluid $^4$He. Multiphonon production of
+ UCN with various energy spectrum of the neutron flux has been studied
+ in Ref.~\cite{Korobkina2002}.  Fig.~\ref{fig:Korobkina2002} shows the
+ energy spectrum of neutron flux $\frac{d\phi}{dE}$ for three sources
+ as a function of momentum $q$, and are compared to the dynamic
+ scattering function $S(q,\omega=\hbar q^2/2m)$. The peak at
+ $q=0.7$/\AA~corresponds to the one phonon excitation by superfluid
+ helium. The values of $S$ above 1.2/\AA~are extrapolated. The value
+ of $S$ above 2/\AA~are essentially zero.  The UCN production from one
+ phonon and multiphonon processes have been calculated for three input
+ neutron spectrums: SNS ballistic guide, PULSTAR MC flux and HMI
+ polarized flux.  The multiphonon contribution to the UCN production
+ is calculated by using Eqn.~(\ref{eqn:He_P_rate}), and calculating
+ $\int \Phi(E_1)S(k_1,\omega=\frac{\alpha k_1^2}{2}) dk_1$.  The
+ result showed that, for sources where helium is exposed to the total
+ thermal flux or at a dedicated spallation source, the multiphonon
+ contribution can amount to slightly more than a factor of 2 increase
+ in the UCN production.
 
 
 
@@ -978,11 +980,11 @@ production.
 %% I can get rid of this part
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 UCN production by multiphonon emission in superfluid helium under
-pressure was studied in Ref.~\cite{Schmidt2009}.  The dynamic
+pressure is studied in Ref.~\cite{Schmidt2009}.  The dynamic
 scattering function $S(q,\omega)$ of the superfluid helium strongly
 depends on pressure, leading to a pressure-dependent differential UCN
 production rate. The expression for the multiphonon part of $S$
-describing UCN production was derived from inelastic neutron
+describing UCN production is derived from the inelastic neutron
 scattering data.  Application of pressure to superfluid helium
 increases the velocity of sound, such that the dispersion curves of
 the $^4$He and of the free neutron cross at shorter neutron
@@ -996,19 +998,18 @@ it was expected to observe an increase in the single phonon UCN
 production rate, and different multiphonon contribution with pressure
 increase.  It was observed that, both the single and the multiphonon
 scattering functions change with pressure. The single phonon
-excitation moves to a shorter wavelength (see
+excitation moves to a shorter wavelength~(see
 Fig.~\ref{fig:Schmidt_S}) and the value for $S$ decreases. It leads to
 a reduction in one-phonon UCN production.  The multiphonon excitations
-increase with pressure and the peak of the scattering function $S$
+increase with pressure, and the peak of the scattering function $S$
 moves to shorter incident-neutron wavelengths, see
-Fig.~\ref{fig:Schmidt_S}. However the UCN production rate decreases
+Fig.~\ref{fig:Schmidt_S}. However, the UCN production rate decreases
 with pressure increase.  Only if the cold neutron flux at
 8.3~\AA~exceeds by more than 2.5 times that at 8.9~\AA, an increase in
 the UCN production rate may be expected. However, it has to be
 considered that the application of pressure requires a window for UCN
 extraction which causes severe UCN losses. Therefore, UCN production
-in superfluid helium under pressure was concluded not to be
-attractive.
+in superfluid helium under pressure is concluded not to be attractive.
 
 
 
@@ -1016,15 +1017,14 @@ attractive.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.7\textwidth]{Schmidt_S.PNG}
-    \caption{~\cite{Schmidt2009} Multiphonon scattering function
-      at SVP (Saturated Vapour Pressure) and 20bar. The extrapolation
-      to short wavelength of Korobkina {\it {et
-          al.}}~\cite{Korobkina2002} at SVP is linear in k,
-      whereas the calculation of Schott {\it {et
-          al.}}~\cite{Schott2003} is based on the static structure
-      factor of the superfluid helium. The data point ($A$) is taken
-      from Ref.~\cite{Fak1991}. The one-phonon peaks are indicated
-      by vertical arrows: SVP (dotted line) and 20bar (solid line).  }
+   \caption{~\cite{Schmidt2009} Multiphonon scattering function at
+     SVP~(Saturated Vapour Pressure) and 20~bar. The extrapolation to
+     short wavelength of Korobkina {\it {et al.}}~\cite{Korobkina2002}
+     at SVP is linear in $k$, whereas the calculation of Schott {\it
+       {et al.}}~\cite{Schott2003} is based on the static structure
+     factor of the superfluid helium. The data point ($A$) is taken
+     from Ref.~\cite{Fak1991}. The one-phonon peaks are indicated by
+     vertical arrows: SVP~(dotted line) and 20~bar~(solid line).  }
 %     \vspace{-2.em}
     \label{fig:Schmidt_S}
     \end{center}
@@ -1044,25 +1044,25 @@ attractive.
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Superfluid $^4$He has a zero neutron absorption cross-section and if
-the converter is kept at sufficiently low temperatures (typically
+Superfluid $^4$He has a zero neutron absorption cross-section, and if
+the converter is kept at sufficiently low temperatures~(typically
 $\lesssim$ 1~K), thermal upscattering of UCN is sufficiently
 suppressed. This allows the produced UCN to survive in the converter
 for times dominated by the wall losses of the vessel, typically
 $>$100~s~\cite{Leung2016}.
 
 The upscattering of neutrons is caused by the interactions between a
-neutron at rest and excitations in superfluid helium at different
+neutron at rest, and excitations in superfluid helium at different
 temperatures. These excitations can be categorized in three groups:
 one phonon absorption, two-phonon scattering, and roton-phonon
-scattering.  The total upscattering rate can be written as
+scattering. The total upscattering rate can be written as
 
 \begin{equation}
 \label{eqn:hE_{UCN}pscattering}
 \frac{1}{\tau_{up}} =
-\frac{1}{\tau_{1-ph}}+\frac{1}{\tau_{2-ph}}+\frac{1}{\tau_{rot-ph}}
+\frac{1}{\tau_{1-ph}}+\frac{1}{\tau_{2-ph}}+\frac{1}{\tau_{rot-ph}},
 \end{equation}
-where,
+where 
 %which are described by the following equation:
 \begin{equation}
 \label{eqn:1ph}
@@ -1072,13 +1072,13 @@ is the one phonon absorption contribution,
 
 \begin{equation}
 \label{eqn:2ph}
-\frac{1}{\tau_{2-ph}}= BT^7,
+\frac{1}{\tau_{2-ph}}= BT^7
 \end{equation}
-is the two-phonon scattering contribution (one phonon absorbed and one
+is the two-phonon scattering contribution~(one phonon absorbed and one
 phonon emitted), and
 \begin{equation}
 \label{eqn:ph-rtn}
-\frac{1}{\tau_{rot-ph}}= CT^{3/2}e^{-(8.6 K)/T},
+\frac{1}{\tau_{rot-ph}}= CT^{3/2}e^{-(8.6 K)/T}
 \end{equation}
 is the contribution from roton-phonon scattering with the absorption
 of one roton followed by a phonon emission.
@@ -1090,7 +1090,7 @@ of one roton followed by a phonon emission.
 The values of $A$, $B$ and $C$ are extracted from data for
 temperatures up to 2.4~K~\cite{Leung2016}. The comparison between
 the UCN production and upscattering rate to the theoretical
-temperature dependence of these processes showed that the main
+temperature dependence of these processes showed that, the main
 contribution is from two-phonon scattering $\frac{1}{\tau_{up}}=BT^7$
 with $B=(4-16)\times 10^{-3}$~/(s K$^7$)~\cite{Leung2016}.
 
@@ -1137,9 +1137,9 @@ with $B=(4-16)\times 10^{-3}$~/(s K$^7$)~\cite{Leung2016}.
 %\subsubsection{UCN lifetime in superfluid $^4$He}
 
 \subsection{UCN production by Solid Deuterium}
-Solid deuterium (sD$_2$) is a material with small absorption
-cross-section, small incoherent scattering cross-section (to minimize
-upscattering), and the presence of numerous phonon modes which can
+Solid deuterium~(sD$_2$) is a material with small absorption
+cross-section, small incoherent scattering cross-section~(to minimize
+upscattering), and the presence of numerous phonon modes, which can
 inelastically scatter neutrons down to UCN energies.
 %In solid D$_2$ the phonon excitations are present in the coherent
 %part of the scattering, whereas the incoherent part is determined by
@@ -1152,14 +1152,15 @@ within solid deuterium.
 % deuterium~\cite{Serebrov2000}.
  
 Solid deuterium has an almost perfect hcp crystal structure, when
-prepared under suitable conditions (low pressure and $T >$~5~K). The
-D$_2$ molecule has internal rotational modes which are described by
+prepared under suitable conditions~(low pressure and $T >$~5~K). The
+D$_2$ molecule has internal rotational modes, which are described by
 the rotational quantum number $J$. The rotational excitations give
-rise to additional modes in the solid deuterium. %In the solid phase,
-$J$ is still a good quantum number.  Deuterium in the states with even
-$J$ is called ortho-deuterium (o-D$_2$) whereas deuterium in the
-states with odd $J$ is called para-deuterium (p-D$_2$). An increase of
-the concentration of the p-D$_2$ molecules leads to a larger neutron
+rise to additional modes in the solid deuterium.
+% In the solid phase, $J$ is still a good quantum number.
+Deuterium in the states with even $J$ is called
+ortho-deuterium~(o-D$_2$), whereas deuterium in the states with odd
+$J$ is called para-deuterium~(p-D$_2$). An increase of the
+concentration of the p-D$_2$ molecules leads to a larger neutron
 upscattering rate.
 %The self-conversion between these two species in the solid phase is
 %extremely slow compared with the time scale of the experiment and
@@ -1167,8 +1168,8 @@ upscattering rate.
 %temperatures ($T\sim$~6~K), about 99.999\% of the deuterium molecules
 %are in the ortho state, when thermal equilibrium is reached. At room
 %temperature, D$_2$ has an ortho concentration of 66.7\%.
-Theoretically and experimentally it has been shown that sD$_2$ at
-sufficiently low temperatures (around 5K) with high enough purity and
+Theoretically and experimentally, it has been shown that sD$_2$ at
+sufficiently low temperatures~(around 5K) with high enough purity and
 with high ortho concentration can be used to produce a high density
 UCN~\cite{Atchison2005}.
 
@@ -1191,9 +1192,9 @@ UCN~\cite{Atchison2005}.
 \subsubsection{UCN Production Cross-Section and UCN Production Rate in Solid Deuterium~\cite{ucnbook,Frei2010,Frei2009}}
 
 The formula for the UCN production in solid deuterium is very similar
-to that of the superfluid helium shown in Eqn.~(\ref{UCN_production})
+to that of the superfluid helium shown in Eqn.~(\ref{UCN_production}),
 with replacing $^4$He atomic density $N_{\text{He}}$ with molecular density
-of solid deuterium $N_{D_2}$ and noting that in sD$_2$ the neutron
+of solid deuterium $N_{D_2}$, and noting that in sD$_2$ the neutron
 scattering cross-section may be written as a sum of coherent and
 incoherent contributions:
 
@@ -1205,9 +1206,9 @@ b_{\text{coh}}^2 S_{\text{coh}} (q,\omega) + \frac{k_2}{k_1} b_{\text{inc}}^2 S_
 \end{equation}
 In Ref.~\cite{Frei2010} the UCN production cross-section $\sigma$
 was determined by two ways. One way is the determination of the
-quasi-particle (phonons and rotational excitations of the D$_2$
-molecule) density of states $G_1(E)$ (incoherent approximation) from
-the measured neutron cross-section $\frac{d\sigma}{d\omega}$ and the
+quasi-particle~(phonons and rotational excitations of the D$_2$
+molecule) density of states $G_1(E)$~(incoherent approximation) from
+the measured neutron cross-section $\frac{d\sigma}{d\omega}$, and the
 other method is the direct integration of the dynamical neutron
 cross-section $\frac{d\sigma}{d\omega}$ ($\hbar=1$) in the kinematical
 region along the free-neutron dispersion parabola.
@@ -1215,7 +1216,7 @@ region along the free-neutron dispersion parabola.
 \paragraph{UCN production cross-section: Incoherent approximation.}
 With the knowledge of the quasi-particle density of states $G_1(E)$,
 it is possible to calculate the dynamical neutron cross-section
-$\frac{d\sigma}{d\omega}$ (averaged over the scattering angle, thus
+$\frac{d\sigma}{d\omega}$~(averaged over the scattering angle, thus
 $q$). Vice versa it is also possible to extract $G_1(E)$ from a
 measured dynamical neutron cross-section~\cite{Turchin}.  If
 $G_1(E)$ is known, it is possible to calculate one-phonon and
@@ -1269,23 +1270,22 @@ $\frac{d\sigma}{d\omega}$.
 % excitations above E$=$12~meV~\cite{Frei2009}.
 The method for the determination of $G_1(E)$ from the measured neutron
 scattering data in solid deuterium is studied in
-Ref.~\cite{Frei2009}.  In the determination of $G_1(E)$,
-contributions of higher order multiphonons to $\frac{d\sigma}{dE}$ are
-incorporated.
+Ref.~\cite{Frei2009}. In the determination of $G_1(E)$, contributions
+of higher order multiphonons to $\frac{d\sigma}{dE}$ are incorporated.
 
-In the case of UCN production the energy transfer of the downscattered
-neutron $E=E_1-E_{\text{UCN}}$ is approximately equal to the initial
-neutron energy $E_1$ ($E_{\text{UCN}} \ll E_1, E_{\text{UCN}}$: UCN
-energy). The total cross-section for UCN production can be calculated
-by
+In the case of UCN production, the energy transfer of the
+downscattered neutron $E=E_1-E_{\text{UCN}}$ is approximately equal to
+the initial neutron energy $E_1$
+($E_{\text{UCN}} \ll E_1, E_{\text{UCN}}$: UCN energy). The total
+cross-section for UCN production can be calculated by
 
 \begin{equation}
 \sigma_{\text{UCN}}({E_1})=\int_0 ^{E_{\text{UCN}}^{max}} \frac{d\sigma (E_1)}{dE} dE_{\text{UCN}}.
 \end{equation}
 
-The calculated cross-section is shown in
-Fig.~\ref{fig:Frei2010_sigma_G1} is in agreement with data on UCN
-production using a cold neutron beam ($E_1 \sim 1.4$~meV to 20~meV).
+The calculated cross-section shown in
+Fig.~\ref{fig:Frei2010_sigma_G1}, is in agreement with data on UCN
+production using a cold neutron beam~($E_1 \sim 1.4$~meV to 20~meV).
 Here the one-quasi-particle and two-quasi-particle excitations are
 included in the calculations.  The UCN production cross-section is
 mainly determined by one-quasi-particle excitation for energies below
@@ -1342,10 +1342,10 @@ result obtained by the incoherent approximation.
 
 The UCN production cross-section can be determined by
 \begin{equation}
-\sigma_{\text{UCN}}(E_1)=\frac{\sigma_1}{k_1} S(k_1, E_1) \frac{2}{3} k_{\text{UCN}}^{max} \; E_{\text{UCN}}^{max} 
+\sigma_{\text{UCN}}(E_1)=\frac{\sigma_1}{k_1} S(k_1, E_1) \frac{2}{3} k_{\text{UCN}}^{max} \; E_{\text{UCN}}^{max} ,
 \end{equation}
 where $E_1$ is the energy of the incoming neutrons in the
-downscattering process, $\sigma_1$ is a constant and
+downscattering process, $\sigma_1$ is a constant, and
 $k_{\text{UCN}}^{max}$ and $E_{\text{UCN}}^{max} $ are the upper
 limits for the UCN momentum and energy.  In order to obtain absolute
 cross-sections, $S(q,\omega)$ has to be calibrated to absolute values.
@@ -1359,10 +1359,10 @@ data, which were obtained with higher incoming-neutron energy
 
 \begin{figure}[h!]
 \begin{center}
-   \includegraphics[width=0.5\textwidth]{Frei2010_sigma.PNG} \caption{\cite{Frei2010}
+  \includegraphics[width=0.5\textwidth]{Frei2010_sigma.PNG} \caption{\cite{Frei2010}
     UCN production cross-section solid o-D$_2$ of
-    95.2\%~\cite{Frei2010}. A UCN energy range of 0-150~neV inside
-    the solid D$_2$ is assumed. Sample: fast frozen solid deuterium
+    95.2\%~\cite{Frei2010}. A UCN energy range of 0-150~neV inside the
+    solid D$_2$ is assumed. Sample: fast frozen solid deuterium
     ($T=4$~K); data from IN4 measurements. Blue $\square$:
     $E_0=17.2$~meV. Red filled $\bigcirc$: $E_0=67$~meV,
     $\blacksquare$: direct UCN production data from measurements at
@@ -1381,7 +1381,7 @@ region of $E\sim6$~meV as compared to the incoherent approximation
 result. This peak corresponds to the coherent phonon contribution to
 the UCN production cross-section. The double-peak structure in the UCN
 production cross-section by the incoherent approximation is not
-present in Fig.~\ref{fig:Frei2010fig2} and cannot be reproduced by the
+present in Fig.~\ref{fig:Frei2010fig2}, and cannot be reproduced by the
 measured data shown in Figs.~\ref{fig:Frei2010_sigma_G1}
 and \ref{fig:Frei2010fig2}.  This means, a new experiment at a more
 intense cold neutron beam with a better energy resolution would be
@@ -1391,9 +1391,9 @@ In Fig.~\ref{fig:sD2_S}, the parabola of the free neutron crosses the
 acoustical phonon dispersion curve at $E \sim 6$~meV. At this point,
 the UCN production cross-section is predominantly determined by
 coherent scattering.  This can explain a deviation from the production
-cross-section in incoherent approximation. Nevertheless the general
+cross-section in incoherent approximation. Nevertheless, the general
 agreement of the incoherent approximation with the PSI data is
-remarkable (as shown in Fig.~\ref{fig:Frei2010_sigma_G1}).
+remarkable~(as shown in Fig.~\ref{fig:Frei2010_sigma_G1}).
 
 
 %The coherent phonon contribution to the UCN production cross-section
@@ -1406,14 +1406,14 @@ exposed to a Maxwellian shaped neutron flux for different effective
 neutron temperatures is shown in
 Fig.~\ref{fig:sD2_production_rate}. The main conclusion from these
 results was the new understanding of possible higher energetic loss
-channels (one-quasi-particle and two-quasi-particle) in solid
+channels~(one-quasi-particle and two-quasi-particle) in solid
 deuterium for the downscattering of cold neutrons in the conversion
 process to UCN. The best value for the effective neutron temperature
 is in the region of $T_n \sim 40$~K which is larger than what was
-previously expected ($T_n \sim 30$~K~\cite{Yu1986}).
+previously expected~($T_n \sim 30$~K~\cite{Yu1986}).
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.5\textwidth]{Frei2010_P.PNG} \caption{\cite{Frei2010}
@@ -1744,7 +1744,7 @@ there is a chance that other materials could lead to a breakthrough.
 New UCN sources using superthermal technology are under development at
 various laboratories across the world.  Neutrons are produced by two
 methods: proton-induced spallation off a heavy nuclear target
-({\it{e.g}}.~tungsten), and fission where neutrons are produced by a nuclear
+(e.g., ~tungsten), and fission where neutrons are produced by a nuclear
 reactor. Table~\ref{tab:full_ucn_sources}~\cite{Jeff_dnp} shows a
 list of the present and future UCN sources worldwide.
 
