@@ -927,7 +927,7 @@ water, there is no detailed data on thermal neutron scattering in
 solid heavy water available. Instead, we relied on a free-gas model
 with an effective temperature of 80~K, as this seems to be the minimum
 effective neutron temperature achieved with solid heavy water
-moderatores.  From the simulated cold neutron flux in the UCN
+moderatores~\cite{rush1966}. From the simulated cold neutron flux in the UCN
 production volume and UCN production cross sections
 from~\cite{Schmidt2015,Korobkina2002}, a production rate of
 ($20600\pm 200$)~s$^{-1}$ in an energy range up to 233.5~neV was
@@ -941,31 +941,31 @@ determined.
   \label{fig:mcnpmodel}
 \end{figure}
 
-%%############################################################
 
 Fig.~\ref{fig:Counts_vs_temp_sim} and \ref{fig:storage_vs_temp_sim}
 show the measured UCN counts and storage lifetime versus the
-superfluid helium temperature for all four temperature sensors and their
-simulations respectively. In these graphs the filled circles represent
-the measured data and the emtpy squares and triangles represent the
+superfluid helium temperature for all four temperature sensors and
+their simulations. In these graphs, the filled circles represent the
+measured data, and the emtpy squares and triangles represent the
 simulations. The lines are only shown for readibility and are
-interpolation of the points. The empty squares are the simulations
-where the helium vapour above the superfluid helium liquid is included
+interpolation of the simulated points. The empty squares are the simulations
+where the helium vapour above the superfluid helium liquid is included,
 and empty triangles are the simulations without the helium vapour. The
 interpolations for the squares are shown in solid lines and the
 interpolations for the emtpy triangles are shown with dotted lines.
 
 The simulations include two values for the upscattering paremeter $B$:
-$B= 0.016$~s$^{-1}$ and $B= 0.008$~s$^{-1}$. The lower solid lines
-show the simulations for $B= 0.016$~s$^{-1}$ where match the measured
-data very well. Simulations without vapour upscattering show
+$B= 0.016$~s$^{-1}$ which is shown in red, and $B= 0.008$~s$^{-1}$
+which is shown in blue. The red solid lines show the simulations for
+$B= 0.016$~s$^{-1}$ where the measured data and simulations match very
+well. Simulations without vapour upscattering~(empty traingles) show
 significant differences at higher liquid temperatures. In this model,
 the storage lifetime and the UCN yield at higher temperatures are
 overestimated. The reason for this is because of the high upscattering
 rate of UCN in the helium vapour.
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{UCNCounts_vs_Temperature.pdf}
+  \includegraphics[width=0.8\textwidth]{UCNCounts_vs_Temperature_color.pdf}
   \caption{Number of UCN extracted from the source at different
     superfluid helium temperatures after irradiating the target with
     1~$\mu$A proton beam current for 60~s(filled circles). The lines
@@ -975,7 +975,7 @@ rate of UCN in the helium vapour.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{Storagelifetime_vs_Temp.pdf}
+  \includegraphics[width=0.8\textwidth]{Storagelifetime_vs_Temp_color.pdf}
   \caption{Storage lifetime of UCN in the source at different
     superfluid helium temperatures~(filled circules). The lines are
     interpolations of simulated data to guide the eye.}
@@ -983,23 +983,23 @@ rate of UCN in the helium vapour.
 \end{figure}
 
 The UCN rate in the steady-state mode of operation was measured at
-different proton beam currents leading to increased temperature in the
-superfliud helium. The overall result of those measurements and their
-simulations are shown in Fig.~\ref{fig:rate_vs_temp_sim}. Here again
-the empty squares represent the simulations where the helium vapour
-above the superfluid helium is included and the empty triangles
-represent the case where the helium vapour is excluded. The
-interpolation of the simulations are shown in lines. The simulated
-data with a liquid helium upscattering parameter of
-$B= 0.016$~s$^{-1}$~(lower solid line) slightly overestimates the drop
-in the rate with temperature. With $B= 0.008$~s$^{-1}$~(upper solid
-line) it slightly overestimates the UCN rate, but better matches the
+different proton beam currents, leading to increased temperature in
+the superfliud helium. The overall result of those measurements and
+their simulations are shown in Fig.~\ref{fig:rate_vs_temp_sim}. Here
+again, the empty squares represent the simulations where the helium
+vapour above the superfluid helium is included in the simulations, and
+the empty triangles represent the case where the helium vapour is
+excluded. The interpolation of the simulations are shown in lines. The
+simulated data with a liquid helium upscattering parameter of
+$B= 0.016$~s$^{-1}$~(red solid line) slightly overestimates the drop
+in the rate with temperature. With $B= 0.008$~s$^{-1}$~(blue solid
+line), it slightly overestimates the UCN rate, but better matches the
 drop with temperature.
 
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{rate_vs_Temp.pdf}
+  \includegraphics[width=0.8\textwidth]{rate_vs_Temp_col.pdf}
   \caption{Histogram of measured UCN rates and temperatures from all
     four temperature sensors while the target is continuously
     irradiated with the UCN valve open. The simulated data~(empty
@@ -1008,42 +1008,40 @@ drop with temperature.
   \label{fig:rate_vs_temp_sim}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\section{Heater Tests of The Source}
 
 \subsection{Heater Test Versus Proton Beam Current}
 One of the UCN experiments was designed to match the heater power from
 the heaters wrapped around the UCN bottle with the proton beam
-current.
+current. This type of measurements helps in the understanding of the
+input heat load on the cryostat.
 
 The result of the heater tests were disscused in
-Section~\ref{sec:heattest}. The application of the heat on the
-superfluid helium bottle gives rise to a temperature increase in the
-superfluid helium as well as a flow rate increase in the $^3$He
-pot. The amount of this heat load is known simply by knowing the the
-applied current to the heater tapes. However the input heat load is
-not known in the case of the target irradiation. As a result, the
-steady-state UCN yield were measured at different proton beam
-current. The target irradiation at higher beam currents give rise to a
-temperature change in the superfluid helium. In addition, the increase
-in the heat load increases the $^3$He flow rate in the $^3$He pot.
-The comparison of the temperature and flow rate increase between these
-experiments give an idea of the amount of applied heat load on the
-superfluid helium bottle for each given proton beam current.
+Appendix~\ref{sec:heattest}. Applying heat to the superfluid helium
+bottle gives rise to a temperature increase in the superfluid helium,
+as well as a flow rate increase in the $^3$He pot. The amount of this
+heat load is known simply by knowing the the applied current to the
+heater tapes. However, the input heat load is not known in the case of
+the target irradiation. As a result, the steady-state UCN yield were
+measured at different proton beam currents. The target irradiation at
+higher beam currents give rise to a temperature change in the
+superfluid helium. In addition, the increase in the heat load
+increases the $^3$He flow rate in the $^3$He pot.  The comparison of
+the temperature and flow rate increase between these experiments give
+an idea of the amount of applied heat load on the superfluid helium
+bottle for each given proton beam current.
 
 Even though the result of the data analysis for this experiment was
 not conclusive, it gave an idea of the stability and the behaviour of
-the helium cryostat and a better experimental plan for the future.
+the helium cryostat, and a better experimental plan for the future.
 
-Some unexpected anomalies were observed during the measurement. For
+Some unexpected anomalies were observed during the measurements. For
 instance, when the 4~K resorvior was being filled, the flow rate in
 the $^3$He pot as well as the temperature in the superfluid helium was
 not stable. Another problem arose from the wait time between the
 measurements. Before conducting a new measurement, it is essential to
 wait long enough so that the superfluid helium temperature and $^3$He
-flow rate go down to a stable value. In some cases, the wait time
-between the measurements was not long enough and so the it was not
+flow rate get down to a stable value. In some cases, the wait time
+between the measurements was not long enough, and so it was not
 possible to assign a change in the superfluid helium temperature or
 $^3$He flow rate. In addition, target irradiation should be long
 enough so that the temperature and the $^3$He flow rate reach a stable
@@ -1056,13 +1054,14 @@ the UCN rate decays to the typical background rate. The middle graph
 shows the temprature of the superfluid helium from the temprature
 sensor TS12 over time. Here the irradiation of the target stopped
 before the superfluid helium could reach a stable saturation
-value. The bottom graph shows the flow rate in the $^3$He from the
-sensor FM1~(see Fig.~\ref{fig:gasflow}). At the beginning of the run,
-the flow rate was still going down and it did not reach a minimum
-stable value. Typically this value was around 14~SLM. In addition, the
-flow rate did not reach a maximum saturation value due to short target
-irradiation time. Therefore, the change in the flow rate is not
-inclusively due to the teraget irradiaton and is not conclusive.
+value. The bottom graph shows the flow rate in the $^3$He from sensor
+FM1~(see Fig.~\ref{fig:gasflow} to see the position of the sensor). At
+the beginning of the run, the flow rate was still going down, and it
+did not reach a minimum stable value. Typically this value was around
+14~SLM. In addition, the flow rate did not reach a maximum saturation
+value due to short target irradiation time. Therefore, the change in
+the flow rate is not inclusively due to the teraget irradiaton and is
+not conclusive.
 
 
 
@@ -1080,14 +1079,14 @@ inclusively due to the teraget irradiaton and is not conclusive.
 \section{Summary}
 
 The result of the first UCN production with the vertical UCN source at
-TRIUMF were discussed. The measurements include the UCN yield
-experiments, UCN storage lifetime experiments and steady-state UCN
+TRIUMF were discussed in this chapter. The measurements include the UCN yield
+experiments, UCN storage lifetime experiments, and steady-state UCN
 production experiments.
 
 The maximum number of UCN achieved for the standard 1~$\mu$A proton
-beam current at 60~s target irradiation was 40000 and the highest
+beam current at 60~s target irradiation time was 40000 and the highest
 number of UCN counts was 325000 at 10~$\mu$A beam current and 60~s
-irradiation of the target.  The experimental period took about two
+target irradiation time. The experimental period took about two
 weeks. In this time, the storage lifetime of UCN decreased from 37~s
 to 27~s with about 2~\% decrease per day due to the source
 contamination after openning the UCN valve. The UCN counts also showed
@@ -1095,7 +1094,7 @@ a decrease of about 40~\% due to the source contamination as well as
 different experimental configuration at later dates. The steady-state
 UCN rate showed to be around 1600~UCN/s/$\mu$A.
 
-To decrease the temperature of the superfluid by 0.1~K a 5~min wait
+To decrease the temperature of the superfluid by 0.1~K, a 5~min wait
 between the cycles is necessary. It is also concluded that, if
 interested in the $^3$He flow rate, the data acquisition should happen
 after the 4~K reservoir filling.
