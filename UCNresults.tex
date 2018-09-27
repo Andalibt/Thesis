@@ -131,12 +131,20 @@ simulations.
 
 
 \section {Data Quality Checks}
-The main detector for most of the experiments is the $^6\mathrm{Li}$
-glass based scintillator detector described in
-Section~\ref{sec:Li6detector}. Before using the collected data to
-extract the desired information, it is critical to make sure that the
-detector was working as expected, and that the data is reliable. Here
-some data quality checks are reported.
+During the 2017 experimental run, we performed about 35
+experiments. For most of these experiments we used the $^6\mathrm{Li}$
+glass based scintillator detector that was described in
+Section~\ref{sec:Li6detector}. The data that is described is this
+chapter is all acquired with the $^6\mathrm{Li}$ detector.  To check
+the reliablitiy of this data we performed some data quality checks
+that are reported here.
+
+%The main detector for most of the experiments is the $^6\mathrm{Li}$
+%glass based scintillator detector described in
+%Section~\ref{sec:Li6detector}. Before using the collected data to
+%extract the desired information, it is critical to make sure that the
+%detector was working as expected, and that the data is reliable. Here
+%some data quality checks are reported.
 
 
 The PSD versus $Q_L$ distribution from a UCN run is shown in
@@ -150,14 +158,17 @@ useful way of separating the signal and background.
     1~$\mu$A proton beam current and 60~s target irradiation time }
   \label{fig:psd_vs_ql}
 \end{figure}
-Here the UCN events are mainly around the PSD value 0.5 and $Q_L$
-between 3000 and 12000. The events at PSD~$\sim 0$ represent the
-$\gamma$-rays in the lightguides. To get the actual UCN counts, a PSD
-cut at 0.3 and a $Q_L$ cut at 2000 were applied. This ensures that
-only the UCN events are counted which are represented by the central
-oval-shaped region. Out of all 9 channels, the centeral channel counts
-the most number of UCN events, while the corner channels receive the
-least as expected~(see Fig.~\ref{fig:channelcounts}).
+
+Here the UCN spectrum has an energy range of 3000 to 12000 $Q_L$ as
+expected, and a median PSD value of 0.5. The events at PSD~$\sim 0$
+represent the $\gamma$-rays in the lightguides. To get the actual UCN
+counts, a PSD cut at 0.3 and a $Q_L$ cut at 2000 were applied.  Those
+cuts were confirmed with Monte-Carlo simulations to have an acceptance
+of 99\% or higher. This ensures that only the UCN events are counted
+which are represented by the central oval-shaped region. Out of all 9
+channels, the centeral channel counts the most number of UCN events,
+while the corner channels receive the least as expected~(see
+Fig.~\ref{fig:channelcounts}).
 
 \begin{figure}[h!]
   \centering
@@ -193,8 +204,9 @@ pileup does not leak into the UCN box.
 The result of such analyses showed the UCN box acceptance is at
 97. $\pm$ 0.1~\%. The UCN-UCN pileup at 1~$\mu$A beam current and 60~s
 irradiation of the target was measured to be at 0.075~Hz or has and
-effect of less than 1~\%. The analysis showed very little evidence for
-cross-talk and less than 2~\% deadtime effect.
+effect of less than 1~\%. The analysis indicated that cross-talk has a
+negligible effect on the operating rates and deadtime affects the
+rates by less than 2~\%.
 
 
 %% I should think about adding MC simulations by Pietro, maybe???
