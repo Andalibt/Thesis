@@ -156,6 +156,73 @@ fundamental property is a measure for the separation of positive and
 negative charges internal to the neutron. However, no nEDM has been
 measured so far.
 
+
+The interaction of the EDM $d$ of a spin-1/2 particle with the
+electromagnetic field strength $F_{\mu \nu}$ in the relativistic
+invariant form can be written as
+
+\begin{equation}
+\label{eqn:hamiltonianRELelectric}
+  H_d = \frac{d}{2} \bar{\psi} \gamma_5 \sigma_{\mu \nu} \psi F_{\mu \nu}~.
+\end{equation}
+
+Similarty, the interaction of a magnetic moment with the
+electromagnetic field strenght $F_{\mu \nu}$ is
+\begin{equation}
+\label{eqn:hamiltonianRELmagnetic}
+  H_d = \frac{\mu}{2} \bar{\psi} i \sigma_{\mu \nu} \psi F_{\mu \nu}~.
+\end{equation}
+
+To study the transformation properties of the Hamiltonian, it is
+interesting to see how all bilinear covariants behave under discrete
+symmetries transformation.
+In four-vector notation, the parity operator as a
+$4 \times 4$ matrix is
+
+\begin{equation}
+\label{eqn:parityMatrix}
+p = \left(
+  \begin{array}{cccc}
+    1 & 0 & 0 & 0 \\
+    0 & -1 & 0 & 0 \\
+    0 & 0 & -1 & 0 \\
+    0 & 0 & 0 & -1 
+  \end{array}
+  \right) ~,
+\end{equation}
+the time-reversal symmetry is
+\begin{equation}
+\label{eqn:TMatrix}
+p = \left(
+  \begin{array}{cccc}
+    -1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+    0 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1 
+  \end{array}
+  \right) ~.
+\end{equation}
+The transformation of all bilinear covariants is listed in
+Table~\ref{tab:transformation}.
+\begin{table}[h!]
+  \label{tab:transformation}
+  \begin{center}
+    \renewcommand{\arraystretch}{2}
+\begin{tabular} {| c || c | c | c | c |} 
+  \hline
+  & current & P & C & T \\ \hline
+  \hline
+  Scalar & $\bar{\psi_1} \psi_2$ & $\eta_1 \eta_2^* \bar{\psi_1}\psi_2$ &  $\xi_1 \xi_2^* \bar{\psi_1}\psi_2$ &  $\zeta_1 \zeta_2^* \bar{\psi_1}\psi_2$ \\ \hline
+  Vector & $\bar{\psi_1}\gamma_\mu \psi_2$ &  $\eta_1 \eta_2^* \bar{\psi_1}\gamma_\mu \psi_2$ & - $\xi_1 \xi_2^* \bar{\psi_1}\gamma_\mu \psi_2$ & - $\zeta_1 \zeta_2^* \bar{\psi_1}\gamma_\mu \psi_2$ \\ \hline
+  Tensor &  $\bar{\psi_1} \sigma_{\mu \nu} \psi_2$ &   $\eta_1 \eta_2^* \bar{\psi_1} \sigma_{\mu \nu} \psi_2$ & - $\xi_1 \xi_2^* \bar{\psi_1} \sigma_{\mu \nu} \psi_2$ &  - $\zeta_1 \zeta_2^* \bar{\psi_1} \sigma_{\mu \nu} \psi_2$ \\ \hline
+  Pseuo-vector & $\bar{\psi_1} \gamma_{\mu}\gamma_5 \psi_2$ & - $\eta_1 \eta_2^* \bar{\psi_1} \gamma_{\mu}\gamma_5 \psi_2$ & $\xi_1 \xi_2^* \bar{\psi_1} \gamma_{\mu}\gamma_5 \psi_2$ &  $\zeta_1 \zeta_2^* \bar{\psi_1} \gamma_{\mu}\gamma_5 \psi_2$ \\ \hline
+  Pseudo-scalar & $\bar{\psi_1} \gamma_5 \psi_2$ & - $\eta_1 \eta_2^*\bar{\psi_1} \gamma_5 \psi_2$ & $\xi_1 \xi_2^*\bar{\psi_1} \gamma_5 \psi_2$ & $\zeta_1 \zeta_2^*\bar{\psi_1} \gamma_5 \psi_2$ \\\hline
+\end{tabular}
+\caption{Symmetry properties of all bilinear covariants}
+\end{center}
+\end{table}
+
+
 The interaction of a nonrelativistic neutron with
 the electromagnetic field can be descibed by the follwoing
 hamiltonian
