@@ -509,19 +509,40 @@ potential which can be used to calculate the small changes in the
 wavefunction outside the range of the interaction by the perturbation
 theory.
 
+
+The scattering of a neutron from a nucleus can be described as a
+superposition of an incoming plane wave and a scattered spherical
+wave:
+
+\begin{equation}
+  \psi(r, \theta) = e^{ikr} + f(\Theta)\frac{e^{ikr}}{r}~,
+\end{equation}
+where $f(\Theta)$ is the scattering amplitude which is angle
+dependent. Since the wavelength of UCN is much larger than the range
+of the strong interaction $R$, there is no angular momentum transfer
+and the process is dominated by s-wave~($l = 0$) scattering. In this
+case the scattering amplitude $f$ does not depend on the incident
+angle
+\begin{equation}
+f(\Theta) = const. = -a.
+\end{equation}
+Since $\frac{d\sigma}{d\Omega} = |f(\Theta)|^2$, $a$ is a quantity
+that could be experimentally measured.
+
+
 The interaction of an incident neutron with a liquid or a solid could
 be described by sum of $\delta$ functions
 
 \begin{equation}
   \label{eqn:vFermi}
-  V(r) = \frac{2\pi \hbar^2}{m_N} \sum_i a_i \delta (r - r_i)
+  V(r) = \frac{2\pi \hbar^2}{m_N} \sum_i a_i \delta (r - r_i)~,
 \end{equation}
 where $m_N$ is the mass of neutron, $r_i$ is the position of ith
 nucleus and $a_i$ is the scattering length with the ith nucleus. This
 is the so-called Fermi pseudopotential. Because of UCN's large
 wavelength, this equation can be written as
 \begin{equation}
-V(r) = \frac{2\pi \hbar^2}{m_N}\sum_i N_ia_i
+V(r) = \frac{2\pi \hbar^2}{m_N}\sum_i N_ia_i~,
 \end{equation}
 where $N_i$ is the number density in the material $i$. In UCN physics,
 this potential is typically called neutron optical potential, since if
@@ -535,10 +556,22 @@ absorption in which UCN get absorbed by the nucleus of the reflecting
 material. To include the losses in the potential, the optical
 potential is usually written as
 \begin{equation}
-  U(r) = V(r) - iW.
+  U(r) = V(r) - iW(r)~,
 \end{equation}
-The ratio $\eta = V/W$ is a measure of the loss per bounce probability
-of the material. 
+where $W(r) = \Sigma N_i \sigma^i_l v$ with $N_i$ being the density,
+$\sigma^i_l$ being the loss cross-section~(absorption plus inelastic
+scattering) of nulei $i$ and $v$ being the velocity. If we solve the
+Schr\"{o}dinger equation with this potential, we get an additional
+decay of probability density as
+
+\begin{equation}
+\rho = \rho_0 e^{-2Wt/\hbar}~,
+\end{equation}
+where $1/\tau_{abs} = 2W/\hbar$.  The ratio
+$f = \frac{W}{V} = \frac{\sigma_l k}{4 \pi a}$ is the UCN loss
+coefficient where as earlier, $\sigma_l$ is the total loss
+cross-section for neutrons with wavenumber $k$, and $a$ is the
+scattering length~\cite{ucnbook}.
 
 The strong interaction plays a crucial role in the nEDM
 measurements. Choosing certian materials enables us to store and guide
@@ -612,7 +645,7 @@ of curved turbine blades moving with a velocity $\sim$~20~m/s in the
 same direction as the neutrons. A UCN density of $\sim$~40~UCN/cm$^3$
 was achieved with this method~\cite{ucnbook,Albert_talk}. The current
 UCN density of this source is 110~UCN/cm$^3$ for neutrons with
-velocities $<$~7m/s\cite{Steyerl1986}.
+velocities $<$~7~m/s~\cite{Steyerl1986}.
 
 
 %\subsection{Goals of Superthermal UCN Sources}
@@ -738,13 +771,13 @@ neutron absorption cross-section and upscattering rate.
 $^4$He is an isotope of helium with two protons and two neutrons. It
 has an integer spin of zero, which makes it a boson. As a result, it
 follows the Bose-Einstein statistics. It has two liquid states known
-as He-I and H-II. The He-I phase is the normal fluid phase, and the
-He-II phase is the superfluid phase with zero viscosity, and zero
-entropy. Fig.~\ref{fig:phasetransition} shows the phase transition
-diagram of $^4$He. The two phases are separated out by the
-$\lambda$-line. The phase transition happens at 2.172~K.  Below the
-lambda line, the liquid can be described by the so-called two-fluid
-model, which consists of both phases. Below 1~K the liquid is mostly
+as He-I and H-II. The He-I phase is the normal fluid phase. The He-II
+phase can be described by the so-called two-fluid model, which
+consists of normal liquid helium and superfluid helium.
+% with zero viscosity, and zero entropy.
+Fig.~\ref{fig:phasetransition} shows the phase transition diagram of
+$^4$He. The two phases are separated out by the $\lambda$-line. The
+phase transition happens at 2.172~K. Below 1~K the liquid is mostly
 superfluid.
 
 \begin{figure}[h!]
@@ -788,11 +821,11 @@ by UCN guides.
 \subsubsection{UCN Production Rate with Single Phonon scattering in
   Superfluid
   helium\label{sec:UCN_production}}
-UCN can be produced by one phonon excitation in superfluid helium when
-the energy of the incident neutrons is equal to that of the one phonon
-excitation in the medium~\cite{Korobkina2002,Schmidt2009,Golub77}. The
-incident neutrons then scatter down to UCN by creating one-phonon
-excitations in the converter medium.
+UCN can be produced in superfluid helium when the energy of the
+incident neutrons is equal to that of the one phonon excitation in the
+medium~\cite{Korobkina2002,Schmidt2009,Golub77}. The incident neutrons
+then scatter down to UCN in the converter medium while creating a
+phonon.
 %The crossing of the dispersion curve for excitations in superfluid
 %helium and the free energy of the neutron shows that the neutron
 %wavelength should be 0.89~nm~\cite{Brome2001} or 8.9~\AA ~in
@@ -829,7 +862,7 @@ momentum that are related by the dispersion curve
 
 \begin{equation}
 \label{dispersion_helium}
-\omega=\omega(q)= cq,
+\omega=\omega(q) \simeq cq,
 \end{equation}
 where $\omega$ is the energy of the phonon, $q$ is the phonon's
 momentum, and $c$ is the speed of sound in the moderator. The second
@@ -1119,7 +1152,8 @@ with pressure increase.  Only if the cold neutron flux at
 the UCN production rate may be expected. However, it has to be
 considered that the application of pressure requires a window for UCN
 extraction which causes severe UCN losses. Therefore, UCN production
-in superfluid helium under pressure is concluded not to be attractive.
+in superfluid helium under pressure is concluded not to be
+attractive~\cite{Schmidt2009}.
 
 
 
@@ -1197,12 +1231,14 @@ of one roton followed by a phonon emission.
 %two-phonon scattering where one phonon absorbed and one phonon
 %emitted, and the third term from roton-phonon scattering which the
 %absorption of one roton followed by a phonon emission.
-The values of $A$, $B$ and $C$ are extracted from data for
-temperatures up to 2.4~K~\cite{Leung2016}. The comparison between
-the UCN production and upscattering rate to the theoretical
-temperature dependence of these processes showed that, the main
-contribution is from two-phonon scattering $\frac{1}{\tau_{up}}=BT^7$
-with $B=(4-16)\times 10^{-3}$~/(s K$^7$)~\cite{Leung2016}.
+The values of $A$, $B$ and $C$ are extracted from data for temperature
+ranges of up to 2.4~K~\cite{Leung2016}. The comparison between the UCN
+production and upscattering rate to the theoretical temperature
+dependence of these processes showed that, the main contribution is
+from two-phonon scattering $\frac{1}{\tau_{up}}=BT^7$ with
+$B = 0.0077$~/(s K$^7$) at higher temperatures and $B = 0.0085$~/(s
+K$^7$) at lower temperatures.
+%$B=(4-16)\times 10^{-3}$~/(s K$^7$)~\cite{Leung2016}.
 
 
 %The most recent study of the upscattering rates in superfluid helium
@@ -1251,407 +1287,263 @@ Solid deuterium~(sD$_2$) is a material with small absorption
 cross-section, small incoherent scattering cross-section~(to minimize
 upscattering), and the presence of numerous phonon modes, which can
 inelastically scatter neutrons down to UCN energies.
-%In solid D$_2$ the phonon excitations are present in the coherent
-%part of the scattering, whereas the incoherent part is determined by
-%rotational transitions and also by incoherent phonon scattering.
 A converter based on sD$_2$ should be operated at temperatures below
 10~K in order to avoid subsequent upscattering of UCN by phonons
 within solid deuterium.
-% The employment of solid deuterium at 10~K increases UCN yield by 10
-% times compared with the UCN yield from liquid
-% deuterium~\cite{Serebrov2000}.
- 
-Solid deuterium has an almost perfect hcp crystal structure, when
-prepared under suitable conditions~(low pressure and $T >$~5~K). The
-D$_2$ molecule has internal rotational modes, which are described by
-the rotational quantum number $J$. The rotational excitations give
-rise to additional modes in the solid deuterium.
-% In the solid phase, $J$ is still a good quantum number.
-Deuterium in the states with even $J$ is called
-ortho-deuterium~(o-D$_2$), whereas deuterium in the states with odd
-$J$ is called para-deuterium~(p-D$_2$). An increase of the
-concentration of the p-D$_2$ molecules leads to a larger neutron
-upscattering rate.
-%The self-conversion between these two species in the solid phase is
-%extremely slow compared with the time scale of the experiment and
-%therefore, using a para- t ortho- converter is essential.  At low
-%temperatures ($T\sim$~6~K), about 99.999\% of the deuterium molecules
-%are in the ortho state, when thermal equilibrium is reached. At room
-%temperature, D$_2$ has an ortho concentration of 66.7\%.
-Theoretically and experimentally, it has been shown that sD$_2$ at
-sufficiently low temperatures~(around 5K) with high enough purity and
-with high ortho concentration can be used to produce a high density
-UCN~\cite{Atchison2005}.
-
-% The common principle is to expose sD$_2$ to a high flux of cold
-% neutrons in order to produce UCN. It was shown that, using a pulsed
-% neutron beam to produce UCN resulted in densities 4-5 orders of
-% magnitude greater than the reactor-based UCN
-% sources~\cite{Pokotilovski1995}.  The UCN production rate here
-% is a factor of 30 larger as compared to superfluid helium, since the
-% phonon spectrum has a much higher phase space density for the
-% downscattering of cold neutrons~\cite{Golub83}. The UCN density
-% in such sources is limited by nuclear absorption in the converter
-% medium, and UCN lifetime.  Below 5K, upscattering in sD$_2$ is less
-% important than absorption~\cite{Liu2000}.
-
-
-
-
-
-\subsubsection{UCN Production Cross-Section and UCN Production Rate in Solid Deuterium}
-
-The formula for the UCN production in solid deuterium is very similar
-to that of the superfluid helium shown in Eqn.~(\ref{UCN_production}),
-with replacing $^4$He atomic density $N_{\text{He}}$ with molecular
-density of solid deuterium $N_{D_2}$, and noting that in sD$_2$ the
-neutron scattering cross-section may be written as a sum of coherent
-and incoherent contributions~\cite{ucnbook,Frei2010,Frei2009}:
-
-\begin{equation}
-\label{eqn:dsigma}
-\frac{d\sigma}{d\omega}=\left[ \frac{k_2}{k_1} 
-b_{\text{coh}}^2 S_{\text{coh}} (q,\omega) + \frac{k_2}{k_1} b_{\text{inc}}^2 S_{\text{inc}}(q,\omega) \right]
- d\Omega.
-\end{equation}
-In Ref.~\cite{Frei2010} the UCN production cross-section $\sigma$
-was determined by two ways. One way is the determination of the
-quasi-particle~(phonons and rotational excitations of the D$_2$
-molecule) density of states $G_1(E)$~(incoherent approximation) from
-the measured neutron cross-section $\frac{d\sigma}{d\omega}$, and the
-other method is the direct integration of the dynamical neutron
-cross-section $\frac{d\sigma}{d\omega}$ ($\hbar=1$) in the kinematical
-region along the free-neutron dispersion parabola.
-
-\paragraph{UCN production cross-section: Incoherent approximation.}
-With the knowledge of the quasi-particle density of states $G_1(E)$,
-it is possible to calculate the dynamical neutron cross-section
-$\frac{d\sigma}{d\omega}$~(averaged over the scattering angle, thus
-$q$). Vice versa it is also possible to extract $G_1(E)$ from a
-measured dynamical neutron cross-section~\cite{Turchin}.  If
-$G_1(E)$ is known, it is possible to calculate one-phonon and
-multiphonon contributions to the neutron cross-section
-$\frac{d\sigma}{d\omega}$.
-% In the incoherent
-% approximation \begin{equation} \label{eqn:G} \frac{d\sigma}{d\omega}=\frac{k_2}{k_1}[b_{eff}(q)]^2 \frac{\hbar
-% q^2}{2m}\frac{G(\omega)}{\omega} \left[ n(\omega)+1 \right]
-% e^{-2W(q)} \end{equation} where $G(\omega)$ is the generalized
-% density of states (GDOS). With the measured inelastic neutron
-% cross-section and Eqn.~(\ref{eqn:G}), it is possible to determine
-% the GDOS.  $G(\omega)$ comprises the complete phonon excitations of
-% sD$_2$ as well as rotational transitions of individual D$_2$
-% molecules. Furthermore, multiphonon excitations of the phonon system
-% of sD$_2$ should appear in the GDOS as they are not corrected for in
-% Eqn.~(\ref{eqn:G}).  GDOS for differently prepared D$_2$ crystals at
-% the same o-D$_2$ concentration is measured for o-D$_2$ 66.7\% and
-% 95\%~\cite{Frei2009}. The result did not show variations beyond
-% statistical effects.  The main difference between the GDOS for
-% different o-D$_2$ concentrations was the strength of the rotational
-% transition $J=0\rightarrow 1$. Increasing the o-D$_2$ concentration
-% enhances this transition.
-
-
-% The generalized density of states (GDOS) $G(\omega)$ is measured to
-% ultimately calculate dynamical neutron cross-section (incoherent
-% approximation). $G(\omega)$ comprises the complete phonon
-% excitations of sD$_2$ as well as rotational transitions of
-% individual D$_2$ molecules. Furthermore, multiphonon excitations of
-% the phonon system of sD$_2$ should appear in the GDOS.  GDOS for
-% differently prepared D$_2$ crystals at the same o-D$_2$
-% concentration was measured for o-D$_2$ 66.7\% and
-% 95\%~\cite{Frei2009}. The result did not show variations beyond
-% statistical effects.  The main difference between the GDOS for
-% different o-D$_2$ concentrations was the strength of the rotational
-% transition $J=0\rightarrow 1$.  Increasing the o-D$_2$ concentration
-% enhances this transition.
-% Fig.~\ref{fig:Frei2010fig}~\cite{Frei2010} shows two examples of
-% neutron scattering data for two different concentrations of o-D$_2$
-% molecules as a function of energy transfer $E=E_i-E_f$.  The density
-% of state (DOS) $G_1$ can be extracted from GDOS data, and it leads
-% to the calculation of $d\sigma/dE$. Studies showed
-% that~\cite{Frei2010}, an increase in the concentration of the
-% p-D$_2$ molecules leads to a larger neutron upscattering.  This
-% upscattering has serious implications to the upscattering of UCN in
-% the sD$_2$ converter material, and reduces the achievable density of
-% UCN in sD$_2$.  It is also shown that, the elastic cross-section
-% ($E=$0~meV) of sD$_2$ is quite large.  The one-particle excitation
-% on the dynamic neutron scattering cross-section is above E$=$10~meV,
-% two-particle contributions is above E$\sim$5~meV, and three particle
-% excitations above E$=$12~meV~\cite{Frei2009}.
-The method for the determination of $G_1(E)$ from the measured neutron
-scattering data in solid deuterium is studied in
-Ref.~\cite{Frei2009}. In the determination of $G_1(E)$, contributions
-of higher order multiphonons to $\frac{d\sigma}{dE}$ are incorporated.
-
-In the case of UCN production, the energy transfer of the
-downscattered neutron $E=E_1-E_{\text{UCN}}$ is approximately equal to
-the initial neutron energy $E_1$
-($E_{\text{UCN}} \ll E_1, E_{\text{UCN}}$: UCN energy). The total
-cross-section for UCN production can be calculated by
-
-\begin{equation}
-\sigma_{\text{UCN}}({E_1})=\int_0 ^{E_{\text{UCN}}^{max}} \frac{d\sigma (E_1)}{dE} dE_{\text{UCN}}.
-\end{equation}
-
-The calculated cross-section shown in
-Fig.~\ref{fig:Frei2010_sigma_G1}, is in agreement with data on UCN
-production using a cold neutron beam~($E_1 \sim 1.4$~meV to 20~meV).
-Here the one-quasi-particle and two-quasi-particle excitations are
-included in the calculations.  The UCN production cross-section is
-mainly determined by one-quasi-particle excitation for energies below
-15~meV. The two-quasi-particle contribution is non-negligible in the
-region of 5-25~meV.
-
-The application of the incoherent approximation in the case of sD$_2$
-has certainly to be questioned since the sD$_2$ crystal scatters
-neutrons more coherently than incoherently.
-
-\begin{figure}[h!]
-\begin{center}
-   \includegraphics[width=0.5\textwidth]{Frei2010_sigma_G1.PNG} \caption{UCN
-    production cross-section of sD$_2$ with 98\% ortho
-    concentration. UCN energy range 0-150~neV inside the solid
-    D$_2$. Solid line: cross-section calculated in incoherent
-    approximation. Dashed line: one-quasi-particle
-    contribution. Dotted line: two-quasi-particle
-    contribution. $\square$: data from measurements at
-    PSI~\cite{Atchison2007}.  }
-%     \vspace{-2.em}
-    \label{fig:Frei2010_sigma_G1}
-    \end{center}
-\end{figure} 
-
-
-
-
-\paragraph{UCN production cross-section: Direct determination.}
-The easiest way of determining the cross-section for UCN production is
-the use of the dynamical scattering function $S(q,\omega)$ in the
-($q,\omega$)-phase space along the free-neutron parabola, as shown
-schematically in Fig.~\ref{fig:sD2_S}.
-
-This method allows the incorporation of all the coherent and
-incoherent contributions to the UCN production cross-section. Possible
-coherent contributions, which cannot be treated exactly with the
-incoherent approximation, appear directly in the deduced
-cross-section. Therefore, this method is superior in principle to the
-result obtained by the incoherent approximation.
-
-\begin{figure}[h!]
-\begin{center}
-   \includegraphics[width=0.7\textwidth]{sD2_S.PNG} \caption{\cite{Frei2010}
-    $S(q,\omega)$ ($q=Q ,\omega=E$) (arb. units) of 95.2\% solid
-    o-D$_2$ at $T=4$~K. Data from IN4 measurements. Black parabola:
-    dispersion of the free neutron. }
-%     \vspace{-2.em}
-    \label{fig:sD2_S}
-    \end{center}
-\end{figure} 
-
-
-
-The UCN production cross-section can be determined by
-\begin{equation}
-\sigma_{\text{UCN}}(E_1)=\frac{\sigma_1}{k_1} S(k_1, E_1) \frac{2}{3} k_{\text{UCN}}^{max} \; E_{\text{UCN}}^{max} ,
-\end{equation}
-where $E_1$ is the energy of the incoming neutrons in the
-downscattering process, $\sigma_1$ is a constant, and
-$k_{\text{UCN}}^{max}$ and $E_{\text{UCN}}^{max} $ are the upper
-limits for the UCN momentum and energy.  In order to obtain absolute
-cross-sections, $S(q,\omega)$ has to be calibrated to absolute values.
-The result of this calibration and the determination of the UCN
-production cross-section as a function of the energy of the incoming
-neutrons, and a comparison with the measurements of this cross-section
-is shown in Fig.~\ref{fig:Frei2010fig2}. This plot also contains the
-data, which were obtained with higher incoming-neutron energy
-($E_1=67$~meV).
-
-
-\begin{figure}[h!]
-\begin{center}
-  \includegraphics[width=0.5\textwidth]{Frei2010_sigma.PNG} \caption{\cite{Frei2010}
-    UCN production cross-section solid o-D$_2$ of
-    95.2\%~\cite{Frei2010}. A UCN energy range of 0-150~neV inside the
-    solid D$_2$ is assumed. Sample: fast frozen solid deuterium
-    ($T=4$~K); data from IN4 measurements. Blue $\square$:
-    $E_0=17.2$~meV. Red filled $\bigcirc$: $E_0=67$~meV,
-    $\blacksquare$: direct UCN production data from measurements at
-    PSI~\cite{Atchison2007}.  }
-%     \vspace{-2.em}
-    \label{fig:Frei2010fig2}
-    \end{center}
-\end{figure} 
-
-The comparison of the calculated UCN production cross-section,
-extracted from the incoherent approximation and parabola method, shows
-(see Fig.~\ref{fig:Frei2010_sigma_G1} and Fig.~\ref{fig:Frei2010fig2})
-a discrepancy in the region of $E\sim6$~meV.  The cross-section
-determined by the parabola method shows a pronounced maximum in the
-region of $E\sim6$~meV as compared to the incoherent approximation
-result. This peak corresponds to the coherent phonon contribution to
-the UCN production cross-section. The double-peak structure in the UCN
-production cross-section by the incoherent approximation is not
-present in Fig.~\ref{fig:Frei2010fig2}, and cannot be reproduced by the
-measured data shown in Figs.~\ref{fig:Frei2010_sigma_G1}
-and \ref{fig:Frei2010fig2}.  This means, a new experiment at a more
-intense cold neutron beam with a better energy resolution would be
-desirable to study this effect further.
-
-In Fig.~\ref{fig:sD2_S}, the parabola of the free neutron crosses the
-acoustical phonon dispersion curve at $E \sim 6$~meV. At this point,
-the UCN production cross-section is predominantly determined by
-coherent scattering.  This can explain a deviation from the production
-cross-section in incoherent approximation. Nevertheless, the general
-agreement of the incoherent approximation with the PSI data is
-remarkable~(as shown in Fig.~\ref{fig:Frei2010_sigma_G1}).
-
-
-%The coherent phonon contribution to the UCN production cross-section
-%at $E \simeq 5$~meV, which is clearly seen in
-%Fig.~\ref{fig:Frei2010fig2}, is a major downscattering channel for
-%UCN production.
-
-The result for the calculated UCN production rate in solid o-D$_2$,
-exposed to a Maxwellian shaped neutron flux for different effective
-neutron temperatures is shown in
-Fig.~\ref{fig:sD2_production_rate}. The main conclusion from these
-results was the new understanding of possible higher energetic loss
-channels~(one-quasi-particle and two-quasi-particle) in solid
-deuterium for the downscattering of cold neutrons in the conversion
-process to UCN. The best value for the effective neutron temperature
-is in the region of $T_n \sim 40$~K which is larger than what was
-previously expected~($T_n \sim 30$~K~\cite{Yu1986}).
-
-
-%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-  \includegraphics[width=0.5\textwidth]{Frei2010_P.PNG} \caption{\cite{Frei2010}
-    Calculated UCN production rate of sD$_2$ with 98\% ortho
-    concentration for different Maxwellian neutron spectra with
-    effective neutron temperature $T_n$. UCN energy range:0-150~neV
-    inside the sD$_2$. Neutron capture flux $10^{14}$~/cm$^2$s. Solid
-    line: total production rate~(one- and two- particle
-    excitations). Dashed line: one-particle production rate. Dotted
-    line: two-particle production rate.}
-%     \vspace{-2.em}
-    \label{fig:sD2_production_rate}
-    \end{center}
-\end{figure} 
-
-
-
-
-
-% \subsubsection{Neutron scattering study} Neutron scattering is an
-% excellent tool to investigate the phonon system and the rotational
-% transitions of D$_2$ molecules in sD$_2$.  The dynamics of sD$_2$ is
-% studied by means of inelastic scattering (coherent and incoherent)
-% of thermal and cold neutrons at different temperatures and
-% para-ortho ratios~\cite{Frei2009}.  Scattering of neutrons where
-% a rotational transition ($ J \rightarrow J^{\prime}$ and $J \neq
-% J^{\prime}$) is involved leads to an incoherent response of the
-% system. The phonon excitations are present in the coherent part of
-% the scattering, whereas the incoherent part is determined by
-% rotational transitions and also by incoherent phonon scattering.
-
-
-% The generalized density of states (GDOS) $G(\omega)$ is measured to
-% ultimately calculate dynamical neutron cross-section (incoherent
-% approximation). $G(\omega)$ comprises the complete phonon
-% excitations of sD$_2$ as well as rotational transitions of
-% individual D$_2$ molecules. Furthermore, multiphonon excitations of
-% the phonon system of sD$_2$ should appear in the GDOS.  GDOS for
-% differently prepared D$_2$ crystals at the same o-D$_2$
-% concentration was measured for o-D$_2$ 66.7\% and
-% 95\%~\cite{Frei2009}. The result did not show variations beyond
-% statistical effects.  The main difference between the GDOS for
-% different o-D$_2$ concentrations was the strength of the rotational
-% transition $J=0\rightarrow 1$.  Increasing the o-D$_2$ concentration
-% enhances this transition.
-% Fig.~\ref{fig:Frei2010fig}~\cite{Frei2010} shows two examples of
-% neutron scattering data for two different concentrations of o-D$_2$
-% molecules as a function of energy transfer $E=E_i-E_f$.  The density
-% of state (DOS) $G_1$ can be extracted from GDOS data, and it leads
-% to the calculation of $d\sigma/dE$. Studies showed
-% that~\cite{Frei2010}, an increase in the concentration of the
-% p-D$_2$ molecules leads to a larger neutron upscattering.  This
-% upscattering has serious implications to the upscattering of UCN in
-% the sD$_2$ converter material, and reduces the achievable density of
-% UCN in sD$_2$.  It is also shown that, the elastic cross-section
-% ($E=$0~meV) of sD$_2$ is quite large.  The one-particle excitation
-% on the dynamic neutron scattering cross-section is above E$=$10~meV,
-% two-particle contributions is above E$\sim$5~meV, and three particle
-% excitations above E$=$12~meV~\cite{Frei2009}.
-
-
-
-% \begin{figure}[h!]  \begin{center} \includegraphics[width=0.5\textwidth]{FREI2010.PNG} \caption{An
-%    example of the dynamical neutron cross-section of solid deuterium
-%    at T$=7$~K. Comparison of two ortho concentrations c$_0$=66.7\%
-%    ($\square$) and c$_0$=98\% ($\bigcirc$). Data from TOFTOF
-%    measurements at the FRM II. Initial energy of the thermal
-%    neutrons is E$_0=$20.4~meV~\cite{Frei2010}. }
-%%     \vspace{-2.em}
-%     \label{fig:Frei2010fig}
-%     \end{center}
-% \end{figure} 
-
-
-
-
-
-\subsubsection{UCN upscattering and UCN lifetime in sD$_2$}
-
 
 The different molecular species, ortho-D$_2$ and para-D$_2$, have
 significantly different UCN-phonon annihilation
 cross-sections~\cite{Liu2000, Morris2002}. The presence of even small
 concentrations of para-D$_2$ can dominate the upscattering rate which
 gives rise to reduced UCN lifetimes in the solid and orders of
-magnitude reduction in the achievable UCN density.  In a D$_2$ solid,
-the populations of ortho and para states are typically determined by
-the ortho/para population of the gas phase before the D$_2$ is frozen
-into solid.  After cooling down the D$_2$ to the solid phase
-($T \sim$~6~K), it normally takes months to reach the equilibrium of
-99.999\% o-D$_2$.
- %The selfconversion between these two species in the solid phase into
- %a thermal Boltzman distribution is extremely slow compared with the
- %time scale of experiment.
+magnitude reduction in the achievable UCN density.
+%In a D$_2$ solid,
+%the populations of ortho and para states are typically determined by
+%the ortho/para population of the gas phase before the D$_2$ is frozen
+%into solid.  After cooling down the D$_2$ to the solid phase
+%($T \sim$~6~K), it normally takes months to reach the equilibrium of
+%99.999\% o-D$_2$.
 Since the elimination of para-D$_2$ is necessary to achieve UCN
 lifetimes comparable to the nuclear absorption time in solid
 deuterium, using a para-D$_2$ to ortho-D$_2$ converter is crucial.
 
 
-\begin{figure}[h!]
-\begin{center}
-  \includegraphics[width=0.8\textwidth]{Morris2002.PNG} \caption{\cite{Morris2002}
-    Left- Data points are measured sD$_2$ lifetimes as a function of
-    temperature, with the para-fraction fixed at 2.5\%. Only the
-    statistical errors are shown. Solid lines show the predicted
-    temperature dependence. The dashed line is the predicted effect of
-    departure from the solid lifetime model due to the upscattering
-    from the D$_2$ gas in the guide. Right- sD$_2$ lifetimes as a
-    function of para-fraction for all of the data taken below 6~K. The
-    solid line is the model prediction of the para-fraction dependence
-    at an average temperature of 5.6~K.  }
+Theoretically and experimentally, it has been shown that sD$_2$ at
+sufficiently low temperatures~(around 5K) with high enough purity and
+with high ortho concentration can be used to produce a high density
+UCN~\cite{Atchison2005}.
+
+%\subsubsection{UCN Production Cross-Section and UCN Production Rate in Solid Deuterium}
+
+%The formula for the UCN production in solid deuterium is very similar
+%to that of the superfluid helium shown in Eqn.~(\ref{UCN_production}),
+%with replacing $^4$He atomic density $N_{\text{He}}$ with molecular
+%density of solid deuterium $N_{D_2}$, and noting that in sD$_2$ the
+%neutron scattering cross-section may be written as a sum of coherent
+%and incoherent contributions~\cite{ucnbook,Frei2010,Frei2009}:
+
+%\begin{equation}
+%\label{eqn:dsigma}
+%\frac{d\sigma}{d\omega}=\left[ \frac{k_2}{k_1} 
+%b_{\text{coh}}^2 S_{\text{coh}} (q,\omega) + \frac{k_2}{k_1} b_{\text{inc}}^2 S_{\text{inc}}(q,\omega) \right]
+% d\Omega.
+% \end{equation}
+
+
+%In Ref.~\cite{Frei2010} the UCN production cross-section $\sigma$
+%was determined by two ways. One way is the determination of the
+%quasi-particle~(phonons and rotational excitations of the D$_2$
+%molecule) density of states $G_1(E)$~(incoherent approximation) from
+%the measured neutron cross-section $\frac{d\sigma}{d\omega}$, and the
+%other method is the direct integration of the dynamical neutron
+%cross-section $\frac{d\sigma}{d\omega}$ ($\hbar=1$) in the kinematical
+%region along the free-neutron dispersion parabola.
+
+%\paragraph{UCN production cross-section: Incoherent approximation.}
+%With the knowledge of the quasi-particle density of states $G_1(E)$,
+%it is possible to calculate the dynamical neutron cross-section
+%$\frac{d\sigma}{d\omega}$~(averaged over the scattering angle, thus
+%$q$). Vice versa it is also possible to extract $G_1(E)$ from a
+%measured dynamical neutron cross-section~\cite{Turchin}.  If
+%$G_1(E)$ is known, it is possible to calculate one-phonon and
+%multiphonon contributions to the neutron cross-section
+
+%$\frac{d\sigma}{d\omega}$.
+
+
+
+%The method for the determination of $G_1(E)$ from the measured neutron
+%scattering data in solid deuterium is studied in
+%Ref.~\cite{Frei2009}. In the determination of $G_1(E)$, contributions
+%of higher order multiphonons to $\frac{d\sigma}{dE}$ are incorporated.
+
+%In the case of UCN production, the energy transfer of the
+%downscattered neutron $E=E_1-E_{\text{UCN}}$ is approximately equal to
+%the initial neutron energy $E_1$
+%($E_{\text{UCN}} \ll E_1, E_{\text{UCN}}$: UCN energy). The total
+%cross-section for UCN production can be calculated by
+
+%\begin{equation}
+%\sigma_{\text{UCN}}({E_1})=\int_0 ^{E_{\text{UCN}}^{max}} \frac{d\sigma (E_1)}{dE} dE_{\text{UCN}}.
+%\end{equation}
+
+%The calculated cross-section shown in
+%Fig.~\ref{fig:Frei2010_sigma_G1}, is in agreement with data on UCN
+%production using a cold neutron beam~($E_1 \sim 1.4$~meV to 20~meV).
+%Here the one-quasi-particle and two-quasi-particle excitations are
+%included in the calculations.  The UCN production cross-section is
+%mainly determined by one-quasi-particle excitation for energies below
+%15~meV. The two-quasi-particle contribution is non-negligible in the
+%region of 5-25~meV.
+
+%The application of the incoherent approximation in the case of sD$_2$
+%has certainly to be questioned since the sD$_2$ crystal scatters
+%neutrons more coherently than incoherently.
+
+%\begin{figure}[h!]
+%\begin{center}
+%   \includegraphics[width=0.5\textwidth]{Frei2010_sigma_G1.PNG} \caption{UCN
+%    production cross-section of sD$_2$ with 98\% ortho
+%    concentration. UCN energy range 0-150~neV inside the solid
+%    D$_2$. Solid line: cross-section calculated in incoherent
+%    approximation. Dashed line: one-quasi-particle
+%    contribution. Dotted line: two-quasi-particle
+%    contribution. $\square$: data from measurements at
+%    PSI~\cite{Atchison2007}.  }
 %     \vspace{-2.em}
-    \label{fig:Morris2002}
-    \end{center}
-\end{figure} 
+%    \label{fig:Frei2010_sigma_G1}
+%    \end{center}
+%\end{figure} 
 
 
 
-%\subsubsection{UCN lifetime in sD$_2$}
+
+%\paragraph{UCN production cross-section: Direct determination.}
+%The easiest way of determining the cross-section for UCN production is
+%the use of the dynamical scattering function $S(q,\omega)$ in the
+%($q,\omega$)-phase space along the free-neutron parabola, as shown
+%schematically in Fig.~\ref{fig:sD2_S}.
+
+%This method allows the incorporation of all the coherent and
+%incoherent contributions to the UCN production cross-section. Possible
+%coherent contributions, which cannot be treated exactly with the
+%incoherent approximation, appear directly in the deduced
+%cross-section. Therefore, this method is superior in principle to the
+%result obtained by the incoherent approximation.
+
+%\begin{figure}[h!]
+%\begin{center}
+%   \includegraphics[width=0.7\textwidth]{sD2_S.PNG} \caption{\cite{Frei2010}
+%    $S(q,\omega)$ ($q=Q ,\omega=E$) (arb. units) of 95.2\% solid
+%    o-D$_2$ at $T=4$~K. Data from IN4 measurements. Black parabola:
+%    dispersion of the free neutron. }
+%%     \vspace{-2.em}
+%    \label{fig:sD2_S}
+%    \end{center}
+%\end{figure} 
+
+
+
+%The UCN production cross-section can be determined by
+%\begin{equation}
+%\sigma_{\text{UCN}}(E_1)=\frac{\sigma_1}{k_1} S(k_1, E_1) \frac{2}{3} k_{\text{UCN}}^{max} \; E_{\text{UCN}}^{max} ,
+%\end{equation}
+%where $E_1$ is the energy of the incoming neutrons in the
+%downscattering process, $\sigma_1$ is a constant, and
+%$k_{\text{UCN}}^{max}$ and $E_{\text{UCN}}^{max} $ are the upper
+%limits for the UCN momentum and energy.  In order to obtain absolute
+%cross-sections, $S(q,\omega)$ has to be calibrated to absolute values.
+%The result of this calibration and the determination of the UCN
+%production cross-section as a function of the energy of the incoming
+%neutrons, and a comparison with the measurements of this cross-section
+%is shown in Fig.~\ref{fig:Frei2010fig2}. This plot also contains the
+%data, which were obtained with higher incoming-neutron energy
+%($E_1=67$~meV).
+
+
+%\begin{figure}[h!]
+%\begin{center}
+%  \includegraphics[width=0.5\textwidth]{Frei2010_sigma.PNG} \caption{\cite{Frei2010}
+%    UCN production cross-section solid o-D$_2$ of
+%    95.2\%~\cite{Frei2010}. A UCN energy range of 0-150~neV inside the
+%    solid D$_2$ is assumed. Sample: fast frozen solid deuterium
+%    ($T=4$~K); data from IN4 measurements. Blue $\square$:
+%    $E_0=17.2$~meV. Red filled $\bigcirc$: $E_0=67$~meV,
+%    $\blacksquare$: direct UCN production data from measurements at
+%    PSI~\cite{Atchison2007}.  }
+%%     \vspace{-2.em}
+ %   \label{fig:Frei2010fig2}
+ %   \end{center}
+%\end{figure} 
+
+%The comparison of the calculated UCN production cross-section,
+%extracted from the incoherent approximation and parabola method, shows
+%(see Fig.~\ref{fig:Frei2010_sigma_G1} and Fig.~\ref{fig:Frei2010fig2})
+%a discrepancy in the region of $E\sim6$~meV.  The cross-section
+%determined by the parabola method shows a pronounced maximum in the
+%region of $E\sim6$~meV as compared to the incoherent approximation
+%result. This peak corresponds to the coherent phonon contribution to
+%the UCN production cross-section. The double-peak structure in the UCN
+%production cross-section by the incoherent approximation is not
+%present in Fig.~\ref{fig:Frei2010fig2}, and cannot be reproduced by the
+%measured data shown in Figs.~\ref{fig:Frei2010_sigma_G1}
+%and \ref{fig:Frei2010fig2}.  This means, a new experiment at a more
+%intense cold neutron beam with a better energy resolution would be
+%desirable to study this effect further.
+
+%In Fig.~\ref{fig:sD2_S}, the parabola of the free neutron crosses the
+%acoustical phonon dispersion curve at $E \sim 6$~meV. At this point,
+%the UCN production cross-section is predominantly determined by
+%coherent scattering.  This can explain a deviation from the production
+%cross-section in incoherent approximation. Nevertheless, the general
+%agreement of the incoherent approximation with the PSI data is
+%remarkable~(as shown in Fig.~\ref{fig:Frei2010_sigma_G1}).
+
+
+%The result for the calculated UCN production rate in solid o-D$_2$,
+%exposed to a Maxwellian shaped neutron flux for different effective
+%neutron temperatures is shown in
+%Fig.~\ref{fig:sD2_production_rate}. The main conclusion from these
+%results was the new understanding of possible higher energetic loss
+%channels~(one-quasi-particle and two-quasi-particle) in solid
+%deuterium for the downscattering of cold neutrons in the conversion
+%process to UCN. The best value for the effective neutron temperature
+%is in the region of $T_n \sim 40$~K which is larger than what was
+%previously expected~($T_n \sim 30$~K~\cite{Yu1986}).
+
+
+
+%\begin{figure}[h!]
+%\begin{center}
+%  \includegraphics[width=0.5\textwidth]{Frei2010_P.PNG} \caption{\cite{Frei2010}
+%    Calculated UCN production rate of sD$_2$ with 98\% ortho
+%    concentration for different Maxwellian neutron spectra with
+%    effective neutron temperature $T_n$. UCN energy range:0-150~neV
+%    inside the sD$_2$. Neutron capture flux $10^{14}$~/cm$^2$s. Solid
+%    line: total production rate~(one- and two- particle
+%    excitations). Dashed line: one-particle production rate. Dotted
+%    line: two-particle production rate.}
+%%     \vspace{-2.em}
+%    \label{fig:sD2_production_rate}
+%    \end{center}
+%\end{figure} 
+
+
+
+\subsubsection{UCN upscattering and UCN lifetime in sD$_2$}
+
+
+
+
+%\begin{figure}[h!]
+%\begin{center}
+%  \includegraphics[width=0.8\textwidth]{Morris2002.PNG} \caption{\cite{Morris2002}
+%    Left- Data points are measured sD$_2$ lifetimes as a function of
+%    temperature, with the para-fraction fixed at 2.5\%. Only the
+%    statistical errors are shown. Solid lines show the predicted
+%    temperature dependence. The dashed line is the predicted effect of
+%    departure from the solid lifetime model due to the upscattering
+%    from the D$_2$ gas in the guide. Right- sD$_2$ lifetimes as a
+%    function of para-fraction for all of the data taken below 6~K. The
+%    solid line is the model prediction of the para-fraction dependence
+%    at an average temperature of 5.6~K.  }
+%%     \vspace{-2.em}
+%    \label{fig:Morris2002}
+%    \end{center}
+%\end{figure} 
+
 The lifetime of the UCN in sD$_2$ is limited by factors such as
 upscattering from phonons in the solid, upscattering from p-D$_2$
-contamination, and absorption inside the vessel.  Reducing the time UCN
-spend inside the sD$_2$ can reduce the average absorption rate. This
-led to the proposal of a thin-film source where a thin layer of solid
-D$_2$ coats the inside of a storage bottle that is embedded in a cold
-neutron flux~\cite{Golub83}. The possibility of a smaller source
-volume combined with the higher operating temperature of the thin film
-source offers significant technical simplification.
+contamination, and absorption inside the vessel.  Reducing the time
+UCN spend inside the sD$_2$ can reduce the average absorption
+rate. This led to the proposal of a thin-film source where a thin
+layer of solid D$_2$ coats the inside of a storage bottle that is
+embedded in a cold neutron flux~\cite{Golub83}. The possibility of a
+smaller source volume combined with the higher operating temperature
+of the thin film source offers significant technical
+simplification. In Ref.~\cite{anghel2018solid} losses in frost layers
+on the surface of the deuterium crystal and the role of annealing have
+been quantified.
 
 The UCN lifetime in the solid deuterium as a function of the temperature
 and para/ortho fractions has been measured~\cite{Morris2002}. The
@@ -1666,38 +1558,19 @@ in SD$_2$, $\frac{1}{\tau_{para}}$ is the upscattering rate from para
 deuterium molecules in the solid, $\frac{1}{\tau_{Dabs}}$ is the
 upscattering rate from the absorption on deuterium and
 $\frac{1}{\tau_{Habs}}$ is the upscattering rate from the absorption
-on the hydrogen impurities in the solid. The results for UCN lifetimes
-$\tau_{SD}$ in sD$_2$ as a function of the sD$_2$ temperature and
-para/ortho fractions are shown in Fig.~\ref{fig:Morris2002}. The
-difference between the solid and dashed line demonstrates the need to
-include the effect of deuterium vapour in the guide on the lifetime at
-higher temperatures. With this correction, the measured lifetimes
-agree well with theoretical predictions of the upscattering rate.
+on the hydrogen impurities in the solid.
 
 
 
+%The results for UCN lifetimes
+%$\tau_{SD}$ in sD$_2$ as a function of the sD$_2$ temperature and
+%para/ortho fractions are shown in Fig.~\ref{fig:Morris2002}. The
+%difference between the solid and dashed line demonstrates the need to
+%include the effect of deuterium vapour in the guide on the lifetime at
+%higher temperatures. With this correction, the measured lifetimes
+%agree well with theoretical predictions of the upscattering rate.
 
 
-%They demonstrated the necessity of including the effect of deuterium
-%vapor in the UCN guide on the lifetime at higher temperatures to
-%achieve an agreement with the theoretical predictions of UCN
-%lifetime.  The storage time for UCN in the presence of an exit hole
-%is $1/\tau_{tot}=1/\tau_{h}+1/\tau_0$ where $1/\tau_{h}$ is the loss
-%rate of UCN through exit hole and $\tau_0$ is the storage time in the
-%absence of the hole.  (????? not convincing for the next line!!!!! I
-%need to add something here.)
-
-%
-%The temperature should be low enough so that the absorption in the film is greater than the upscattering rate.
-
-%\item[$\bullet$] why deuterium? (weak neutron absorption
-%cross-section from UCN book and Atchison2005,
-%Altarev1980) \item[$\bullet$] UCN production with solid Deuterium
-%(Frei2007 and Lauer2013 for Mainz and Morris2002 and Saunders2013 for
-%Los Alamos) \item[$\bullet$] upscattering rates
-%(Liu2000) \item[$\bullet$] thin film sources?? ( in the UCN
-%book) \item[$\bullet$] production of UCN at pulsed neutron source
-%(Pokotilovski1995)
 \subsection{Comparison between sD$_2$ and superfluid helium sources}
 
 The main differences between sD$_2$ and superfluid helium sources are
@@ -2027,8 +1900,8 @@ than the ILL turbine source.
 %model.
 
 \section{Summary}
-Precision experiments involving UCN provide an attractive avenue to
-investigate physics beyond the standard model. Measurement of the
+Precision experiments involving the UCN provide an attractive avenue
+to investigate physics beyond the standard model. Measurement of the
 neutron EDM is an example of such experiments. For such studies high
 densities of UCN are needed.
 
@@ -2136,17 +2009,19 @@ $B= \omega_{rf} / \gamma_n$.
 \begin{figure}[h]
   \centering
   \includegraphics[width=1.0\textwidth]{ramsey.png}
-  \caption{Ramsey method of separated oscillating fields. Left shows
-    the scheme of a measurement procedure and right shows the data
-    points. The blue points are the UCN counts with the spin up and
-    the red points are the UCN with spin down~(data from the PSI-nEDM
-    collaboration). The width at half height~$\Delta \nu$ of the
-    central fringe is approximately $1/2T$, the four vertical lines
-    indicate the working points~(see text).}
+  \caption{\cite{Schmidt-Wellenburg:2016nfv} Ramsey method of separated
+    oscillating fields. Left shows the scheme of a measurement
+    procedure and right shows the data points. The blue points are the
+    UCN counts with the spin up and the red points are the UCN with
+    spin down~(data from the PSI-nEDM collaboration). The width at
+    half height~$\Delta \nu$ of the central fringe is approximately
+    $1/2T$, the four vertical lines indicate the working points~(see
+    text).}
   \label{fig:ramsey}
 \end{figure}
 
-The probability to find the UCN with spin up is
+The probability to find the UCN with spin up is~(see full calculation
+in Appendix~\ref{app:ramsey})
 \begin{align}
   \label{eqn:spinup}
   P(T, \omega_{rf}) &= \bra{\uparrow} U(T, \omega_{rf}) \ket{\uparrow} \\ \nonumber
