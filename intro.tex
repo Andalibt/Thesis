@@ -1899,50 +1899,6 @@ than the ILL turbine source.
 %forces which helps to investigate the physics beyond the standard
 %model.
 
-\section{Summary}
-Precision experiments involving the UCN provide an attractive avenue
-to investigate physics beyond the standard model. Measurement of the
-neutron EDM is an example of such experiments. For such studies high
-densities of UCN are needed.
-
-UCN are very slow neutrons with velocities $<8$~m/s that can be
-trapped in matter, magnetic and gravitational fields.  Superthermal
-UCN sources could produce high densities of UCN. Such sources should
-have a very small neutron absorption cross-section and upscattering
-rate, while having a high UCN production rate. So far, the best
-candidates are superfluid helium and solid deuterium.
-%The UCN production rate, the upscattering rate and the UCN lifetime
-%of $^4$He and sD$_2$ are discussed in detail.
-
-Both $^4$He and solid D$_2$ UCN sources use quantum excitations in the
-converter medium to create the UCN; these are phonons in the case of
-superfluid sD$_2$ and phonons and rotons in the case of $^4$He. Since
-$^4$He does not capture neutrons, and has a small upscattering
-probability for UCN, the superfluid $^4$He source can be operated at
-lower currents for longer times, allowing a large density of neutrons
-to accumulate. In the case of superfluid helium, storage times of
-hundreds of seconds are achievable. The production rate in sD$_2$ is
-higher than in supefruid 4He, but the neutron storage lifetime is only
-tens of milliseconds.
-
-The TRIUMF UCN project is the only spallation-driven superfluid-$^4$He
-source proposed at this time in the world~\cite{Ruediger}. The
-spallation-driven UCN sources at PSI~\cite{Ries_ascona} and
-LANL~\cite{Ito_ascona} use the phonons in solid deuterium as an
-alternative method of UCN production.
-%The production rate in D$_2$ is higher than in superfluid $^4$He, but
-%the neutron storage lifetime of the latter is much longer (hundreds
-%of seconds compared to milliseconds) if the phonon density is
-%suppressed by cooling to $<$ 1~K.
-The TRIUMF's UCN source uses an optimum proton beam structure on the
-minute scale to produce the highest density of UCN in the world, while
-sD$_2$ spallation sources benefit from pulsing the beam, then isolate
-any UCN produced as quickly as possible to achieve high UCN densities.
-The detail of the current UCN facility at TRIUMF is presented in
-Chapter~\ref{chap:UCNattriumf} and the result of the first UCN
-production with the vertical UCN source is discussed in
-Chapter~\ref{chap:UCNresult}.
-
 
 
 \section{Measurement of nEDM}
@@ -2090,8 +2046,9 @@ field inhomogeneities.
 \subsection{Systematic Errors}
 The dominant systematic errors in the previous best experiment arose
 due to magnetic field instability~(uncorrelated with the electric
-field $E$), and magnetic field inhomogeneity through the geometric phase
-effect~(GPE)~\cite{pendlebury2004}~(see Appendix~\ref{app:GPE}).
+field $E$), and magnetic field inhomogeneity through the geometric
+phase effect~(GPE) which is a misnomer~\cite{pendlebury2004}~(see
+Appendix~\ref{app:GPE}).
 %The GPE arises due to a combination of magnetic field
 %inhomogeneity and motion of the particles in the electric field during
 %the measurement time, when the neutrons and co-magnetometer atoms are
@@ -2117,6 +2074,124 @@ gradient. Graphing the measured neutron EDM as a function of this
 ratio then allows to correct to the zero gradient and hence discover
 the true neutron EDM. This is also supplemented by gradient
 determination using surrounding Cs magnetometers.
+
+
+Pendlebury {\it{et.~al.,}}~\cite{Pendlebury2015} measured the nEDM by
+the Ramsey technique and using mercury as a comagnetometer to make
+cycle-by-cycle corrections.  As they show, the measured nEDM has a
+downward(upward) slope as a function of the relative frequency shift
+of neutrons and Hg when the applied $\bf{B_0}$ field is
+upward(downward),
+\begin{equation}
+  d_{\mathrm {meas}}= d_n \pm d_{\mathrm{false}}~.
+\end{equation}
+One would assumet that the crossing point $d_x$ happens when there is
+no magnetic field gradient. However, various effects could potentially
+shift the crossing point.
+
+
+Table~\ref{tab:nedmsystematics} shows a summery of the nEDM systematic
+errors and their uncertainties for the Pendlebury
+{\it{et.~al.,}}~\cite{Pendlebury2015} nEDM measurement. The
+description of each effect is breifly listed below:
+
+\begin{table}[h!]
+  \begin{center}
+    \begin{tabular}{|c||c|c|}
+      \hline
+      \bf{Effect} & \bf{Shift} & $\boldsymbol{\sigma}$ \\ \hline \hline
+      $\nu_{\mathrm{Hg}}$ light shift (included in $d_x$) & (0.35) & 0.08 \\ \hline
+      $\chi_{\nu}^2 = 1.2$ adjustment & 0 & 0.68 \\ \hline
+      Quadrupole fields and Earth's rotation & 0.33 & 0.14 \\ \hline
+      Dipole field & -0.71 & 0.07 \\ \hline
+      Hg door PMD & 0.00 & 0.60 \\ \hline
+      $\bf{v} \times \bf{E}$ translational & 0.000 & 0.001 \\\hline
+      $\bf{v} \times \bf{E}$ rotational & 0.00 & 0.05 \\ \hline
+      Second-order $\bf{v} \times \bf{E}$ & 0.000 & 0.000 \\ \hline
+      Uncompensated $\bf{B}$ drift & 0.00 & 0.34 \\ \hline
+      Hg atom EDM & -0.002 & 0.006 \\ \hline
+      Electric forces & 0.00 & 0.04 \\ \hline
+      Leakage currents & 0.00 & 0.01 \\ \hline
+      AC fields & 0.000 & 0.001 \\ \hline
+      Nonuniform Hg depolarization & 0.000 & 0.001 \\ \hline
+      Total shift of $d_X$ & -0.38 & 0.99 \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{\cite{Pendlebury2015}Summary of systematic errors and their
+    uncertainties, in units of $10^{-26}$~e$\cdot$cm. Correction for
+    the mercury light shift is already incorporated run by run prior
+    to the crossing-lines fit; other corrections are then applied to
+    the crossing-point EDM value $d_x$ .}
+  \label{tab:nedmsystematics}
+\end{table}
+
+\begin{description}
+\item{ $\bullet$ \bf{$\boldsymbol{\nu_{\mathrm{Hg}}}$ light shift:}}
+  The presence of mercury reading light can shift the frequency of the
+  mercury atoms.
+  
+\item{$\bullet$\bf{$\boldsymbol{\chi_{\nu}^2 = 1.2}$ adjustment:}}
+  Over the four years of data taking, the profile of the magnetic
+  field could in principle change due to opening and closing the
+  magnetic shields and their demagnetization. These random variations
+  are taken into account by increasing the uncertainty of the global
+  fit $\chi^2_{\nu}$.
+  
+\item{$\bullet$ \bf{Quadrupole fields and Earth's rotation:}} In the
+  presence of a field with gradient in the $x$ and $y$ direction only,
+  the neutron spins follow the total field direction adiabatically
+  while the nonadiabatic Hg atoms stay insensitive to such
+  changes. This affect the neutron to Hg frequency ratio, which in
+  turn causes a false nEDM. The rotation of the Earth shifts all of
+  the frequency ratio measurements of neutron and Hg to lower values
+  when the $\bf{B_0}$ field is upwards, and to higher values by the
+  same amount when the $\bf{B_0}$ field is downwards.
+  
+\item{$\bullet$\bf{Dipole field:}} The field of a permanent magnetic
+  dipole close near the UCN storage results in a field gradient which
+  can induce a false nEDM.
+
+\item{$\bullet$\bf{Hg door PMD:}} This is the effect of the permanent
+  magnetic dipole~(PMD) near the Hg door which induces a false nEDM.
+  
+\item{$\bullet$$\bf{v}\times\bf{E}$ \bf{effects}:} A false nEDM signel
+  arises when UCN experiences a magnetic field gradient in the
+  presence of the electric field as it.
+
+\item{$\bullet$\bf{Uncompensated
+      $\bf{B}$ drift:}} In principle there could be some residual
+  effects due to the fluctuations in the magnetic field, such as
+  hysteresis in the mu-metal shield. This could eventually induce a
+  false EDM.
+
+\item{$\bullet$\bf{Hg atom EDM:}} Since the mercury is used to
+  compensate for shifts in the magnetic field, any EDM-like component
+  contributing to the mercury frequency will affect the measurement of
+  the neutron EDM.
+
+\item{$\bullet$\bf{Electric forces:}} An electrostatic force can
+  slightly move the electrodes of the high voltage EDM cell which can
+  cause a systematic uncertainty.
+
+\item{$\bullet$\bf{Leakage currents:}} The leakage current that flows
+  through or along the surface of the insulator between the high
+  voltage electordes with a component along the $\bf{B_0}$ field would
+  produce a frequency shift that gives rise to a false nEDM.
+
+\item{$\bullet$ \bf{AC fields:}} An oscillation in the high voltage
+  can generate an oscillating displacement current in the nEDM cell
+  which causes an oscillating $\bf{B}$ field. This can make a change
+  in the frequency shift and therefore the nEDM.
+
+\item{$\bullet$\bf{Nonuniform Hg depolarization:}} If the average
+  depolarization time of the Hg atoms are different for two
+  orientations of the $\bf{E}$ field, or if the Hg frequency has some
+  dependencies to the depolarization time, a false EDM would be
+  induced.
+
+\end{description}
+
+
 
 
 %This method can be calibrated for larger applied
@@ -2385,4 +2460,51 @@ the WWR-M reactor in Gatchina in order to increase the UCN flux.
 %\item{what else?}
   
 %\end{description}
+
+
+
+
+\section{Summary}
+Precision experiments involving the UCN provide an attractive avenue
+to investigate physics beyond the standard model. Measurement of the
+neutron EDM is an example of such experiments. For such studies high
+densities of UCN are needed.
+
+UCN are very slow neutrons with velocities $<8$~m/s that can be
+trapped in matter, magnetic and gravitational fields.  Superthermal
+UCN sources could produce high densities of UCN. Such sources should
+have a very small neutron absorption cross-section and upscattering
+rate, while having a high UCN production rate. So far, the best
+candidates are superfluid helium and solid deuterium.
+%The UCN production rate, the upscattering rate and the UCN lifetime
+%of $^4$He and sD$_2$ are discussed in detail.
+
+Both $^4$He and solid D$_2$ UCN sources use quantum excitations in the
+converter medium to create the UCN; these are phonons in the case of
+superfluid sD$_2$ and phonons and rotons in the case of $^4$He. Since
+$^4$He does not capture neutrons, and has a small upscattering
+probability for UCN, the superfluid $^4$He source can be operated at
+lower currents for longer times, allowing a large density of neutrons
+to accumulate. In the case of superfluid helium, storage times of
+hundreds of seconds are achievable. The production rate in sD$_2$ is
+higher than in supefruid 4He, but the neutron storage lifetime is only
+tens of milliseconds.
+
+The TRIUMF UCN project is the only spallation-driven superfluid-$^4$He
+source proposed at this time in the world~\cite{Ruediger}. The
+spallation-driven UCN sources at PSI~\cite{Ries_ascona} and
+LANL~\cite{Ito_ascona} use the phonons in solid deuterium as an
+alternative method of UCN production.
+%The production rate in D$_2$ is higher than in superfluid $^4$He, but
+%the neutron storage lifetime of the latter is much longer (hundreds
+%of seconds compared to milliseconds) if the phonon density is
+%suppressed by cooling to $<$ 1~K.
+The TRIUMF's UCN source uses an optimum proton beam structure on the
+minute scale to produce the highest density of UCN in the world, while
+sD$_2$ spallation sources benefit from pulsing the beam, then isolate
+any UCN produced as quickly as possible to achieve high UCN densities.
+The detail of the current UCN facility at TRIUMF is presented in
+Chapter~\ref{chap:UCNattriumf} and the result of the first UCN
+production with the vertical UCN source is discussed in
+Chapter~\ref{chap:UCNresult}.
 
