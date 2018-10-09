@@ -106,8 +106,53 @@ amplitudes much greater than the coercivity.
 
 To understand the behavior in Fig.~\ref{fig:data_and_simulation}, a
 theoretical model of the hysteresis based on the work of
-Jiles~\cite{jiles1994frequency} was used.  The model contains a number of
-adjustable parameters.  We adjusted the parameters based on our
+Jiles~\cite{jiles1994frequency} was used.
+%The model contains a number
+%of adjustable parameters.
+The anhysteretic magnetization of a material in the presence of
+magnetic field could be written as
+\begin{equation}
+M_{an}(H) =  M_s \ell \left( \frac{H + \alpha M_{an}(H)}{a} \right)
+\end{equation}
+where $\ell$ is the langevin function $\ell = coth(x) - 1/x$, $M_s$ is
+the saturation magnetization, $\alpha$ is a coupling coefficient,
+$a = k_BT/\mu_0 <m> $ with $k_B$ being the Bolzmann constant, $T$
+being the temperature, $\mu_0$ the permeability of free space, and
+$<m>$ is the effective domain size. The equation for hysteresis can then be derived from the energy-balance equation 
+\begin{equation}
+\mu_0 \int M_{an} dH_e  = \mu_0 \int M dH_e + \mu_0 k \delta(1-c) \int \frac{dM_{irr}}{dH_e}~,
+\end{equation}
+which means, in an initially demagnetized material, hysteresis can
+appear as a change in total demagnetization, or or be dissipated due
+to irreversible changes in magnetization $M_{irr}$ (hysteresis
+loss). Here the first term of the right-hand side is the contribution
+to the magnetostatic energy, and the second term on the right-hand
+side is the dissipation loss due to pinning. In this equation
+$H_e= H + \alpha M$, the coefficient $k$ is the pinning parameter
+which determines the amount of energy dissipated, and $\delta$ is a
+directional parameter which ensures that energy is always lost through
+dissipation. The coefficient $c$ is a measure of the amount of
+reversible change in magnetization.  The total magnetization cosists
+of two parts including reversible and irreversible magnetization
+$M = M_{\mathrm{irr}} + M_{\mathrm{rev}}$.
+
+Now including both classical (eddy current) losses and anomalous
+losses we get
+\begin{equation}
+  \begin{aligned}
+    &\left (  \frac{\mu_0d^2}{2 \rho \beta} \frac{dH}{dt} \right)\left( \frac{dM}{dH} \right)+ \left (\frac{GdW\mu_0 H_0}{\rho} \right)^2 \left( \frac{dH}{dt} \right)^2 \left( \frac{dM}{dH} \right)^{3/2} \\
+    &+ \left[k\delta - \alpha \left( M_{an}(H) - M(H) + k \delta c \frac{dM_{an}}{dH_e}\right)\right] \left( \frac{dM}{dH} \right) \\
+    &- \left(M_{an}(H) - M(H) + k \delta c\frac{dM_{an}}{dH_e} \right) = 0~,
+  \end{aligned}
+\end{equation}
+where $\rho$ is the resistivity, $d$ is the cross-sectional dimension
+in meters, $\beta$ is a geometric factor, $G$ is a dimensionless
+constant of value 0.1356, $w$ is the width of the laminations, $H_0$
+is a parameter representing the fluctuating internal potential
+experienced by domain walls. This equation can be solved numerically.
+
+
+We adjusted the parameters based on our
 measurements of $B_m-H_m$ loops including the initial magnetization
 curve.  These measurements were performed separately from our lock-in
 amplifier measurements, using an arbitrary function generator and a

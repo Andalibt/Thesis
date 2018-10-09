@@ -1,16 +1,18 @@
-\chapter{Current UCN Facility at TRIUMF\label{chap:UCNattriumf}}
+\chapter{UCN Facility at TRIUMF\label{chap:UCNattriumf}}
 
 
-The current vertical UCN cryostat at TRIUMF is the same UCN cryostat
-developed and tested at KEK-RCNP. In October 2016, the cryostat was
-shipped to triumf, and in 2017 it was installed at a dedicated
-spallation neutron source for further UCN experiments. The main
-purpose of such experiments were for better understanding of the
-vertical UCN source, and the design of the next generation UCN source
-for higher statistics. The 520~MeV cyclotron at TRIUMF provides up to
-40~$\mu$A of proton beam that can be diverted onto a tungsten
-spallation target. The vertical UCN source is placed above the target
-and is surrounded by graphite blocks serving as neutron reflectors.
+The vertical UCN cryostat at TRIUMF is the same UCN cryostat developed
+and tested at KEK-RCNP.  This source is referred to as the vertical
+UCN source because the UCN exit the source vertically.  In October
+2016, the cryostat was shipped to TRIUMF, and in 2017 it was installed
+at a dedicated spallation neutron source for further UCN
+experiments. The main purpose of such experiments were for better
+understanding of the vertical UCN source, and the design of the next
+generation UCN source for higher statistics. The 520~MeV cyclotron at
+TRIUMF provides up to 40~$\mu$A of proton beam that can be diverted
+onto a tungsten spallation target. The vertical UCN source is placed
+above the target and is surrounded by graphite blocks serving as
+neutron reflectors.
 
 
 The vertical source was modified to fulfill the Canadian safety
@@ -35,7 +37,7 @@ important elements of the UCN facility at TRIUMF are discribed below.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{UCN Beam-line~(BL1U)}
+\section{Proton Beam-line for UCN Facility~(BL1U)}
 TRIUMF produces negatively charged hydrogen ions $H^-$ from an ion
 source. These ions are then accelerated in the 520~Mev cyclotron in an
 outward spiral trajectory. A thin graphite stripper foil removes the
@@ -121,6 +123,7 @@ pyramid~Fig.~\ref{fig:pyramid}.
   \label{fig:pyramid}
 \end{figure}
 
+
 \section{Tungsten Spallation Target\label{sec:target}}
 The spallation target is located at the downstream end of BL1U. The
 UCN spallation target comprises a series of rectangular blocks, adding
@@ -147,7 +150,7 @@ time-averaged).
     5.0~cm, respectively.}
   \label{fig:target}
 \end{figure}
-The target is being water-cooled. A water flow of approximately
+The target is water cooled. A water flow of approximately
 0.8~L/s cools the target. Horizontal channels around the blocks create
 a uniform flow. To reduce the beam absorption in the water the last
 two blocks are thicker. Cooling water corrode tungsten.  Therefore, a
@@ -162,7 +165,25 @@ At TRIUMF, neutrons are produced via the spallation process by hitting
 a tungsten target with a proton beam. Spallation is refered to a
 nuclear reaction where high energy particles interact with atomic
 nucleus. This process creates many high energy neutrons and background
-radiation. The target is surrounded by several blocks of lead and
+radiation.  Since the temperature of the superfluid helium is crucial,
+the heat load into it should be kept as small as possible. Two effects
+dominate the heat load: (1) heating by prompt $\gamma$ radiation and
+neutrons; and (2) residual heating by radioactive decays of materials
+activated by neutron capture.  Any heat deposited in the converter
+vessel and the connected UCN guide will directly contribute to the
+heat load, so they should be thin-walled and made out of a material
+with low density, low atomic number, and low neutron-absorption cross
+section. Additionally, the vessel and UCN guide should be leak-tight
+for superfluid helium, have a high optical potential for UCN, or allow
+coating with a suitable material. The cold- and thermal-moderator
+vessels have less direct impact on the heat load into the UCN con-
+verter, but secondary particles from (n, $\gamma$) reactions and
+radioactive decays can still contribute.
+
+
+
+
+The target is surrounded by several blocks of lead and
 graphite. The fast neutrons are reflected and moderated down and enter
 the warm D$_2$O moderator at room temperature~(300~K) and become
 thermal neutrons with an energy of 0.025~eV, and the speed of 2.2~km/s.
@@ -174,9 +195,15 @@ enter the isotopically pure superfluid helium at 0.84 to 0.92~K as a
 result of phonon transitions inside the superfluid helium as discussed
 in Section~\ref{sec:ucn_with_heII}.
 
-The schematic of the vertical source is shown in
-Fig.~\ref{fig:source}.  The neutron moderators and the helium
-circulation system are explained below.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{Source_all.png}
+  \caption{The UCN source and the guide geometry at TRIUMF }
+  \label{fig:Source_all}
+\end{figure}
+
+
 
 
 \begin{figure}[h!]
@@ -192,6 +219,13 @@ circulation system are explained below.
     pumping~(see text for more details). }
   \label{fig:source}
 \end{figure}
+
+
+
+The schematic of the vertical source is shown in Fig.~\ref{fig:source}
+and a 3D drawing of the vertical source and the guide geometry is
+shown in Fig.~\ref{fig:Source_all}. The neutron moderators and the
+helium circulation system are explained below.
 
 
 \subsection{Neutron D$_2$O Moderators}
@@ -219,7 +253,7 @@ stages towards superfluid helium condensation is presented below. The
 full operation and design details are available in
 Ref.~\cite{matsumiya_thesis}.
 
-\subsubsection{4 Kelvin Reservoir}
+\subsubsection{Liquid Helium Reservoir}
 The first step of the helium circulation is to fill up the helium
 reservoir with the commercially available 4.2~K helium. The full
 capacity of the helium reservoir is 50~L. In the 2017 experimental
@@ -271,7 +305,7 @@ helium transfer stops once the 4~K reservoir is 60\% filled.
 The efficiency of each transfer from the stationary dewar to the 4~K
 reservoir was about 40\% to 60\% on average.
 
-\subsubsection{1 Kelvin Pot}
+\subsubsection{Liquid Helium Pot at 1 Kelvin}
 The 4.2~K liquid helium in the helium reservoir is transfered to a
 pot called ``1~K pot''. The flow rate of the transferred liquid
 helium is controlled by a needle valve. The 1~K pot is always pumped
@@ -281,16 +315,43 @@ meter. The maximum level of the 1.4~K liquid helium is about 15~cm. At
 this level, the volume of the 1.4~K liquid helium is about 1.3~L.
 
 
-\subsubsection{$^3$He Pot}
-Once the 1~K pot is ready, the $^3$He circulation starts to condense
-helium into the ``$^3$He pot''. To start, the needle valve in the $^3$He
-reservoir is opened. A vaccum pump compresses the $^3$He gas. The
-$^3$He gas is then purified by a room temperature and a cold purifier
-and enters the 4~K reservoir to get precooled. The further cooling down
-to 1~K, and condensation happen via the 1~K pot. The liquid $^3$He is
-then transfered to the $^3$He pot, and is further cooled down to 0.7~K
-via pumping. The evaporated $^3$He is pumped out and goes through an
-oil filter and goes back to the beginning point of the circulation.
+\subsubsection{Liquid $^3$He Pot}
+
+Isotopically pure $^4$He is cooled by the latent heat of decompressed,
+liquid $^3$He inside a vessel called ``$^3$He pot''.
+
+
+Once the 1~K pot is ready, the $^3$He gas circulates in a loop from
+room temperature to the $^3$He pot. $^3$He is a very valuable gas, so
+the entire $^3$He gas system is kept below atmospheric pressure. In
+case of a leak, the system will be contaminated, but we will not lose
+$^3$He. To start, the needle valve in the $^3$He reservoir is
+opened. A vacuum pump compresses the $^3$He gas. The $^3$He gas is
+then purified by a room temperature and a cold purifier and is
+precooled by the $^4$K reservoir, and then condensed in the 1~K
+pot. The liquid $^3$He then undergoes Joule-Thomson expansion into the
+$^3$He pot which is decompressed by vacuum pumps. Joule-Thomson~(JT)
+expansion occurs at a valve. During JT expansion, a part of the liquid
+$^3$He is evaporated. Since the expansion is adiabatic, total enthalpy
+is conserved and the liquid fraction remaining after JT expansion can
+be calculated.
+
+The $^3$He pot is connected to the isotopically pure $^4$He volume by
+a copper heat exchanger which conducts the heat produced in the
+isotopically pure $^4$He to the $^3$He pot. There are several
+counter-flow heat exchangers to recover enthalpy of the evaporated
+helium gas.
+
+
+%Once the 1~K pot is ready, the $^3$He circulation starts to condense
+%helium into the ``$^3$He pot''. To start, the needle valve in the $^3$He
+%reservoir is opened. A vacuum pump compresses the $^3$He gas. The
+%$^3$He gas is then purified by a room temperature and a cold purifier
+%and enters the 4~K reservoir to get precooled. The further cooling down
+%to 1~K, and condensation happen via the 1~K pot. The liquid $^3$He is
+%then transfered to the $^3$He pot, and is further cooled down to 0.7~K
+%via pumping. The evaporated $^3$He is pumped out and goes through an
+%oil filter and goes back to the beginning point of the circulation.
 
 \subsubsection{Isopure Helium}
 After filling the $^3$He pot with 0.7~K liquid $^3$He, the
@@ -313,9 +374,9 @@ exchanger. The isopure He in the heat exchange pot is cooled by the
 0.7~K liquid $^3$He via the copper heat exchanger and becomes
 He-II. The condensed He-II fills the He-II bottle with a volume of
 8.5~L and gets cooled down to $\sim$~0.83~K.
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% up to here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Data Acquisition System\label{sec:DAQ}}
 The TUCAN UCN DAQ system accumulates data from different devices and
