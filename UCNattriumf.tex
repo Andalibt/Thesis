@@ -36,7 +36,6 @@ spallation neutrons and superfluid helium for UCN production. The
 important elements of the UCN facility at TRIUMF are discribed below.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Proton Beam-line for UCN Facility~(BL1U)}
 TRIUMF produces negatively charged hydrogen ions $H^-$ from an ion
 source. These ions are then accelerated in the 520~Mev cyclotron in an
@@ -374,9 +373,9 @@ exchanger. The isopure He in the heat exchange pot is cooled by the
 0.7~K liquid $^3$He via the copper heat exchanger and becomes
 He-II. The condensed He-II fills the He-II bottle with a volume of
 8.5~L and gets cooled down to $\sim$~0.83~K.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% up to here
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 \section{Data Acquisition System\label{sec:DAQ}}
 The TUCAN UCN DAQ system accumulates data from different devices and
@@ -389,8 +388,7 @@ information from the connected sensors or input devices, processes the
 data, and triggers outputs based on pre-programmed parameters.
 Depending on the inputs and outputs, a PLC can monitor and record
 data, automatically start and stop processes, generate alarms based on
-the applied limits, and more. A picture of the PLC
-is shown in Fig.~\ref{fig:PLC}.
+the applied limits, and more.
 
 \begin{figure}[h!]
   \centering
@@ -403,6 +401,48 @@ is shown in Fig.~\ref{fig:PLC}.
     and the fuses are positioned. }
   \label{fig:PLC}
 \end{figure}
+
+A picture of the PLC is shown in Fig.~\ref{fig:PLC}. The PLC modules
+are placed in the top two rows. The bottom row includes the power
+supplies and the fuses for the sensors. The middle section of the PLC
+box has the terminal blocks for all the sensors. The terminal blocks
+for each sensor are labeled. The number of terminal blocks for each
+sensor depends on its wiring diagram. There green terminal blocks are
+for the ground connection and the grey termianl blocks are for all
+other readings.  The cables from the sensors enter the PLC via the two
+holes on the top of the PLC box. These cables are then routed on the
+right side of the pannel and connected to the designated terminal
+blocks. The input connection from the sensors to the terminal blocks
+enter from the bottom row and the output connection to the PLC modules
+leave the terminal blocks from their top row. We draw the wiring
+diagram for each sensor using Altium software.
+
+Fig.~\ref{fig:altium} shows the altium drawing for the PG3H sensor in
+the $^4$He system which is named UCN:He4:PG3H. The first part
+indicates that it is a sensor for the UCN source, the middle part
+indicates which sub-system this system blongs to e.g., $^3$He or
+$^4$He or UCN guides~(UGD) and the last part is the name of the sensor
+which in this case is pressure gauge 3 high (PG3H). The left wires on
+the left side of the drawing show the connection to the modules. Here
+we used the red~(RD), black~(BK) and shield~(SH) of a Belden 9462
+cable. An orange wire~(OR) then goes to the bottom of the PLC and
+connects to a fuse and a violet wire~(VI) connects to the top row~(D0)
+module one~(M1) and terminals T7 and T9. The other
+values~(UCN:HE4:PG3H and RADCPRESS) are related to the PLC
+programming. On the left side of the graph we see wires from the
+sensor itself to the terminal block. As the Fig. shows, the sensor is
+a Omega PXM219-1.6bar pressure gauge. To see the location of the
+sensor please look at appendix~\ref{app:gasflow}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1.0\textwidth, angle = 0]{altium_2.png}
+  \caption{Altium drawing of the pressure gauge PG3H~(UCN:HE4:PG3H) }
+  \label{fig:altium}
+\end{figure}
+
+
+
 The communication between the PLC and the screen is handled by EPICS.
 The EPICS screen defines the user interface for the controls. It
 provides readouts of variables, indications of device status, and
@@ -444,10 +484,99 @@ the top section.
   \label{fig:midas}
 \end{figure}
 
+The main MIDAS frontends that are being read out by the UCN DAQ:
+
+\begin{itemize}
+\item Source EPICS frontend (and beamline EPICS) frontend, which
+  copies a subset of the EPICS Process Variables~(PVs) to the MIDAS
+  history system.  The program that does this is called
+  ``feSourceEpics''. On the MIDAS status page the equipment
+  ``SourceEpics'' is green and producing new events at a rate of
+  $\sim 0.1$~Hz. It is possible to add new history plot or add new
+  variables to the existing history plot.
+\item A Keithley picoammeter which is reading the current from a
+  thermal neutron counter. The picoammeter is readout through a
+  MIDAS-GPIB chain; the frontend to control it is called ``scpico''.
+\item The V1720 for reading out the UCN $^6$Li detector.
+\item A frontend program for controlling UCN sequence. It starts
+  triggering after the end of target irradiation.
+\item V785 peak sensing ADC for reading out the UCN $^3$He detector.
+  This frontend is for digitizing the signal from the $^3$He UCN
+  detector.  The program for reading out the digizer is called
+  ``fev785''.  These frontend program controls the readout from a CAEN
+  V785 VME module. The trigger~(gate) signal for the V785 is generated
+  by a bunch of NIM electronics that process the signal from the
+  $^3$He detector.
+\end{itemize}
+
 For the 2017 experimental run, each expriment had a unique MIDAS run
 number. The MIDAS files were then converted to ROOT files for data
-analysis. The result of the analysis is presented in
-Chapter~\ref{chap:UCNresult}.
+analysis. ROOT is a scientific software package developed by
+scientists at CERN~\cite{brun1997root}. It provides all the
+functionalities needed to deal with big data processing, statistical
+analysis, visualisation and storage. It is mainly written in C++, but
+integrated with other languages such as Python and R. Our data was
+saved as .root format. Each data file represents a particular midas
+run and has 8 trees. A tree in ROOT is like a table. Each row of the
+table is a branch in the tree. Fig.~\ref{fig:sfig1} shows the trees in
+a ROOT file. The XXX indicates the number of the MIDAS run. The UCN
+Hit trees include the data timestamps, ChargeL, ChargeS, PSD~(see
+Section~\ref{sec:detectors}), Baseline and etc. The run transition
+trees include the UCN valve open time, UCN valve close time, Cycle
+start time and etc.~(see Chapter~\ref{chap:UCNresult}). The LND
+Detector tree has the thermal neutron detector readings and its
+timestamps. The Source Epics tree has the readings for all the UCN
+source sensors integrated into the EPICS system, and the Beam Line
+Epics tree has all the readings related to the beamlines such as
+target temperatures and etc. The header tree includes the experiment
+number~(e.g., TCN170XX which represents a TUCAN experiment in 2017 and
+XX represents the experiment number), the person who was on the shift,
+and the comments they entered on the MIDAS web interface screen during
+the shift.
+
+\begin{figure}
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=.7\textwidth]{data_struct.pdf}
+  \caption{}
+  \label{fig:sfig1}
+\end{subfigure}%
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=.8\textwidth]{data_struct2.png}
+  \caption{}
+  \label{fig:sfig2}
+\end{subfigure}
+\caption{(a)~A ROOT file and the trees that represent tables. (b)~A
+  snapshot of the Source Epics tree with some of the branches. Each
+  branch is a row of the Source Epics table. }
+\label{fig:data_struct}
+\end{figure}
+
+We developed a ROOT program that extracts the UCN cycle information
+for each MIDAS run and creates a .root file.  The output file has one
+tree as ``cycle information'' table. It consists of branches with the
+cycle average, maximum, and minimum values for the main sensors that
+contribute to the analysis.  The analysis is based on the UCN cycles,
+and it is essential to know, for example, how the temperature of the
+superfluid helium changes for each cycle. Therefore, the average,
+maximum and mimimum values of the superfluid helium temperature for
+each cycle for different temperature sensors are calculated and
+inserted in the cycle information tree. In addition, the UCN
+background, and the total UCN counts for each cycle are also added to
+the tree. More details about these variables, and the result of the
+analysis is presented in Chapter~\ref{chap:UCNresult}.
+
+
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=0.4\textwidth]{data_struct.pdf}
+%  \caption{Left: A ROOT file and the trees }
+%  \label{fig:data_struct}
+%\end{figure}
+
+
+
 
 \section{UCN Detectors\label{sec:detectors}}
 For the TUCAN experimental runs in 2017, a $^6$Li and a $^3$He
