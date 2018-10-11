@@ -1,4 +1,4 @@
-\chapter{UCN Production and Detection\label{chap:UCNresult}}
+\chapter{UCN Production, Transport, and Detection\label{chap:UCNresult}}
 
 In November of 2017, the first UCN at TRIUMF were produced using the
 prototype vertical UCN source described in
@@ -15,8 +15,8 @@ presented.
 \section{UCN Cycle of Measurement}
 Fig.~\ref{fig:volume_schematic} is a simple schematic of UCN
 production and detection volumes. This simplified sketch helps
-understand the UCN trade between different volumes and understand the
-concepts without getting distracted with too many details. Here volume
+understand the UCN trade between different volumes, and understand the
+concepts without getting distracted with too much details. Here volume
 $V_1$ is the production and storage volume before the valve, where
 $N_1$ number of UCN are produced. $V_2$ is the secondary volume, where
 $N_2$ number of UCN could enter after the valve is opened, and $V_3$
@@ -61,26 +61,36 @@ the differential Eqn.~\ref{eqn:alldndt}.
 \end{equation}
 
 
-In these equations, \large $\frac{dN_1}{dt}$ \normalsize shows the
-change in the UCN counts over time in $V_1$,~\large $\frac{dN_2}{dt}$
-\normalsize shows the change in the UCN counts in $V_2$, and \large
-$\frac{dN_3}{dt}$ \normalsize shows the change in the UCN count in
-$V_3$, after the valve is opened. Each term in the right side of the
-equations is described below.
+In these equations,$dN_1/dt$ shows the change in the UCN counts over
+time in $V_1$, $dN_2/dt$ shows the change in the UCN
+counts in $V_2$, and $dN_3/dt$ shows the
+change in the UCN count in $V_3$, after the valve is opened. Each term
+in the right side of the equations is described below.
 
-The total number of UCN in $V_1$ depends on three factors: the UCN
-that get into $V_2$~\large($\frac{N_1}{\tau_{c,1}}$) \normalsize, the
-UCN that is lost with the storage lifetime $\tau_1$, and the UCN that
-bounce back from $V_2$ to $V_1$~\large ($\frac{N_2}{\tau_{c,2}}$)
-\normalsize. In $V_2$, some UCN cross from $V_1$ to $V_2$~ \large
-($\frac{N_1}{\tau_{c,1}}$) \normalsize, some get lost with the loss
-rate $\tau_2$~\large ($\frac{N_2}{\tau_2}$) \normalsize, some cross
-the gate valve and go back to $V_1$~ \large
-($\frac{N_2}{\tau_{c,2}}$)\normalsize, and some get to the detector
-~\large ($\frac{N_2}{\tau_{c,3}}$) \normalsize. The rate of the UCN
-detection $\frac{dN_3}{dt}$ is the number of UCN crossing from $V_2$.
-In principle, solving these equations could give an estimate of the
-number of UCN in each volume.
+In the first equation, the total number of UCN in $V_1$ depends on
+three factors: the UCN that get into $V_2$ with the rate
+$N_1/\tau_{c,1}$, the UCN that is lost with the storage lifetime
+$\tau_1$ with the rate rate $N_1/\tau_{1}$, and the UCN that bounce
+back from $V_2$ to $V_1$ with the rate $N_2/\tau_{c,2}$. Here
+$1/\tau_{c,1}$ is the probability of UCN crossing from volume $V_1$ to
+volume $V_2$, and $1/\tau_{c,2}$ is the probability of UCN cross from
+volume $V_2$ back to volume $V_1$.
+
+
+In the second equation for $V_2$, some UCN cross from $V_1$ to $V_2$
+with the rate $N_1/\tau_{c,1}$, some get lost with the rate
+$N_2/\tau_2$, some cross the gate valve and go back to $V_1$ with the
+rate$N_2/\tau_{c,2}$, and some get to the detector with the rate
+$N_2/\tau_{c,3}$. Here $1/\tau_{c,3}$ is the probabiliy of UCN
+crossing from volume $V_2$ to volume $V_3$ and $1/\tau_2$ is the loss
+probability of UCN in volume $V_2$.
+
+
+
+In the third equation, the rate of the UCN detection $dN_3/dt$ is the
+rate of UCN crossing from volume $V_2$ to volume $V_3$ as
+$N_2/\tau_{c,3}$. In principle, solving these equations could give an
+estimate of the number of UCN in each volume.
 
 A 3D drawing of the experimental setup is shown in
 Fig.~\ref{fig:Source_all}. In this case, $V_1$ is the UCN source
@@ -197,7 +207,7 @@ are not a concern for UCN counting. In addition, $\gamma$-$\gamma$
 pileup does not leak into the UCN box.
 
 The result of such analyses showed the UCN box acceptance is at
-97. $\pm$ 0.1~\%. The UCN-UCN pileup at 1~$\mu$A beam current and 60~s
+99.7 $\pm$ 0.1~\%. The UCN-UCN pileup at 1~$\mu$A beam current and 60~s
 irradiation of the target was measured to be at 0.075~Hz or has and
 effect of less than 1~\%. The analysis indicated that cross-talk has a
 negligible effect on the operating rates and deadtime affects the
@@ -607,28 +617,56 @@ open delay times.
 \end{figure}
 Fig.~\ref{fig:storage_example} shows the total UCN counts~(background
 subtracted) versus the valve open delay time for 1~$\mu$A proton beam
-current and 60~s target irradiation time. The longer delay times give rise to
-lower UCN counts due to the loss mechanisms. The one exponential fit
-function
+current and 60~s target irradiation time. The longer delay times give
+rise to lower UCN counts due to the loss mechanisms. The one
+exponential fit function
 \begin{equation}
-\text{UCN counts} = A e^{-t/\tau_1}
+\text{UCN counts} = A e^{-t/\tau_1}~,
 \end{equation}
 determines the storage lifetime $\tau_1$. At 170~s valve open delay
 time, the total UCN counts are not consistent with what the fit
 function predicts due to low statistics. However, the result of the
 fit is not driven by this inconsistency as it has a negligible effect
 on the extrected storage lifetime.
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=0.9\textwidth]{17002_StorageLifetime.pdf}
+%  \caption{The total UCN counts at different valve open delay times
+%    for 1~$\mu$A beam current and 60~s irradiation time. The red line
+%    is the one exponential fit. }
+%  \label{fig:storage_example}
+%\end{figure}
 
+%\setlength\belowcaptionskip{-3ex}
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.9\textwidth]{17002_StorageLifetime.pdf}
-  \caption{The total UCN counts at different valve open delay times
-    for 1~$\mu$A beam current and 60~s irradiation time. The red line
-    is the one exponential fit. }
+  \begin{subfigure}{.8\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{17002_StorageLifetime.pdf}
+    \caption{}
+    \label{fig:storage_example1}
+  \end{subfigure}%
+  \\
+  \begin{subfigure}{.8\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{10muA_30s.pdf}
+    \caption{}
+    \label{fig:storage_example10}
+  \end{subfigure}
+  \caption{The total UCN counts at different valve open delay times for
+    (a) 1~$\mu$A beam current and 60~s irradiation time and (b)
+    10~$\mu$A beam current and 30~s target irradiation time. The red
+    line is the one exponential fit. The initail UCN counts for the
+    10~$\mu$A target irradiation is higher. However, the storage
+    lifetime is lower compared to 1~$\mu$A beam current because of the
+    heat load on the superfluid helium. In the case of 10~$\mu$A beam
+    current, the maximum cycle delay time is 120~s compared to the 170~s
+    delay time in the case of 1~$\mu$A beam current. This is due to
+    excessive heat load on the cryostat and low statistics.}
   \label{fig:storage_example}
 \end{figure}
 
-Below the result of the storage lifetime measurements are presented.
+%Below the result of the storage lifetime measurements are presented.
 
 \subsection{Storage Lifetime Versus Beam Current and Irradiation Time}
 The storage lifetime of UCN in the source is measured at different
@@ -653,7 +691,7 @@ storage lifetime in the source.
   \caption{Storage lifetime in the source at different irradiation
     times and proton beam currents. Different markers refer to
     different target irradiation times. At longer irradiation times
-    and higher beam currents, the storge lifetime decreases due to the
+    and higher beam currents, the storage lifetime decreases due to the
     increased heat load in the source, and an increase in the
     superfluid helium temperature. }
   \label{fig:storage_beam_irrad}
@@ -724,15 +762,15 @@ the contamination in the UCN source after opening the UCN valve.
 
 
 
-\section{PENTrack Simulations\label{sec:pentrack}}
+\section{Main Results\label{sec:pentrack}}
 
 For better understanding of the loss mechanisms of UCN, the
 experiments were also simulated in
 PENTrack~\cite{schreyer2017pentrack}. PENTrack is a particle tracking
 simulation software which simulates the trajectories of UCN and their
-decay products~(e.g., Protons and Electrons) and their spin
-precession in complex geometries in Electric and Magnetic fields by
-solving the relativistic equation of motion.
+decay products~(e.g., protons and electrons) and their spin precession
+in complex geometries in Electric and Magnetic fields by solving the
+relativistic equation of motion.
 
 To simulate the UCN storage and transport, an exact model of the UCN
 guides for PENTrack was build by the TUCAN team. Here the result of
@@ -951,28 +989,31 @@ determined.
 
 Fig.~\ref{fig:Counts_vs_temp_sim} and \ref{fig:storage_vs_temp_sim}
 show the measured UCN counts and storage lifetime versus the
-superfluid helium temperature for all four temperature sensors and
-their simulations. In these graphs, the filled circles represent the
-measured data, and the emtpy squares and triangles represent the
-simulations. The lines are only shown for readibility and are
-interpolation of the simulated points. The empty squares are the simulations
-where the helium vapour above the superfluid helium liquid is included,
-and empty triangles are the simulations without the helium vapour. The
-interpolations for the squares are shown in solid lines and the
-interpolations for the emtpy triangles are shown with dotted lines.
+superfluid helium temperature for all four temperature sensors as well
+as their simulations.
 
-The simulations include two values for the upscattering paremeter $B$:
-$B= 0.016$~s$^{-1}$ which is shown in red, and $B= 0.008$~s$^{-1}$
-which is shown in blue. The red solid lines show the simulations for
-$B= 0.016$~s$^{-1}$ where the measured data and simulations match very
-well. Simulations without vapour upscattering~(empty traingles) show
-significant differences at higher liquid temperatures. In this model,
-the storage lifetime and the UCN yield at higher temperatures are
-overestimated. The reason for this is because of the high upscattering
-rate of UCN in the helium vapour.
+
+{\bf{add how the temperatures are
+    simulated, what the tuned parameters were}}.
+
+
+
+
+In these graphs, the filled circles represent the
+measured data, and the emtpy squares and triangles represent the
+simulations.  The empty squares are the simulations where the helium
+vapour above the superfluid helium liquid is included, and empty
+triangles are the simulations without the helium vapour. The
+interpolations for the squares are shown in solid lines and the
+interpolations for the emtpy triangles are shown with dotted
+lines. The lines are only shown for readibility and are interpolation
+of the simulated points.
+
+
+
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{UCNCounts_vs_Temperature_color.pdf}
+  \includegraphics[width=0.9\textwidth]{UCNCounts_vs_Temperature.pdf}
   \caption{Number of UCN extracted from the source at different
     superfluid helium temperatures after irradiating the target with
     1~$\mu$A proton beam current for 60~s(filled circles). The lines
@@ -982,12 +1023,31 @@ rate of UCN in the helium vapour.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{Storagelifetime_vs_Temp_color.pdf}
+  \includegraphics[width=0.9\textwidth]{Storagelifetime_vs_Temp.pdf}
   \caption{Storage lifetime of UCN in the source at different
     superfluid helium temperatures~(filled circules). The lines are
     interpolations of simulated data to guide the eye.}
   \label{fig:storage_vs_temp_sim}
 \end{figure}
+
+The simulations include two values for the upscattering paremeter $B$:
+$B= 0.016$~s$^{-1}$ which represent the two lower solid and dotted
+lines, and $B= 0.008$~s$^{-1}$ which represent the two upper solid and
+dotted lines. For the simulations with $B= 0.016$~s$^{-1}$ when the
+helium vapour is also included~(lower solid lines), the measured data
+and simulations match very well. Simulations 
+without including the liquid vapour~(empty traingles, dashed
+lines) show significant differences at higher liquid temperatures. In
+this model, the storage lifetime and the UCN yield at higher
+temperatures are overestimated. The reason for this is because of the
+high upscattering rate of UCN in the helium vapour.
+
+
+{\bf{I should prove that there is high upscattering rate of UCN in the
+    helium vapour. How is this calculated? Is it documented somewhere??}}.
+
+
+
 
 The UCN rate in the steady-state mode of operation was measured at
 different proton beam currents, leading to increased temperature in
@@ -1006,7 +1066,7 @@ drop with temperature.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{rate_vs_Temp_col.pdf}
+  \includegraphics[width=0.8\textwidth]{rate_vs_Temp.pdf}
   \caption{Histogram of measured UCN rates and temperatures from all
     four temperature sensors while the target is continuously
     irradiated with the UCN valve open. The simulated data~(empty
