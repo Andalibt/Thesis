@@ -1000,7 +1000,7 @@ superfluid helium temperature for all four temperature sensors as well
 as their simulations.
 
 
-{\bf{add how the temperatures are
+{\bf{add how the temperature sensors are
     simulated, what the tuned parameters were}}.
 
 
@@ -1012,7 +1012,7 @@ simulations.  The empty squares are the simulations where the helium
 vapour above the superfluid helium liquid is included, and empty
 triangles are the simulations without the helium vapour. The
 interpolations for the squares are shown in solid lines and the
-interpolations for the emtpy triangles are shown with dotted
+interpolations for the emtpy triangles are shown with dotted and dashed
 lines. The lines are only shown for readibility and are interpolation
 of the simulated points.
 
@@ -1023,8 +1023,16 @@ of the simulated points.
   \includegraphics[width=0.9\textwidth]{UCNCounts_vs_temp_ver3.pdf}
   \caption{Number of UCN extracted from the source at different
     superfluid helium temperatures after irradiating the target with
-    1~$\mu$A proton beam current for 60~s(filled circles). The lines
-    are interpolations of simulated data to guide the eye.}
+    1~$\mu$A proton beam current for 60~s(filled circles). The empty
+    squares represent the simulations where the helium gas above the
+    superfluid helium liquid is taken into account and the empty
+    triangles represent the simulations where the helium gas is not
+    included. The lines are interpolations of simulated data to guide
+    the eye. The simulations were performed with two values of B: B =
+    0.008/s~(as shown with the top two lines) and B = 0.016/s~(as
+    shown with the bottom two lines). The measured data is best
+    matched with the simulations where B = 0.016/s where the helium
+    gas is also taken into account.}
   \label{fig:Counts_vs_temp_sim}
 \end{figure}
 
@@ -1032,22 +1040,33 @@ of the simulated points.
   \centering
   \includegraphics[width=0.9\textwidth]{StorageLifetime_vs_temp_ver3.pdf}
   \caption{Storage lifetime of UCN in the source at different
-    superfluid helium temperatures~(filled circules). The lines are
+    superfluid helium temperatures~(filled circules).  The empty
+    squares represent the simulations where the helium gas above the
+    superfluid helium liquid is taken into account and the empty
+    triangles represent the simulations where the helium gas is not
+    included. The lines are interpolations of simulated data to guide
+    the eye. The simulations were performed with two values of B: B =
+    0.008/s~(the top two lines and B = 0.016/s. The measured data is
+    best matched with the simulations where B = 0.016/s where the
+    helium gas is also taken into account.  The lines are
     interpolations of simulated data to guide the eye.}
   \label{fig:storage_vs_temp_sim}
 \end{figure}
 
 The simulations include two values for the upscattering paremeter $B$:
-$B= 0.016$~s$^{-1}$ which represent the two lower solid and dotted
-lines, and $B= 0.008$~s$^{-1}$ which represent the two upper solid and
-dotted lines. For the simulations with $B= 0.016$~s$^{-1}$ when the
-helium vapour is also included~(lower solid lines), the measured data
-and simulations match very well. Simulations 
-without including the liquid vapour~(empty traingles, dashed
-lines) show significant differences at higher liquid temperatures. In
-this model, the storage lifetime and the UCN yield at higher
-temperatures are overestimated. The reason for this is because of the
-high upscattering rate of UCN in the helium vapour.
+$B= 0.016$~s$^{-1}$, which represent the lower thick solid line~(empty
+squares which represents the model where the helium vapour above the
+superfluid helium liquid is included) and the dotted line~(empty
+triangles where the helium vapour above the superfluid helium liquid
+is not included), and $B= 0.008$~s$^{-1}$ which represent the solid
+line~(empty squares) and the dashed line~(empty triangles). For the
+simulations with $B= 0.016$~s$^{-1}$, when the helium vapour is also
+included~(thick solid line), the measured data and simulations match
+very well. Simulations without including the liquid vapour~(empty
+traingles, dotted and dashed lines) show significant differences at higher liquid
+temperatures. In this model, the storage lifetime and the UCN yield at
+higher temperatures are overestimated. The reason for this is because
+of the high upscattering rate of UCN in the helium vapour.
 
 
 {\bf{I should prove that there is high upscattering rate of UCN in the
@@ -1073,7 +1092,7 @@ drop with temperature.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{rate_vs_Temp.pdf}
+  \includegraphics[width=0.8\textwidth]{UCNrate_vs_temp_withsim_ver2.pdf}
   \caption{Histogram of measured UCN rates and temperatures from all
     four temperature sensors while the target is continuously
     irradiated with the UCN valve open. The simulated data~(empty
