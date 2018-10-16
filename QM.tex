@@ -1,52 +1,35 @@
 \chapter{Review of Quantum Mechanics\label{chap:qm}}
+Here is a review of a spin-1/2 particle in the presence of a static
+and an oscillating magnetic field similar to the geometry in the
+neutron Electric Dipole moment experiment~\cite{NMR_Notes}. The first
+section focuses on the derivation of the wavefunction of a spin-1/2
+particle in the presence of a magnetic field in the $z$
+direction. Section~\ref{sec:Larmor} shows the calculation of the
+Larmor precession frequency of such system based on the calculated
+wavefunction. In Section~\ref{sec:rfpulse}, the behaviour of a
+spin-1/2 particle in the presence of an oscillating magnetic field
+prependicular to the static field is studied is studied. 
 
 \section{Spin-1/2 Particle in a Magnetic Field}
 
 The Hamiltonian $H$ for a particle at rest with spin $\vec{S}$ in a magnetic
-field $\vec{B}$ is
+field $\vec{B} = B_{0} \hat{k}$ is
 %
 \begin{equation}
-H = - \gamma \vec{S} \cdot \vec{B},
+H = - \gamma \vec{S} \cdot \vec{B}  = - \gamma B_{0} S_{z},
 \end{equation}
 %
-where $\gamma$ is the gyromagnetic ratio~\cite{NMR_Notes}.
-If the magnetic field $\vec{B} = B_{0} \hat{k}$, then
-%
+where $\gamma$ is the gyromagnetic ratio, and $S_{z}$ is the
+projection of the particles spin along the $z$-axis. For spin-1/2
+particles $S_z$ can be written in terms of the Pauli metrices
 \begin{equation}
-H = - \gamma B_{0} \vec{S} \cdot \hat{k} = - \gamma B_{0} S_{z}
+  S_{z} = \left( \begin{array}{cc}
+                   \frac{\hbar}{2} & 0  \\
+                   0 & -\frac{\hbar}{2} \\
+                 \end{array} \right) = \frac{\hbar}{2} \sigma_{z}.
 \end{equation}
-%
-where $S_{z}$ is the projection of the particles spin along the
-z-axis.
-%
-For spin-1/2 particles
-%
-\[ S_{z} = \left( \begin{array}{cc}
-\frac{\hbar}{2} & 0  \\
-0 & -\frac{\hbar}{2} \\
-\end{array} \right) = \frac{\hbar}{2} \sigma_{z} ,\]
-%
-where $\sigma_{z}$ is the Pauli spin matrix
-%
-\[ \sigma_{z} = \left( \begin{array}{cc}
-1 & 0  \\
-0 & -1 \\
-\end{array} \right) ,\]
-%
-with eigenvalues $ \lambda_{1,2} = \pm 1$, and corresponding
-eigenvectors
-\begin{equation}
-    \vec{\chi}_{1,2} = 
-    \begin{pmatrix}
-        1 \\
-        0
-     \end{pmatrix} ,
-    \begin{pmatrix}
-        0 \\
-        1
-    \end{pmatrix}
-\end{equation}
-which can be relabeled as
+As a reminder, the eigenvalues of $\sigma_z$ are
+$ \lambda_{1,2} = \pm 1$, with corresponding eigenvectors
 \begin{equation}
    \chi_{1} = |\uparrow\rangle = 
     \begin{pmatrix}
@@ -57,49 +40,44 @@ which can be relabeled as
     \begin{pmatrix}
         0 \\
         1
-     \end{pmatrix}
+     \end{pmatrix}~.
 \end{equation}
 %
-The Hamiltonian is then
+The Hamiltonian can then be written in terms of Pauli metrices. Considering $\omega_{0} = \gamma B_{0}$, the eigenvalues or the energy states of the system are
 %
-\begin{equation}
-  \label{eqn:B0ham}
-  H = -\gamma  B_{0} \frac{\hbar}{2}\sigma_{z} = \omega_{0}\frac{\hbar}{2}\sigma_{z} \,\,\, ,
-\end{equation}
-where $\omega_{0} = \gamma B_{0}$.  The eigenvalues, or energies of
-this Hamiltonian are
+%\begin{equation}
+%  \label{eqn:B0ham}
+%  H = -\gamma  B_{0} \frac{\hbar}{2}\sigma_{z} = \omega_{0}\frac{\hbar}{2}\sigma_{z} \,\,\, ,
+%\end{equation}
+%with $\omega_{0} = \gamma B_{0}$. The eigenvalues, or energies of
+%this Hamiltonian are
 \begin{equation}
   E_{\uparrow} = -\omega_{0} \frac{\hbar}{2} \,\,\, \textrm{and} \,\,\, E_{\downarrow} = \omega_{0} \frac{\hbar}{2} \,\,\, .
 \end{equation}
-The corresponding eigenvectors evolve with time as
-\begin{equation}
-  |\uparrow (t)\rangle = |\uparrow\rangle e^{ -i \frac{E_{\uparrow} t}{\hbar}} = |\uparrow\rangle e^{i \frac{\omega_{0}t}{2}}
-\end{equation}
-and
-\begin{equation}
-  |\downarrow (t)\rangle = |\downarrow\rangle e^{ -i \frac{E_{\downarrow} t}{\hbar}} = |\downarrow\rangle e^{-i \frac{\omega_{0}t}{2}}.
-\end{equation}
-%
-The state of the system at time $t$ is
-
-\begin{equation}
-  |\psi(t)\rangle = a_{0}|\uparrow(t)\rangle + b_{0}|\downarrow(t)\rangle = \begin{pmatrix}
-    a_{0} e^{i \frac{\omega_{0}t}{2}} \\
-    b_{0}e^{-i \frac{\omega_{0}t}{2}}
-     \end{pmatrix}
-\end{equation}
-with
+Using the time evolution operator, the corresponding eigenvectors
+evolve with time as
+  \begin{align}
+    |\uparrow (t)\rangle &= |\uparrow\rangle e^{ -i \frac{E_{\uparrow} t}{\hbar}} = |\uparrow\rangle e^{i \frac{\omega_{0}t}{2}}\\
+    |\downarrow (t)\rangle &= |\downarrow\rangle e^{ -i \frac{E_{\downarrow} t}{\hbar}} = |\downarrow\rangle e^{-i \frac{\omega_{0}t}{2}}~.
+   \end{align}
+Assuming the initial state of the system as
 \begin{equation}
 \label{eqn:psi0}
 |\psi(0)\rangle = \begin{pmatrix}
         a_{0} \\
         b_{0}
-     \end{pmatrix}.
+     \end{pmatrix}~,
 \end{equation}
-%
-For normalization, it is require that $|a_{0}|^{2}+|b_{0}|^2 = 1$.  Let
+the state of the system at time $t$ is then a combination of both up and down states are written below
+\begin{equation}
+  |\psi(t)\rangle = a_{0}|\uparrow(t)\rangle + b_{0}|\downarrow(t)\rangle = \begin{pmatrix}
+    a_{0} e^{i \frac{\omega_{0}t}{2}} \\
+    b_{0}e^{-i \frac{\omega_{0}t}{2}}~.
+     \end{pmatrix}
+\end{equation}
+For normalization, it is require that $|a_{0}|^{2}+|b_{0}|^2 = 1$.
+One way to fulfill this condition is to assume that
 $a_{0} = $cos($\alpha /2$) and $b_{0} = $sin($\alpha /2)$, then
-
 \begin{equation}
   \label{eqn:psi}
   |\psi(t)\rangle = \textrm{cos($\alpha$/2)}|\uparrow\rangle e^{i \frac{\omega_{0}t}{2}} + \textrm{sin($\alpha$/2)}|\downarrow\rangle e^{-i \frac{\omega_{0}t}{2}} = \begin{pmatrix}
@@ -110,98 +88,74 @@ $a_{0} = $cos($\alpha /2$) and $b_{0} = $sin($\alpha /2)$, then
 This is the time-varying wavefunction of a
 spin-1/2 particle in a static magnetic field $\vec{B} = B_{0}\hat{k}$.
 
+
 \section{Larmor precession\label{sec:Larmor}}
-
-Using Eqn.~\ref{eqn:psi}, we can determine
-$\langle S_{x} \rangle$, $\langle S_{y} \rangle$, and
-$\langle S_{z} \rangle$, where
-
-\[ S_{x} = \left( \begin{array}{cc}
-                    0 & \frac{\hbar}{2}  \\
-                    \frac{\hbar}{2} & 0 \\
-\end{array} \right) = \frac{\hbar}{2} \sigma_{y} ,\,\,\,\, \textrm{and} \,\,\,\, S_{y} = \left( \begin{array}{cc}
- 0 & -i\frac{\hbar}{2}  \\
-i\frac{\hbar}{2} & 0 \\
-\end{array} \right) = \frac{\hbar}{2} \sigma_{y} ,\]
-%
-and
-%
-\begin{equation*}
-\langle S \rangle = \langle \psi(t) | S | \psi(t) \rangle .
-\end{equation*}
-
-\begin{equation}
-\begin{split}
-  \langle S_{x} \rangle & =  \begin{pmatrix} \textrm{cos($\alpha$/2)}^{*} e^{-i \frac{\omega_{0}t}{2}} \,\,\, \textrm{sin($\alpha$/2)}^{*} e^{i \frac{\omega_{0}t}{2}} \end{pmatrix}   \begin{pmatrix} 0 & \hbar/2\\ \hbar/2 & 0 \end{pmatrix}  \begin{pmatrix} \textrm{cos($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}}\\ \textrm{sin($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \end{pmatrix}  \\
-  & =  \begin{pmatrix} \textrm{cos($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \,\,\, \textrm{sin($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}} \end{pmatrix}  \begin{pmatrix} \frac{\hbar}{2}\textrm{sin($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \\ \frac{\hbar}{2}\textrm{cos($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}} \end{pmatrix}  \\
-  & = \frac{\hbar}{2} \textrm{cos($\alpha$/2) sin($\alpha$/2)} e^{-i \omega_{0}t} + \frac{\hbar}{2} \textrm{sin($\alpha$/2) cos($\alpha$/2)} e^{-i \omega_{0}t} \\
-  & = \hbar \textrm{cos($\alpha$/2) sin($\alpha$/2)}(\frac{e^{-i \omega_{0}t} + e^{i \omega_{0}t}}{2}) \\
-  & = \hbar \textrm{cos($\alpha$/2) sin($\alpha$/2)} \textrm{cos($\omega_{0}$t)} \\
-  & = \frac{\hbar}{2}\textrm{sin($\alpha$) cos($\omega_{0}$t)}
-\end{split}
-\end{equation}
-
+To understand what is happening here, it is best to calculate the
+expectation values $\langle S_x \rangle$, $\langle S_y \rangle$, and
+$\langle S_z \rangle$:
+\begin{align}
+  \langle S_{x} \rangle & =
+                          \begin{pmatrix} \textrm{cos($\alpha$/2)}^{*} e^{-i \frac{\omega_{0}t}{2}} \,\,\, \textrm{sin($\alpha$/2)}^{*} e^{i \frac{\omega_{0}t}{2}}
+                          \end{pmatrix}
+                          \begin{pmatrix} 0 & \hbar/2\\ \hbar/2 & 0
+                          \end{pmatrix}
+                                                                  \begin{pmatrix} \textrm{cos($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}}\\ \textrm{sin($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \end{pmatrix}  \\ \nonumber
+  & = \frac{\hbar}{2}\textrm{sin($\alpha$) cos($\omega_{0}$t)}~.
+\end{align}
+Similarly,
 \begin{equation}
 \begin{split}
 \langle S_{y} \rangle & = \begin{pmatrix} \textrm{cos($\alpha$/2)}^{*} e^{-i \frac{\omega_{0}t}{2}} \,\,\, \textrm{sin($\alpha$/2)}^{*} e^{i \frac{\omega_{0}t}{2}} \end{pmatrix}  \begin{pmatrix} 0 & -i\hbar/2\\ i\hbar/2 & 0 \end{pmatrix}  \begin{pmatrix} \textrm{cos($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}}\\ \textrm{sin($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \end{pmatrix} \\
-& =  \begin{pmatrix} \textrm{cos($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \,\,\, \textrm{sin($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}} \end{pmatrix}  \begin{pmatrix} -i\frac{\hbar}{2}\textrm{sin($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \\ i\frac{\hbar}{2}\textrm{cos($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}} \end{pmatrix} \\
-& = -i\frac{\hbar}{2} \textrm{cos($\alpha$/2) sin($\alpha$/2)} e^{-i \omega_{0}t} + i\frac{\hbar}{2} \textrm{sin($\alpha$/2) cos($\alpha$/2)} e^{i \omega_{0}t} \\
-& = -\hbar \textrm{cos($\alpha$/2) sin($\alpha$/2)}(\frac{e^{i \omega_{0}t} - e^{-i \omega_{0}t}}{2i}) \\
-& = -\hbar \textrm{cos($\alpha$/2) sin($\alpha$/2)} \textrm{sin($\omega_{0}$t)} \\
-& = -\frac{\hbar}{2}\textrm{sin($\alpha$) sin($\omega_{0}$t)}
+& = -\frac{\hbar}{2}\textrm{sin($\alpha$) sin($\omega_{0}$t)}~,
 \end{split}
 \end{equation}
-
+And also,
 \begin{equation}
 \begin{split}
 \langle S_{z} \rangle & =  \begin{pmatrix} \textrm{cos($\alpha$/2)}^{*} e^{-i \frac{\omega_{0}t}{2}} \,\,\, \textrm{sin($\alpha$/2)}^{*} e^{i \frac{\omega_{0}t}{2}} \end{pmatrix}  \begin{pmatrix} \hbar/2 & 0\\ 0 & -\hbar/2 \end{pmatrix}\begin{pmatrix} \textrm{cos($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}}\\ \textrm{sin($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \end{pmatrix} \\
-& =  \begin{pmatrix} \textrm{cos($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \,\,\, \textrm{sin($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}} \end{pmatrix}  \begin{pmatrix} \frac{\hbar}{2}\textrm{cos($\alpha$/2)} e^{i \frac{\omega_{0}t}{2}} \\ -\frac{\hbar}{2}\textrm{sin($\alpha$/2)} e^{-i \frac{\omega_{0}t}{2}} \end{pmatrix}  \\
-& = \frac{\hbar}{2}(\textrm{cos$^{2}(\alpha/2)$ - sin$^{2}(\alpha/2)$}) \\
-& = \frac{\hbar}{2}(\textrm{cos$^{2}(\alpha/2)$ - 1+ cos$^{2}(\alpha/2)$}) \\
-& = \frac{\hbar}{2}(2\textrm{cos($\alpha/2)^{2}$ - 1}) \\
-& = \frac{\hbar}{2}(2\left(\frac{1 + \textrm{cos($\alpha$)}}{2}\right) - 1) \\
 & = \frac{\hbar}{2}\textrm{cos($\alpha$)}
 \end{split}
 \end{equation}
+This shows that $\langle S \rangle$ makes an angle $\alpha$ with the
+$z$-axis and is precesses about the field at the Larmor frequency
+$\omega_0 = \gamma B_0$~(see Fig.\ref{fig:larmor}).
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{larmor.png}
+  \caption{Precession of $\langle S \rangle$ in a uniform magnetic
+    field $B_0$}
+  \label{fig:larmor}
+\end{figure}
 
 \section{Effect of RF Pulses and NMR Lineshape\label{sec:rfpulse}}
 In this section the effect of adding an oscillating field at
-resonance, perpendicular to the static $B_0$ field is studied. Consider
+resonance, perpendicular to the static $B_0$ field is studied. Consider $\vec{B} = \vec{B_0} + \vec{B_1}$ where
 %
 \begin{equation}
 \begin{split}
-&\vec{B}_{0} = B_{0} \hat{z}, \;\;\;\;\;\;
-\vec{B}_{1} = B_{1}\textrm{cos}(\omega t) \hat{i} - B_{1} \textrm{sin} (\omega t) \hat{j} \\
-%
-&\vec{B} = \vec{B}_{0} + \vec{B}_{1} = B_{0}\hat{z} + B_{1}(\textrm{cos}(\omega t) \hat{i} - \textrm{sin}(\omega t) \hat{j}).
+  \vec{B}_{0} &= B_{0} \hat{z}, \;\;\;\;\;\; \\
+  \mathrm {and}~
+\vec{B}_{1} &= B_{1}\textrm{cos}(\omega t) \hat{i} - B_{1} \textrm{sin} (\omega t) \hat{j}~.
 \end{split}
 \end{equation}
-The Hamiltonian would be
-\begin{equation}
-\begin{split}
-H= -\vec{\mu}\cdot \vec{B} = -\gamma \vec{S} \cdot \vec{B} 
-& = -\gamma(B_{0}S_{z} + B_{1}\textrm{cos}(\omega t)S_{x} - B_{1}\textrm{sin}(\omega t)S_{y}) \\
-& = -\gamma \frac{\hbar}{2}(B_{0}\sigma_{z} + B_{1}\textrm{cos}(\omega t)\sigma_{x} - B_{1}\textrm{sin}(\omega t)\sigma_{y}).
-\end{split}
-\end{equation}
-
+Hamiltonian $H = \vec{\mu}\cdot \vec{B}$ can then be written in the matrix form as
+%\begin{equation}
+%\begin{split}
+%H &= -\gamma \vec{S} \cdot \vec{B} \\
+% &= -\gamma \frac{\hbar}{2}(B_{0}\sigma_{z} + B_{1}\textrm{cos}(\omega t)\sigma_{x} - B_{1}\textrm{sin}(\omega t)\sigma_{y}).
+%\end{split}
+%\end{equation}
 %\begin{equation}
 %\hat{H}  = -\gamma\frac{\hbar}{2} \left(\begin{pmatrix} %B_{0} & 0 \\ 0 & -B_{0} \end{pmatrix} + \begin{pmatrix} 0 & %B_1 \textrm{cos}(\omega t) \\ B_1 \textrm{cos}(\omega t) & %0 \end{pmatrix} - i \begin{pmatrix} 0 & %-B_{1}\textrm{sin}(\omega t) \\ B_{1}\textrm{sin}(\omega t) %& 0 \end{pmatrix}\right)
 %\end{equation}
-In matrix form
+%In matrix form
 \begin{equation}
 \begin{split}
-  H &= -\gamma \frac{\hbar}{2} \begin{pmatrix} B_{0} & B_{1}(\textrm{cos}(\omega t) + i\textrm{sin}(\omega t)) \\ B_{1}(\textrm{cos}(\omega t) - i\textrm{sin}(\omega t)) & -B_{0} \end{pmatrix} \\
-%
-&= -\gamma \frac{\hbar}{2} \begin{pmatrix} B_{0} & B_{1} e^{i\omega t} \\ B_{1}e^{-i\omega t} & -B_{0} \end{pmatrix}.
+  H &= -\gamma \frac{\hbar}{2} \begin{pmatrix} B_{0} & B_{1} e^{i\omega t} \\ B_{1}e^{-i\omega t} & -B_{0} \end{pmatrix}.
 \end{split}
 \end{equation}
 
-The Schr\"{o}dinger equation
-\begin{equation}
-H|\psi(t) \rangle = i\hbar\frac{\partial}{\partial t}|\psi(t) \rangle
-\end{equation}
-would then become        
+The Schr\"{o}dinger equation would then become
 \begin{equation}
 -\gamma \frac{\hbar}{2}\begin{pmatrix} B_{0} & B_{1}e^{i\omega t} \\ B_{1}e^{-i\omega t} & -B_{0} \end{pmatrix} \begin{pmatrix} a(t) \\ b(t) \end{pmatrix} = i\hbar\frac{\partial}{\partial t} \begin{pmatrix} a(t) \\ b(t) \end{pmatrix}.
 \end{equation} 
@@ -309,8 +263,9 @@ $b(t)$ gives
 \end{split}
 \end{equation}
 %
-If the particle starts out at $t=0$ with spin up ({\it i.e}., $a_{0} =1$,
-$b_{0} = 0$),
+If the particle starts out at $t=0$ with spin up (i.e., $a_{0} =1$,
+$b_{0} = 0$), the time-evolutioned components of the wavefunction
+could then be
 %
 \begin{equation}
 \begin{split}
@@ -326,9 +281,6 @@ time, is then
 \begin{equation}
 \begin{split}
 P(t) &= |b(t)|^2 \\
-&= |\frac{-i}{\omega'}\textrm{sin}(\omega' t/2) e^{\frac{i\omega t}{2}}||\frac{i}{\omega'}\textrm{sin}(\omega' t/2) e^{\frac{-i\omega t}{2}}| \\
-&=\frac{\omega_1^2}{\omega'^2}\textrm{sin}^{2}(\frac{\omega' t}{2}) \\
-&=\frac{\omega_1^2}{\omega_{1}^2 + (\omega_0 - \omega)^2}\textrm{sin}^{2}(\frac{\omega' t}{2}) \\
 &=\frac{\omega_1^2}{\omega_{1}^2 + (\omega_0 - \omega)^2}\frac{1- \textrm{cos}(\omega' t)}{2}.
 \end{split}
 \end{equation}
@@ -339,7 +291,6 @@ $\omega ' t = \pi$. Then for $\omega'$ would become
 \begin{equation}
 \begin{split}
 \omega' &= \sqrt{\omega_{1}^{2} + (\omega_{0}-\omega)^{2}} \\
-& = \sqrt{\omega_{1}^{2} + (\omega_{0}-\omega_0)^{2}} \\
 & = \omega_{1} \;\;\; ,
 \end{split}
 \end{equation}
