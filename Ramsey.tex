@@ -8,11 +8,11 @@ efficient since the amplitude and the phase of the oscillating field
 might change along the path of the beam. As a different approach,
 Ramsey suggested to confine the oscillating fields to small regions;
 one at the beginning of the space which the energy levels are being
-studied and the other one at the end. In this case, there is no
+studied, and the other one at the end. In this case, there is no
 oscillating field in between.
 
 Consider a system which is subjected to an oscillatory perturbation at
-time $t_1$. This induces a transition between the eigenstates p and q:
+time $t_1$. This induces a transition between the eigenstates $p$ and $q$:
 \begin{equation}
 V=
 \left(
@@ -26,17 +26,16 @@ An example of such perturbation is a system with a magnetic moment
 entering a region with rotating magnetic field with angular velocity
 $\omega$. The general wave function for this system is
 \begin{equation}
-\psi(t)= C_p (t) \psi_p + C_q(t) \psi_q.
+\psi(t)= C_p (t) \psi_p + C_q(t) \psi_q~.
 \end{equation}
-Therefore, the time dependent Schr\"{o}dinger equations will have the
-form
-
-\begin{align}
- \label{eqn:cp}
-  i \hbar \dot{C}_p(t)&= W_p C_p(t)+\hbar b e^{i \omega t} C_q(t) \\
-   \label{eqn:cq}
-i \hbar \dot{C}_q(t)&=\hbar b e^{-i \omega t} C_p(t) +W_q C_q(t).
-\end{align}
+Therefore, the time dependent Schr\"{o}dinger equations can be written
+in the matrix form as
+%\begin{align}
+% \label{eqn:cp}
+%  i \hbar \dot{C}_p(t)&= W_p C_p(t)+\hbar b e^{i \omega t} C_q(t) \\
+%   \label{eqn:cq}
+%i \hbar \dot{C}_q(t)&=\hbar b e^{-i \omega t} C_p(t) +W_q C_q(t).
+%\end{align}
 %Let's write the above equation in matrix notation and solve for
 %$C_p(t)$ and $C_q(t)$. Let's define
 
@@ -47,7 +46,7 @@ i \hbar \dot{C}_q(t)&=\hbar b e^{-i \omega t} C_p(t) +W_q C_q(t).
 %C_q
 %\end{array} \right)
 %\end{equation}
-In matrix form Eqns.~\ref{eqn:cp} and \ref{eqn:cq} could be written as
+%In matrix form Eqns.~\ref{eqn:cp} and \ref{eqn:cq} could be written as
 \begin{equation}
   \label{eqn:cpcqmatrix}
 i \hbar \frac{d}{dt}\left(
@@ -63,8 +62,8 @@ W_p & \hbar b e^{i \omega t} \\
 \left(
 \begin{array}{c}
 C_p \\
-C_q.
-\end{array}\right)
+C_q
+\end{array}\right)~.
 \end{equation}
 It is assumed that, at $t=t_1$, $C_p$ and $C_q$ have the values $C_p(t_1)$
 and $C_q(t_1)$ respectively.
@@ -77,21 +76,21 @@ The $2 \times 2$ matrix on the right side could be written as
 W_p & \hbar b e^{i\omega t} \\
 \hbar b e^{-i\omega t} & W_q 
 \end{array}
-\right) &=
-\left(
-\begin{array}{cc}
-W_p & \hbar b \cos{\omega t}+i \hbar b \sin{\omega t} \\
-\hbar b \cos{\omega t}-i \hbar b \sin{\omega t} & W_q
-\end{array}
-\right) \\ \nonumber
+\right)
+%\left(
+%\begin{array}{cc}
+%W_p & \hbar b \cos{\omega t}+i \hbar b \sin{\omega t} \\
+%\hbar b \cos{\omega t}-i \hbar b \sin{\omega t} & W_q
+%\end{array}
+%\right) \\ \nonumber
 &= \left(
 \begin{array}{cc}
 W_p & 0 \\
 0 & W_q
-\end{array} \right) -\hbar b \sin{\omega t} \sigma_2 +\hbar b \cos{\omega t} \sigma_1.
+\end{array} \right) -\hbar b \sin{\omega t} \sigma_2 +\hbar b \cos{\omega t} \sigma_1~.
 \end{align}
 Here $\sigma_1$ and $\sigma_2$ are Pauli matrices.
-Replacing Eqn.~\ref{eqn:pauli} in Eqn.~\ref{eqn:cpcqmatrix}
+Replacing Eqn.~\ref{eqn:pauli} in Eqn.~\ref{eqn:cpcqmatrix} gives
 %Hence, The time
 %dependent Schr\"{o}dinger equation will take the form
 \begin{equation}
@@ -109,72 +108,73 @@ C_q
 \right]\left( \begin{array}{c}
 C_p \\
 C_q
-\end{array}\right).
+\end{array}\right)~.
 \end{equation}
 The first matrix on the right could be written as
 \begin{align}
 \left( \begin{array}{cc}
 \frac{W_p}{\hbar} & 0 \\
 0 & \frac{W_q}{\hbar}
-\end{array} \right) &= \left(
-\begin{array}{cc}
-\frac{W_p+W_q}{2\hbar} + \frac{W_p-W_q}{2\hbar} & 0 \\
-0 & \frac{W_p+W_q}{2\hbar}-\frac{W_p-W_q}{2\hbar}
-\end{array} \right) \\ \nonumber
-                  &= \left(
-\begin{array}{cc}
-  \Omega + \omega_0/2 & 0 \\
-  0 & \Omega - \omega_0/2
-\end{array} \right) \\ \nonumber
+       \end{array} \right) %&=\left(
+%\begin{array}{cc}
+%\frac{W_p+W_q}{2\hbar} + \frac{W_p-W_q}{2\hbar} & 0 \\
+%0 & \frac{W_p+W_q}{2\hbar}-\frac{W_p-W_q}{2\hbar}
+%\end{array} \right) \\ \nonumber
+%                  &= \left(
+%\begin{array}{cc}
+%  \Omega + \omega_0/2 & 0 \\
+%  0 & \Omega - \omega_0/2
+%\end{array} \right) \\ \nonumber
                   & =
                     \begin{array}{cc}
-           \Omega + \frac{\omega_0}{2} \sigma_3           
+           \Omega \mathbb{I} + \frac{\omega_0}{2} \sigma_3           
                     \end{array} 
 \end{align}
+where
+\begin{equation}
+\Omega=\frac{W_p+W_q}{2\hbar} ~,~
+\omega_0=\frac{W_q-W_p}{\hbar}~.
+\end{equation}
+Therefore the Schr\"{o}dinger equation takes the form
+\begin{equation}
+\frac{d}{dt}C= -i \left[
+\Omega -\frac{\omega_0}{2}\sigma_3 + b \left(\sigma_1 \cos{\omega t}  - \sigma_2\sin{\omega t}  \right) \right]C
+\end{equation}
 where
 \begin{equation}
 C=\left( \begin{array}{c}
 C_p \\
 C_q
-\end{array}\right) , 
-\Omega=\frac{W_p+W_q}{2\hbar} ,
-\omega_0=\frac{W_q-W_p}{\hbar}.
+\end{array}\right)~.
 \end{equation}
-Therefore the Schr\"{o}dinger equation takes the form
+The term $\left( \sigma_1\cos{\omega t}  - \sigma_2 \sin{\omega t}  \right)$ is like a rotation.In general, we have$
+e^{-i \vec{\sigma}\cdot\hat{n} \frac{\theta}{2}}~ \vec{a}. \vec{\sigma} ~e^{i \vec{\sigma}.\hat{n} \frac{\theta}{2}}=\left[ \hat{n}(\hat{n}.\vec{a})+\cos\theta (\vec{a} - \hat{n} (\hat{n}.\vec{a}))+\sin \theta (\hat{n} \times \vec{a} )\right] \vec{\sigma}$. Considering $\hat{n}=-\hat{k}$ and $\vec{a}=\hat{x}$ we can rewrite it as $e^{i \frac{\omega t}{2} \sigma_3} \sigma_1 e^{-i \frac{\omega t}{2}\sigma_3}$~.
+%\begin{equation}
+%\sigma_1 \cos{\omega t} - \sigma_2 \sin{\omega t} = e^{i \frac{\omega t}{2} \sigma_3} \s%igma_1 e^{-i \frac{\omega t}{2}\sigma_3}.
+%\end{equation}
+Hence, the Schr\"{o}dinger equation can be written in one line in the following form
 \begin{equation}
-\frac{d}{dt}C= -i \left[
-\Omega -\frac{\omega_0}{2}\sigma_3 + b \left(\sigma_1 \cos{\omega t}  - \sigma_2\sin{\omega t}  \right) \right]C.
+  \dot{C}= -i e^{ i \frac{\omega t}{2}\sigma_3} \left[\Omega - \frac{\omega_0}{2} \sigma_3+b \sigma_1\right] e^{-i\frac{\omega t}{2}\sigma_3} C~.
 \end{equation}
-The term $\left( \sigma_1\cos{\omega t}  - \sigma_2 \sin{\omega t}  \right)$ is like a rotation. In general, we have
-\begin{equation}
-e^{-i \vec{\sigma}\cdot\hat{n} \frac{\theta}{2}}~ \vec{a}. \vec{\sigma} ~e^{i \vec{\sigma}.\hat{n} \frac{\theta}{2}}=\left[ \hat{n}(\hat{n}.\vec{a})+\cos\theta (\vec{a} - \hat{n} (\hat{n}.\vec{a}))+\sin \theta (\hat{n} \times \vec{a} )\right] \vec{\sigma} .
-\end{equation}
-If $\hat{n}=-\hat{k}$ and $\vec{a}=\hat{x}$, then
-\begin{equation}
-\sigma_1 \cos{\omega t} - \sigma_2 \sin{\omega t} = e^{i \frac{\omega t}{2} \sigma_3} \sigma_1 e^{-i \frac{\omega t}{2}\sigma_3}.
-\end{equation}
-Hence, the Schr\"{o}dinger equation will be
-\begin{equation}
-\dot{C}= -i e^{ i \frac{\omega t}{2}\sigma_3} \left[\Omega - \frac{\omega_0}{2} \sigma_3+b \sigma_1\right] e^{-i\frac{\omega t}{2}\sigma_3} C.
-\end{equation}
-Rewriting the Schr\"{o}dinger equation in terms of variable $D$
-\begin{equation}
-\dot{D}=-i \left[ \left( \frac{\omega - \omega_0}{2}\right) \sigma_3 +b \sigma_1 \right]D ,
-\end{equation}
-where 
-\begin{equation}
-C= e^{i \frac{\omega t}{2}\sigma_3} e^{-i \Omega t} D
-\end{equation}
-or
+To simplify this equation, we can introduce a new parameter $D$ as $C= e^{i \frac{\omega t}{2}\sigma_3} e^{-i \Omega t} D$. Taking the derivative of both sides and simplfy, we get
+%Rewriting the Schr\"{o}dinger equation in terms of variable $D$
+%\begin{equation}
+%\dot{D}=-i \left[ \left( \frac{\omega - \omega_0}{2}\right) \sigma_3 +b \sigma_1 \right]D ,
+%\end{equation}
+%where 
+%\begin{equation}
+%C= e^{i \frac{\omega t}{2}\sigma_3} e^{-i \Omega t} D
+%\end{equation}
+%or
 \begin{equation}
   \label{eqn:ddot}
 \dot{D}=\frac{i a}{2}\left[ \sigma_3 \cos \theta - \sigma_1 \sin \theta \right] D
 \end{equation}
 where
-$ a:= {\left[{(\omega_0 - \omega)}^2+ {(2b)}^2\right]}^\frac{1}{2}$ ,
+$a:= {\left[{(\omega_0 - \omega)}^2+ {(2b)}^2\right]}^\frac{1}{2}$ ,
 $\cos \theta = \frac{\omega_0 - \omega}{a}$ and
-$\sin \theta=\frac{2b}{a}$. Hence, at $t = t_1+T$, the solution to
-the Eqn.~\ref{eqn:ddot} is
+$\sin \theta=\frac{2b}{a}$. Hence, at $t = t_1+T$, the solution to the
+Eqn.~\ref{eqn:ddot} is
 \begin{equation}
 D(t_1+T)= e^{\left[\frac{i a}{2}
 \left( \sigma_3 \cos \theta
@@ -191,12 +191,12 @@ then
 \begin{equation}
 D(t_1+T)= \left[\cos \frac{aT}{2}+i(\sigma_3 \cos \theta - \sigma_1 \sin \theta ) \sin \frac{aT}{2}\right] D(t_1)
 \end{equation}
-and therefore $C(t_1+T)$ would be
-\begin{align}
-  C(t_1+T) &= e^{i\frac{\omega}{2}(t_1+T)\sigma_3} e^{-i \Omega T} \left[\cos \frac{aT}{2}+i(\sigma_3 \cos \theta - \sigma_1 \sin \theta ) \sin \frac{aT}{2}\right]\\ \nonumber
-  & \times e^{-i \frac{\omega t_1}{2}\sigma_3} C(t_1),
-\end{align}
-or equivalently
+and therefore $C(t_1+T)$ components would be
+%\begin{align}
+%  C(t_1+T) &= e^{i\frac{\omega}{2}(t_1+T)\sigma_3} e^{-i \Omega T} \left[\cos \frac{aT}{2}+i(\sigma_3 \cos \theta - \sigma_1 \sin \theta ) \sin \frac{aT}{2}\right]\\ \nonumber
+%  & \times e^{-i \frac{\omega t_1}{2}\sigma_3} C(t_1),
+%\end{align}
+%or equivalently
 \begin{align}
   C_p(t_1+T)&= \left\lbrace \left[
               i \cos \theta \sin \frac{aT}{2}+\cos \frac{aT}{2} \right] C_p(t_1)\right. \\ \nonumber
@@ -207,15 +207,14 @@ or equivalently
   C_q(t_1+T)&=\left\lbrace - \left[ i \sin \theta \sin \frac{aT}{2} e^{-i \omega t_1}\right]C_p(t_1) \right . \\ \nonumber
   &+
 \left .  \left[-i \cos \theta \sin \frac{aT}{2}+ \cos \frac{aT}{2}\right] C_q(t_1)\right\rbrace
-  e^{\left\lbrace i \left[ -\frac{\omega}{2}- \frac{W_p+W_q}{2\hbar} \right] T \right\rbrace} .
+  e^{\left\lbrace i \left[ -\frac{\omega}{2}- \frac{W_p+W_q}{2\hbar} \right] T \right\rbrace}~.
 \end{align}
 
 These are the general solutions for a system with energy eigenstates
 $p$ and $q$.  As a comparison, if $C_p(t_1+T)=a(t)$ ,
-$C_q(t_1+T)=b(t)$, $a= \omega'$ , $2b=\omega_1$ then
-Eqn.~\ref{eqn:aNb}. In this case, $W_p$ and $W_q$ are energies of the
-spin up and spin down configurations.
-
+$C_q(t_1+T)=b(t)$, $a= \omega'$ , $2b=\omega_1$ then it will be the
+same as the Eqn.~\ref{eqn:aNb}. In this case, $W_p$ and $W_q$ are
+energies of the spin up and spin down configurations.
 As a special case, if $b=0$~(no perturbation), then $\cos \theta=1$ and
 $\sin \theta=0$. Hence, the solutions would be
 \begin{align}
@@ -231,33 +230,34 @@ experimental impossibility of attaining completely uniform magnetic
 fields, it is assumed that energy levels $p$ and $q$ are not constant in
 the intermediate state when $b=0$, which means, it is divided to
 sub-regions with duration $\Delta t_k$ and energies are $W_{p,k}$ and
-$W_{q,k}$ respectively. Assuming
+$W_{q,k}$ respectively. We assume
 \begin{equation}
-C_p(0)=1 , \, \, C_q(0)=0 ,
+C_p(0)=1 , \, \, C_q(0)=0~,
 \end{equation}
-it means, the system is at state $p$ before it enters the first
-perturbation region. Hence, the amplitudes would be
+which means, the system is at state $p$ before it enters the first
+perturbation region. Hence, the amplitudes after time $\tau$ would be
 \begin{align}
 C_p(\tau) &=\left[i \cos \theta \sin \frac{a\tau}{2}+ \cos \frac{a\tau}{2}\right]
 e^{i\left[\frac{\omega}{2}-\left(\frac{W_p+W_q}{2\hbar}\right)\right]\tau}\\ \nonumber
 C_q(\tau) &=\left[ -i \sin \theta \sin \frac{a\tau}{2} \right] 
 e^{i \left[ -\frac{\omega}{2} - \left( \frac{W_p+W_q}{2\hbar}\right)\right]\tau} .
 \end{align}
-And after entering the intermediate region,
+And after entering the intermediate region the components of the wavefunction become,
 \begin{align}
-C_p(\tau+T)&=\Pi_k e^{-i W_{p,k} \Delta \frac{t_k}{\hbar}}  C_p(\tau)\nonumber \\
-&=e^{-\frac{i}{\hbar} \Sigma_k W_{p,k} \Delta t_k}  C_p(\tau) \nonumber\\
-C_p(\tau+T)&=e^{-i \frac{\bar{W_p}T}{\hbar}} C_p(\tau) \\
-\nonumber\\
-C_q(\tau+T)&=e^{-i \frac{\bar{W_q}T}{\hbar}} C_q(\tau) .
+%C_p(\tau+T)&=\Pi_k e^{-i W_{p,k} \Delta \frac{t_k}{\hbar}}  C_p(\tau)\nonumber \\
+%&=e^{-\frac{i}{\hbar} \Sigma_k W_{p,k} \Delta t_k}  C_p(\tau) \nonumber\\
+  C_p(\tau+T)&=e^{-i \frac{\bar{W_p}T}{\hbar}} C_p(\tau) ~
+\mathrm{and}~, \\
+\nonumber
+C_q(\tau+T)&=e^{-i \frac{\bar{W_q}T}{\hbar}} C_q(\tau)~.
 \end{align}
 
 It is impossible to have completely uniform magnetic fields in the
-experiment. Therefore, it is assumed that the energies of the $p$ and $q$
-states are not constant in this region, and the region is divided into
-a number of sub-regions such that in the $k^{th}$ sub-region of
-duration $\Delta t_k$ the energies are $W_{p,k}$ and $W_{q,k}$.
-In addition,
+experiment. Therefore, it is assumed that the energies of the $p$ and
+$q$ states are not constant in this region, and the region is divided
+into a number of sub-regions such that in the $k^{th}$ sub-region of
+duration $\Delta t_k$ have the energies $W_{p,k}$ and $W_{q,k}$. In
+addition,
 $\bar{W_p}=\frac{1}{T}\Sigma_k W_{p,k}\Delta t_k=\frac{1}{L}\Sigma_k
 W_{p,k} \Delta L_k$, which is the space mean value of $W_p$. There is
 a similar interpretation for $W_q$ as well. After entering the final
@@ -267,15 +267,15 @@ perturbation region,
                  &-
  \left. \left[i \sin \theta \sin \frac{a\tau}{2} e^{i \omega (\tau+T)}\right]C_q(\tau+T)\right\rbrace \times
   e^{i\left[\frac{\omega}{2}-\frac{(W_p+W_q)}{2\hbar}\right]\tau}\\ \nonumber
-  C_q(2\tau+T) &=\left\lbrace -\left[i \sin \theta \sin \frac{a\tau}{2} e^{-i \omega (\tau+T)}\right]C_p(\tau+T) \right . \\ \nonumber
-  &+ \left . \left[ -i \cos \theta \sin \frac{a\tau}{2}+ \cos \frac{a\tau}{2}\right] C_q(\tau+T)\right\rbrace \times
-  e^{i \left[\frac{-\omega}{2}-\frac{(W_p+W_q)}{2\hbar}\right]\tau}
-\end{align}
-or it could be rewritten as
-\begin{align}
-  C_q(2\tau+T)&= 2i\sin \theta \left[ \cos \theta \sin^2 \frac{a\tau}{2}\sin \frac{\lambda T}{2} -\frac{1}{2}\sin a\tau \cos \frac{\lambda T}{2} \right] \nonumber \\ &\times e^{-i \left[\frac{\omega}{2} + \frac{(W_p+W_q)}{2\hbar}\right]}(2\tau+T) +
-                                                                                                                                                                        \left[ \frac{\bar{W_p}-W_p+\bar{W_q}-W_q}{2\hbar} 
-                                                                                                                                                                        T\right] ,
+%  C_q(2\tau+T) &=\left\lbrace -\left[i \sin \theta \sin \frac{a\tau}{2} e^{-i \omega (\tau+T)}\right]C_p(\tau+T) \right . \\ \nonumber
+%  &+ \left . \left[ -i \cos \theta \sin \frac{a\tau}{2}+ \cos \frac{a\tau}{2}\right] C_q(\tau+T)\right\rbrace \times
+%  e^{i \left[\frac{-\omega}{2}-\frac{(W_p+W_q)}{2\hbar}\right]\tau}
+%\end{align}
+%or it could be rewritten as
+%\begin{align}
+     C_q(2\tau+T)&= 2i\sin \theta \left[ \cos \theta \sin^2 \frac{a\tau}{2}\sin \frac{\lambda T}{2} -\frac{1}{2}\sin a\tau \cos \frac{\lambda T}{2} \right] \nonumber \\ &\times e^{-i \left[\frac{\omega}{2} + \frac{(W_p+W_q)}{2\hbar}\right]}(2\tau+T) +
+                                                                                                                                                                           \left[ \frac{\bar{W_p}-W_p+\bar{W_q}-W_q}{2\hbar} 
+                                                                                                                                                                           T\right] ,
 \end{align} 
 where
 \begin{equation}
@@ -299,7 +299,7 @@ and therefore, $a$ would take the form
 a= 2b \sqrt{1+x^2} .
 \end{equation}
 Setting $b\tau = \frac{\pi}{4}$~(which is similar to
-Section.~\ref{sec:rfpulse} where $\omega_1 t= \pi$) and $T=8\tau$,
+Section.~\ref{sec:rfpulse} where $\omega_1 t= \pi$), and $T=8\tau$,
 then
 %
 \begin{align}
