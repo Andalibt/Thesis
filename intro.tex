@@ -326,8 +326,10 @@ wavelength.
     Ultracold & 300~neV & 8~m/s & 3~mK & 50~nm \\
     \hline
   \end{tabular}
-  \caption{Commonly used names for neutrons in different energy ranges
-    and their corresponding velocity, temperature and
+  \caption[Neutron names in different energy ranges and their
+  corresponding velocities, temperatures, and wavelength]{Commonly
+    used names for neutrons in different energy ranges and their
+    corresponding velocity, temperature and
     wavelenght \label{tab:ucnenergy}}
 \end{table}
 
@@ -530,13 +532,14 @@ nucleus and $a_i$ is the scattering length with the ith nucleus. This
 is the so-called Fermi pseudopotential. Because of UCN's large
 wavelength, this equation can be written as
 \begin{equation}
-V(r) = \frac{2\pi \hbar^2}{m_N}\sum_i N_ia_i~,
+V(r) = \frac{2\pi \hbar^2}{m_N}\sum_i N_ia_i\Theta(r)~,
 \end{equation}
-where $N_i$ is the number density in the material $i$. In UCN physics,
-this potential is typically called neutron optical potential, since if
-the energy of the neutron is less than the optical potential $E < V$
-the neutron will be fully reflected from the material surface under
-any angle of incidence. This sets a limit on the UCN velocity.
+where $N_i$ is the number density in the material $i$, and $\Theta(r)$
+is the step function inside the domain of the material. In UCN
+physics, this potential is typically called neutron optical potential,
+since if the energy of the neutron is less than the optical potential
+$E < V$ the neutron will be fully reflected from the material surface
+under any angle of incidence. This sets a limit on the UCN velocity.
 
 UCN can be lost when it is reflected from the material walls.
 This is because of the upscattering in which UCN absorb energy or
@@ -770,7 +773,7 @@ superfluid.
 
 \begin{figure}[h!]
   \centering \includegraphics[width=0.7\textwidth]{phasetransition.png}
-  \caption{The phase diagram of $^4$He. Here the normal fluid phase or
+  \caption[Phase diagram of $^4$He]{The phase diagram of $^4$He. Here the normal fluid phase or
     He-I and the superfluid phase or H-II are shown.}
 \label{fig:phasetransition}
 \end{figure}
@@ -784,15 +787,17 @@ surface is called film flow.
 \subsubsection{Superfluid Helium Converter}
 
 The superfluid $^4$He is an attractive candidate as a UCN source, and
-was studied in Ref.~\cite{Golub77}.  It has zero neutron absorption
-cross-section, resulting in $\tau_a \rightarrow \infty$, which makes it
-a good candidate as a UCN source.  In superfluid helium the upscattering
-losses become smaller than $\beta$-decay losses below $T \sim 0.7$~K.
-The dominant production mechanism is the excitation of a single phonon
-at the crossing of the free neutron and phonon dispersion curves, with
-a momentum $q\sim 0.7$/\AA~\cite{Brome2001}, and energy 1~meV
+was studied in Ref.~\cite{Golub77}. The dominant production mechanism
+in the superfluid helium is the excitation of a single phonon at the
+crossing of the free neutron and phonon dispersion curves, with a
+momentum $q\sim 0.7$/\AA~\cite{Brome2001}, and energy 1~meV
 corresponding to a neutron wavelength 8.9~\AA. The availability of
-8.9~\AA~cold neutrons is crucial and their flux must be maximized.
+8.9~\AA~cold neutrons is crucial and their flux must be maximized. In
+superfluid helium the upscattering losses become smaller than
+$\beta$-decay losses below $T \sim 0.7$~K.  It has zero neutron
+absorption cross-section, resulting in $\tau_a \rightarrow \infty$,
+which makes it a good candidate as a UCN source.
+
 %For a long UCN lifetime in superfluid helium, besides the low
 %temperature of the converter, the $^3$He contamination must be low
 %($^3$He/$^4$He $\le 10^{-12}$), due to its large absorption
@@ -821,7 +826,7 @@ phonon.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.7\textwidth]{FIG1_2.PNG}
-    \caption{\cite{PSI_news} Dispersion relation of superfluid
+    \caption[Free neutron and superfluid helium dispersion relation]{\cite{PSI_news} Dispersion relation of superfluid
       helium~(c) and of the free neutron~(a). Neutrons with $E\simeq
       1$~meV and wavenumber $q \simeq 0.7$/\AA~can excite a single
       phonon with the same energy and momentum and be downscattered to
@@ -1069,10 +1074,11 @@ P_{\text{UCN}}=9.44 \times 10^{-9}\frac{d\Phi (E_1^*)}{dE_1^*} \;
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.7\textwidth]{Korobkina2002.PNG}
-    \caption{The energy spectrum of the incident cold neutron flux
-      from three sources compared to the dynamic scattering function
-      $S(q,\omega=\frac{\alpha k_1^2}{2})$~/meV as a function of
-      $q$~/\AA.}
+   \caption[Cold neutron energy spectrum and $S$ function]{The energy
+     spectrum of the incident cold neutron flux from three sources
+     compared to the dynamic scattering function
+     $S(q,\omega=\frac{\alpha k_1^2}{2})$~/meV as a function of
+     $q$~/\AA.}
 %     \vspace{-2.em}
     \label{fig:Korobkina2002}
     \end{center}
@@ -1149,21 +1155,21 @@ attractive~\cite{Schmidt2009}.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.7\textwidth]{Schmidt_S.PNG}
-   \caption{~\cite{Schmidt2009} Multiphonon scattering function at
-     SVP~(Saturated Vapour Pressure) and 20~bar. The extrapolation to
-     short wavelength of Korobkina {\it {et al.}}~\cite{Korobkina2002}
-     at SVP is linear in $k$, whereas the calculation of Schott {\it
-       {et al.}}~\cite{Schott2003} is based on the static structure
-     factor of the superfluid helium. The data point ($A$) is taken
-     from Ref.~\cite{Fak1991}. The one-phonon peaks are indicated by
+   \caption[Multiphonon scattering function of superfluid helium at
+   differnet pressures]{~\cite{Schmidt2009} Multiphonon scattering
+     function at SVP~(Saturated Vapour Pressure) and 20~bar. The
+     extrapolation to short wavelength of Korobkina {\it {et
+         al.}}~\cite{Korobkina2002} at SVP is linear in $k$, whereas
+     the calculation of Schott {\it {et al.}}~\cite{Schott2003} is
+     based on the static structure factor of the superfluid
+     helium. The data point ($A$) is taken from
+     Ref.~\cite{Fak1991}. The one-phonon peaks are indicated by
      vertical arrows: SVP~(dotted line) and 20~bar~(solid line).  }
 %     \vspace{-2.em}
     \label{fig:Schmidt_S}
     \end{center}
 \end{figure} 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsubsection{UCN upscattering and UCN lifetime in superfluid helium~\label{sec:upscattering}}
@@ -1224,8 +1230,8 @@ ranges of up to 2.4~K~\cite{Leung2016}. The comparison between the UCN
 production and upscattering rate to the theoretical temperature
 dependence of these processes showed that, the main contribution is
 from two-phonon scattering $\frac{1}{\tau_{up}}=BT^7$ with
-$B = 0.0077$~/(s K$^7$) at higher temperatures and $B = 0.0085$~/(s
-K$^7$) at lower temperatures.
+$B = 0.0076$~/(s K$^7$) at 1~K and $B = 0.0088$~/(s K$^7$) at
+0.6~K\cite{Leung2016}.
 %$B=(4-16)\times 10^{-3}$~/(s K$^7$)~\cite{Leung2016}.
 
 
@@ -1783,13 +1789,13 @@ NCSU PULSTAR & sD$_2$ & Reactor & Installing
   \hline
 \end{tabular}
 \end{center}
-\caption{Existing and future UCN sources worldwide. The existing or
-  proposed sources at the following sites is listed: Institut
-  Laue-Langevin~(ILL) in France, Reasearch Center for Nuclear
-  Physics~(RCNP) in Japan, KEK and J-PARC in Japan, TRIUMF in Canada,
-  Petersburg Nuclear Physics Institute~(PNPI) in Russia, Los Alamos
-  National Lab~(LANL), PULSTAR and SNS in the US, Mainz and FRM II in
-  Germany. }
+\caption[UCN facilities worldwide]{Existing and future UCN sources
+  worldwide. The existing or proposed sources at the following sites
+  is listed: Institut Laue-Langevin~(ILL) in France, Reasearch Center
+  for Nuclear Physics~(RCNP) in Japan, KEK and J-PARC in Japan, TRIUMF
+  in Canada, Petersburg Nuclear Physics Institute~(PNPI) in Russia,
+  Los Alamos National Lab~(LANL), PULSTAR and SNS in the US, Mainz and
+  FRM II in Germany. }
 \label{tab:full_ucn_sources}
 \end{table}
 
@@ -1953,14 +1959,14 @@ $B= \omega_{rf} / \gamma_n$.
 \begin{figure}[h]
   \centering
   \includegraphics[width=1.0\textwidth]{ramsey.png}
-  \caption{\cite{Schmidt-Wellenburg:2016nfv} Ramsey method of separated
-    oscillating fields. Left shows the scheme of a measurement
-    procedure and right shows the data points. The blue points are the
-    UCN counts with the spin up and the red points are the UCN with
-    spin down~(data from the PSI-nEDM collaboration). The width at
-    half height~$\Delta \nu$ of the central fringe is approximately
-    $1/2T$, the four vertical lines indicate the working points~(see
-    text).}
+  \caption[Ramsey cycle]{\cite{Schmidt-Wellenburg:2016nfv} Ramsey
+    method of separated oscillating fields. Left shows the scheme of a
+    measurement procedure and right shows the data points. The blue
+    points are the UCN counts with the spin up and the red points are
+    the UCN with spin down~(data from the PSI-nEDM collaboration). The
+    width at half height~$\Delta \nu$ of the central fringe is
+    approximately $1/2T$, the four vertical lines indicate the working
+    points~(see text).}
   \label{fig:ramsey}
 \end{figure}
 
@@ -2105,11 +2111,12 @@ description of each effect is breifly listed below:
       Total shift of $d_X$ & -0.38 & 0.99 \\ \hline
     \end{tabular}
   \end{center}
-  \caption{\cite{Pendlebury2015}Summary of systematic errors and their
-    uncertainties, in units of $10^{-26}$~e$\cdot$cm. Correction for
-    the mercury light shift is already incorporated run by run prior
-    to the crossing-lines fit; other corrections are then applied to
-    the crossing-point EDM value $d_x$ .}
+  \caption[Summary of systematic errors for the most recent nEDM
+  measurement]{\cite{Pendlebury2015}Summary of systematic errors and
+    their uncertainties, in units of $10^{-26}$~e$\cdot$cm. Correction
+    for the mercury light shift is already incorporated run by run
+    prior to the crossing-lines fit; other corrections are then
+    applied to the crossing-point EDM value $d_x$ .}
   \label{tab:nedmsystematics}
 \end{table}
 
@@ -2223,16 +2230,16 @@ Here is a brief survey of the nEDM measurement sites.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{nedm_vs_year.png}
-  \caption{The timeline of the upper bound on the neutron EDM from
-    previous and future experiments. The yellow squares are the
-    previous bounds, and the blue dot is the sensitivity target of
-    next generation experiments.  In the standard model, the expected
-    size of nEDM is more than 5 orders of magnitude below the current
-    experimental bound, as shown by the green shaded area in the
-    plot. In extensions of the standard models, however, the expected
-    size of nEDM covers the regions of the current and future
-    experimental bound, as shown by the red shaded
-    area.~\cite{yoon2018neutron} }
+  \caption[History of nEDM measurement]{The timeline of the upper
+    bound on the neutron EDM from previous and future experiments. The
+    yellow squares are the previous bounds, and the blue dot is the
+    sensitivity target of next generation experiments.  In the
+    standard model, the expected size of nEDM is more than 5 orders of
+    magnitude below the current experimental bound, as shown by the
+    green shaded area in the plot. In extensions of the standard
+    models, however, the expected size of nEDM covers the regions of
+    the current and future experimental bound, as shown by the red
+    shaded area.~\cite{yoon2018neutron} }
   \label{fig:nEDMhistory}
 \end{figure}
 

@@ -28,10 +28,10 @@ detector.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\textwidth]{volume_schematic.png}
-  \caption{Schematic drawing of a simple UCN source. $V_1$ is the
-    production volume with $N_1$ number of UCN, $V_2$ is the secondary
-    volume where $N_2$ number of UCN exist, and $V_3$ is the detector
-    with $N_3$ number of UCN. }
+  \caption[Schematic drawing of a simple UCN source]{Schematic drawing
+    of a simple UCN source. $V_1$ is the production volume with $N_1$
+    number of UCN, $V_2$ is the secondary volume where $N_2$ number of
+    UCN exist, and $V_3$ is the detector with $N_3$ number of UCN. }
   \label{fig:volume_schematic}
 \end{figure}
 
@@ -115,11 +115,13 @@ time. Once the UCN valve is closed, a new cycle of measurement starts.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{UCNRate.png}
-  \caption{The figure shows the UCN rate at 60~s irradiation time, and
-    1~$\mu$A beam current. In this case, the UCN gate valve is opened
-    immediately after the end of target irradiation. At this time, the
-    UCN rate reaches the peak of about 2000 UCN/s. The UCN rate decays
-    down to the background level. The valve is left open for 120~s. }
+  \caption[UCN rate at 1~$\mu$A beam current and 60~s target
+  irradiation]{The figure shows the UCN rate at 60~s irradiation time,
+    and 1~$\mu$A beam current. In this case, the UCN gate valve is
+    opened immediately after the end of target irradiation. At this
+    time, the UCN rate reaches the peak of about 2000 UCN/s. The UCN
+    rate decays down to the background level. The valve is left open
+    for 120~s. }
   \label{fig:UCNRate}
 \end{figure}
 
@@ -159,7 +161,8 @@ useful way of separating the signal and background.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{PSD_vs_QL.pdf}
-  \caption{PSD versus $Q_L$ for all of the PMTs for a standard
+  \caption[PSD versus $Q_L$ for 1~$\mu$A beam current and 60~s target
+  irradiation]{PSD versus $Q_L$ for all of the PMTs for a standard
     1~$\mu$A proton beam current and 60~s target irradiation time }
   \label{fig:psd_vs_ql}
 \end{figure}
@@ -178,8 +181,9 @@ Fig.~\ref{fig:channelcounts}).
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{channelcounts.pdf}
-  \caption{Number of UCN events for each channel. The total number of
-    UCN events decrease as we move towards the corner channels.  }
+  \caption[UCN events per channel]{Number of UCN events for each
+    channel. The total number of UCN events decrease as we move
+    towards the corner channels.  }
   \label{fig:channelcounts}
 \end{figure}
 
@@ -264,12 +268,12 @@ UCN valve open time. The solid lines shows the valve close time.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1.0\textwidth]{UCNRate_with_lines_logy.pdf}
-  \caption{Three measurement cycles for 1~$\mu$A beam current, 60~s
-    irradiation time, and 0~s valve open delay time. The dashed lines
-    show the start of the target irradiation, the dotted lines show
-    the end of the irradiation and the valve open time for each cycle
-    and the solid lines show the end of a cycle, which is the valve
-    close time.}
+  \caption[UCN cycles of measurement]{Three measurement cycles for
+    1~$\mu$A beam current, 60~s irradiation time, and 0~s valve open
+    delay time. The dashed lines show the start of the target
+    irradiation, the dotted lines show the end of the irradiation and
+    the valve open time for each cycle and the solid lines show the
+    end of a cycle, which is the valve close time.}
   \label{fig:UCNRate_with_lines}
 \end{figure}
 
@@ -310,10 +314,11 @@ data~(see Section~\ref{sec:pentrack}).
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{UCNCounts_vs_Beam.pdf}
-  \caption{The total UCN counts versus the applied proton beam
-    current. The labelas show the full range of the superfluid helium
-    temperature for that measurement. The dashed line is the fit to
-    the UCN counts at low beam currents.}
+  \caption[UCN counts versus proton beam current]{The total UCN counts
+    versus the applied proton beam current. The labelas show the full
+    range of the superfluid helium temperature for that
+    measurement. The dashed line is the fit to the UCN counts at low
+    beam currents.}
   \label{fig:counts_vs_beam}
 \end{figure}
 
@@ -335,7 +340,8 @@ and TS12 showing the lowest value.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{TSs.png}
-  \caption{Zoomed in screenshot of the EPICS temperature monitoring
+  \caption[TUCAN's EPICS temperature monitoring screen~(zoomed
+  in)]{Zoomed in screenshot of the EPICS temperature monitoring
     screen~\ref{fig:epics}. TS11 is located at the UCN heat exchanger
     bottom, TS12 is located at the UCN double tube bottom, TS14 is
     located at the heat exchanger double tube top and TS16 is located
@@ -374,11 +380,12 @@ superfluid helium.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{UCNCounts_vs_irradTime.pdf}
-  \caption{Number of UCN extracted from the source after irradiating
-    the target for different times with different beam currents. The
-    dashed lines extrapolate the data for irradiation times below 60~s
-    using exponential saturation curves. The labels show the
-    saturation time constant for each beam current. }
+  \caption[UCN yield versus target irradiation times]{Number of UCN
+    extracted from the source after irradiating the target for
+    different times with different beam currents. The dashed lines
+    extrapolate the data for irradiation times below 60~s using
+    exponential saturation curves. The labels show the saturation time
+    constant for each beam current. }
   \label{fig:counts_vs_irrad}
 \end{figure}
 
@@ -398,11 +405,11 @@ sensor.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{counts_vs_temp.pdf}
-  \caption{UCN yield versus the superfluid helium temperature. At a
-    particular UCN counts, there are several values for the
-    temperature of the superfluid helium. This is due to the
-    discrepancy in the temperature sensor readings as described in the
-    text.}
+  \caption[UCN yield versus the superfluid helium temperature]{UCN
+    yield versus the superfluid helium temperature. At a particular
+    UCN counts, there are several values for the temperature of the
+    superfluid helium. This is due to the discrepancy in the
+    temperature sensor readings as described in the text.}
   \label{fig:counts_vs_temp}
 \end{figure}
 
@@ -426,8 +433,10 @@ Fig.~\ref{fig:UCNRate_steadystate}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{steadystate_point3muA.png}
-  \caption{UCN rate at the steady-state production mode with 0.3~$\mu$A proton beam
-    current. The UCN rate reaches a constant value of 450 UCN counts/s.}
+  \caption[Steady-state UCN rate at 0.3~$\mu$A beam current]{UCN rate at the
+    steady-state production mode with 0.3~$\mu$A proton beam
+    current. The UCN rate reaches a constant value of 450 UCN
+    counts/s.}
   \label{fig:UCNRate_steadystate}
 \end{figure}
 
@@ -450,10 +459,11 @@ decrease.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{654_UCNRate.pdf}
-  \caption{The UCN rate at 3~$\mu$A beam current at 10~min irradiation
-    time at the steady-state mode of operation. The UCN valve is left
-    open throughout the measurement cycle. Quickly after the start of
-    the target irradiation the UCN rate in the detector goes up. The
+  \caption[Steady-state UCN rate at 3~$\mu$A beam current]{The UCN
+    rate at 3~$\mu$A beam current at 10~min irradiation time at the
+    steady-state mode of operation. The UCN valve is left open
+    throughout the measurement cycle. Quickly after the start of the
+    target irradiation the UCN rate in the detector goes up. The
     target irradiation creates a heatload on the cryostat and the
     superfluid helium. This gives rise to a slow temperature increase
     in the source. As a result, the UCN rate goes down due to the
@@ -464,10 +474,11 @@ decrease.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{UCNRate_temp.pdf}
-  \caption{ The temperature of the superfluid helium~(TS12) for the
-    steady state mode of operation at 3~$\mu$A beam current and 10~min
-    target irradiation. After the irradiation stops, the temperature
-    starts to decrease. }
+  \caption[Superfluid helium temperature at 3~$\mu$A beam
+  current~(steady-state mode)]{The temperature of the superfluid
+    helium~(TS12) for the steady state mode of operation at 3~$\mu$A
+    beam current and 10~min target irradiation. After the irradiation
+    stops, the temperature starts to decrease. }
   \label{fig:UCNRate_temp}
 \end{figure}
 
@@ -582,9 +593,10 @@ latter half of the run pottentially affected this drop.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\textwidth]{UCNCounts_vs_time.pdf}
-  \caption{The total UCN counts extracted from the source for 1~$\mu$A
-    beam current and 60~s irradiation time at different days during
-    the experimental run. }
+  \caption[ UCN yield at 1~$\mu$A beam current and 60~s target
+  irradiation over experimental run]{The total UCN counts extracted
+    from the source for 1~$\mu$A beam current and 60~s irradiation
+    time at different days during the experimental run. }
   \label{fig:UCNCounts_time}
 \end{figure}
 
@@ -611,8 +623,10 @@ open delay times.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{storagetime_all.png}
-  \caption{UCN cycles at different valve open delay times for 1~$\mu$A
-    beam current and 60~s target irradiation time.}
+  \caption[UCN rate at different value open delay times at 1~$\mu$A
+  beam current and 60~s irradiation time ]{UCN cycles at different
+    valve open delay times for 1~$\mu$A beam current and 60~s target
+    irradiation time.}
   \label{fig:storage_all}
 \end{figure}
 Fig.~\ref{fig:storage_example} shows the total UCN counts~(background
@@ -653,15 +667,16 @@ on the extrected storage lifetime.
     \caption{}
     \label{fig:storage_example10}
   \end{subfigure}
-  \caption{The total UCN counts at different valve open delay times for
-    (a) 1~$\mu$A beam current and 60~s irradiation time and (b)
-    10~$\mu$A beam current and 30~s target irradiation time. The red
-    line is the one exponential fit. The initail UCN counts for the
-    10~$\mu$A target irradiation is higher. However, the storage
-    lifetime is lower compared to 1~$\mu$A beam current because of the
-    heat load on the superfluid helium. In the case of 10~$\mu$A beam
-    current, the maximum cycle delay time is 120~s compared to the 170~s
-    delay time in the case of 1~$\mu$A beam current. This is due to
+  \caption[UCN storage lifetime extraction for two beam currents]{The
+    total UCN counts at different valve open delay times for (a)
+    1~$\mu$A beam current and 60~s irradiation time and (b) 10~$\mu$A
+    beam current and 30~s target irradiation time. The red line is the
+    one exponential fit. The initail UCN counts for the 10~$\mu$A
+    target irradiation is higher. However, the storage lifetime is
+    lower compared to 1~$\mu$A beam current because of the heat load
+    on the superfluid helium. In the case of 10~$\mu$A beam current,
+    the maximum cycle delay time is 120~s compared to the 170~s delay
+    time in the case of 1~$\mu$A beam current. This is due to
     excessive heat load on the cryostat and low statistics.}
   \label{fig:storage_example}
 \end{figure}
@@ -688,11 +703,12 @@ storage lifetime in the source.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{StorageLifetime_17009_and_17009A.pdf}
-  \caption{Storage lifetime in the source at different irradiation
-    times and proton beam currents. Different markers refer to
-    different target irradiation times. At longer irradiation times
-    and higher beam currents, the storage lifetime decreases due to the
-    increased heat load in the source, and an increase in the
+  \caption[UCN storage lifetime at different irradiation times and
+  proton beam currents]{Storage lifetime in the source at different
+    irradiation times and proton beam currents. Different markers
+    refer to different target irradiation times. At longer irradiation
+    times and higher beam currents, the storage lifetime decreases due
+    to the increased heat load in the source, and an increase in the
     superfluid helium temperature. }
   \label{fig:storage_beam_irrad}
 \end{figure}
@@ -726,7 +742,8 @@ higher temperatures.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{StorageLifetime_vs_temp.pdf}
-  \caption{Storage lifetime of UCN at different isopure helium
+  \caption[UCN storage lifetime at different isopure helium
+  temperatures]{Storage lifetime of UCN at different isopure helium
     temperatures. In this experiment, the temperature of the
     superfluid helium was set using heater tapes around the UCN
     bottle. The vertical axis shows the storage lifetime in seconds
@@ -753,10 +770,12 @@ the contamination in the UCN source after opening the UCN valve.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{storageLifetime_vs_time.pdf}
-  \caption{Storage lifetime of the source over the experimental run. A
-    2\% daily decrease in the storage lifetime is observed possibly
-    due to the contamination in the source after opening the UCN
-    valve.}
+  \caption[Storage lifetime in the source over the experimental
+  run]{Storage lifetime in the source over the experimental run. A 2\%
+    daily decrease in the storage lifetime is observed possibly due to
+    the contamination in the source after opening the UCN valve. The
+    two different values of the storage lifetime at the end of the
+    experimental run is due to different configuration.}
   \label{fig:storagelifetime_overall}
 \end{figure}
 
@@ -889,27 +908,30 @@ guides~\cite{DAUM201471,Wlokka2017,Atchison2010}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{risefalltime.png}
-  \caption{UCN rate with two exponential fit shown in red. The rise
-    time and fall time are labeled.}
+  \caption[UCN cycle with a two exponential fit]{UCN rate with two
+    exponential fit shown in red. The rise time and fall time are
+    labeled.}
   \label{fig:risefalltime}
 \end{figure}
 
 	
 \begin{figure}[h!]
   \centering \includegraphics[width=0.9\textwidth]{falltime.pdf}
-  \caption{Comparison of fall time $\tau_2$ in the experimental data
-    and the simulations with different diffuse-reflection
-    probabilities. The boxes indicate the second and third quartile of
-    the experimental data~(see text for the definition of quartiles).
-    The empty circle indicates its average.}
+  \caption[Comparison of UCN fall time between simulations and data
+  ]{Comparison of fall time $\tau_2$ in the experimental data and the
+    simulations with different diffuse-reflection probabilities. The
+    boxes indicate the second and third quartile of the experimental
+    data~(see text for the definition of quartiles).  The empty circle
+    indicates its average.}
 \label{fig:falltime}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{risetime.pdf}
-\caption{Comparison of rise time $\tau_{\mathrm{rise}}$ in
-  experimental data and simulations with different diffuse-reflection
+\caption[Comparison of UCN rise time between simulations and
+data]{Comparison of rise time $\tau_{\mathrm{rise}}$ in experimental
+  data and simulations with different diffuse-reflection
   probabilities. The boxes indicate the second and third quartile of
   the experimental data~(see text for the definition of
   quartiles). The empty circles indicate the average.}
@@ -980,8 +1002,9 @@ determined.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.6\textwidth]{MCNPmodel.pdf}
-  \caption{MCNP model of the source. Red dots indicate the temperature
-    sensors used to determine the temperature of the superfluid.}
+  \caption[MCNP model of the UCN source]{MCNP model of the source. Red
+    dots indicate the temperature sensors used to determine the
+    temperature of the superfluid.}
   \label{fig:mcnpmodel}
 \end{figure}
 
@@ -1019,7 +1042,8 @@ of the simulated points.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{UCNCounts_vs_temp_ver3.pdf}
-  \caption{Number of UCN extracted from the source at different
+  \caption[UCN yield versus superfluid helium temperature data and
+  simulations]{Number of UCN extracted from the source at different
     superfluid helium temperatures after irradiating the target with
     1~$\mu$A proton beam current for 60~s(filled circles). The empty
     squares represent the simulations where the helium gas above the
@@ -1037,10 +1061,11 @@ of the simulated points.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{StorageLifetime_vs_temp_ver3.pdf}
-  \caption{Storage lifetime of UCN in the source at different
-    superfluid helium temperatures~(filled circles).  The empty
-    squares represent the simulations where the helium gas above the
-    superfluid helium liquid is taken into account and the empty
+  \caption[UCN storage lifetime versus superfluid helium temperature
+  data and simulations]{Storage lifetime of UCN in the source at
+    different superfluid helium temperatures~(filled circles).  The
+    empty squares represent the simulations where the helium gas above
+    the superfluid helium liquid is taken into account and the empty
     triangles represent the simulations where the helium gas is not
     included. The lines are interpolations of simulated data to guide
     the eye. The simulations were performed with two values of $B$:
@@ -1097,8 +1122,9 @@ upscattering rate in that section.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{UCNrate_vs_temp_withsim_ver2.pdf}
-  \caption{Histogram of measured UCN rates and temperatures from all
-    four temperature sensors while the target is continuously
+  \caption[UCN rate versus superfluid helium temperature data and
+  simulations]{Histogram of measured UCN rates and temperatures from
+    all four temperature sensors while the target is continuously
     irradiated with the UCN valve open. The emtpy squares represent
     the simulations where the helium gas above the superfluid helium
     liquid is taken into account and the empty tirangles represent the
@@ -1174,7 +1200,8 @@ value.
 
 \begin{figure}[h!]
   \centering \includegraphics[width=0.8\textwidth]{problemrun.pdf}
-  \caption{Steady-state UCN production data for 1.5~$\mu$A proton beam
+  \caption[Steady-state UCN production data for 1.5~$\mu$A proton beam
+  current]{Steady-state UCN production data for 1.5~$\mu$A proton beam
     current. The top graph shows the UCN rate over time, the middle
     graph shows the superfluid helium temperature~(TS12) over time and
     the bottom graph shows the $^3$He flow rate versus time. Detail
