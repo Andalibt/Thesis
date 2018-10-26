@@ -143,12 +143,11 @@ protons). This geometry is very similar to~(and motivated by) a
 neutron spallation target design used previously at KEK~(KENS
 facility)~\cite{kawai2001fabrication}: five blocks of tungsten
 constitute the target with 78~mm height and 57~mm width, three with
-20~mm length in the beam direction, one with 30~mm length, and one
-with 50~mm length~(see Fig.~\ref{fig:target}).  The target has a
-support and cooling system, designed to allow for remote-handling and
-ease of servicing. The target-cooling and remote-handling systems are
-designed for an instantaneous proton current of 40~$\mu$A~(10~$\mu$A
-time-averaged).
+20~mm length in the beam direction, two with 30~mm length~(see
+Fig.~\ref{fig:target}). The target has a support and cooling system,
+designed to allow for remote-handling and ease of servicing. The
+target-cooling and remote-handling systems are designed for an
+instantaneous proton current of 40~$\mu$A~(10~$\mu$A time-averaged).
 %\begin{figure}[h!]
 %  \centering
 %  \includegraphics[width=0.8\textwidth]{target.png}
@@ -177,10 +176,10 @@ time-averaged).
   \end{subfigure}
   \caption[TUCAN's spallation target]{(a) Tungsten Target Blocks from
     the spallation target at KEK. The target blocks are plated with
-    tantalum. (b) Present design for the tungsten spallation target at
+    tantalum. (b) Present design of the tungsten spallation target at
     the TRIUMF UCN facility. The target blocks have a cross-section of
-    $5.7 \times 7.8$~cm$^2$ , and thicknesses of 2.0, 2.0, 3.0, and
-    5.0~cm, respectively.}
+    $5.7 \times 7.8$~cm$^2$ , and thicknesses of 2.0, 2.0, 2.0, 3.0,
+    and 3.0~cm, respectively.}
   \label{fig:target}
 \end{figure}
 
@@ -195,47 +194,39 @@ target when necessary.
 
 
 \section{Vertical UCN Source at TRIUMF\label{sec:vertical_source}}
-At TRIUMF, neutrons are produced via the spallation process by hitting
-a tungsten target with a proton beam. Spallation is refered to a
-nuclear reaction where high energy particles interact with atomic
-nucleus. This process creates many high energy neutrons and background
-radiation.  Since the temperature of the superfluid helium is crucial,
-the heat load into it should be kept as small as possible. Two effects
-dominate the heat load: (1) heating by prompt $\gamma$ radiation and
-neutrons; and (2) residual heating by radioactive decays of materials
-activated by neutron capture.  Any heat deposited in the converter
-vessel and the connected UCN guide will directly contribute to the
-heat load, so they should be thin-walled and made out of a material
-with low density, low atomic number, and low neutron-absorption cross
+Neutrons are produced via proton-induced spallation off tungsten
+target. Spallation is a nuclear reaction where high energy particles
+interact with the atomic nucleus. This creates many high-energy
+neutrons and less gamma radiation than fission~(per neutron). Since
+the temperature of the superfluid helium is crucial, the heat load
+into it should be kept as small as possible. Two effects dominate the
+heat load: (1) heating by prompt $\gamma$ radiation and neutrons; and
+(2) residual heating by radioactive decays of materials activated by
+neutron capture.  Any heat deposited in the converter vessel and the
+connected UCN guide will contribute to the heat load on the He-II, so
+they should be thin-walled and made out of a material with low
+density, low atomic number, and low neutron-absorption cross
 section. Additionally, the vessel and UCN guide should be leak-tight
 for superfluid helium, have a high optical potential for UCN, or allow
 coating with a suitable material. The cold- and thermal-moderator
-vessels have less direct impact on the heat load into the UCN con-
-verter, but secondary particles from (n, $\gamma$) reactions and
+vessels have less direct impact on the heat load into the UCN
+converter, but secondary particles from (n, $\gamma$) reactions and
 radioactive decays can still contribute.
 
 
 
 
-The target is surrounded by several blocks of lead and
-graphite. The fast neutrons are reflected and moderated down and enter
-the warm D$_2$O moderator at room temperature~(300~K) and become
-thermal neutrons with an energy of 0.025~eV, and the speed of 2.2~km/s.
-Iced heavy water at 10~K is used as a cold moderator. After passing
-through the warm D$_2$O, thermal neutrons enter the the cold moderator
-and become cold neutrons. These neutrons have the speed of several
-hundreds of meter per second.  UCN are produced when the slow neutrons
-enter the isotopically pure superfluid helium at 0.84 to 0.92~K as a
-result of phonon transitions inside the superfluid helium as discussed
-in Section~\ref{sec:ucn_with_heII}.
-
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1.1\textwidth]{Source_all.png}
-  \caption{The UCN source and the guide geometry at TRIUMF}
-  \label{fig:Source_all}
-\end{figure}
+The target is surrounded by several blocks of lead and graphite. The
+fast neutrons are reflected and moderated down and enter the warm
+D$_2$O moderator at room temperature~(300~K) and become thermal
+neutrons with an energy of 0.025~eV, or a speed of 2.2~km/s.  Heavy
+water ice at 10~K is used as a cold moderator. After passing through
+the warm D$_2$O, thermal neutrons enter the the cold moderator and
+become cold neutrons. These neutrons have the speed of several
+hundred~m/s. UCN are produced when the cold neutrons~(CN) enter the
+isotopically pure superfluid helium at 0.84 to 0.92~K. The CN induce
+phonon transitions inside the superfluid helium in order to become
+UCN, as discussed in Section~\ref{sec:ucn_with_heII}.
 
 
 
@@ -257,81 +248,89 @@ in Section~\ref{sec:ucn_with_heII}.
 
 
 
-The schematic of the vertical source is shown in Fig.~\ref{fig:source}
-and a 3D drawing of the vertical source and the guide geometry is
-shown in Fig.~\ref{fig:Source_all}. The UCN-production volume filled
-with superfluid helium and is attached to a $^3$He heat exchenger. The
-combined height of UCN-production volume and vertical UCN guide is
-1.25~m, with the lower 0.62~m filled with superfluid helium. Right
-above the liquid surface, a short, narrow section of the vertical
-guide blocks superfluid film flow to reduce heat load. Above the
-cryostat, the UCN guide continues horizontally in a vacuum jacket to
-transition from cryogenic to room temperature. It ends with a burst
-disk for pressure relief and a gate valve with a protetive ring
-improving UCN transmission in the open state.
 
-Downstream of the valve, the UCN guide follows a 45$^\circ$ kink to
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{Source_all.png}
+  \caption{The UCN source and the guide geometry at TRIUMF}
+  \label{fig:Source_all}
+\end{figure}
+
+
+A schematic diagram of the vertical source is shown in
+Fig.~\ref{fig:source} and a 3D drawing of the vertical source and the
+guide geometry is shown in Fig.~\ref{fig:Source_all}. The
+UCN-production volume is filled with superfluid helium and is cooled
+by a Cu heat exchanger with the $^3$He pot. The combined height of the
+UCN-production volume and vertical UCN guide is 1.25~m, with the lower
+0.62~m filled with superfluid helium. Right above the liquid surface,
+a short, narrow section of the vertical guide blocks superfluid film
+flow and radiant heat to reduce the heat load. Above the cryostat, the
+UCN guide turns horizontally in a vacuum jacket to transition from
+cryogenic to room temperature. It ends with a burst disk for emergency
+pressure relief and a gate valve~(GV) with a protective ring improving
+UCN transmission in the open state~(indicated as UCN valve on
+Fig.~\ref{fig:source} and Fig.~\ref{fig:Source_all}).
+
+Downstream of the GV, the UCN guide follows the 45$^\circ$ kinks to
 avoid radiation leaking through a direct line of sight to the
 experimental area. Finally, it penetrates through 3~m of additional
-shielding and drops down to allows the UCN to penetrate a 0.1~mm-thick
-aluminum foil and to enter the main detector. The foil separates the
-helium-filled UCN guide from the detector vacuum to reduce
-contamination of the source. The main detector is a $^6$Li detector
-described below. A secondary $^3$He proportional counter with its own
-aluminum window is mounted to a 5~mm pinhole in the guide and serves
-as a monitor detector .
+shielding and drops to accelerate the UCN by gravity to penetrate a
+0.1~mm-thick aluminum foil and to enter the main detector with high
+efficiency. The foil separates the helium vapour-filled UCN guide from
+the detector vacuum to reduce contamination of the source. The main
+detector is a $^6$Li detector described in
+Section~\ref{sec:Li6detector}. A secondary $^3$He proportional counter
+with its own aluminum window is mounted to a 5~mm pinhole in the guide
+and serves as a monitor detector.
 
 
 
 
-The neutron moderators and the helium circulation system are explained
-below.
+The neutron moderators, the helium circulation system, and the process
+of cryostat operations are explained below.
 
 
 \subsection{Neutron D$_2$O Moderators}
-Deuterium is an isotope of hydrogen which has one proton and one
-neutron in the nucleus, and it has a lower probability to absorb
-neutrons. As a result, heavy water is used as a neutron moderator. The
-warm D$_2$O moderator to create thermal neutrons from spallation
-neutrons is at room temperature. However, the cold moderator for the
-production of cold neutrons is at much lower
-temperatures~($\sim$~10~K).
+%Deuterium is an isotope of hydrogen which has one proton and one
+%neutron in the nucleus, and it has a lower probability to absorb
+%neutrons. As a result, heavy water is used as a neutron moderator.
+The warm D$_2$O moderator to create thermal neutrons from spallation
+neutrons is at room temperature. The cold moderator for the production
+of cold neutrons is at much lower temperatures~($\sim$~10~K).
 
 \subsubsection{D$_2$O Solidification}
-The Iced D$_2$O vessel has a capacity of 100~L. About 14~L of liquid
-D$_2$O is injected to the vessel initially. This is followed by adding 11~L of
-D$_2$O to the vessel 8 times.  After filling up the vessel,
+The D$_2$O ice vessel has a capacity of 100~L. About 14~L of liquid
+D$_2$O is injected to the vessel initially. This is followed by adding
+11~L of D$_2$O to the vessel 8 times.  After filling up the vessel,
 Gifford McMahon refrigerators solidify the heavy water and further
 cool it down to 20~K. The process of icing the heavy water takes about
-6 days and cooling it down to 20~k takes another 7 days.
+6 days and cooling it down to 20~K takes another 7 days.
 
 
 \subsection{Helium Circulation and Superfluid Helium Condensation}
-The helium circulation and the superfluid helium condensation could
-get started once the temperature of D$_2$O is as low as 10~K. The
-stages towards superfluid helium condensation is presented below. The
-full operation and design details are available in
-Ref.~\cite{matsumiya_thesis}.
+Helium circulation and superfluid helium condensation normally starts
+once the temperature of D$_2$O has reached 10~K. The stages leading to
+superfluid helium condensation are presented below. The full operation
+and design details are available in Ref.~\cite{matsumiya_thesis}.
 
 \subsubsection{Liquid Helium Reservoir}
-The first step of the helium circulation is to fill up the helium
-reservoir with the commercially available 4.2~K helium. The full
-capacity of the helium reservoir is 50~L. In the 2017 experimental
-run, the TUCAN collaboration used a labview program to automatically
-fill up the reservoir using a 500~L dewar of 4.2~K helium. This dewar
-was refered to as the ``stationary dewar''. This way, it is possible
-to set the desired minimum and maximum levels of the helium in the 4~K
-reservoir, and set it to automatically get filled once it hits the
-minimum value, and stop filling once it reaches the maximum value. The
-helium levels were measured by level meters. In addition, two flow
-meteres were used to observe the gas flow and evaporation of the
-superfluid in the 4~K reservoir~(FM4 and FM5 in
-Fig.~\ref{fig:gasflow}. The DAQ system and sensor positions are
-described in Section.~\ref{sec:DAQ} and the gas flow diagram is
-available in Fig.~\ref{fig:gasflow}. The stationary dewar was filled
-up with 350~L dewars~( we reffered to them as ``transfer dewar'') of
-4~K helium from the meson hall liquifier. The helium autofill system
-is shown in Fig.~\ref{fig:ucnarea}.
+The first step is to fill the 4~K liquid helium reservoir. The full
+capacity of the reservoir is 50~L. In the 2017 experimental run, the
+TUCAN collaboration developed a Labview program to automatically fill
+the reservoir from a nearby 500~L dewar. This dewar is referred to as
+the ``stationary dewar''. In the program, it is possible to set the
+desired minimum and maximum levels of the helium in the 4~K reservoir,
+and set it to fill automatically. The helium autofill system is shown
+in Fig.~\ref{fig:ucnarea}. The helium level is measured by a level
+meter. The DAQ system and sensor positions are described in
+Section.~\ref{sec:DAQ} and the gas flow diagram is available in
+Fig.~\ref{fig:gasflow} of Appendix~\ref{app:gasflow}. In addition, two
+flow meteres were used to observe the gas flow and evaporation of the
+superfluid in the 4~K reservoir~(FM4 and FM5 in Fig.~\ref{fig:gasflow}
+of Appendix~\ref{app:gasflow}). The stationary dewar was filled from
+350~L transfer dewars which were in turn filled from the Meson Hall
+liquifier.
 
 \begin{figure}[h!]
   \centering
@@ -346,16 +345,16 @@ is shown in Fig.~\ref{fig:ucnarea}.
   \label{fig:ucnarea}
 \end{figure}
 
-Fig.~\ref{fig:4kfilling} shows the 5 filling cycles of the 4~K
-reservoir on April 22, 2017 during the first cool down test. The
-liquid helium transfer starts once the liquid level in the 4~K
-reservoir reaches 20\%. Once the transfer starts, the liquid level
-starts to decrease with a sharper slope. This is because of the
-introduced heat load to the reservoir. It takes some time to cool down
-the transfer line from the stationary dewar to the reservoir. The warm
-liquid helium causes a boil off in the 4~K reservoir. The boiled off
-helium gas goes through the recovery line to the liquifier. The liquid
-helium transfer stops once the 4~K reservoir is 60\% filled.
+Fig.~\ref{fig:4kfilling} shows 5 filling cycles of the 4~K reservoir
+on April 22, 2017 during the first cooling test. Liquid helium
+transfer starts once the liquid level in the 4~K reservoir reaches
+20\%. Once the transfer starts, the liquid level starts to decrease
+with a sharper slope. This is because it takes some time to cool the
+transfer line from the stationary dewar to the reservoir. The warmer
+helium vapour causes a heat load to the 4~K reservoir. Any helium gas
+evaporated from the reservoir returns through a recovery line to the
+liquifier. Liquid helium transfer stops once the 4~K reservoir is 60\%
+filled.
 
 \begin{figure}[h!]
   \centering
@@ -377,23 +376,20 @@ different temperatures and pressures on both sides, while there is no
 heat exchange to the environment.  The 1~K pot is always pumped by a
 pumping system. Pumping on the pot provides a pressure drop across the
 valve which then gives rise to expansion, and therefore, cooling of
-liquid helium down to about 1.4~K. The pressure in the pot determines
-the saturated vapour pressure above the liquid, and hence, the
-temperature of the liquid.  Calculations of refrigerator performance
-were studied recently in the context of the vertical UCN source
+liquid helium down to about 1.4~K via Joule-Thomson~(JT) expansion as
+discussed below. The pressure in the pot determines the saturated
+vapour pressure above the liquid, and hence, the temperature of the
+liquid.  Calculations of refrigerator performance were studied
+recently in the context of the vertical UCN source
 \cite{Florian_thesis} and in the future horizontal UCN source
-\cite{bib:sweitz}. The level of helium in the 1~K pot is measured by
-a liquid level meter. The maximum level of the 1.4~K liquid helium is
+\cite{bib:sweitz}. The level of helium in the 1~K pot is measured by a
+liquid level meter. The maximum level of the 1.4~K liquid helium is
 about 15~cm. At this level, the volume of the 1.4~K liquid helium is
 about 1.3~L.
 
    
 
 \subsubsection{Liquid $^3$He Pot}
-
-Isotopically pure $^4$He is cooled by the latent heat of decompressed,
-liquid $^3$He inside a vessel called ``$^3$He pot''.
-
 
 Once the 1~K pot is ready, the $^3$He gas circulates in a loop from
 room temperature to the $^3$He pot. $^3$He is a very valuable gas, so
@@ -402,19 +398,22 @@ case of a leak, the system will be contaminated, but we will not lose
 $^3$He. $^3$He pot works based on the Joule-Thomson effect as well.
 To start, the needle valve in the $^3$He reservoir is opened. A vacuum
 pump compresses the $^3$He gas. The $^3$He gas is then purified by a
-room temperature and a cold purifier, and is precooled by the $^4$K
-reservoir, and then condensed in the 1~K pot. The liquid $^3$He then
-undergoes Joule-Thomson expansion into the $^3$He pot which is
-decompressed by vacuum pumps. During JT expansion, a part of the
-liquid $^3$He is evaporated. Since the expansion is adiabatic, total
-enthalpy is conserved and the liquid fraction remaining after JT
-expansion can be calculated.
+room temperature and a cold purifier, and is precooled by the 4~K
+reservoir, and then condensed in a Cu tube in the 1~K pot. The liquid
+$^3$He then undergoes Joule-Thomson~(JT) expansion through NV into the
+$^3$He pot which is decompressed by vacuum pumps. The JT expansion is
+isenthalpic.
+
+%During JT expansion,
+%a part of the liquid $^3$He is evaporated. Since the expansion is
+%adiabatic, total enthalpy is conserved and the liquid fraction
+%remaining after JT expansion can be calculated.
 
 The $^3$He pot is connected to the isotopically pure $^4$He volume by
-a copper heat exchanger which conducts the heat produced in the
-isotopically pure $^4$He to the $^3$He pot. There are several
-counter-flow heat exchangers to recover enthalpy of the evaporated
-helium gas.
+a copper heat exchanger which conducts the heat in the
+isotopically pure $^4$He to the $^3$He pot.
+% There are several counter-flow heat exchangers to recover enthalpy
+% of the evaporated helium gas.
 
 
 %Once the 1~K pot is ready, the $^3$He circulation starts to condense
@@ -447,7 +446,7 @@ and the top of the heat exchange pot is connected via the copper heat
 exchanger. The isopure He in the heat exchange pot is cooled by the
 0.7~K liquid $^3$He via the copper heat exchanger and becomes
 He-II. The condensed He-II fills the He-II bottle with a volume of
-8.5~L and gets cooled down to $\sim$~0.83~K.
+8.5~L and is cooled to $\sim$~0.83~K.
 
 
 
@@ -457,7 +456,7 @@ The TUCAN UCN DAQ system accumulates data from different devices and
 integrates them into a MIDAS file.
 
 For the 2017 data acquisition, almost all the sensors such as
-temperature sensors, flow meteres, pressure gaugas and etc., were
+temperature sensors, flow meters, pressure gauges and etc. were
 connected to a Programmable Logic Controller~(PLC). The PLC receives
 information from the connected sensors or input devices, processes the
 data, and triggers outputs based on pre-programmed parameters.
@@ -470,7 +469,7 @@ the applied limits, and more.
   \includegraphics[width=0.8\textwidth, angle = 90]{PLC.JPG}
   \caption[TUCAN's PLC in the meson hall]{A photograph of the PLC in
     the meson hall. The grey terminal blocks are used to connect the
-    signal from the devices to the computing moduels. The first two
+    signal from the devices to the computing modules. The first two
     top rows include the computing modules. Each sensor is connected
     to a specific terminal on a specific module. The bottom row is
     where the power supplies and the fuses are positioned. }
@@ -482,21 +481,21 @@ are placed in the top two rows. The bottom row includes the power
 supplies and the fuses for the sensors. The middle section of the PLC
 box has the terminal blocks for all the sensors. The terminal blocks
 for each sensor are labeled. The number of terminal blocks for each
-sensor depends on its wiring diagram. There green terminal blocks are
+sensor depends on its wiring diagram. The green terminal blocks are
 for the ground connection and the grey termianl blocks are for all
 other readings.  The cables from the sensors enter the PLC via the two
-holes on the top of the PLC box. These cables are then routed on the
-right side of the pannel and connected to the designated terminal
-blocks. The input connection from the sensors to the terminal blocks
-enter from the bottom row and the output connection to the PLC modules
-leave the terminal blocks from their top row. We draw the wiring
-diagram for each sensor using Altium software.
+holes on the top of the PLC box. They are then routed on the right
+side of the panel and connected to the designated terminal blocks. The
+input connection from the sensors to the terminal blocks enter from
+the bottom row and the output connection to the PLC modules leave the
+terminal blocks from their top row. We draw the wiring diagram for
+each sensor using Altium software.
 
 Fig.~\ref{fig:altium} shows the altium drawing for the PG3H sensor in
 the $^4$He system which is named UCN:He4:PG3H. The first part
 indicates that it is a sensor for the UCN source, the middle part
-indicates which sub-system this system blongs to e.g., $^3$He or
-$^4$He or UCN guides~(UGD) and the last part is the name of the sensor
+indicates which sub-system this system belongs to~(e.g., $^3$He or
+$^4$He or UCN guides UGD) and the last part is the name of the sensor
 which in this case is pressure gauge 3 high (PG3H). The left wires on
 the left side of the drawing show the connection to the modules. Here
 we used the red~(RD), black~(BK) and shield~(SH) of a Belden 9462
@@ -507,7 +506,7 @@ values~(UCN:HE4:PG3H and RADCPRESS) are related to the PLC
 programming. On the left side of the graph we see wires from the
 sensor itself to the terminal block. As the Fig. shows, the sensor is
 a Omega PXM219-1.6bar pressure gauge. To see the location of the
-sensor please look at appendix~\ref{app:gasflow}.
+sensor please look at Appendix~\ref{app:gasflow}.
 
 \begin{figure}[h!]
   \centering
@@ -584,18 +583,18 @@ The main MIDAS frontends that are being read out by the UCN DAQ:
   $^3$He detector.
 \end{itemize}
 
-For the 2017 experimental run, each expriment had a unique MIDAS run
+For the 2017 experimental run, each experiment had a unique MIDAS run
 number. The MIDAS files were then converted to ROOT files for data
 analysis. ROOT is a scientific software package developed by
 scientists at CERN~\cite{brun1997root}. It provides all the
-functionalities needed to deal with big data processing, statistical
+functionalities needed to deal with data processing, statistical
 analysis, visualisation and storage. It is mainly written in C++, but
-integrated with other languages such as Python and R. Our data was
-saved as .root format. Each data file represents a particular midas
-run and has 8 trees. A tree in ROOT is like a table. Each row of the
-table is a branch in the tree. Fig.~\ref{fig:sfig1} shows the trees in
-a ROOT file. The XXX indicates the number of the MIDAS run. The UCN
-Hit trees include the data timestamps, ChargeL, ChargeS, PSD~(see
+integrated with other languages such as Python and R. Each ROOT file
+represents a particular midas run and has 8 trees. A tree in ROOT is
+like a table. Each row of the table is a branch in the
+tree. Fig.~\ref{fig:sfig1} shows the trees in a ROOT file. The XXX
+indicates the number of the MIDAS run. The UCN Hit trees include the
+data timestamps, ChargeL, ChargeS, PSD~(see
 Section~\ref{sec:detectors}), Baseline and etc. The run transition
 trees include the UCN valve open time, UCN valve close time, Cycle
 start time and etc.~(see Chapter~\ref{chap:UCNresult}). The LND
@@ -628,10 +627,10 @@ the shift.
 \label{fig:data_struct}
 \end{figure}
 
-We developed a ROOT program that extracts the UCN cycle information
-for each MIDAS run and creates a .root file.  The output file has one
-tree as ``cycle information'' table. It consists of branches with the
-cycle average, maximum, and minimum values for the main sensors that
+I developed a ROOT program that extracts the UCN cycle information for
+each MIDAS run and creates a .root file.  The output file has one tree
+as ``cycle information'' table. It consists of branches with the cycle
+average, maximum, and minimum values for the main sensors that
 contribute to the analysis.  The analysis is based on the UCN cycles,
 and it is essential to know, for example, how the temperature of the
 superfluid helium changes for each cycle. Therefore, the average,
@@ -655,33 +654,35 @@ analysis is presented in Chapter~\ref{chap:UCNresult}.
 
 \section{UCN Detectors\label{sec:detectors}}
 For the TUCAN experimental runs in 2017, a $^6$Li and a $^3$He
-detector were used. The main reason for this was to check the
-consistency of the result, and the performance of each detector. The
-brief description of each detector is available below.
+detector were used. The main reason tow detectors were used was to
+check the consistency of the result, and the performance of each
+detector. A brief description of each detector is available below.
 
 \subsection{$^6$Li Detector\label{sec:Li6detector}}
 The main detector used during the UCN measurements~(see
 Chapter~\ref{chap:UCNresult}) is a $^6\mathrm{Li}$ glass based
 scintillator detector designed and built at the University of Winnipeg
 for the TUCAN nEDM experiment at
-TRIUMF~\cite{jamieson2017characterization}. Since $^6\mathrm{Li}$ has
-a high neutron capture cross-section~(order of $10^5$ bn) at UCN
-energies, the scintillator glass is doped with it. The charged
-particles in the reaction
+TRIUMF~\cite{jamieson2017characterization, Lori}. Since
+$^6\mathrm{Li}$ has a high neutron capture cross-section~(order of
+$10^5$ b) at UCN energies, the scintillator glass is doped with
+it. The charged particles in the reaction
 \begin{equation}
 ^6Li + n \rightarrow \alpha (2.05~\mathrm{MeV}) + t (2.73~\mathrm{MeV})
 \end{equation}
-are detected. To reduce the effect of $\alpha$ or triton escaping the
-glass, a layer of 60~$\mu$m thick depleted $^6\mathrm{Li}$
-glass~(GS30), on top of a layer of 120~$\mu$m thick dopped
-$^6\mathrm{Li}$~(GS20) were optically bonded. This design allows the
-resultant particles to deposit all of their energy within the
-scintillating glass. Table~\ref{tab:scintillator} shows the content
-and density of those $^6\mathrm{Li}$ scintillators.
+are detected. The mean range of the $\alpha$ is 5.3~$\mu$m, and the
+mean range of the triton is 34.7~$\mu$m. To reduce the effect of
+$\alpha$ or triton escaping the glass, a layer of 60~$\mu$m thick
+depleted $^6\mathrm{Li}$ glass~(GS30), on top of a layer of 120~$\mu$m
+thick dopped $^6\mathrm{Li}$~(GS20) were optically bonded. This design
+allows the UCN to pass through the depleted layer before being
+captured in the $^6$Li-rich layer, thus the resultant particles
+deposit all their energy within the scintillating
+glass. Table~\ref{tab:scintillator} shows the content and density of
+those $^6\mathrm{Li}$ scintillators.
 
 \begin{table}[h!]
   \centering
-  \label{tab:scintillator}
   \begin{tabular}{|c|c|c|}
     \hline
     Scintillator & GS20~($^6\mathrm{Li}$ Enriched) & GS30~( $^6\mathrm{Li}$ depleted) \\
@@ -693,22 +694,19 @@ and density of those $^6\mathrm{Li}$ scintillators.
     $^6\mathrm{Li}$ desity~(cm$^{-3}$) & $1.716 \times 10^{22}$ & $1.806 \times 10^{18}$ \\
     \hline
   \end{tabular}
-  \caption{Properties of the glass scintillators}
+  \caption{Properties of the glass
+    scintillators\label{tab:scintillator}}
 \end{table}
 
 
 Making the scintillating Li glass as thin as possible reduces the
-sensitivity to $\gamma$-ray scintillating backgrounds, and thermal
-neutron captures. The mean range of the $\alpha$ is 5.3~$\mu$m, and the
-mean range of the triton is 34.7~$\mu$m. This means, if the
-thickness of the scintillator is less than 50~$\mu$m, the resultant
-particles escape before stopping which gives rise to an efficiency
-loss.  In order to handle high UCN rates of up to \~1~MHz, the
-$^6\mathrm{Li}$ detector face is segmented into 9 tiles~(see
-Fig.~\ref{fig:Li6detector}). The scintillation light is then guided
-through ultra-violet transmitting acrylic light-guide to its
-corresponding Photomultiplier Tube~(PMT) outside the vaccum region of
-the detector.
+sensitivity to $\gamma$-ray-induced scintillation backgrounds, and
+thermal neutron captures. In order to handle high UCN rates of up to
+1~MHz, the $^6\mathrm{Li}$ detector face is segmented into 9
+tiles~(see Fig.~\ref{fig:Li6detector}). The scintillation light of
+each tile is guided through ultra-violet transmitting acrylic
+light-guide to its corresponding photomultiplier tube~(PMT) outside
+the vacuum region of the detector.
 
 \begin{figure}[h!]
   \centering
@@ -716,40 +714,39 @@ the detector.
   \caption[3D drawing of the $^6$Li detector and its enclosure]{3D
     drawing of the $^6$Li detector and its enclosure. The enclosure is
     made of Al, and the rim of the adapter flange which UCN can hit is
-    ccoated with 1~$\mu$m Ni by thermal evaporation. }
+    coated with 1~$\mu$m Ni by thermal evaporation. }
   \label{fig:Li6detector}
 \end{figure}
 
-The data acquisition with this detector includes a CAEN V1720
-digitizer which has a Pulse-Shape Discrimination~(PSD) firmware that
-triggers on pulses below a certain threshold for each channel. Every
-4~ns the digitizer samples the waveform which is then digitized to a
-voltage on a 2~V scale into an ADC value between 0 and 4096. Each
-channel of the digitizer sends a trigger, whenever the number of
-counts in the ADC goes below a certain baseline~(pedestal) value. The
-PSD calculates the sum of the signal below the baseline for two time
-windows: $t_s = 40$~ns~(short gate) and $t_L = 200$~ns~(long
-gate). The short gate is chosen in a way to contain all of the charge
-for the $\gamma$-ray interactions in the light-guide. The ADC sum for
-during the long gate below the baseline is calle $Q_L$~(read charge
-long) and for during the short gate below the baseline is called
-$Q_S$~(read charge short). Charge long has the total charge deposit
-for the neutron capture events. The PSD value is defined as
+The data acquisition for the detector is based on the CAEN V1720
+digitizer which has a Pulse-Shape Discrimination~(PSD) firmware. Every
+4~ns the digitizer samples the waveform on a 2~V scale into an ADC
+value between 0 and 4096. Each channel of the digitizer sends a
+trigger, whenever the number of counts in the ADC goes below a certain
+baseline~(pedestal) value. The PSD calculates the sum of the signal
+below the baseline for two time windows: $t_s = 40$~ns~(short gate)
+and $t_L = 200$~ns~(long gate). The short gate is chosen in a way to
+contain all of the charge for the $\gamma$-ray interactions in the
+light-guide. The ADC sum for during the long gate below the baseline
+is called $Q_L$~(read charge long) and for during the short gate below
+the baseline is called $Q_S$~(read charge short). Charge long has the
+total charge deposited for the neutron capture events. The PSD value is
+defined as
 \begin{equation}
   \label{eq:psd}
   \mathrm{PSD} = \frac{\left( Q_L - Q_S\right)}{Q_L}~,
 \end{equation}  
 which is the amount of charge in the tail of an event.
 
-Jamieson {\it{et al.}}, showed that the absolute efficiency of this
-detector is $89.7^{+1.3}_{-1.9}$~\% with a background contamination of
+The absolute efficiency of this detector is $89.7^{+1.3}_{-1.9}$~\%
+with a background contamination of
 $0.3 \pm 0.1$~\%~\cite{jamieson2017characterization}. The detector is
 stable at the 0.06~\% level or better, and that the variation in the
 efficiency between the detector tiles is less than 5~\%.
 \subsection{$^3$He Detector}
 
 The $^3$He detector used for the data acquisition is a Dunia-10 type
-which was shipped from RCNP.  $^3$He provides an effective neutron
+which was used at RCNP. The $^3$He provides an effective neutron
 detector material for neutron detection by absorbing neutrons via the
 following reaction
 
@@ -757,7 +754,6 @@ following reaction
   \label{eqn:he3}
 n + ^3\mathrm{He} \rightarrow p + t + 674~\mathrm{keV}.
 \end{equation}
-
 Before the start of the experiment, the $^3$He detector was tested
 with an AmBe source, and it showed consistent result with what was
 observed at RCNP. The detector was surrounded with paraffin blocks to
@@ -770,7 +766,6 @@ moderate the neutrons~(see Fig.~\ref{fig:he3detector}).
     moderation.}
   \label{fig:he3detector}
 \end{figure}
-
 More detail about the $^3$He detector could be found in
 Ref.~\cite{matsumiya_thesis}.
 % The result of the comparison between the $^3$He and $^6$Li detectors

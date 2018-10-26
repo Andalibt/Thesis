@@ -1,4 +1,5 @@
-hea\chapter{UCN Production, Transport, and Detection\label{chap:UCNresult}}
+\chapter{UCN Production, Transport, and
+  Detection\label{chap:UCNresult}}
 
 In November of 2017, the first UCN at TRIUMF were produced using the
 prototype vertical UCN source described in
@@ -12,17 +13,23 @@ generation high intensity UCN source. In this chapter those
 experiments are described and the result of the data analysis is
 presented.
 
+Chapter proceeds as follows:
+\begin{itemize}
+\item general disussion of measurement cycle
+\item data analysis focusing on experimental measurements of UCN
+  counts and storage lifetime in source
+\item data are compared to detailed Monte-Carlo description in
+  Section~\ref{sec:pentrack} to extract physical parameters of source
+  and UCN guides
+\end{itemize}
+
 \section{UCN Cycle of Measurement}
 Fig.~\ref{fig:volume_schematic} is a simple schematic of UCN
-production and detection volumes. This simplified sketch helps
-understand the UCN trade between different volumes, and understand the
-concepts without getting distracted with too much details. Here volume
-$V_1$ is the production and storage volume before the valve, where
-$N_1$ number of UCN are produced. $V_2$ is the secondary volume, where
-$N_2$ number of UCN could enter after the valve is opened, and $V_3$
-is the detector volume where $N_3$ number of UCN could reach the
-detector.
-
+production and detection volumes sketch the UCN propagation between
+different volumes. Here volume $V_1$ represents the production and
+storage volume before the valve, where $N_1$ UCN are produced. $V_2$
+is the secondary volume, where $N_2$ UCN enter after the valve is
+opened, and $V_3$ is the detector volume where $N_3$ UCN are detected.
 
 
 \begin{figure}[h]
@@ -36,20 +43,23 @@ detector.
 \end{figure}
 
 At $t = 0$, when the beam is on and the valve is closed, the number of UCN in
-$V_1$ goes up, while the total number of UCN in $V_2$ and $V_3$ is
-zero. This is described with 
+$V_1$ builds up, while the total number of UCN in $V_2$ and $V_3$ is
+zero. This may be described with 
 
 \begin{equation}
   \label{eqn:dndt}
 \frac{dN_1}{dt} = P - \frac{N_1}{\tau_1}~,
 \end{equation}
-where $P$ is the UCN production rate in the source, as describe in
+where $P$ is the UCN production rate in the source, as described in
 Section~\ref{sec:UCN_production}, and $\tau_1$ is the UCN storage
-lifetime in the source. After the beam is turned off, the valve is
-opened, and UCN could travel to the volume $V_2$ and eventually volume
-$V_3$. In our measurements, the valve is usually left open for 2
-minutes. The UCN trade between $V_1$, $V_2$ and $V_3$ is described by
-the differential Eqn.~\ref{eqn:alldndt}.
+lifetime in the source. The solution is exponential
+$N_1 \rightarrow P \tau_1$ as $t \rightarrow \infty$. After the beam
+is turned off, the valve is opened, and UCN may travel to the volume
+$V_2$ and eventually volume $V_3$. In our measurements, the valve is
+usually left open for 2 minutes. The UCN rates of change are described
+by the coupled, first-order, linear differential equations:
+%trade between $V_1$, $V_2$
+%and $V_3$ is described by the differential Eqn.~\ref{eqn:alldndt}.
 
 \begin{equation}
   \label{eqn:alldndt}
@@ -60,12 +70,13 @@ the differential Eqn.~\ref{eqn:alldndt}.
   \end{aligned}
 \end{equation}
 
-
-In these equations,$dN_1/dt$ shows the change in the UCN counts over
-time in $V_1$, $dN_2/dt$ shows the change in the UCN
-counts in $V_2$, and $dN_3/dt$ shows the
-change in the UCN count in $V_3$, after the valve is opened. Each term
-in the right side of the equations is described below.
+Here $\tau_{c,1}$, $\tau_{c,2}$, and $\tau_{c,3}$ are the lifetimes
+due to crossing the surface and $\tau_2$ is the lifetime in $V_2$. In
+these equations, $dN_1/dt$ shows the change in the UCN counts over
+time in $V_1$, $dN_2/dt$ shows the change in the UCN counts in $V_2$,
+and $dN_3/dt$ shows the change in the UCN count in $V_3$, after the
+valve is opened. Each term in the right side of the equations is
+described below.
 
 In the first equation, the total number of UCN in $V_1$ depends on
 three factors: the UCN that get into $V_2$ with the rate
@@ -89,27 +100,31 @@ probability of UCN in volume $V_2$.
 
 In the third equation, the rate of the UCN detection $dN_3/dt$ is the
 rate of UCN crossing from volume $V_2$ to volume $V_3$ as
-$N_2/\tau_{c,3}$. In principle, solving these equations could give an
-estimate of the number of UCN in each volume.
+$N_2/\tau_{c,3}$. If they enter $V_3$, they will be detected, hence,
+they will not cross back.  In principle, solving these equations could
+give an estimate of the number of UCN in each volume. The solutions
+are again exponentials.
 
 A 3D drawing of the experimental setup is shown in
 Fig.~\ref{fig:Source_all}. In this case, $V_1$ is the UCN source
-bottle, and the horizontal section of the UCN guide before the UCN gate
+bottle and the horizontal section of the UCN guide before the UCN gate
 valve, and $V_2$ and $V_3$ are the volumes after the UCN valve and the
 detector volume respectively.
 
 
-The process of UCN production described above is refered to the UCN
-production in the ``batch mode'', since the UCN is accumulated in the
-source while the UCN valve is left closed. Here the target is
-irradiated, and the UCN are produced in the source. After the
-irradiation stops, the UCN valve is opened, and UCN could bounce of
-the guide walls and reach the detector volume. In our standard UCN
-production measurements, the applied beam current is 1~$\mu$A, and the
-target is irradiated for 60~s. One cycle of measurement is shown in
-Fig.~\ref{fig:UCNRate}. The UCN valve is typically left open for 2
-minutes. The end of a UCN cycle is defined by the UCN valve close
-time. Once the UCN valve is closed, a new cycle of measurement starts.
+The process of UCN production described above is refered to as ``batch
+mode'', since the UCN are accumulated in the source before opening the
+UCN valve.
+%Here the target is irradiated, and the UCN are produced in
+%the source. After the irradiation stops, the UCN valve is opened, and
+%UCN could bounce of the guide walls and reach the detector volume.
+In our standard UCN production measurements, the applied beam current
+is 1~$\mu$A, and the target is irradiated for 60~s. One cycle of
+measurement is shown in Fig.~\ref{fig:UCNRate}. The UCN valve is
+typically left open for 2 minutes. The end of a UCN cycle is defined
+by the UCN valve close time. Once the UCN valve is closed, a new cycle
+of measurement starts. The UCN counts are then fitted by an
+exponential function.
 
 
 \begin{figure}[h!]
@@ -126,10 +141,10 @@ time. Once the UCN valve is closed, a new cycle of measurement starts.
 \end{figure}
 
 
-Another possible mode of operation is when we leave the UCN valve open
-while irradiating the target. This is called the ``steady-state
-mode'' where we have a constant stream of UCN to the main
-detector~(see Section~\ref{sec:steadystate}).
+Another possible mode of operation is to leave the UCN valve open
+while irradiating the target. This is called the ``steady-state mode''
+where we have a constant stream of UCN to the main detector~(see
+Section~\ref{sec:steadystate}).
 
 The following sections are focused on the result of the UCN yield
 optimization, the UCN storage lifetime measurements, UCN production in
@@ -138,13 +153,13 @@ simulations.
 
 
 \section {Data Quality Checks}
-During the 2017 experimental run, we performed about 35
-experiments. For most of these experiments we used the $^6\mathrm{Li}$
-glass based scintillator detector that was described in
-Section~\ref{sec:Li6detector}. The data that is described is this
-chapter is all acquired with the $^6\mathrm{Li}$ detector.  To check
-the reliablitiy of this data we performed some data quality checks
-that are reported here.
+During the 2017 experimental run, we performed about 35 experiments
+individually labelled by TCN\#. For most of these experiments we used
+the $^6\mathrm{Li}$ detector described in
+Section~\ref{sec:Li6detector}. The data in this chapter was focused on
+UCN source characterization, all acquired with the $^6\mathrm{Li}$
+detector.  To check the reliability of this data we performed data
+quality checks based on the detector signals.
 
 %The main detector for most of the experiments is the $^6\mathrm{Li}$
 %glass based scintillator detector described in
@@ -154,33 +169,32 @@ that are reported here.
 %some data quality checks are reported.
 
 
-The PSD versus $Q_L$ distribution from a UCN run is shown in
-Fig.~\ref{fig:psd_vs_ql} for all the PMTs combined. This is the most
-useful way of separating the signal and background.
+The PSD versus $Q_L$ distribution from a run is shown in
+Fig.~\ref{fig:psd_vs_ql} for all nine PMTs combined. The UCN appear in
+the upper right portion of PSD-$Q_L$ space.
 % The graph is for run 541
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{PSD_vs_QL.pdf}
-  \caption[PSD versus $Q_L$ for 1~$\mu$A beam current and 60~s target
-  irradiation]{PSD versus $Q_L$ for all of the PMTs for a standard
+  \caption[UCN event spectra for 1~$\mu$A beam current and 60~s target
+  irradiation]{UCN event spectra for all of the PMTs for a standard
     1~$\mu$A proton beam current and 60~s target irradiation time }
   \label{fig:psd_vs_ql}
 \end{figure}
 
 Here the UCN spectrum has an energy range of 3000 to 12000 $Q_L$ as
 expected, and a median PSD value of 0.5. The events at PSD~$\sim 0$
-represent the $\gamma$-rays in the lightguides. To get the actual UCN
-counts, a PSD cut at 0.3 and a $Q_L$ cut at 2000 were applied.  Those
-cuts were confirmed with Monte-Carlo simulations to have an acceptance
-of 99\% or higher. This ensures that only the UCN events are counted
-which are represented by the central oval-shaped region. Out of all 9
-channels, the centeral channel counts the most number of UCN events,
-while the corner channels receive the least as expected~(see
-Fig.~\ref{fig:channelcounts}).
-
+represent the $\gamma$-rays in the lightguides. To define UCN counts,
+a PSD cut at 0.3 and a $Q_L$ cut at 2000 were applied. Those cuts were
+confirmed with Monte-Carlo simulations to have an efficiency of 99\%
+or higher. The total number of UCN events in each PMT for a run at
+1~$\mu$A beam current and 60~s irradiation time is shown in
+Fig.~\ref{fig:channelcounts}.  Out of all 9 channels, the central
+channel counts the most UCN, while the corner channels receive the
+least as expected based on geometry.
+% for run 573
 \begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.9\textwidth]{channelcounts.pdf}
+  \centering \includegraphics[width=0.9\textwidth]{PMTROIevents.pdf}
   \caption[UCN events per channel]{Number of UCN events for each
     channel. The total number of UCN events decrease as we move
     towards the corner channels.  }
@@ -188,16 +202,16 @@ Fig.~\ref{fig:channelcounts}).
 \end{figure}
 
 
-The effect of the detector on the UCN counts could be categorized in
-three groups: Deadtime, Crosstalk and Pileup. Deadtime is the minimum
-time difference between two subsequent UCN events in the same PMT,
-which might give rise to loss in the UCN counts. Crosstalk is the
-multiple trigger events in neighboring PMTs originated from the same
-UCN events. This effect might increase the possiblitiy of
-overestimating the total UCN counts. Pileup is the combination of
-multiple events into a single event. It includes UCN-UCN,
-UCN-$\gamma$, $\gamma$-UCN and $\gamma$-$\gamma$ pileups. The true
-number of UCN counts is estimated by
+The effect of detector systematics on the measured UCN counts can be
+categorized in three groups: deadtime, crosstalk and pileup. Deadtime
+is the minimum time difference between two subsequent UCN events in
+the same PMT, which gives rise to a loss of UCN counts. Crosstalk
+arises from multiple trigger events in neighboring PMTs originated
+from the same UCN event. This would falsely increase the total UCN
+counts. Pileup is the combination of multiple events into a single
+event. It includes UCN-UCN, UCN-$\gamma$, $\gamma$-UCN and
+$\gamma$-$\gamma$ pileups. The true number of UCN counts is estimated
+by
 \begin{equation}
   \label{eqn:trueUCN}
   N^{\mathrm{True}}_{\mathrm{UCN}} = \left [ N^{\mathrm{raw}}_{\mathrm{UCN}} \cdot \left( 1 + \alpha_{pl} + \alpha_{ct}\right) \right] \cdot A_{box}~,
@@ -210,12 +224,12 @@ our Monte-Carlo simulations, the $\gamma$-UCN and UCN-$\gamma$ pileups
 are not a concern for UCN counting. In addition, $\gamma$-$\gamma$
 pileup does not leak into the UCN box.
 
-The result of such analyses showed the UCN box acceptance is at
-99.7 $\pm$ 0.1~\%. The UCN-UCN pileup at 1~$\mu$A beam current and 60~s
+The result of such analyses showed the UCN box acceptance is at 99.7
+$\pm$ 0.1~\%. The UCN-UCN pileup at 1~$\mu$A beam current and 60~s
 irradiation of the target was measured to be at 0.075~Hz or has and
-effect of less than 1~\%. The analysis indicated that cross-talk has a
+effect of less than 1\%. The analysis indicated that cross-talk has a
 negligible effect on the operating rates and deadtime affects the
-rates by less than 2~\%.
+rates by less than 2\%.
 
 
 %% I should think about adding MC simulations by Pietro, maybe???
@@ -228,7 +242,7 @@ certain time t$_i$, when the UCN valve is closed is the integration of
 Eqn.~\ref{eqn:dndt}
 \begin{equation}
   \label{eq:totalUCN}
-  N = P \tau_1\left[ 1- \exp \left(\frac{t_i }{ \tau_1}\right) \right]~,
+  N = P \tau_1\left[ 1- \exp \left(\frac{-t_i }{ \tau_1}\right) \right]~,
 \end{equation}
 where the UCN storage lifetime $\tau_1$ is given by
 
@@ -243,7 +257,7 @@ UCN guide walls $\tau_\mathrm{wall,1}^{-1}$, and the neutron $\beta$
 decay $\tau_\beta^{-1}$. The volume in which the UCN are produced
 includes the UCN bottle, as well as the horizontal guide section
 before the UCN valve~(see Fig.~\ref{fig:Source_all}). This volume is
-not fully filled with the superfluid helium. As a result, $ f_1$ is
+not fully filled with the superfluid helium. The quantity $ f_1$ is
 the probablity of UCN being in the superfluid helium while the UCN
 valve is closed. After the valve is opened, the total UCN lifetime is
 
@@ -277,34 +291,35 @@ UCN valve open time. The solid lines shows the valve close time.
   \label{fig:UCNRate_with_lines}
 \end{figure}
 
-The total UCN counts are given by the integration of all the UCN
-events for the duration of the valve open time. However, this method
-of counting includes the measured background UCN as well. To subtract
-the background counts from the actual UCN counts, the UCN background
-rate is calculated before the start of the irradiation of that
-particular cycle. This rate is then multiplied by the valve open
-duration, which then gives an estimate of the total background UCN
-counts. The background rate is typically less than 5~UCN/s. The
-subtraction of the latter from the total UCN counts gives the actual
-number of UCN that are produced by the isopure helium converter, and
-detected by the detector. At low and moderate UCN counts, the
-statistical uncertainty is available by taking the square root of the
-number of measured events, as follows conveniently from Poisson
-statistics~\cite{pomme2015uncertainty}.
+The total UCN counts are given by the sum of all the UCN events for
+the duration of the valve open time. However, this method of counting
+includes backgrounds. To subtract the background counts from the
+actual UCN counts, the UCN background rate is calculated before the
+start of the irradiation of that particular cycle. This rate is then
+multiplied by the valve open duration, which then gives an estimate of
+the total background UCN counts. The background rate is typically less
+than 5~UCN/s. The subtraction of the latter from the total UCN counts
+gives the actual number of UCN that are produced by the isopure helium
+converter, and detected by the detector. At low and moderate UCN
+counts, the statistical uncertainty is available by taking the square
+root of the number of measured events, as follows conveniently from
+Poisson statistics~\cite{pomme2015uncertainty}.
 %%%%%%%%%%
 \subsection{UCN Yield Versus Proton Beam Current}
-The UCN yield at different proton beam currents is also
-studied. Fig.~\ref{fig:counts_vs_beam} shows the total UCN counts
-versus the applied proton beam current in $\mu$A at 60~s irradiation
-time. The background UCN is subtracted off from the detected UCN
-counts as explained earlier. The error bar on the UCN counts is
+
+A unique feature of the TRIUMF facility compared to RCNP is higher
+current compatibility~(RCNP: 400~MeV at $<1$~$\mu$A).
+Fig.~\ref{fig:counts_vs_beam} shows the total UCN counts versus the
+applied proton beam current in $\mu$A at 60~s irradiation time. The
+background UCN is subtracted off from the detected UCN counts as
+explained earlier. The statisticl uncertainty on the UCN counts is
 calculated as $\sqrt{N}$. At lower beam currents, the total UCN counts
 increase linearly with the proton beam current. The dashed line shows
 the extrapolation to higher beam currents in an ideal case. However,
 at higher beam currents, the total UCN counts deacreses due to an
 increase in the heat load on the isopure superfluid helium, and
 therefore, its temperature. Theoretically, the upscattering rate in
-the superfluid helium is proportional to its temperature as $T^7$~(see
+the superfluid helium is related to its temperature as $T^7$~(see
 Section~\ref{sec:upscattering}). This has been confirmed by performing
 PENTrack simulations and comparing the result to the acquired
 data~(see Section~\ref{sec:pentrack}).
@@ -315,10 +330,12 @@ data~(see Section~\ref{sec:pentrack}).
   \centering
   \includegraphics[width=0.8\textwidth]{UCNCounts_vs_Beam.pdf}
   \caption[UCN counts versus proton beam current]{The total UCN counts
-    versus the applied proton beam current. The labelas show the full
-    range of the superfluid helium temperature for that
-    measurement. The dashed line is the fit to the UCN counts at low
-    beam currents.}
+    versus the applied proton beam current for 60~s target irradiation
+    times. The labels show the full range of the superfluid helium
+    temperature for that measurement. The dashed line is the fit to
+    the UCN counts at low beam currents. The total UCN counts can be
+    described by Eqn.~\ref{eq:totalUCN}. Here the production rate
+    grows linearly with current and $\tau_1$ varies with time.}
   \label{fig:counts_vs_beam}
 \end{figure}
 
@@ -350,25 +367,25 @@ and TS12 showing the lowest value.
   \label{fig:TSs}
 \end{figure}
 
-In summary, at lower beam currents, because of the low heat load on
-the superfliud helium, its temperature change is not significant, and
-it gives rise to a linear increase in the UCN counts versus at various
-applied proton beam current. However, at higher proton beam currents,
-the temperature of the superfluid increases due to a higher heat load,
-and it gives rise to higher upscattering rate in the superfluid and
-lower UCN counts.
+At lower beam currents, because of the low heat load on the superfliud
+helium, its temperature change is not significant, and it gives rise
+to a linear increase in the UCN counts versus at various applied
+proton beam current. However, at higher proton beam currents, the
+temperature of the superfluid increases due to a higher heat load, and
+it gives rise to higher upscattering rate in the superfluid and lower
+UCN counts.
 
 
 \subsection{UCN Yield Versus Target Irradiation Times}
-The total UCN counts is optimized by irradiating the target with
-different proton beam currents at different irradiation times. The
+The total UCN counts are optimized by irradiating the target with
+different proton beam currents for different irradiation times. The
 result is shown in Fig.~\ref{fig:counts_vs_irrad}. In this graph, the
 vertical axis shows the total number of UCN counts where the
 background UCN are subtracted, and the horizontal axis shows the
 target irradiation times in seconds. Each marker represents a proton
-beam current. The dashed line is an exponential fit to those data
-points. The proton beam current and the extracted time constant from
-the fit are shown in the Figure.
+beam current. The dashed line is an exponential fit~(see
+Eqn.~\ref{eq:totalUCN}) to those data points. The proton beam current
+and the extracted time constant from the fit are shown in the Figure.
 
 At higher beam currents, the saturation time constant decreases due to
 the higher heat load and faster temperature increase in the superfluid
@@ -413,10 +430,11 @@ sensor.
   \label{fig:counts_vs_temp}
 \end{figure}
 
-As the temperature of the superfluid helium increases, the
-number of UCN counts in the detector decreases as expected. This is
-mainly due to the high UCN upscattering rate in the superfluid helium
-at higher temperatures.
+As the temperature of the superfluid helium increases, the number of
+UCN counts in the detector decreases as expected. This is mainly due
+to the high UCN upscattering rate in the superfluid helium at higher
+temperatures which is further quantified in
+Section~\ref{sec:yieldsims}.
 
 
 \subsection{Steady-state UCN Production\label{sec:steadystate}}
@@ -425,7 +443,7 @@ The result shown so far are achieved in the batch mode of
 operation. In addition to such measurements, the UCN rate was also
 measured at different beam currents in the steady-state mode of
 operation. In these measurements, the UCN valve was left open, and the
-target was irradiated for about 10~min. A typicall UCN rate graph for
+target was irradiated for about 10~min. A typical UCN rate graph for
 0.3~$\mu$A beam current and 10~min target irradiation time is shown in
 Fig.~\ref{fig:UCNRate_steadystate}.
 
@@ -573,7 +591,7 @@ comparison to simulations are discussed in Section~\ref{sec:pentrack}.
 %  \label{tab:steadystateparams}
 %\end{table}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% up to here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{UCN Yield Over the Experiment Period}
 
@@ -981,7 +999,7 @@ data]{Comparison of rise time $\tau_{\mathrm{rise}}$ in experimental
 %which is consistent with the result in~\cite{Leung2016}.
 
 
-\subsection{UCN Yield and Storage Lifetime Simulations}
+\subsection{UCN Yield and Storage Lifetime Simulations~\label{sec:yieldsims}}
 To estimate the UCN production, a model of accurate target, moderator
 and UCN converter geometries were build for MCNP6.1, taking into
 account material impurities determined from assays and fill levels of
@@ -993,8 +1011,8 @@ water, there is no detailed data on thermal neutron scattering in
 solid heavy water available. Instead, we relied on a free-gas model
 with an effective temperature of 80~K, as this seems to be the minimum
 effective neutron temperature achieved with solid heavy water
-moderatores~\cite{rush1966}. From the simulated cold neutron flux in the UCN
-production volume and UCN production cross sections
+moderatores~\cite{rush1966}. From the simulated cold neutron flux in
+the UCN production volume and UCN production cross sections
 from~\cite{Schmidt2015,Korobkina2002}, a production rate of
 ($20600\pm 200$)~s$^{-1}$ in an energy range up to 233.5~neV was
 determined.
