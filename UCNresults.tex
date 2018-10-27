@@ -591,8 +591,6 @@ comparison to simulations are discussed in Section~\ref{sec:pentrack}.
 %  \label{tab:steadystateparams}
 %\end{table}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% up to here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsection{UCN Yield Over the Experiment Period}
 
 The total UCN counts for our standard measurements at 1~$\mu$A beam
@@ -600,12 +598,12 @@ current and 60~s irradiation time over the course of the experimental
 run is shown in Fig.~\ref{fig:UCNCounts_time}. The graph shows an
 overall decrease of about $\sim$~40\% over the course of the eighteen
 days. The source volume is connected to a long UCN guide sealed with
-an O-ring. It is expected that the rest gas to contaminate the source
-every time the UCN valve is opened. This caused a decrease in the UCN
-yield~(and storage lifetime as shown later in
+an O-ring. It is expected that the rest gas added contaminants to the
+source every time the UCN valve is opened. This caused a decrease in
+the UCN yield~(and storage lifetime as shown later in
 Section~\ref{sec:storage_overall}) over the course of the
 measurement. In addition, the changes in the UCN guide geometry in the
-latter half of the run pottentially affected this drop.
+latter half of the run potentially affected this drop.
 
 
 \begin{figure}[h]
@@ -626,7 +624,7 @@ indicates the performance of the UCN source. The storage lifetime of
 UCN is determined by measuring the detected UCN at different valve
 open delay times right after the irradiation stops.  The typical
 chosen values are 0~s, 5~s, 10~s, 20~s, 30~s, 60~s, 80~s, 120~s and
-170~s.
+170~s. The target was irradiated for 60~s.
 % For most of the experiments, the order in which the delay to the
 % valve open time was applied was as following: 0~s, 170~s, 20~s,
 % 120~s, 50~s, 80~s, 30~s and 5~s.
@@ -637,21 +635,25 @@ total storage lifetime in the source.
 Fig.~\ref{fig:storage_all} shows several UCN cycles for the standard
 1~$\mu$A proton beam current and 60~s target irradiation time. The
 difference in the maximum detected UCN rate is due to different valve
-open delay times.
+open delay times as labeled on the graph.
+% used to be storagetime_all.png
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.9\textwidth]{storagetime_all.png}
+  \includegraphics[width=1.0\textwidth]{UCNrate_withdelaylabels.pdf}
   \caption[UCN rate at different value open delay times at 1~$\mu$A
   beam current and 60~s irradiation time ]{UCN cycles at different
     valve open delay times for 1~$\mu$A beam current and 60~s target
-    irradiation time.}
+    irradiation time. The vertical dashed line indicate the start of
+    the target irradiation. The values in seconds represent the valve
+    open delay times for each cycle.}
   \label{fig:storage_all}
 \end{figure}
 Fig.~\ref{fig:storage_example} shows the total UCN counts~(background
-subtracted) versus the valve open delay time for 1~$\mu$A proton beam
-current and 60~s target irradiation time. The longer delay times give
-rise to lower UCN counts due to the loss mechanisms. The one
-exponential fit function
+subtracted) versus the valve open delay time for 1~$\mu$A and
+10~$\mu$A proton beam current and 60~s target irradiation time. The
+total UCN counts at 0~s cycle delay time are higher for 10~$\mu$A. The
+longer delay times give rise to lower UCN counts due to the loss
+mechanisms. The one exponential fit function
 \begin{equation}
 \text{UCN counts} = A e^{-t/\tau_1}~,
 \end{equation}
@@ -659,7 +661,7 @@ determines the storage lifetime $\tau_1$. At 170~s valve open delay
 time, the total UCN counts are not consistent with what the fit
 function predicts due to low statistics. However, the result of the
 fit is not driven by this inconsistency as it has a negligible effect
-on the extrected storage lifetime.
+on the extracted storage lifetime because of low statistics.
 %\begin{figure}[h!]
 %  \centering
 %  \includegraphics[width=0.9\textwidth]{17002_StorageLifetime.pdf}
@@ -674,14 +676,14 @@ on the extrected storage lifetime.
   \centering
   \begin{subfigure}{.8\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{17002_StorageLifetime.pdf}
+    \includegraphics[width=1.0\textwidth]{17002_StorageLifetime_ver3.pdf}
     \caption{}
     \label{fig:storage_example1}
   \end{subfigure}%
   \\
   \begin{subfigure}{.8\textwidth}
     \centering
-    \includegraphics[width=1.0\textwidth]{10muA_30s.pdf}
+    \includegraphics[width=1.0\textwidth]{10muA_30s_ver3.pdf}
     \caption{}
     \label{fig:storage_example10}
   \end{subfigure}
@@ -689,7 +691,7 @@ on the extrected storage lifetime.
     total UCN counts at different valve open delay times for (a)
     1~$\mu$A beam current and 60~s irradiation time and (b) 10~$\mu$A
     beam current and 30~s target irradiation time. The red line is the
-    one exponential fit. The initail UCN counts for the 10~$\mu$A
+    one exponential fit. The initial UCN counts for the 10~$\mu$A
     target irradiation is higher. However, the storage lifetime is
     lower compared to 1~$\mu$A beam current because of the heat load
     on the superfluid helium. In the case of 10~$\mu$A beam current,
@@ -699,24 +701,23 @@ on the extrected storage lifetime.
   \label{fig:storage_example}
 \end{figure}
 
-%Below the result of the storage lifetime measurements are presented.
+% Below the result of the storage lifetime measurements are presented.
 
 \subsection{Storage Lifetime Versus Beam Current and Irradiation Time}
 The storage lifetime of UCN in the source is measured at different
-proton beam currents and different target irradiation times for better
-optimization of the source. The result of those measurements is shown
-in Fig.~\ref{fig:storage_beam_irrad}. Here the vertical axis shows the
-storage lifetime in the source in seconds, and the horizontal axis
-shows the proton beam current in $\mu$A. Each marker represents a
-target irradiation time. At lower beam currents, the duration of the
-target irradiation does not make a significant difference in the
-storage lifetime. At higher proton beam currents, the longer the
-irradiation time takes, the lower the storage lifeimte will be.
-
-In summary, irradiating the target at high proton beam currents and
-longer irradiation times create a higher heat load on the UCN source,
-which leads to higher upscattering rates, and as a result, lower UCN
-storage lifetime in the source.
+proton beam currents and different target irradiation times for a
+better understanding of the source. The result of those measurements
+is shown in Fig.~\ref{fig:storage_beam_irrad}. Here the vertical axis
+shows the storage lifetime in the source in seconds, and the
+horizontal axis shows the proton beam current in $\mu$A. Each marker
+represents a target irradiation time. At lower beam currents, the
+duration of the target irradiation does not make a significant
+difference in the storage lifetime. At higher proton beam currents,
+the longer the irradiation time takes, the lower the storage lifeimte
+will be. In summary, irradiating the target at high proton beam
+currents and longer irradiation times create a higher heat load on the
+UCN source, which leads to higher upscattering rates, and as a result,
+lower UCN storage lifetime in the source.
 
 \begin{figure}[h!]
   \centering
@@ -727,7 +728,7 @@ storage lifetime in the source.
     refer to different target irradiation times. At longer irradiation
     times and higher beam currents, the storage lifetime decreases due
     to the increased heat load in the source, and an increase in the
-    superfluid helium temperature. }
+    superfluid helium temperature.}
   \label{fig:storage_beam_irrad}
 \end{figure}
 
@@ -735,25 +736,24 @@ storage lifetime in the source.
 \subsection{Storage Lifetime Versus Isopure Helium Temperature}
 The storage lifetime of UCN was also measured at different
 temperatures of the superfluid helium. In this experiment, the
-temperature of superfluid was increased by using the heater tapes
-wrapped around the UCN bottle. The heater powers were set to increase
-the temperatures by a certain amount. Once the temperatures reached a
-stable state, the target irradiation started.
+temperature of superfluid was increased by using heater wire wrapped
+around the UCN bottle. The heater powers were set to increase the
+temperatures by a certain amount. Once the temperatures stablized,
+target irradiation was started.
 
 The result of this measurement is shown in
 Fig.~\ref{fig:storagelifetime_vs_temp}. The vertical axis is the
 storage lifetime of UCN in seconds, and the horizontal axis is the
 temperature of the superfluid helium. As mentioned earlier, the four
 temperature sensors that measure the temperature of the superfluid
-show some discrepancy. As a result, for a given value of the storage
-lifetime, there are four different values for the temperature of the
-superfluid. The vertical error bars are equal to $\sqrt{N}$, and the
-horizontal error bars are set as
-($T_{\mathrm{max}} - T_{\mathrm{min}}$)/2, as discussed earlier. The
-data shows a downward trend. As the temperature of the superfluid
-helium increases, the storage lifetime in the source decreases. This
-is due to higher upscattering rate in the superfluid helium at
-higher temperatures.
+show some discrepancy. As a result, for a given measurement, there are
+four different values for the temperature of the superfluid. The
+vertical error bars come from the fit, and the horizontal error bars
+are set as ($T_{\mathrm{max}} - T_{\mathrm{min}}$)/2, as discussed
+earlier. The data shows a downward trend. As the temperature of the
+superfluid helium increases, the storage lifetime in the source
+decreases. This is due to higher upscattering rate in the superfluid
+helium at higher temperatures.
 
 
 %TCN17014
@@ -776,13 +776,14 @@ higher temperatures.
 
 \subsection{Storage Lifetime Over Experimental Period\label{sec:storage_overall}}
 
-The standard storage lifetime measurements were performed on a daily
-basis over the course of the experimental run. This includes the
-irradiation of the target at 1~$\mu$A proton beam current for
-60~s. The result of those measurements are shown in
+Standard storage lifetime measurements were performed on a daily basis
+over the course of the experimental run. This includes the irradiation
+of the target at 1~$\mu$A proton beam current for 60~s. The result of
+those measurements are shown in
 Fig.~\ref{fig:storagelifetime_overall}. Over a two week period, the
 storage lifetime decreased from 37~s to 27~s. This is possibly due to
-the contamination in the UCN source after opening the UCN valve.
+progressive contamination in the UCN source after opening the UCN
+valve.
 
 
 \begin{figure}[h!]
@@ -824,24 +825,25 @@ complex optical potential is used to describe matters:
 where the real part, $V$, depends on the number densities and bound
 coherent scattering lengthes of each nucleus species. The imaginary
 part, $W$, depends on the loss cross-section for a given velocity.
-Upon the incidence of a UCN on a surface, it can be scatterd either
+Upon the incidence of a UCN on a surface, it can be reflected either
 specularly or diffusely. The specular reflection by definition is the
-reflection of light from a smooth surface at a defined angle. The
-diffuse reflection is the reflection by rough surfaces that tend to
-reflect light in all directions.
+reflection of light from a smooth surface at a reflection angle equal
+to the incident angle. The diffuse reflection is the reflection by
+rough surfaces that tend to reflect light in all directions.
 
 PENTrack simulations were performed to extract the diffusivity of the
 UCN guides~(see Fig.~\ref{fig:Source_all}). PENTrack uses two models
-to calculate the scattering distribution of the UCN impinging on the
-material surface: Lambert model or the
-Microroughness~\cite{Steyerl1972}. Experimental geometries imported in
-PENTrack are the StL files made through CAD models. For these
-simulations, the exact model of the vertical UCN source was used
-including the burst disk, the actual shape of the UCN valve in the
-open and close state, pinhole, foil and the detector~(see
-Section~\ref{sec:vertical_source} for more details).
+to calculate the diffuse scattering distribution of the UCN impinging
+on the material surface: Lambert model or the Microroughness
+model.
+% ~\cite{Steyerl1972}.
+Experimental geometries imported in PENTrack are the StL files made
+through CAD models. For these simulations, the exact model of the
+vertical UCN source was used including the burst disk, the actual
+shape of the UCN valve in the open and close state, pinhole, foil and
+the detector~(see Section~\ref{sec:vertical_source} for more details).
 
-The abosorption in the foil is set according to the measurements
+The absorption in the foil is set according to the measurements
 in~\cite{atchison2009transmission}. The main detector is modeled with
 its two scintillator layers~\cite{jamieson2017characterization} and
 their corresponding Fermi potentials and absorption cross-section, as
@@ -866,26 +868,25 @@ Table~\ref{tab:materials}.
 
 \begin{table}
   \centering
-\begin{tabular}{|c|c|c|}
-  \hline
-Material & Fermi pot. (neV) & Diffusivity \\
-\hline
-  He-II  & $18.8 - 0.5\hbar B T^7 i$ & 0.16 \\
-  He vapour & $-0.5 \hbar \tau^{-1}_\mathrm{vapour} i$ & 0 \\
-  Prod. volume (NiP) & $213 - 0.120 i$ & 0.05 \\
-  Guides (stainl. steel) & $183 - 0.140 i$ & 0.03 \\
-  % Pinhole (copper) & $171 - 0.0726 i$ & 0.20 \\
-  Foil (aluminium) & $54.1 - 0.00281 i$ & 0.20 \\
-  GS30 scintillator & $83.1 - 0.000123 i$ & 0.16 \\
-  GS20 scintillator & $103 - 1.24 i$ & 0.16 \\
-  \hline
-\end{tabular}
-\caption{Material parameters used in PENTrack
-  simulation.~\cite{atchison2009transmission,Ban2016,sears1992neutron}}
-\label{tab:materials}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Material & Optical Potential (neV) & Diffusivity \\
+    \hline
+    He-II  & $18.8 - 0.5\hbar B T^7 i$ & 0.16 \\
+    He vapour & $-0.5 \hbar \tau^{-1}_\mathrm{vapour} i$ & 0 \\
+    Production volume (NiP) & $213 - 0.120 i$ & 0.05 \\
+    Guides (stainl. steel) & $183 - 0.140 i$ & 0.03 \\
+    % Pinhole (copper) & $171 - 0.0726 i$ & 0.20 \\
+    Foil (aluminium) & $54.1 - 0.00281 i$ & 0.20 \\
+    GS30 scintillator~\cite{Ban2016} & $83.1 - 0.000123 i$ & 0.16 \\
+    GS20 scintillator~\cite{Ban2016} & $103 - 1.24 i$ & 0.16 \\
+    \hline
+  \end{tabular}
+  \caption{Material parameters used in PENTrack
+    simulation.}
+  \label{tab:materials}
 \end{table}
-
-%%%%%%%%%%%%%% moved the helium gas stuff from here %%%%%%%%%%%%%%%%%%%%%%%%%
+%~\cite{atchison2009transmission,sears1992neutron}
 
 To better match the simulated UCN transport with reality, both the
 simulation and the measured UCN rate in the detector after opening the
