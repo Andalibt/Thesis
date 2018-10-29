@@ -799,7 +799,6 @@ valve.
 \end{figure}
 
 
-
 \section{Main Results\label{sec:pentrack}}
 
 For better understanding of the loss mechanisms of UCN, the
@@ -807,7 +806,7 @@ experiments were also simulated in
 PENTrack~\cite{schreyer2017pentrack}. PENTrack is a particle tracking
 simulation software which simulates the trajectories of UCN and their
 decay products~(e.g., protons and electrons) and their spin precession
-in complex geometries in Electric and Magnetic fields by solving the
+in complex geometries in electric and magnetic fields by solving the
 relativistic equation of motion.
 
 To simulate the UCN storage and transport, an exact model of the UCN
@@ -832,31 +831,80 @@ to the incident angle. The diffuse reflection is the reflection by
 rough surfaces that tend to reflect light in all directions.
 
 PENTrack simulations were performed to extract the diffusivity of the
-UCN guides~(see Fig.~\ref{fig:Source_all}). PENTrack uses two models
-to calculate the diffuse scattering distribution of the UCN impinging
-on the material surface: Lambert model or the Microroughness
-model.
-% ~\cite{Steyerl1972}.
-Experimental geometries imported in PENTrack are the StL files made
-through CAD models. For these simulations, the exact model of the
-vertical UCN source was used including the burst disk, the actual
-shape of the UCN valve in the open and close state, pinhole, foil and
-the detector~(see Section~\ref{sec:vertical_source} for more details).
+UCN guides~(see Fig.~\ref{fig:Source_all}). Experimental geometries
+imported in PENTrack are the STL files made through CAD models. For
+these simulations, the exact model of the vertical UCN source was used
+including the burst disk, the actual shape of the UCN valve in the
+open and close state, pinhole, foil and the detector~(see
+Section~\ref{sec:vertical_source} for more details).
 
-The absorption in the foil is set according to the measurements
+
+
+In PENTrack simulations, the interaction of UCN with material
+boundaries and bulk material is handled by determining the UCN track
+intersections with the STL mesh triangles and selecting the relevant
+model to describe the behaviour: specular reflection, diffuse
+reflection (Lambert model or Microroughness model), transmission via
+Snell's law, diffuse transmission (Lambert model or Microroughness
+model), absorption or upscattering at a material boundary, and
+absorption or upscattering in the bulk of the material. The material
+list includes real and imaginary optical potentials, Lambert
+reflection probabilities, Microroughness parameters, and spin-flip
+probabilities. The imaginary optical potential of a material can vary
+with temperature and thus materials must be treated separately at
+different temperatures. PENTrack has no direct temperature parameter,
+so the imaginary optical potentials are calculated. Only the Lambert
+model was used for the simulations to study the transmission
+properties of UCN guides.
+
+
+%PENTrack uses two models to
+%calculate the diffuse scattering distribution of the UCN impinging on
+%the material surface: Lambert model or the Microroughness model.
+
+
+
+In PENTrack simulations, the optical potential of materials is used to
+model their interaction with UCN. The imaginery part of the optical
+potential~($W$) determines the loss of UCN~(see
+Section~\ref{sec:ucnproperties}). Table~\ref{tab:materials} collects
+the material parameters used in our simulations. The absorption in the
+foil is set according to the measurements
 in~\cite{atchison2009transmission}. The main detector is modeled with
 its two scintillator layers~\cite{jamieson2017characterization} and
-their corresponding Fermi potentials and absorption cross-section, as
-stated in~\cite{Ban2016}. In the simulations, it is assumed that the
-spectrum of produced UCN is proportional to $\sqrt{E}$ and that the
-upscattering rate in the superfluid helium follows
+their corresponding optical potentials and absorption cross-section,
+as stated in~\cite{Ban2016}. In the simulations, it is assumed that
+the spectrum of produced UCN is proportional to $\sqrt{E}$ and that
+the upscattering rate in the superfluid helium follows
 $\tau_\mathrm{He} = B T^7$ , with $B$ between 0.008~$s^{-1}$ and
-0.016~$s^{-1}$ as measured by~\cite{Leung2016}. The wall loss
-parameters were tuned to give a storge lifetime in the source $\tau_1$
-between~($29.81 \pm 0.18$)~s and ($31.07 \pm 0.19$)~s matching the
-storage lifetime during the middle of the experimental run, and
-resulting in the material parameters shown in
-Table~\ref{tab:materials}.
+0.016~$s^{-1}$ as measured by~\cite{Leung2016}. The imaginary optical
+potentials of the UCN guides and the production volume were tuned~(see
+Table~\ref{tab:materials}) to give a storage lifetime in the
+source~($\tau_1$) that matches the storage lifetime during the middle
+of the experimental run.
+
+
+The helium vapour above the liquid is included in the simulations with
+an upscattering rate
+$\tau^{-1}_\mathrm{vapour} = \left< v \right> n \sigma_\mathrm{He,n}$
+depending on the average atomic velocity $\left < v \right>$ which is
+given by the vapour temperature, the vapour density $n$ given by the
+saturated vapour pressure of the liquid and the vapour temperature,
+and the thermal-neutron-scattering cross-section of helium
+$\sigma_\mathrm{He,n} = 0.76~b$. This is because, the temperature of
+the vapour right above the superfluid helium liquid is the same as the
+superfluid temperature itself and it increases to room temperature
+while moving along the guides. In this model, since the helium vapour
+above the liquid has much higher temperature than the superfluid
+helium liquid, the helium atoms have much higher velocities as
+compared to the UCN. As a result, it might seem that the UCN are
+stationary. Therefore, in the reference frame of the helium atoms,
+thermal neutrons are moving towards the helium atoms.  It was assumed
+that the vapour has the same temperature gradient as measured by
+several temperature sensors on the outer guide wall. To include the
+temperature gradient in the simulation, the guide volume was split
+into 10~cm long sections and assigned each an averaged UCN
+upscattering rate in that section.
 
 
 %$\tau_1 = 34.9 \pm .8$~s with an upscattering lifetime in the
@@ -875,9 +923,9 @@ Table~\ref{tab:materials}.
     He-II  & $18.8 - 0.5\hbar B T^7 i$ & 0.16 \\
     He vapour & $-0.5 \hbar \tau^{-1}_\mathrm{vapour} i$ & 0 \\
     Production volume (NiP) & $213 - 0.120 i$ & 0.05 \\
-    Guides (stainl. steel) & $183 - 0.140 i$ & 0.03 \\
+    Guides (stainless steel) & $183 - 0.140 i$ & 0.03 \\
     % Pinhole (copper) & $171 - 0.0726 i$ & 0.20 \\
-    Foil (aluminium) & $54.1 - 0.00281 i$ & 0.20 \\
+    Foil (aluminium)~\cite{atchison2009transmission} & $54.1 - 0.00281 i$ & 0.20 \\
     GS30 scintillator~\cite{Ban2016} & $83.1 - 0.000123 i$ & 0.16 \\
     GS20 scintillator~\cite{Ban2016} & $103 - 1.24 i$ & 0.16 \\
     \hline
@@ -888,33 +936,50 @@ Table~\ref{tab:materials}.
 \end{table}
 %~\cite{atchison2009transmission,sears1992neutron}
 
-To better match the simulated UCN transport with reality, both the
-simulation and the measured UCN rate in the detector after opening the
-valve at $t=0$ are fitted with the function
+To match the simulated UCN transport with the measured data more
+accurately, both the simulation and the measured UCN rate in the
+detector after opening the valve at $t=0$ are fitted with the function
 
 \begin{equation}
 R(t) = R_0 \left[ 1 - \exp \left( -\frac{t - \Delta t}{\tau_\mathrm{rise}} \right) \right] \exp \left( -\frac{t - \Delta t}{\tau_2} \right) + R_B
 \end{equation}
 In this equation, $\Delta t$ is the delay time between opening the
-valve and detecting the first UCN and it is 2 to 3~s. The parameter
-$R_B$ is the background UCN rate in the experimental data and is zero
-in the simulations. The fit funciton, the rise time
-$\tau_{\mathrm{rise}}$, and the fall time~$\tau_2$ are shown in
-Fig.~\ref{fig:risefalltime} for a given UCN cycle.
+valve and detecting the first UCN which is typically 2 to 3~s in the
+measurements. The parameter $R_B$ is the background UCN rate in the
+experimental data and is zero in the simulations. The fit function,
+the rise time $\tau_{\mathrm{rise}}$, and the fall time~$\tau_2$ are
+shown in Fig.~\ref{fig:risefalltime} for a given UCN cycle.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{risefalltime.png}
+  \caption[UCN cycle with a two exponential fit]{UCN rate with two
+    exponential fit shown in red. The rise time and fall time are
+    labeled.}
+  \label{fig:risefalltime}
+\end{figure}
 
 In the simulations, the Lambert model is used to tune the probablity
 of UCN being diffusely reflected on the guide walls to match the rise
 time and fall time of the UCN rate in the storage lifetime
-measurements~(see Fig.~\ref{fig:falltime} and
-Fig.~\ref{fig:risetime}).  The delay time $\Delta t$ matches in all
-scenarios.  In the graphs, the data is shown by the boxes and the
+measurements~(see Figs.~\ref{fig:falltime} and
+Fig.~\ref{fig:risetime}).  The delay time $\Delta t$ is a constant in
+all scenarios.  In the graphs, the data is shown by the boxes and the
 simulation results for different UCN guide diffusivity are shown by
 different markers. The boxes indicate the second and third quartile of
-the experimental data. Quartiles divide the data set to four
-sections. The median of the data set is the second quartile. The value
-between the minimum value of a data set and the median is the first
-quartile. The value between the median and the maximum value of a data
-set is the third quartile.
+the experimental data. The median lies between the second and third
+quartile. Median divides the data into two parts where the equal
+number of data points lie above and below it. The lowest 25\% of data
+points are in the first quartile, the next 25\% are in the second
+quartile, the next 25\% are in the third quartile, and the highest
+25\% are in the fourth quartile. Each quartile contains a quarter of
+the data.
+
+%Quartiles divide the data set to four
+%sections. The median of the data set is the second quartile. The value
+%between the minimum value of a data set and the median is the first
+%quartile. The value between the median and the maximum value of a data
+%set is the third quartile.
 
 Diffuse reflection probabilities of 1\% and 10\% clearly result in too
 short and too long time constants. The experimental fall time can be
@@ -924,18 +989,11 @@ reported for a range of UCN
 guides~\cite{DAUM201471,Wlokka2017,Atchison2010}.
 
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{risefalltime.png}
-  \caption[UCN cycle with a two exponential fit]{UCN rate with two
-    exponential fit shown in red. The rise time and fall time are
-    labeled.}
-  \label{fig:risefalltime}
-\end{figure}
+
 
 	
 \begin{figure}[h!]
-  \centering \includegraphics[width=0.9\textwidth]{falltime.pdf}
+  \centering \includegraphics[width=0.7\textwidth]{falltime.pdf}
   \caption[Comparison of UCN fall time between simulations and data
   ]{Comparison of fall time $\tau_2$ in the experimental data and the
     simulations with different diffuse-reflection probabilities. The
@@ -947,7 +1005,7 @@ guides~\cite{DAUM201471,Wlokka2017,Atchison2010}.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.9\textwidth]{risetime.pdf}
+\includegraphics[width=0.7\textwidth]{risetime.pdf}
 \caption[Comparison of UCN rise time between simulations and
 data]{Comparison of rise time $\tau_{\mathrm{rise}}$ in experimental
   data and simulations with different diffuse-reflection
@@ -1001,22 +1059,22 @@ data]{Comparison of rise time $\tau_{\mathrm{rise}}$ in experimental
 
 
 \subsection{UCN Yield and Storage Lifetime Simulations~\label{sec:yieldsims}}
-To estimate the UCN production, a model of accurate target, moderator
-and UCN converter geometries were build for MCNP6.1, taking into
+To estimate the UCN production, an accurate model of target, moderator
+and UCN converter geometries was built for MCNP6.1, taking into
 account material impurities determined from assays and fill levels of
 liquid moderator vessels~(see Fig.~\ref{fig:mcnpmodel}). The full
-source is then simulated: the proton beam hitting the target,
+source was then simulated: the proton beam hitting the target,
 secondary neutrons, protons, photons, and electrons, and neutron
 moderation in graphite and heavy water. In contrast to liquid heavy
 water, there is no detailed data on thermal neutron scattering in
 solid heavy water available. Instead, we relied on a free-gas model
 with an effective temperature of 80~K, as this seems to be the minimum
 effective neutron temperature achieved with solid heavy water
-moderatores~\cite{rush1966}. From the simulated cold neutron flux in
+moderators~\cite{rush1966}. From the simulated cold neutron flux in
 the UCN production volume and UCN production cross sections
 from~\cite{Schmidt2015,Korobkina2002}, a production rate of
 ($20600\pm 200$)~s$^{-1}$ in an energy range up to 233.5~neV was
-determined.
+determined~($\sqrt{E_\mathrm{UCN}}$).
 
 \begin{figure}[h!]
   \centering
@@ -1028,7 +1086,7 @@ determined.
 \end{figure}
 
 
-Fig.~\ref{fig:Counts_vs_temp_sim} and \ref{fig:storage_vs_temp_sim}
+Figs.~\ref{fig:Counts_vs_temp_sim} and \ref{fig:storage_vs_temp_sim}
 show the measured UCN counts and storage lifetime versus the
 superfluid helium temperature for all four temperature sensors as well
 as their simulations. To simulate the temperature of the superfluid
@@ -1038,23 +1096,22 @@ simulations. The UCN upscattering in the superfluid helium is
 $\tau_{\mathrm{abs}}^{-1} = 2W/\hbar$~(see
 Section~\ref{sec:ucnproperties}), and also
 $\tau_{\mathrm{abs}}^{-1} = B T^7$. For two values of
-$B$~($B = 0.016$/s and $B = 0.008$/s) at the desired temperature, the
-imaginery fermi potential of superfluid helium can be calculated to
-use in the simulations.
+$B$~($B = 0.016$/s and $B = 0.008$/s, with $T$ in K) at the desired
+temperature, the imaginary optical potential of superfluid helium can
+be calculated to use in the simulations.
 
 
 %{\bf{add how the temperature sensors are
 %    simulated, what the tuned parameters were}}.
 
-In these graphs, the filled circles represent the
-measured data, and the emtpy squares and triangles represent the
-simulations.  The empty squares are the simulations where the helium
-vapour above the superfluid helium liquid is included, and empty
-triangles are the simulations without the helium vapour. The
-interpolations for the squares are shown in solid lines and the
-interpolations for the emtpy triangles are shown with dotted and dashed
-lines. The lines are only shown for readibility and are interpolation
-of the simulated points.
+In these graphs, the filled circles represent the measured data, and
+the empty squares and triangles represent the simulations.  The empty
+squares are the simulations where the helium vapour above the
+superfluid helium liquid is included, and empty triangles are the
+simulations without the helium vapour. The interpolations for the
+squares are shown in solid lines and the interpolations for the empty
+triangles are shown with dotted and dashed lines. The lines are only
+shown for readibility and are interpolation of the simulated points.
 
 
 
@@ -1112,27 +1169,27 @@ of the high upscattering rate of UCN in the helium vapour.
 
 
 
-The helium vapour above the liquid is included in the simulations with
-an upscattering rate
-$\tau^{-1}_\mathrm{vapour} = \left< v \right> n \sigma_\mathrm{He,n}$
-depending on the average atomic velocity $\left < v \right>$ which is
-given by the vapour temperature, the vapour density $n$ given by the
-saturated vapour pressure of the liquid and the vapour temperature,
-and the thermal-neutron-scattering cross-section of helium
-$\sigma_\mathrm{He,n} = 0.76~b$. This is because, the temperature of
-the vapour right above the superfluid helium liquid is the same as the
-superfluid temperature itself and it increases to room temperature
-while moving along the guides. In this model, since the helium vapour
-above the liquid has much higher temperature than the superfluid
-helium liquid, the helium atoms have much higher velocities as
-compared to the UCN. As a result, it might seem that the UCN are
-stationary. Therefore, in the reference frame of the helium atoms,
-thermal neutrons are moving towards the helium atoms.  It was assumed
-that the vapour has the same temperature gradient as measured by
-several temperature sensors on the outer guide wall. To include the
-temperature gradient in the simulation, the guide volume was split
-into 10~cm long sections and assigned each an averaged UCN
-upscattering rate in that section.
+%The helium vapour above the liquid is included in the simulations with
+%an upscattering rate
+%$\tau^{-1}_\mathrm{vapour} = \left< v \right> n \sigma_\mathrm{He,n}$
+%depending on the average atomic velocity $\left < v \right>$ which is
+%given by the vapour temperature, the vapour density $n$ given by the
+%saturated vapour pressure of the liquid and the vapour temperature,
+%and the thermal-neutron-scattering cross-section of helium
+%$\sigma_\mathrm{He,n} = 0.76~b$. This is because, the temperature of
+%the vapour right above the superfluid helium liquid is the same as the
+%superfluid temperature itself and it increases to room temperature
+%while moving along the guides. In this model, since the helium vapour
+%above the liquid has much higher temperature than the superfluid
+%helium liquid, the helium atoms have much higher velocities as
+%compared to the UCN. As a result, it might seem that the UCN are
+%stationary. Therefore, in the reference frame of the helium atoms,
+%thermal neutrons are moving towards the helium atoms.  It was assumed
+%that the vapour has the same temperature gradient as measured by
+%several temperature sensors on the outer guide wall. To include the
+%temperature gradient in the simulation, the guide volume was split
+%into 10~cm long sections and assigned each an averaged UCN
+%upscattering rate in that section.
 
 
 %{\bf{I should prove that there is high upscattering rate of UCN in the
@@ -1181,40 +1238,40 @@ upscattering parameter.
 One of the UCN experiments was designed to match the heater power from
 the heaters wrapped around the UCN bottle with the proton beam
 current. This type of measurements helps to understand the input heat
-load on the cryostat.
+load on the cryostat from the beam.
 
-The result of the heater tests were disscused in
+The result of additional heater tests are discussed in
 Appendix~\ref{sec:heattest}. Applying heat to the superfluid helium
 bottle gives rise to a temperature increase in the superfluid helium,
 as well as a flow rate increase in the $^3$He pot. The amount of this
-heat load is known simply by knowing the the applied current to the
-heater tapes. However, the input heat load is not known in the case of
-the target irradiation. As a result, the steady-state UCN yield were
-measured at different proton beam currents as a way to calibrate the
-proton beam current with the input current on the heaters. The target
-irradiation at higher beam currents give rise to a temperature
-increase in the superfluid helium. In addition, the increase in the
-heat load increases the $^3$He flow rate in the $^3$He pot. The
-comparison of the temperature and flow rate increase between these
-experiments give an idea of the amount of applied heat load on the
-superfluid helium bottle for each given proton beam current.
+heat load is known simply by knowing the the applied voltage and
+current to the heater wire. However, the input heat load is not known
+in the case of the target irradiation. As a result, the steady-state
+UCN yield were measured at different proton beam currents as a way to
+calibrate the proton beam current with the input current on the
+heaters. The target irradiation at higher beam currents give rise to a
+temperature increase in the superfluid helium. In addition, the
+increase in the heat load increases the $^3$He flow rate in the $^3$He
+pot. The comparison of the temperature and flow rate increase between
+these experiments give an idea of the amount of applied heat load on
+the superfluid helium bottle for each given proton beam current.
 
 Even though the result of the data analysis for this experiment was
 not conclusive, it gave an idea of the stability and the behaviour of
 the helium cryostat, and a better experimental plan for the future.
 
 Some unexpected anomalies were observed during the measurements. For
-instance, when the 4~K resorvior was being filled, the flow rate in
+instance, when the 4~K reservoir was being filled, the flow rate in
 the $^3$He pot as well as the temperature in the superfluid helium was
-not stable. Another problem arose from the wait time between the
-measurements. Before conducting a new measurement, it is essential to
-wait long enough so that the superfluid helium temperature and $^3$He
-flow rate get down to a stable value. In some cases, the wait time
-between the measurements was not long enough, and therefore it was not
-possible to assign a change in the superfluid helium temperature or
-$^3$He flow rate. In addition, target irradiation should be long
-enough so that the temperature and the $^3$He flow rate reach a stable
-value.
+not stable nor reproducible. Another problem arose from the wait time
+between the measurements. Before conducting a new measurement, it is
+essential to wait long enough so that the superfluid helium
+temperature and $^3$He flow rate get down to a stable value. In some
+cases, the wait time between the measurements was not long enough, and
+therefore it was not possible to assign a change in the superfluid
+helium temperature or $^3$He flow rate. In addition, target
+irradiation should be long enough so that the temperature and the
+$^3$He flow rate reach a stable value.
 
 
 \begin{figure}[h!]
@@ -1230,7 +1287,7 @@ value.
 
 Fig.~\ref{fig:problemrun} shows an inconclusive run. The top graph
 shows the UCN rate over time. This shows an increase in the UCN rate
-after starting the target irradiation. At the end of the irraidation,
+after starting the target irradiation. At the end of the irradiation,
 the UCN rate decays to the typical background rate. The middle graph
 shows the temprature of the superfluid helium from the temprature
 sensor TS12 over time. Here the irradiation of the target stopped
