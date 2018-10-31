@@ -124,7 +124,7 @@ Fig.~\ref{fig:pyramid}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{pyramid.png}
-  \caption[Two quadrupole magnets and the shidling pyramid]{Two
+  \caption[Two quadrupole magnets and the shielding pyramid]{Two
     quadrupole magnets which focus the proton beam onto a 12~cm thick
     tungsten spallation target, located inside a hermetically-sealed
     target crypt. Also shown is the UCN shielding pyramid, which
@@ -234,8 +234,8 @@ UCN, as discussed in Section~\ref{sec:ucn_with_heII}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{vertical_source.png}
-  \caption[Schematic diagram of the vertial UCN source at
-  TRIUMF]{Schematic diagram of the vertial UCN source at
+  \caption[Schematic diagram of the vertical UCN source at
+  TRIUMF]{Schematic diagram of the vertical UCN source at
     TRIUMF. Spallation neutrons are moderated in warm D$_2$O vessel
     and become cold neutrons in Iced D$_2$O. The cold neutrons then
     enter the superfluid helium bottle where they become UCN by phonon
@@ -326,7 +326,7 @@ in Fig.~\ref{fig:ucnarea}. The helium level is measured by a level
 meter. The DAQ system and sensor positions are described in
 Section.~\ref{sec:DAQ} and the gas flow diagram is available in
 Fig.~\ref{fig:gasflow} of Appendix~\ref{app:gasflow}. In addition, two
-flow meteres were used to observe the gas flow and evaporation of the
+flow meters were used to observe the gas flow and evaporation of the
 superfluid in the 4~K reservoir~(FM4 and FM5 in Fig.~\ref{fig:gasflow}
 of Appendix~\ref{app:gasflow}). The stationary dewar was filled from
 350~L transfer dewars which were in turn filled from the Meson Hall
@@ -338,7 +338,7 @@ liquifier.
   \caption[UCN experimental area during the mini shutdown in October
   2017]{A photograph of the UCN experimental area during the mini
     shutdown in October 2017. Some experimental components are shown
-    and are labeled. The yellow concrete blocks are blocking the
+    and are labelled. The yellow concrete blocks are blocking the
     radiation during the target irradiation times. The vertical UCN
     cryostat could be seen because of the removal of some radiation
     shielding. }
@@ -367,7 +367,7 @@ The efficiency of each transfer from the stationary dewar to the 4~K
 reservoir was about 40\% to 60\% on average.
 
 \subsubsection{Liquid Helium Pot at 1 Kelvin}
-The 4.2~K liquid helium in the helium reservoir is transfered to a pot
+The 4.2~K liquid helium in the helium reservoir is transferred to a pot
 called ``1~K pot''. The flow rate of the transferred liquid helium is
 controlled by a needle valve~(JT valve) where the Joule-Thomson
 expansion happens and the liquid helium cools down. The Joule-Thomson
@@ -382,7 +382,7 @@ vapour pressure above the liquid, and hence, the temperature of the
 liquid.  Calculations of refrigerator performance were studied
 recently in the context of the vertical UCN source
 \cite{Florian_thesis} and in the future horizontal UCN source
-\cite{bib:sweitz}. The level of helium in the 1~K pot is measured by a
+\cite{sweitz}. The level of helium in the 1~K pot is measured by a
 liquid level meter. The maximum level of the 1.4~K liquid helium is
 about 15~cm. At this level, the volume of the 1.4~K liquid helium is
 about 1.3~L.
@@ -480,9 +480,9 @@ A picture of the PLC is shown in Fig.~\ref{fig:PLC}. The PLC modules
 are placed in the top two rows. The bottom row includes the power
 supplies and the fuses for the sensors. The middle section of the PLC
 box has the terminal blocks for all the sensors. The terminal blocks
-for each sensor are labeled. The number of terminal blocks for each
+for each sensor are labelled. The number of terminal blocks for each
 sensor depends on its wiring diagram. The green terminal blocks are
-for the ground connection and the grey termianl blocks are for all
+for the ground connection and the grey terminal blocks are for all
 other readings.  The cables from the sensors enter the PLC via the two
 holes on the top of the PLC box. They are then routed on the right
 side of the panel and connected to the designated terminal blocks. The
@@ -491,7 +491,7 @@ the bottom row and the output connection to the PLC modules leave the
 terminal blocks from their top row. We draw the wiring diagram for
 each sensor using Altium software.
 
-Fig.~\ref{fig:altium} shows the altium drawing for the PG3H sensor in
+Fig.~\ref{fig:altium} shows the Altium drawing for the PG3H sensor in
 the $^4$He system which is named UCN:He4:PG3H. The first part
 indicates that it is a sensor for the UCN source, the middle part
 indicates which sub-system this system belongs to~(e.g., $^3$He or
@@ -547,8 +547,8 @@ in two different ways: History logging where some data is saved
 periodically~(every 1-10~s) and can be plotted from history page and
 file logging where all data is saved to MIDAS file to be analyzed
 later. The TUCAN MIDAS DAQ has a web interface shown in
-Fig.~\ref{fig:midas}. The green color indicates that the equipment
-frontend is running. Each run can be started by pressing the button at
+Fig.~\ref{fig:midas}. The green colour indicates that the equipment
+front-end is running. Each run can be started by pressing the button at
 the top section.
 
 \begin{figure}[h!]
@@ -558,10 +558,10 @@ the top section.
   \label{fig:midas}
 \end{figure}
 
-The main MIDAS frontends that are being read out by the UCN DAQ:
+The main MIDAS front-ends that are being read out by the UCN DAQ:
 
 \begin{itemize}
-\item Source EPICS frontend (and beamline EPICS) frontend, which
+\item Source EPICS front-end (and beam line EPICS) front-end, which
   copies a subset of the EPICS Process Variables~(PVs) to the MIDAS
   history system.  The program that does this is called
   ``feSourceEpics''. On the MIDAS status page the equipment
@@ -570,14 +570,14 @@ The main MIDAS frontends that are being read out by the UCN DAQ:
   variables to the existing history plot.
 \item A Keithley picoammeter which is reading the current from a
   thermal neutron counter. The picoammeter is readout through a
-  MIDAS-GPIB chain; the frontend to control it is called ``scpico''.
+  MIDAS-GPIB chain; the front-end to control it is called ``scpico''.
 \item The V1720 for reading out the UCN $^6$Li detector.
-\item A frontend program for controlling UCN sequence. It starts
+\item A front-end program for controlling UCN sequence. It starts
   triggering after the end of target irradiation.
 \item V785 peak sensing ADC for reading out the UCN $^3$He detector.
-  This frontend is for digitizing the signal from the $^3$He UCN
-  detector.  The program for reading out the digizer is called
-  ``fev785''.  These frontend program controls the readout from a CAEN
+  This front-end is for digitizing the signal from the $^3$He UCN
+  detector.  The program for reading out the digitizer is called
+  ``fev785''.  These front-end program controls the readout from a CAEN
   V785 VME module. The trigger~(gate) signal for the V785 is generated
   by a bunch of NIM electronics that process the signal from the
   $^3$He detector.
@@ -588,20 +588,20 @@ number. The MIDAS files were then converted to ROOT files for data
 analysis. ROOT is a scientific software package developed by
 scientists at CERN~\cite{brun1997root}. It provides all the
 functionalities needed to deal with data processing, statistical
-analysis, visualisation and storage. It is mainly written in C++, but
+analysis, visualization and storage. It is mainly written in C++, but
 integrated with other languages such as Python and R. Each ROOT file
-represents a particular midas run and has 8 trees. A tree in ROOT is
+represents a particular Midas run and has 8 trees. A tree in ROOT is
 like a table. Each row of the table is a branch in the
 tree. Fig.~\ref{fig:sfig1} shows the trees in a ROOT file. The XXX
 indicates the number of the MIDAS run. The UCN Hit trees include the
-data timestamps, ChargeL, ChargeS, PSD~(see
+data time-stamps, ChargeL, ChargeS, PSD~(see
 Section~\ref{sec:detectors}), Baseline and etc. The run transition
 trees include the UCN valve open time, UCN valve close time, Cycle
 start time and etc.~(see Chapter~\ref{chap:UCNresult}). The LND
 Detector tree has the thermal neutron detector readings and its
-timestamps. The Source Epics tree has the readings for all the UCN
+time-stamps. The Source Epics tree has the readings for all the UCN
 source sensors integrated into the EPICS system, and the Beam Line
-Epics tree has all the readings related to the beamlines such as
+Epics tree has all the readings related to the beam lines such as
 target temperatures and etc. The header tree includes the experiment
 number~(e.g., TCN170XX which represents a TUCAN experiment in 2017 and
 XX represents the experiment number), the person who was on the shift,
@@ -627,14 +627,14 @@ the shift.
 \label{fig:data_struct}
 \end{figure}
 
-I developed a ROOT program that extracts the UCN cycle information for
-each MIDAS run and creates a .root file.  The output file has one tree
-as ``cycle information'' table. It consists of branches with the cycle
-average, maximum, and minimum values for the main sensors that
+We developed a ROOT program that extracts the UCN cycle information
+for each MIDAS run and creates a .root file.  The output file has one
+tree as ``cycle information'' table. It consists of branches with the
+cycle average, maximum, and minimum values for the main sensors that
 contribute to the analysis.  The analysis is based on the UCN cycles,
 and it is essential to know, for example, how the temperature of the
 superfluid helium changes for each cycle. Therefore, the average,
-maximum and mimimum values of the superfluid helium temperature for
+maximum and minimum values of the superfluid helium temperature for
 each cycle for different temperature sensors are calculated and
 inserted in the cycle information tree. In addition, the UCN
 background, and the total UCN counts for each cycle are also added to
@@ -691,7 +691,7 @@ those $^6\mathrm{Li}$ scintillators.
     \hline
     $^6\mathrm{Li}$ fraction (\%) & 95 & 0.01 \\
     \hline
-    $^6\mathrm{Li}$ desity~(cm$^{-3}$) & $1.716 \times 10^{22}$ & $1.806 \times 10^{18}$ \\
+    $^6\mathrm{Li}$ density~(cm$^{-3}$) & $1.716 \times 10^{22}$ & $1.806 \times 10^{18}$ \\
     \hline
   \end{tabular}
   \caption{Properties of the glass
@@ -705,7 +705,7 @@ thermal neutron captures. In order to handle high UCN rates of up to
 1~MHz, the $^6\mathrm{Li}$ detector face is segmented into 9
 tiles~(see Fig.~\ref{fig:Li6detector}). The scintillation light of
 each tile is guided through ultra-violet transmitting acrylic
-light-guide to its corresponding photomultiplier tube~(PMT) outside
+light-guide to its corresponding photo-multiplier tube~(PMT) outside
 the vacuum region of the detector.
 
 \begin{figure}[h!]
