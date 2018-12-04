@@ -13,7 +13,7 @@ generation high intensity UCN source. In this chapter those
 experiments are described and the result of the data analysis is
 presented.
 
-Chapter proceeds as follows:
+This chapter proceeds as follows:
 \begin{itemize}
 \item general discussion of measurement cycle
 \item data analysis focusing on experimental measurements of UCN
@@ -25,11 +25,12 @@ Chapter proceeds as follows:
 
 \section{UCN Cycle of Measurement}
 Fig.~\ref{fig:volume_schematic} is a simple schematic of UCN
-production and detection volumes sketch the UCN propagation between
-different volumes. Here volume $V_1$ represents the production and
-storage volume before the valve, where $N_1$ UCN are produced. $V_2$
-is the secondary volume, where $N_2$ UCN enter after the valve is
-opened, and $V_3$ is the detector volume where $N_3$ UCN are detected.
+production and detection volumes which shows the UCN propagation
+between different volumes. Here volume $V_1$ represents the production
+and storage volume before the valve, where $N_1$ UCN are
+produced. $V_2$ is the secondary volume, where $N_2$ UCN enter after
+the valve is opened, and $V_3$ is the detector volume where $N_3$ UCN
+are detected.
 
 
 \begin{figure}[h]
@@ -71,12 +72,12 @@ by the coupled, first-order, linear differential equations:
 \end{equation}
 
 Here $\tau_{c,1}$, $\tau_{c,2}$, and $\tau_{c,3}$ are the lifetimes
-due to crossing the surface and $\tau_2$ is the lifetime in $V_2$. In
-these equations, $dN_1/dt$ shows the change in the UCN counts over
-time in $V_1$, $dN_2/dt$ shows the change in the UCN counts in $V_2$,
-and $dN_3/dt$ shows the change in the UCN count in $V_3$, after the
-valve is opened. Each term in the right side of the equations is
-described below.
+due to crossing the surface~(described below) and $\tau_2$ is the
+lifetime in $V_2$. In these equations, $dN_1/dt$ shows the change in
+the UCN counts over time in $V_1$, $dN_2/dt$ shows the change in the
+UCN counts in $V_2$, and $dN_3/dt$ shows the change in the UCN count
+in $V_3$, after the valve is opened. Each term in the right side of
+the equations is described below.
 
 In the first equation, the total number of UCN in $V_1$ depends on
 three factors: the UCN that get into $V_2$ with the rate
@@ -185,10 +186,11 @@ the upper right portion of PSD-$Q_L$ space.
 Here the UCN spectrum has an energy range of 3000 to 12000 $Q_L$ as
 expected, and a median PSD value of 0.5. The events at PSD~$\sim 0$
 represent the $\gamma$-rays in the lightguides. To define UCN counts,
-a PSD cut at 0.3 and a $Q_L$ cut at 2000 were applied. Those cuts were
-confirmed with Monte-Carlo simulations to have an efficiency of 99\%
-or higher. The total number of UCN events in each PMT for a run at
-1~$\mu$A beam current and 60~s irradiation time is shown in
+a PSD cut at 0.3 and a $Q_L$ cut at 2000 were applied. These cuts
+define the UCN boxed described below. Those cuts were confirmed with
+Monte-Carlo simulations to have an efficiency of 99\% or higher. The
+total number of UCN events in each PMT for a run at 1~$\mu$A beam
+current and 60~s irradiation time is shown in
 Fig.~\ref{fig:channelcounts}.  Out of all 9 channels, the central
 channel counts the most UCN, while the corner channels receive the
 least as expected based on geometry.
@@ -300,14 +302,14 @@ multiplied by the valve open duration, which then gives an estimate of
 the total background UCN counts. The background rate is typically less
 than 5~UCN/s. The subtraction of the latter from the total UCN counts
 gives the actual number of UCN that are produced by the isopure helium
-converter, and detected by the detector. At low and moderate UCN
-counts, the statistical uncertainty is available by taking the square
+converter and detected by the detector.  At the observed UCN count
+rates, the statistical uncertainty is available by taking the square
 root of the number of measured events, as follows conveniently from
 Poisson statistics~\cite{pomme2015uncertainty}.
 %%%%%%%%%%
 \subsection{UCN Yield Versus Proton Beam Current}
 
-A unique feature of the TRIUMF facility compared to RCNP is higher
+A unique feature of the TRIUMF facility compared to RCNP is the higher
 current compatibility~(RCNP: 400~MeV at $<1$~$\mu$A).
 Fig.~\ref{fig:counts_vs_beam} shows the total UCN counts versus the
 applied proton beam current in $\mu$A at 60~s irradiation time. The
@@ -439,7 +441,7 @@ Section~\ref{sec:yieldsims}.
 
 \subsection{Steady-state UCN Production\label{sec:steadystate}}
 
-The result shown so far are achieved in the batch mode of
+The results shown so far are achieved in the batch mode of
 operation. In addition to such measurements, the UCN rate was also
 measured at different beam currents in the steady-state mode of
 operation. In these measurements, the UCN valve was left open, and the
@@ -603,7 +605,8 @@ source every time the UCN valve is opened. This caused a decrease in
 the UCN yield~(and storage lifetime as shown later in
 Section~\ref{sec:storage_overall}) over the course of the
 measurement. In addition, the changes in the UCN guide geometry in the
-latter half of the run potentially affected this drop.
+latter half of the run potentially affected this drop by adding
+contamination to the source and increasing the losses.
 
 
 \begin{figure}[h]
@@ -736,10 +739,10 @@ lower UCN storage lifetime in the source.
 \subsection{Storage Lifetime Versus Isopure Helium Temperature}
 The storage lifetime of UCN was also measured at different
 temperatures of the superfluid helium. In this experiment, the
-temperature of superfluid was increased by using heater wire wrapped
-around the UCN bottle. The heater powers were set to increase the
-temperatures by a certain amount. Once the temperatures stabilized,
-target irradiation was started.
+temperature of the superfluid was increased by using heater wire
+wrapped around the UCN bottle. The heater powers were set to increase
+the temperatures by a certain amount. Once the temperatures
+stabilized, target irradiation was started.
 
 The result of this measurement is shown in
 Fig.~\ref{fig:storagelifetime_vs_temp}. The vertical axis is the
@@ -807,10 +810,10 @@ PENTrack~\cite{schreyer2017pentrack}. PENTrack is a particle tracking
 simulation software which simulates the trajectories of UCN and their
 decay products~(e.g., protons and electrons) and their spin precession
 in complex geometries in electric and magnetic fields by solving the
-relativistic equation of motion.
+relativistic equations of motion.
 
 To simulate the UCN storage and transport, an exact model of the UCN
-guides for PENTrack was build by the TUCAN team. Here the result of
+guides for PENTrack was built by the TUCAN team. Here the result of
 those simulations and comparison to the measured data are presented.
 %%%%%%%
 \subsection{UCN Guide Diffusivity\label{sec:diffusivity}}
@@ -835,27 +838,35 @@ UCN guides~(see Fig.~\ref{fig:Source_all}). Experimental geometries
 imported in PENTrack are the STL files made through CAD models. For
 these simulations, the exact model of the vertical UCN source was used
 including the burst disk, the actual shape of the UCN valve in the
-open and close state, pinhole, foil and the detector~(see
-Section~\ref{sec:vertical_source} for more details).
+open and close state, pinhole detector, foil and the main $^6$Li
+detector~(see Section~\ref{sec:vertical_source} for more details).
 
 
 
-In PENTrack simulations, the interaction of UCN with material
+In the PENTrack simulations, the interaction of UCN with material
 boundaries and bulk material is handled by determining the UCN track
 intersections with the STL mesh triangles and selecting the relevant
 model to describe the behaviour: specular reflection, diffuse
 reflection (Lambert model or Microroughness model), transmission via
 Snell's law, diffuse transmission (Lambert model or Microroughness
 model), absorption or upscattering at a material boundary, and
-absorption or upscattering in the bulk of the material. The material
-list includes real and imaginary optical potentials, Lambert
-reflection probabilities, Microroughness parameters, and spin-flip
-probabilities. The imaginary optical potential of a material can vary
-with temperature and thus materials must be treated separately at
-different temperatures. PENTrack has no direct temperature parameter,
-so the imaginary optical potentials are calculated. Only the Lambert
-model was used for the simulations to study the transmission
-properties of UCN guides.
+absorption or upscattering in the bulk of the material. To track
+particles, PENTrack performs a 5th-order-Runge-Kutta integration of a
+general, relativistic equation of motion including gravitational
+acceleration, Lorentz forces due to magnetic and electric fields, and
+the force of a magnetic-gradient field on the particle’s magnetic
+moment. To simulate the precession of spins in magnetic fields,
+PENTrack can integrate the Bargmann-Michel-Telegdi~(BMT) equation
+along a particle’s trajectory.
+
+The material list includes real and imaginary optical potentials,
+Lambert reflection probabilities, Microroughness parameters, and
+spin-flip probabilities. The imaginary optical potential of a material
+can vary with temperature and thus materials must be treated
+separately at different temperatures. PENTrack has no direct
+temperature parameter, so the imaginary optical potentials are
+calculated. Only the Lambert model was used for the simulations to
+study the transmission properties of UCN guides.
 
 
 %PENTrack uses two models to
@@ -1091,7 +1102,7 @@ Figs.~\ref{fig:Counts_vs_temp_sim} and \ref{fig:storage_vs_temp_sim}
 show the measured UCN counts and storage lifetime versus the
 superfluid helium temperature for all four temperature sensors as well
 as their simulations. To simulate the temperature of the superfluid
-helium, different values for the imaginary Fermi potential $W$ were
+helium, different values for the imaginary optical potential $W$ were
 taken into account as it is the needed parameter for the PENTrack
 simulations. The UCN upscattering in the superfluid helium is
 $\tau_{\mathrm{abs}}^{-1} = 2W/\hbar$~(see
@@ -1327,11 +1338,11 @@ at later dates. The steady-state UCN rate was showed to be around
 Although we were able to extract three times more UCN than ever before
 due to the increased beam current on the spallation target, we
 achieved only half of the previously best storage lifetime, mostly due
-to the contamination of the source while it was moved, the burst dik
-added to the UCN guide, and the new UCN valve not optimized for UCN
-storage.
+to the contamination of the source while it was moved from RCNP to
+TRIUMF, the burst dik added to the UCN guide, and the new UCN valve
+not optimized for UCN storage.
 
-The UCN production rate from MCNP simulations found to be
+The UCN production rate from MCNP simulations were found to be
 ($20600\pm 200$)~s$^{-1}$ in an energy range up to 233.5~neV with
 $\sqrt{E_\mathrm{UCN}}$ energy spectra. Simulations including the
 temperature-dependent up-scattering in superfluid helium and helium
