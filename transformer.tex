@@ -105,6 +105,20 @@ larger amplitudes, the material goes into saturation.  Both
 $\dot{B}_{m,Y}$ and $\dot{B}_{m,X}$ eventually decrease as expected at
 amplitudes much greater than the coercivity.
 
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[width=\textwidth]{Jiles_and_data.pdf}
+    \caption[Demodulated signal as a function of amplitude of the
+    applied $H_m$ field]{$\dot{B}_{m,X}$ and $\dot{B}_{m,Y}$ as a
+      function of amplitude of the applied $H_m$ field at 1~Hz.
+      Points show the acquired data.  Curves display the simulation
+      based on the model described in the text.}
+    \label{fig:data_and_simulation}
+  \end{center}
+\end{figure} 
+
+
 To understand the behavior in Fig.~\ref{fig:data_and_simulation}, a
 theoretical model of the hysteresis based on the work of
 Jiles~\cite{jiles1994frequency} was used.
@@ -115,17 +129,18 @@ magnetic field could be written as
 \begin{equation}
 M_{an}(H) =  M_s \ell \left( \frac{H + \alpha M_{an}(H)}{a} \right)
 \end{equation}
-where $\ell$ is the langevin function $\ell = coth(x) - 1/x$, $M_s$ is
-the saturation magnetization, $\alpha$ is a coupling coefficient,
+where $\ell$ is the Langevin function $\ell = \coth(x) - 1/x$, $M_s$
+is the saturation magnetization, $\alpha$ is a coupling coefficient,
 $a = k_BT/\mu_0 <m> $ with $k_B$ being the Bolzmann constant, $T$
-being the temperature, $\mu_0$ the permeability of free space, and
-$<m>$ is the effective domain size. The equation for hysteresis can then be derived from the energy-balance equation 
+being the temperature, $\mu_0$ being the permeability of free space,
+and $<m>$ being the effective domain size. The equation for hysteresis
+can then be derived from the energy-balance equation
 \begin{equation}
 \mu_0 \int M_{an} dH_e  = \mu_0 \int M dH_e + \mu_0 k \delta(1-c) \int \frac{dM_{irr}}{dH_e}~,
 \end{equation}
 which means, in an initially demagnetized material, hysteresis can
-appear as a change in total demagnetization, or or be dissipated due
-to irreversible changes in magnetization $M_{irr}$ (hysteresis
+appear as a change in total demagnetization, or be dissipated due to
+irreversible changes in magnetization $M_{irr}$ (hysteresis
 loss). Here the first term of the right-hand side is the contribution
 to the magnetostatic energy, and the second term on the right-hand
 side is the dissipation loss due to pinning. In this equation
@@ -133,7 +148,7 @@ $H_e= H + \alpha M$, the coefficient $k$ is the pinning parameter
 which determines the amount of energy dissipated, and $\delta$ is a
 directional parameter which ensures that energy is always lost through
 dissipation. The coefficient $c$ is a measure of the amount of
-reversible change in magnetization.  The total magnetization cosists
+reversible change in magnetization.  The total magnetization consists
 of two parts including reversible and irreversible magnetization
 $M = M_{\mathrm{irr}} + M_{\mathrm{rev}}$.
 
@@ -182,17 +197,9 @@ predicted by the model (we have adjusted them both to be positive, for
 graphing purposes).  We expect that with further tuning of the model,
 even better agreement could be achieved.
 
-\begin{figure}[h!]
-  \begin{center}
-    \includegraphics[width=\textwidth]{Jiles_and_data.pdf}
-    \caption[Demodulated signal as a function of amplitude of the
-    applied $H_m$ field]{$\dot{B}_{m,X}$ and $\dot{B}_{m,Y}$ as a
-      function of amplitude of the applied $H_m$ field at 1~Hz.
-      Points show the acquired data.  Curves display the simulation
-      based on the model described in the text.}
-    \label{fig:data_and_simulation}
-  \end{center}
-\end{figure} 
+
+
+
 
 The model of Ref.~\cite{jiles1994frequency} makes no prediction of the
 temperature dependence of the parameters.  Ideally, the temperature
