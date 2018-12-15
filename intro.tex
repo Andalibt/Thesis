@@ -523,28 +523,51 @@ In an inhomogeneous magnetic field, UCN experience a force described
 by
 \begin{equation}
   \label{eqn:fmag}
-  {\bf{F}}_m = - {\boldsymbol{\nabla}V}_m = \pm \vert {\boldsymbol{\mu}}_n \vert \boldsymbol{\nabla} \bf{B}.
+  {\bf{F}}_m = - {\boldsymbol{\nabla}V}_m = \pm \vert {\boldsymbol{\mu}}_n \vert \boldsymbol{\nabla} \bf{B}~.
 \end{equation}
-In the nEDM measurements, the interaction of UCN with the magnetic
-field is used to polarize UCN, and to measure its polarization at the
-end of the measurement cycle~(see Section~\ref{sec:Ramsey}). In
-Eqn.~\ref{eqn:fmag}, the sign $\pm$ corresponds to the relative
+The last equal sign in the equation above is only true for an
+adiabatic case where the neutrons are moving so slowly that
+their magnetic moment is always in the same direction as the magnetic
+field. This will happen when the changes of the inhomogeneous magnetic
+field over time in the rest frame of the neutron is much slower than
+the neutron's Larmor precession frequency $\omega_L$ as described by
+\begin{equation}
+\omega_L \gg \frac{\frac{d\bf{B}}{dt}}{\bf{B}}~.
+\end{equation}
+
+The Larmor precession is the precession of the neutron's magnetic
+moment around the applied external magnetic field~(see
+section~\ref{sec:nedmmeasurement}). Since UCN move very slowly, this
+condition is easily fulfilled
+
+
+
+In Eqn.~\ref{eqn:fmag}, the sign $\pm$ corresponds to the relative
 orientation between the magnetic moment and the magnetic field.  UCN
 of anti-parallel spin to the magnetic field~(magnetic moment parallel)
-are called ``high field seekers'', have negative $V_m$, accelerate
-towards strong magnetic fields, and are attracted to it. UCN with
+are accelerated into the magnetic field with the force
+$ {\bf{F}}_m = \vert {\boldsymbol{\mu}}_n \vert \boldsymbol{\nabla}
+\bf{B} $ and are therefore called ``high field seekers''. UCN with
 parallel spin~(and thus magnetic moment anti-parallel) to the magnetic
-field, are called ``low field seekers'', have positive $V_m$, and
-are repelled by the magnetic field.
+field, are called ``low field seekers''.
 
-Eqn.~\ref{eqn:fmag} is true only if UCN move adiabatically through the
-magnetic field. This condition will be fulfilled when the Larmor
-precession frequency of UCN is smaller than the changes in the
-magnetic field in the rest frame of the UCN. However, since the UCN
-have low speeds, this condition is easily fulfilled. If the UCN spin
-adiabatically traces the magnetic field, it will be fully polarized,
-which can be achieved by passing the UCN through a strong~$\sim 6$~T
-magnetic field.
+
+%Eqn.~\ref{eqn:fmag} is true only if UCN move adiabatically through the
+%magnetic field. This condition will be fulfilled when the Larmor
+%precession frequency of UCN is smaller than the changes in the
+%magnetic field in the rest frame of the UCN. However, since the UCN
+%have low speeds, this condition is easily fulfilled.
+
+
+
+In the nEDM measurements, the interaction of UCN with the magnetic
+field is used to polarize UCN, and to measure its polarization at the
+end of the measurement cycle~(see Section~\ref{sec:Ramsey}).  If the
+UCN spin adiabatically traces the magnetic field, it will be fully
+polarized, which can be achieved by passing the UCN through a
+strong~$\sim 6$~T magnetic field. In such magnetic field, the magnetic
+potential would be about 360~neV which is enough to supress the low
+field seekers.
 
 %If the magnetic field $\textbf{\textit{B}}$ is inhomogeneous and the
 %neutron spin traces the magnetic field adiabatically, the neutron will
@@ -572,8 +595,8 @@ magnetic field.
 Neutrons and protons are bound in the nucleus by the strong
 interaction. However, this interaction has a short range, and it only
 affects the neighbouring nuclei. The Woods-Saxon potential
-approximately describes the nucleons interaction inside the atomic
-nucleus
+approximately describes the nucleon interaction inside the atomic
+nucleus~\cite{WoodSaxon}
 \begin{equation}
   \label{eqn:woodsax}
   V(r) = - \frac{V_0}{1+\exp(\frac{r-R}{b})}~,
@@ -598,7 +621,7 @@ superposition of an incoming plane wave and a scattered spherical
 wave:
 
 \begin{equation}
-  \psi(z, \theta) = e^{ikz} + f(\theta)\frac{e^{ikz}}{z}~,
+  \psi(r, \theta) = e^{ikr} + f(\theta)\frac{e^{ikr}}{r}~,
 \end{equation}
 where $f(\theta)$ is the angle dependent scattering amplitude and is
 determined by the boundary condition at $r = R$. Since the wavelength
@@ -609,12 +632,13 @@ scattering amplitude $f$ does not depend on the incident angle
 \begin{equation}
 f(\theta) = const. = -a~.
 \end{equation}
-Since the differential cross section becomes
+The differential cross section is then given by
 $\frac{d\sigma}{d\Omega} = |f(\theta)|^2 = a^2$ , where $a$ is the
-scattering length, a quantity that could be experimentally measured.
+scattering length, a quantity that can be experimentally measured.
 
 The interaction of an incident neutron with a nucleus can therefore
-alternatively be described by a single $\delta$-function
+alternatively be described by a single
+$\delta$-function~\cite{ucnbook}
 
 \begin{equation}
   V(\textbf{r}) = \frac{2 \pi \hbar^2}{m_N} a \delta^{(3)}(\textbf{r})~,
@@ -630,10 +654,11 @@ functions
 \end{equation}
 where $r_i$ is the position of the $i$th nucleus, $a_i$ is the
 scattering length with the $i$th nucleus, and the sum is over all the
-nuclei. This is the Fermi pseudopotential. Because of UCN's large
+nuclei. This is the Fermi pseudopotential. Since UCN have a large
 wavelength, this equation can be written as
 \begin{equation}
-  V(\textbf{r}) = \frac{2\pi \hbar^2}{m_N}\sum_i N_ia_i\Theta(\textbf{r})~,
+  \label{eqn:v}
+  V(\textbf{r}) = \frac{2\pi \hbar^2}{m_N}\sum_{\mathrm{domain}~i} N_ia_i\Theta(\textbf{r})~,
 \end{equation}
 where $N_i$ is the number density in the material i, and $\Theta(r)$
 is the step function inside the domain of the material. Here the sum
@@ -641,33 +666,51 @@ is over the domains of nuclei with the same scattering length
 $a_i$. In neutron physics, this potential is typically called neutron
 optical potential, since if the energy of the neutron is less than the
 optical potential $E < V$, the neutron will be fully reflected from
-the material surface under any angle of incidence. This sets a limit
-on the UCN velocity.
+the material surface under any angle of incidence. This sets an upper
+limit on the UCN velocity.
 
 UCN can be lost when reflected from the material walls.  This can be
 due to the upscattering in which UCN absorb energy, or absorption in
 which UCN get captured by a nucleus in the reflecting material. To
-include the losses in the potential, the optical potential is usually
-written as
+include these losses in the potential, the optical potential is usually
+written as a complex potential given by
 \begin{equation}
-  U(r) = V(r) - iW(r)~,
+  \label{eqn:u}
+  U(r) = V(r) - iW(r)~.  
 \end{equation}
-where $W(r) = \Sigma N_i \sigma^i_l v$ with $N_i$ being the density,
-$\sigma^i_l$ being the loss cross-section~(absorption plus inelastic
-scattering) of nuclei $i$, and $v$ being the velocity. If we solve the
-Schr\"{o}dinger equation with this potential, we get an additional
-decay of probability density as
+ If we solve the Schr\"{o}dinger equation with this potential
+including losses~(as compared to solving while considering only
+$V(r)$), we get an additional decay of probability density as
 
 \begin{equation}
-\rho = \rho_0 e^{-2Wt/\hbar}~,
+\rho = \rho_0 e^{-2Wt/\hbar}~.
 \end{equation}
-where $1/\tau_{abs} = 2W/\hbar$.  The ratio
-$f = \frac{W}{V} = \frac{\sigma_l k}{4 \pi a}$ is the UCN loss
+We set
+\begin{equation}
+  \label{eqn:w}
+W(r) = \frac{\hbar}{2}\sum_{\mathrm{domain}~i}N_i \sigma^i_l v \Theta(\bf{r})
+\end{equation}
+with $N_i$ being the number density in the material $i$, $\sigma^i_l$ being the loss
+cross-section~(absorption plus inelastic scattering) of material $i$,
+and $v = \frac{\hbar k}{m_N}$ being the neutron velocity.
+Therefore we get a correct description of absorption
+\begin{equation}
+  1/\tau_{abs} = 2W/\hbar = \sum_i N_i \sigma^i_l v \Theta(\bf{r})~.
+\end{equation}
+Comparing Eqn.~\ref{eqn:v}, and \ref{eqn:w} and carrying over the sum
+for the whole material, Eqn.~\ref{eqn:u} becomes
+\begin{equation}
+U = V - iW = \frac{2 \pi \hbar}{m_N} N(a_r - i a_r)~,
+\end{equation}
+where $a_r$ is the real part of the scattering length and
+$a_i = \frac{\sigma_l k}{4\pi}$ is the imaginary part of the
+scattering length. The ratio
+$f = \frac{W}{V} = \frac{\sigma_l k}{4 \pi a_r}$ is the UCN loss
 coefficient, where as earlier, $\sigma_l$ is the total loss
 cross-section for neutrons with wavenumber $k$, and $a$ is the
 scattering length~\cite{ucnbook}.
 
-For almost all materials $V \gg W$. The total energy of UCN are
+For almost all materials $V \gg W$. The total energy of UCN satisfies
 $E < V$ for many materials and therefore, they are reflected from
 material surfaces at all angles of incidence. For $V > E$, the mean
 probability of neutron loss on reflection from an abrupt potential
@@ -751,7 +794,7 @@ velocities of $\sim$~40~m/s are decelerated by reflection from a set
 of curved turbine blades moving with a velocity $\sim$~20~m/s in the
 same direction as the neutrons. A UCN density of $\sim$~40~UCN/cm$^3$
 was achieved with this method~\cite{ucnbook,Albert_talk}. The current
-UCN density of this source is 110~UCN/cm$^3$ for neutrons with
+UCN density of the ILL UCN source is 110~UCN/cm$^3$ for neutrons with
 velocities $<$~7~m/s~\cite{Steyerl1986}.
 
 
@@ -765,7 +808,7 @@ excitation of the converter medium~(e.g., to a phonon).  Superthermal
 sources have the ability to provide much higher UCN densities than
 conventional sources such as the ILL turbine source. The best
 candidates for the superthermal converters to date are liquid $^4$He
-and solid deuterium.
+and solid deuterium~\cite{ucnbook}.
 
 
 %UCN are a powerful tool to study new physics and the properties of
@@ -811,19 +854,20 @@ by transfer of the energy $E_0^*$ to a neutron.  The principle of
 detailed balance links the cross-section for upscattering
 $\sigma(E_{\text{UCN}} \rightarrow E_{\text{UCN}}+E_0^*)$ and
 downscattering
-$\sigma(E_{\text{UCN}}+E_0^* \rightarrow
-E_{\text{UCN}})$~\cite{ucnbook}
+$\sigma(E_{\text{UCN}} \rightarrow
+E_{\text{UCN}}-E_0^*) $~\cite{ucnbook}
 
 \begin{equation}
 \label{eqn:detailed_balance}
 \sigma(E_{\text{UCN}} \rightarrow E_{\text{UCN}}+E_0^*)= \frac{(E_{\text{UCN}}+E_0^*)}{E_{\text{UCN}}}
-e^{-\frac{E_0^*}{k_B T}}\sigma(E_{\text{UCN}}+E_0^* \rightarrow E_{\text{UCN}})
+e^{-\frac{E_0^*}{k_B T}}\sigma(E_{\text{UCN}} \rightarrow E_{\text{UCN}} -E_0^*)
 \end{equation}
 where $T$ is the temperature of the medium, $E_{\text{UCN}}$ is the
 energy of the UCN, and $k_B$ is the Boltzmann constant.
 
-In general, $\sigma(E_{\text{UCN}}+E_0^* \rightarrow E_{\text{UCN}})$
-is practically independent of $T$, so that for
+In general, $\sigma(E_{\text{UCN}} \rightarrow E_{\text{UCN}}-E_0^*)$
+is practically independent of $T$ since it is a scattering
+cross-section~(see section~\ref{sec:UCN_production}), so that for
 $E_0^* \gg k_B T \gg E_{\text{UCN}}$, the upscattering cross-section
 for UCN can be made arbitrarily small by decreasing the
 temperature. If the converter is now placed in a neutron flux at a
@@ -832,8 +876,8 @@ downscattering events, and a negligible number of upscattering events.
 
 If the converter is contained in a vessel whose walls are good UCN
 reflectors with potential $V \gg V_m$, where $V_m$ is the UCN potential
-of the converter, and the walls are transparent to the neutrons of
-energy $E_0^*$, then UCN will build up in the moderator to a density
+of the converter, and the walls are transparent to neutrons of
+energy $> E_0^*$, then UCN will build up in the moderator to a density
 until the rate of loss is equal to the rate of UCN production.
 
 %Coherent inelastic scattering can provide the equivalent of a
@@ -865,7 +909,7 @@ possible loss mechanisms
 where $1/\tau_a$ is the UCN absorption rate in the medium, $1/\tau_W$
 is the rate of the UCN loss on the walls, $1/\tau_{up}$ is the neutron
 loss due to the upscattering in the medium, and $1/\tau_{\beta}$ is
-the $\beta$-decay losses.
+the losses due to neutron lifetime.
 
 %An important factor in choosing a UCN source is the absorption rate of the neutron. As a result, pure
 Pure deuterium and liquid $^4$He are good candidates for superthermal
@@ -877,12 +921,16 @@ neutron absorption cross-section, and upscattering rate.
 
 \subsubsection{Superfluid $^4$He Definition}
 
-$^4$He is an isotope of helium with two protons and two neutrons. It
-has an integer spin of zero, which makes it a boson. As a result, it
-follows the Bose-Einstein statistics. It has two liquid states known
-as He-I and He-II. The He-I phase is the normal fluid phase. The He-II
-phase can be described by the so-called ``two-fluid model'', which
-consists of normal liquid helium and superfluid helium.
+$^4$He is an isotope of helium with two protons and two neutrons and
+has zero spin, which makes it a boson. As a result, it follows the
+Bose-Einstein statistics, which means when cooled to very low
+temperatures, it would fall into the lowest accessible quantum state
+resulting in a new form of matter.
+
+Liquid helium has two liquid states known as He-I and He-II. The He-I
+phase is the normal fluid phase. The He-II phase can be described by
+the so-called ``two-fluid model'', which consists of normal liquid
+helium and superfluid helium.
 % with zero viscosity, and zero entropy.
 Fig.~\ref{fig:phasetransition} shows the phase transition diagram of
 $^4$He. The two phases are separated out by the $\lambda$-line. The
@@ -905,32 +953,34 @@ Because of its zero viscosity, superfluid helium has the ability to
 flow through very small capillaries or narrow channels without
 experiencing any friction at all. The climbing of He-II along the
 surface is called ``film flow''.
-
+%I say this since I mention film flow in chapter 4.
 
 \subsubsection{Superfluid Helium Converter}
 
 Superfluid $^4$He is an attractive candidate as a UCN source, and was
-studied in Ref.~\cite{Golub77}. The dominant production mechanism in
-the superfluid helium is the excitation of a single phonon at the
-crossing of the free neutron and phonon dispersion curves, with a
-momentum $q\sim 0.7$/\AA~\cite{Brome2001}, and energy 1~meV
-corresponding to a neutron wavelength 8.9~\AA. The availability of
-8.9~\AA~cold neutrons is crucial and their flux must be maximized. In
-superfluid helium, the upscattering losses become smaller than
-$\beta$-decay losses below $T \sim 0.7$~K. It has zero neutron
-absorption cross-section, resulting in $\tau_a \rightarrow \infty$,
-which makes it a good candidate as a UCN source.
+studied in Ref.~\cite{Golub77}. It has zero neutron absorption
+cross-section, resulting in $\tau_a \rightarrow \infty$. The dominant
+UCN production mechanism in superfluid helium is the excitation of a
+single phonon at the crossing of the free neutron and phonon
+dispersion curves in fig.~\ref{fig:FIG1}, with a momentum
+$q\sim 0.7$/\AA~\cite{Brome2001}, and energy 1~meV corresponding to a
+neutron wavelength 8.9~\AA. The availability of 8.9~\AA~cold neutrons
+is crucial and their flux must be maximized.
+%In superfluid helium, the upscattering losses become
+%smaller than $\beta$-decay losses below $T \sim 0.7$~K.
+
 
 %For a long UCN lifetime in superfluid helium, besides the low
 %temperature of the converter, the $^3$He contamination must be low
 %($^3$He/$^4$He $\le 10^{-12}$), due to its large absorption
 %cross-section, which requires $^4$He purification.
 There are two types of UCN sources based on superfluid helium: sources
-where experiment and source are combined in one apparatus, and the
+where experiment and source are combined in one
+apparatus~\cite{van2009cryoedm, huffman2000magnetic}, and the
 measurement is performed inside the superfluid helium, and
 extracted-UCN sources where the source is an apparatus on its own, and
 delivers neutrons to experiments at room temperature connected to it
-by UCN guides.
+by UCN guides~(see section~\ref{sec:ucnww}).
 
 
 
@@ -1852,7 +1902,7 @@ there is a chance that other materials could lead to a breakthrough.
 % Cut if possible
 
 
-\section{Current Status of UCN Sources Worldwide}
+\section{Current Status of UCN Sources Worldwide\label{sec:ucnww}}
 %\subsection {It needs to be modified}
 New UCN sources using superthermal technology are under development at
 various laboratories across the world. Neutrons statistically produced
@@ -2031,7 +2081,7 @@ than the ILL turbine source.
 
 
 
-\section{Measurement of nEDM}
+\section{Measurement of nEDM\label{sec:nedmmeasurement}}
 
 To measure the nEDM, an ensemble of polarized UCN are put in the
 presence of aligned electric and magnetic fields. The Hamiltonian of
