@@ -632,7 +632,7 @@ scattering amplitude $f$ does not depend on the incident angle
 \begin{equation}
 f(\theta) = const. = -a~.
 \end{equation}
-The differential cross section is then given by
+The differential cross-section is then given by
 $\frac{d\sigma}{d\Omega} = |f(\theta)|^2 = a^2$ , where $a$ is the
 scattering length, a quantity that can be experimentally measured.
 
@@ -932,7 +932,7 @@ phase is the normal fluid phase. The He-II phase can be described by
 the so-called ``two-fluid model'', which consists of normal liquid
 helium and superfluid helium.
 % with zero viscosity, and zero entropy.
-Fig.~\ref{fig:phasetransition} shows the phase transition diagram of
+fig.~\ref{fig:phasetransition} shows the phase transition diagram of
 $^4$He. The two phases are separated out by the $\lambda$-line. The
 phase transition happens at 2.172~K. Below 1~K, the liquid is mostly
 the superfluid component of the two-fluid model.
@@ -990,7 +990,7 @@ by UCN guides~(see section~\ref{sec:ucnww}).
 UCN can be produced in superfluid helium when the energy of the
 incident neutrons is equal to that of the one phonon excitation in the
 converter medium~\cite{Korobkina2002,Schmidt2009,Golub77}. The
-incident neutrons then scatter down to UCN in the converter medium
+incident neutrons then downscatter to UCN in the converter medium
 while creating a phonon.
 %The crossing of the dispersion curve for excitations in superfluid
 %helium and the free energy of the neutron shows that the neutron
@@ -1014,29 +1014,37 @@ while creating a phonon.
     \label{fig:FIG1}
     \end{center}
 \end{figure} 
-Fig.~\ref{fig:FIG1} shows the dispersion relation of the superfluid
-helium and a free neutron. A neutron at rest can absorb energy $\hbar
-\omega$ and momentum $\hbar q$ with
+fig.~\ref{fig:FIG1} shows the dispersion relation of the superfluid
+helium and a free neutron. A neutron with energy
 \begin{equation}
-\label{neutron_energy}
-\omega=\frac{\hbar q^2}{2m}~,
+  \label{eqn:neutron_energy}
+  E_k = \frac{\hbar^2 q^2}{2 m} = \hbar \omega
 \end{equation}
-where $m$ is the mass of the neutron. A neutron with this energy and
-momentum can come to rest after transferring its energy and momentum
-to the superfluid $^4$He. For single phonon interactions, which are
-usually dominant, the superfluid helium can only exchange quantities
-of energy and momentum that are related by the dispersion curve
+can come to rest after transfering this energy to superfluid He-II in
+a collision. Here $m$ is the mass of the neutron, $\hbar q$ is the
+momentum of the neutron and $\hbar \omega$ is its energy.
+%at rest can absorb energy $\hbar
+%\omega$ and momentum $\hbar q$ with
+%\begin{equation}
+%\label{neutron_energy}
+%\omega=\frac{\hbar q^2}{2m}~,
+%\end{equation}
+%where $m$ is the mass of the neutron. A neutron with this energy and
+%momentum can come to rest after transferring its energy and momentum
+%to the superfluid $^4$He.
+For single phonon interactions, which are usually dominant, the
+neutron can only transfer momentum in agreement with the dispersion
+curve~fig.~\ref{fig:FIG1}
 
 \begin{equation}
 \label{dispersion_helium}
 \omega=\omega(q) \simeq cq~,
 \end{equation}
-where $\omega$ is the energy of the phonon, $q$ is the phonon's
-momentum, and $c$ is the speed of sound in the moderator. Here an
-approximation is used to simplify the discussion. The neutrons can
-only come to rest by emission of a single phonon, if they have the
-resonant energy $E_0^*$ given by the intersection of
-Eqns.~(\ref{neutron_energy}) and (\ref{dispersion_helium})
+where $c$ is the speed of sound in the moderator. This equation is an
+approximation to simplify the discussion. The neutrons can only come
+to rest by emission of a single phonon, if they have the resonant
+energy $E_0^*$ given by the intersection of
+Eqns.~(\ref{eqn:neutron_energy}) and (\ref{dispersion_helium})
 
 \begin{equation}
 \omega(q)=cq=\frac{\hbar q^2}{2m}~,
@@ -1046,7 +1054,7 @@ and so
 q^*=\frac{2mc}{\hbar}~.
 \end{equation}
 
-%Fig.~\ref{fig:FIG1} shows that an incident neutron can lose its
+%fig.~\ref{fig:FIG1} shows that an incident neutron can lose its
 %entire energy by creating a phonon excitation inside the converter
 %medium if it has the energy amount equal to the phonon excitations in
 %the converter medium. If this energy is $E_0^*=\hbar^2 k_0^*/2m$,
@@ -1054,19 +1062,21 @@ q^*=\frac{2mc}{\hbar}~.
 %$k_0^*=2mc/ \hbar$.
 
 The differential cross-section for neutron scattering is given by the
-dynamic scattering function $S(q,\omega)$, which is the Fourier
-transform of the Van Hove correlation function $G(r,t)$ in space and
-time of the superfluid helium~\cite{Squires}:
+dynamic scattering function $S(q,\omega)$~(shown later in
+fig.~\ref{fig:Schmidt_S}), which is the Fourier transform of the Van
+Hove correlation function $G(r,t)$ in space and time of the superfluid
+helium~\cite{Squires}:
 
 \begin{equation}
-\frac{d\sigma}{d\omega}=b^2 \frac{k_2}{k_1}S(q,\omega) d\Omega,
+\frac{d\sigma}{d\omega}=b^2 \frac{k_2}{k_1}S(q,\omega) d\Omega~.
 \end{equation}
-where $b$ is the bound neutron scattering length for $^4$He,
+Where $b$ is the bound neutron scattering length for $^4$He,
 $\hbar k_1$ is the momentum of the incident neutrons, and
 $\hbar k_2=\hbar k_{\text{UCN}}$ is the momentum of the UCN. The
-quantity $S(q,\omega)$ has been measured in great
-detail~\cite{S_func1,gibbs1999collective,S_func3}. Performing the
-change of variables,
+quantity $S(q,\omega)$ has been measured in great detail for different
+pressures, temperatures and $q$ values in
+Ref.~\cite{S_func1,gibbs1999collective,S_func3}. Performing the change
+of variables,
 
 \begin{equation}
 d\Omega=2 \pi \sin \theta d \theta = 2 \pi \frac{q dq}{k_1 k_2}
@@ -1077,7 +1087,7 @@ gives
  \frac{d\sigma}{d\omega}=2\pi b^2 \frac{k_2}{k_1}S(q,\omega)\frac{q
    dq}{k_1 k_2}=2\pi b^2 S(q,\omega)\frac{q dq}{k_1^2}~.
 \end{equation}
-This may effectively be integrated over the limits on $q$ which are
+This may be integrated over the limits on $q$ which are
 
 \begin{equation}
   k_1-k_2 < q < k_1+k_2~.
@@ -1130,12 +1140,13 @@ k_{\text{UCN}}^2dk_{\text{UCN}} \\ &=N_{\text{He}} 4 \pi b^2 \alpha^2 \left[
 \end{split}
 \end{equation}
 where $E_c$ and $k_c$ are the critical UCN energy and wave vector of
-the walls of the storage chamber. This way of writing the UCN
-production rate is more general, and it is useful to calculate the
-single phonon and multiphonon contributions to the UCN production
-rate. The one phonon production rate is found by evaluating
-Eqn.~(\ref{eqn:He_P_rate}) over the one phonon peak ($q^*=0.7$/\AA).
-Thus
+the walls of the storage chamber for total reflection. This way of
+writing the UCN production rate is more general, and it is useful to
+calculate the single phonon and multiphonon contributions to the UCN
+production rate. Korobkina {\it{et al.}},~\cite{Korobkina2002} found
+the one phonon production rate by evaluating
+Eqn.~(\ref{eqn:He_P_rate}) over the one phonon peak ($q^*=0.7$/\AA,
+see fig.~\ref{fig:Korobkina2002}).  Thus
 \begin{equation}
 P_{\text{UCN}}=9.44 \times 10^{-9}\frac{d\Phi (E_1^*)}{dE_1^*} \;
 \text{UCN}/\text{cm}^3,
@@ -1220,20 +1231,28 @@ P_{\text{UCN}}=9.44 \times 10^{-9}\frac{d\Phi (E_1^*)}{dE_1^*} \;
 
  \subsubsection{Multiphonon Scattering Contribution in UCN Production
    in Superfluid helium}
-%So far, the UCN production was demonstrated by single phonon emission. Even though one phonon emission is the predominant process in UCN production for a monochromatic UCN beam, the
+ % So far, the UCN production was demonstrated by single phonon
+ % emission. Even though one phonon emission is the predominant
+ % process in UCN production for a monochromatic UCN beam, the
  For polychromatic neutron sources, UCN can also be produced by
  multiphonon processes in superfluid
  $^4$He~\cite{Korobkina2002,Schmidt2009}. Multiphonon production of
  UCN with various energy spectra of the neutron flux has been studied
- in Ref.~\cite{Korobkina2002}.  Fig.~\ref{fig:Korobkina2002} shows the
- energy spectra $\frac{d\phi}{dE}$ for three sources as a function of
- momentum $q$, compared to the dynamic scattering function
- $S(q,\omega=\hbar q^2/2m)$. The $S$ function is interpolation from
- neutron scattering data. The peak at $q=0.7$/\AA~in the dynamic
- scattering function corresponds to the one phonon excitation by
- superfluid helium. The values of $S$ above 1.2/\AA~are
- extrapolated. The value of $S$ above 2/\AA~are essentially zero.  The
- UCN production from one phonon and multiphonon processes have been
+ in Ref.~\cite{Korobkina2002} which is summarized
+ here. Figure.~\ref{fig:Korobkina2002} shows the energy spectra
+ $\frac{d\phi}{dE}$ for three sources as a function of momentum $q$,
+ compared to the dynamic scattering function
+ $S(q,\omega=\hbar q^2/2m)$~\cite{Korobkina2002}.
+ % Korobkina {\it {et
+ % al.,}}~\cite{Korobkina2002} obtained the $S$ function by
+ % interpolation, from neutron scattering data.
+ The peak at $q=0.7$/\AA~in the dynamic scattering function
+ corresponds to the one phonon excitation by superfluid helium. The
+ values of $S$ above 1.2/\AA~are extrapolated, taking into account the
+ known value of $S(q)$ for the one phonon and multiphonon
+ contributions~\cite{Korobkina2002}. The value of $S$ above
+ $q=2$/\AA~are essentially zero~\cite{Korobkina2002}.  The UCN
+ production from one phonon and multiphonon processes have been
  calculated for three input neutron spectra: SNS ballistic guide,
  PULSTAR MC flux and HMI polarized flux.  The multiphonon contribution
  to the UCN production is calculated using Eqn.~(\ref{eqn:He_P_rate}),
@@ -1246,16 +1265,14 @@ P_{\text{UCN}}=9.44 \times 10^{-9}\frac{d\Phi (E_1^*)}{dE_1^*} \;
 
 
 
-
-
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.7\textwidth]{Korobkina2002.PNG}
-   \caption[Cold neutron energy spectrum and $S$ function]{The energy
-     spectrum of the incident cold neutron flux from three sources
-     compared to the dynamic scattering function
-     $S(q,\omega=\frac{\alpha k_1^2}{2})$~/meV as a function of
-     $q$~/\AA.}
+   \caption[Cold neutron energy spectrum and $S$
+   function]{\cite{Korobkina2002}The energy spectrum of the incident
+     cold neutron flux from three sources compared to the dynamic
+     scattering function $S(q,\omega=\frac{\alpha k_1^2}{2})$~/meV as
+     a function of $q$~/\AA.}
 %     \vspace{-2.em}
     \label{fig:Korobkina2002}
     \end{center}
@@ -1294,37 +1311,39 @@ P_{\text{UCN}}=9.44 \times 10^{-9}\frac{d\Phi (E_1^*)}{dE_1^*} \;
 %% I can get rid of this part
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 UCN production by multiphonon excitation in superfluid helium under
-pressure was studied in Ref.~\cite{Schmidt2009}.  The dynamic
-scattering function $S(q,\omega)$ of the superfluid helium strongly
-depends on pressure, leading to a pressure-dependent differential UCN
-production rate. The expression for the multiphonon part of $S$
-describing UCN production is derived from the inelastic neutron
-scattering data.  Application of pressure to superfluid helium
+pressure was studied in Ref.~\cite{Schmidt2009} which is summarized
+here. The dynamic scattering function $S(q,\omega)$ of the superfluid
+helium strongly depends on pressure, leading to a pressure-dependent
+differential UCN production rate. The expression for the multiphonon
+part of $S$ describing UCN production is derived from inelastic
+neutron scattering data.  Application of pressure to superfluid helium
 increases the velocity of sound, such that the dispersion curves of
 the $^4$He and of the free neutron cross at shorter neutron
 wavelength.
 
 Since for neutron beams from a liquid deuterium cold source, the
-differential flux density $\frac{d\Phi}{dE}$ in the range
-8-9~\AA~normally increases for decreasing wavelength of the cold
+differential flux density $\left( \frac{d\Phi}{dE} \right)$ in the
+range 8-9~\AA~normally increases for decreasing wavelength of the cold
 neutron flux, and also since pressure increases the density of He-II,
 it was expected to observe an increase in the single phonon UCN
 production rate, and different multiphonon contribution with pressure
-increase.  It was observed that, both the single and the multiphonon
-scattering functions change with pressure. The single phonon
-excitation moves to a shorter wavelength~(see
-Fig.~\ref{fig:Schmidt_S}) and the value for $S$ decreases. It leads to
-a reduction in one-phonon UCN production.  The multiphonon excitations
+increase.  It was observed however that both, the single and the
+multiphonon scattering functions change with pressure. The single
+phonon excitation moves to a shorter wavelength~(see
+fig.~\ref{fig:Schmidt_S}) and the value for $S$ decreases. It leads to
+a reduction in one-phonon UCN production. The multiphonon excitations
 increase with pressure, and the peak of the scattering function $S$
-moves to shorter incident-neutron wavelengths, see
-Fig.~\ref{fig:Schmidt_S}. However, the UCN production rate decreases
-with pressure increase.  Only if the cold neutron flux at
-8.3~\AA~exceeds by more than 2.5 times that at 8.9~\AA, an increase in
-the UCN production rate may be expected. However, it has to be
-considered that the application of pressure requires a window for UCN
-extraction which causes severe UCN losses. Therefore, UCN production
-in superfluid helium under pressure was concluded not to be
-attractive~\cite{Schmidt2009}.
+moves to shorter incident-neutron wavelengths, as seen in
+fig.~\ref{fig:Schmidt_S}. However, the UCN production rate decreases
+with an increase in pressure.  Only if the cold neutron flux at
+8.3~\AA~exceeds that at 8.7~\AA by more than a factor of 2.5, can one
+expect an increase in the UCN production rate.
+%by more than 2.5 times that at 8.9~\AA, an increase in
+%the UCN production rate may be expected.
+However, it has to be considered that the application of pressure
+requires a window for UCN extraction which causes severe UCN
+losses. Therefore, UCN production in superfluid helium under pressure
+was concluded not to be attractive~\cite{Schmidt2009}.
 
 
 
@@ -1371,14 +1390,15 @@ The upscattering of neutrons is caused by the interactions between a
 neutron at rest, and excitations in superfluid helium at different
 temperatures. These excitations can be categorized in three groups:
 one phonon absorption, two-phonon scattering, and roton-phonon
-scattering. The total upscattering rate can be written as
+scattering~\cite{Leung2016}. Following the discussion in
+Ref.~\cite{Leung2016}, the total upscattering rate can be written as
 
 \begin{equation}
 \label{eqn:hE_{UCN}pscattering}
 \frac{1}{\tau_{up}} =
-\frac{1}{\tau_{1-ph}}+\frac{1}{\tau_{2-ph}}+\frac{1}{\tau_{rot-ph}},
+\frac{1}{\tau_{1-ph}}+\frac{1}{\tau_{2-ph}}+\frac{1}{\tau_{rot-ph}}~.
 \end{equation}
-where 
+Where 
 %which are described by the following equation:
 \begin{equation}
 \label{eqn:1ph}
@@ -1417,7 +1437,7 @@ $B = 0.0076$~/(s K$^7$) at 1~K and $B = 0.0088$~/(s K$^7$) at
 %is done by Leung {\it{et al.}}~\cite{Leung2016}.  They calculated
 %the upscattering rate due to each individual excitation in a
 %temperature range of 0.5~K to 2.2~K as shown in
-%Fig.~\ref{fig:Leung2016}. They calculated the $A$, $B$ and $C$
+%fig.~\ref{fig:Leung2016}. They calculated the $A$, $B$ and $C$
 %coefficients for $T \lesssim 1$~K; however, their temperature
 %dependencies are weak compared to the overall sizes of the terms.
 %They varied the temperature of the converter from 1.2~K to 2.4~K and
@@ -1460,7 +1480,8 @@ cross-section, small incoherent scattering cross-section~(to minimize
 upscattering), and has numerous phonon modes, which can inelastically
 scatter neutrons down to UCN energies.  A converter based on sD$_2$
 should be operated at temperatures below 10~K in order to avoid
-subsequent upscattering of UCN by phonons within solid deuterium.
+subsequent upscattering of UCN by phonons within solid
+deuterium~\cite{Frei2010}.
 
 The different molecular species, ortho-D$_2$ and para-D$_2$, have
 significantly different UCN-phonon annihilation
@@ -1540,7 +1561,7 @@ UCN~\cite{Atchison2005}.
 %\end{equation}
 
 %The calculated cross-section shown in
-%Fig.~\ref{fig:Frei2010_sigma_G1}, is in agreement with data on UCN
+%fig.~\ref{fig:Frei2010_sigma_G1}, is in agreement with data on UCN
 %production using a cold neutron beam~($E_1 \sim 1.4$~meV to 20~meV).
 %Here the one-quasi-particle and two-quasi-particle excitations are
 %included in the calculations.  The UCN production cross-section is
@@ -1574,7 +1595,7 @@ UCN~\cite{Atchison2005}.
 %The easiest way of determining the cross-section for UCN production is
 %the use of the dynamical scattering function $S(q,\omega)$ in the
 %($q,\omega$)-phase space along the free-neutron parabola, as shown
-%schematically in Fig.~\ref{fig:sD2_S}.
+%schematically in fig.~\ref{fig:sD2_S}.
 
 %This method allows the incorporation of all the coherent and
 %incoherent contributions to the UCN production cross-section. Possible
@@ -1608,7 +1629,7 @@ UCN~\cite{Atchison2005}.
 %The result of this calibration and the determination of the UCN
 %production cross-section as a function of the energy of the incoming
 %neutrons, and a comparison with the measurements of this cross-section
-%is shown in Fig.~\ref{fig:Frei2010fig2}. This plot also contains the
+%is shown in fig.~\ref{fig:Frei2010fig2}. This plot also contains the
 %data, which were obtained with higher incoming-neutron energy
 %($E_1=67$~meV).
 
@@ -1630,32 +1651,32 @@ UCN~\cite{Atchison2005}.
 
 %The comparison of the calculated UCN production cross-section,
 %extracted from the incoherent approximation and parabola method, shows
-%(see Fig.~\ref{fig:Frei2010_sigma_G1} and Fig.~\ref{fig:Frei2010fig2})
+%(see fig.~\ref{fig:Frei2010_sigma_G1} and fig.~\ref{fig:Frei2010fig2})
 %a discrepancy in the region of $E\sim6$~meV.  The cross-section
 %determined by the parabola method shows a pronounced maximum in the
 %region of $E\sim6$~meV as compared to the incoherent approximation
 %result. This peak corresponds to the coherent phonon contribution to
 %the UCN production cross-section. The double-peak structure in the UCN
 %production cross-section by the incoherent approximation is not
-%present in Fig.~\ref{fig:Frei2010fig2}, and cannot be reproduced by the
+%present in fig.~\ref{fig:Frei2010fig2}, and cannot be reproduced by the
 %measured data shown in Figs.~\ref{fig:Frei2010_sigma_G1}
 %and \ref{fig:Frei2010fig2}.  This means, a new experiment at a more
 %intense cold neutron beam with a better energy resolution would be
 %desirable to study this effect further.
 
-%In Fig.~\ref{fig:sD2_S}, the parabola of the free neutron crosses the
+%In fig.~\ref{fig:sD2_S}, the parabola of the free neutron crosses the
 %acoustical phonon dispersion curve at $E \sim 6$~meV. At this point,
 %the UCN production cross-section is predominantly determined by
 %coherent scattering.  This can explain a deviation from the production
 %cross-section in incoherent approximation. Nevertheless, the general
 %agreement of the incoherent approximation with the PSI data is
-%remarkable~(as shown in Fig.~\ref{fig:Frei2010_sigma_G1}).
+%remarkable~(as shown in fig.~\ref{fig:Frei2010_sigma_G1}).
 
 
 %The result for the calculated UCN production rate in solid o-D$_2$,
 %exposed to a Maxwellian shaped neutron flux for different effective
 %neutron temperatures is shown in
-%Fig.~\ref{fig:sD2_production_rate}. The main conclusion from these
+%fig.~\ref{fig:sD2_production_rate}. The main conclusion from these
 %results was the new understanding of possible higher energetic loss
 %channels~(one-quasi-particle and two-quasi-particle) in solid
 %deuterium for the downscattering of cold neutrons in the conversion
@@ -1736,7 +1757,7 @@ on the hydrogen impurities in the solid.
 
 The results for UCN lifetimes
 $\tau_{SD}$ in sD$_2$ as a function of the sD$_2$ temperature and
-para/ortho fractions are shown in Fig.~\ref{fig:Morris2002}. The
+para/ortho fractions are shown in fig.~\ref{fig:Morris2002}. The
 difference between the solid and dashed line demonstrates the need to
 include the effect of deuterium vapour in the guide on the lifetime at
 higher temperatures. With this correction, the measured lifetimes
@@ -1747,21 +1768,20 @@ agree well with theoretical predictions of the upscattering rate.
 
 The main differences between sD$_2$ and superfluid helium sources are
 the UCN lifetime and the UCN production rate. While UCN can stay in
-superfluid helium until it $\beta$-decays, UCN in solid deuterium are
+superfluid helium until they $\beta$-decay, UCN in solid deuterium are
 captured by the deuteron in 150~ms after they are produced.  Once a
 superfluid helium source is cooled down to temperatures below 0.75~K,
 the upscattering rate is suppressed to a level comparable to neutron
-$\beta$-decay.  Solid deuterium has a production rate two orders of
-magnitude greater than superfluid helium, due to presence of more
-modes. Therefore, solid deuterium sources output higher UCN current
-compared to superfluid helium sources. However, the limiting
-production time in superfluid helium may be four orders of magnitude
-longer than sD$_2$. Thus, even with a smaller UCN production rate,
-superfluid $^4$He can in principle achieve a UCN density larger than
-that of solid deuterium.  The superthermal enhancement in solid
-deuterium is limited by the large nuclear absorption loss, and thus
-further cooling below 5~K will not significantly enhance the UCN
-yield.
+$\beta$-decay rate. Solid deuterium has a production rate two orders
+of magnitude greater than superfluid helium, due to presence of more
+phonon modes. Therefore, solid deuterium sources output higher UCN
+flux compared to superfluid helium sources. However, the lifetime in
+superfluid helium can be four orders of magnitude longer than
+sD$_2$. Thus, even with a smaller UCN production rate, superfluid
+$^4$He can in principle achieve a UCN density larger than that of
+solid deuterium.  The superthermal enhancement in solid deuterium is
+limited by the large nuclear absorption loss, and thus further cooling
+below 5~K will not significantly enhance the UCN yield.
 
 Anghel {\it{et. al.,}}~\cite{anghel2018solid} showed that in addition
 to the quality of the bulk sD$_2$, the quality of its surface is
@@ -1804,9 +1824,9 @@ Superthermal UCN sources may be compared by
 where $\sigma_s$ is the elastic scattering cross-section, and
 $\sigma_a$ is the absorption
 cross-section~\cite{Salvat2013,Atchison2009,Liu_thesis}. At low
-energies ($<$~1~eV) $\sigma_a \sim 1/v$ where $v$ is the speed of the
-neutrons. This means, the absorption cross-section is much larger at
-lower energies.  Table~\ref{tab:other_sources} shows a list of
+energies ($<$~1~eV) $\sigma_a \propto 1/v$ where $v$ is the speed of
+the neutrons. This means, the absorption cross-section is much larger
+at lower energies.  Table~\ref{tab:other_sources} shows a list of
 possible superthermal UCN sources~\cite{Liu_thesis}. The values of
 $\sigma_a$ are for thermal neutrons.
 
@@ -1832,18 +1852,19 @@ $^{208}$Pb & 0.00049 &  2.38 $\times 10^4$\\
 \caption{Candidates for a superthermal source\label{tab:other_sources}}
 \end{table}
 
-Solid $\alpha - ^{15}$N$_2$ is a potential alternative to
-deuterium~\cite{Salvat2013}. Its absorption cross-section is only 5\%
-of that of D$_2$, and it has a negligible incoherent scattering
-cross-section. Additionally, rotation of the N$_2$ molecules in the
-lattice is inhibited due to the anisotropy of the N$_2$
-inter-molecular potential. This leads to the dispersive modes for the
-rotational degrees of freedom~(librons), which provide additional
-channels for neutron downscattering, and eliminates the rotational
-incoherent upscattering. Measurements~\cite{Salvat2013} show that, the
-production cross-section peaks near 6~meV, and the optimal incident
-cold neutron temperature is 40~K. It was found that, the variation in
-the cross-section is no more than 18\% in the range from 5 to
+Solid $\alpha - ^{15}$N$_2$~(in the $\alpha$ phase where $T < 35$~K)
+is a potential alternative to deuterium~\cite{Salvat2013}. Its
+absorption cross-section is only 5\% of that of D$_2$, and it has a
+negligible incoherent scattering cross-section. Additionally, rotation
+of the N$_2$ molecules in the lattice is inhibited due to the
+anisotropy of the N$_2$ inter-molecular potential. This leads to the
+dispersive modes for the rotational degrees of freedom~(librons),
+which provide additional channels for neutron downscattering, and
+eliminates the rotational incoherent
+upscattering. Measurements~\cite{Salvat2013} show that, the production
+cross-section peaks near 6~meV, and the optimal incident cold neutron
+temperature is 40~K. It was found that, the variation in the
+cross-section is no more than 18\% in the range from 5 to
 25~K~(increasing slightly with increasing temperature). The measured
 cross-section was found to be somewhat lower than that of D$_2$ and
 O$_2$.
@@ -1905,7 +1926,7 @@ there is a chance that other materials could lead to a breakthrough.
 \section{Current Status of UCN Sources Worldwide\label{sec:ucnww}}
 %\subsection {It needs to be modified}
 New UCN sources using superthermal technology are under development at
-various laboratories across the world. Neutrons statistically produced
+various laboratories across the world. Neutrons are usually produced
 by two methods: proton-induced spallation off a heavy nuclear target
 (e.g., tungsten), and fission where neutrons are produced by a nuclear
 reactor. Table~\ref{tab:full_ucn_sources} shows a list of present and
@@ -1987,13 +2008,13 @@ NCSU PULSTAR & sD$_2$ & Reactor & Installing
 
 
 Reactor sources place the moderators close to the reactor core~(FRM~II
-and Gatchina~\cite{Serebrov_ascona}), or use existing CN beam
-lines~(ILL~\cite{Piegsa2014}). At FRM~II, the sD$_2$ will be placed
-around a solid hydrogen cold-moderator close to the fuel element. The
-Gatchina superfluid $^4$He source will be placed inside their thermal
-column, using immense pumping power to cool the converter to 1.1~K,
-making rapid extraction necessary due to increased UCN upscattering at
-this temperature.
+and Gatchina~\cite{Serebrov_ascona}), or use existing Cold
+Neutron~(CN) beam lines~(ILL~\cite{Piegsa2014}). At FRM~II, the sD$_2$
+will be placed around a solid hydrogen cold-moderator close to the
+fuel element. The Gatchina superfluid $^4$He source will be placed
+inside their thermal column, using immense pumping power to cool the
+converter to 1.1~K, making rapid extraction necessary due to increased
+UCN upscattering at this temperature.
 
 The SuperSUN and SUN-2 experiments are the logical extensions of the
 early superthermal source geometry at ILL.  A novel feature of the
@@ -2035,12 +2056,20 @@ bottles of $V \approx$ 10~L. Their pulsed operation permits the
 production of high densities for storage experiments.
 
 
-At the SNS UCN source, the 8.9~$\AA$ cold neutrons are selected using
-a monochromator, and are transported with neutron guides to two cells
-made out of acrylic~(ultraviolet transmitting) and separated by a high
-voltage electrode.  The neutrons entering the cell are
-polarized. Within the cell, the cold neutrons become ultra-cold
-neutrons via $^4$He single-phonon process~\cite{kolarkar2010}.
+At the SNS UCN source, they are planning to use a monochromator to
+select the the 8.9~$\AA$ cold neutrons, which will then be transported
+with neutron guides to two cells made out of acrylic~(ultraviolet
+transmitting) and separated by a high voltage electrode. The neutrons
+entering the cell will be polarized. Within the cell, the cold
+neutrons become ultra-cold neutrons via $^4$He single-phonon
+process~\cite{kolarkar2010}.
+
+%are selected using
+%a monochromator, and are transported with neutron guides to two cells
+%made out of acrylic~(ultraviolet transmitting) and separated by a high
+%voltage electrode.  The neutrons entering the cell are
+%polarized. Within the cell, the cold neutrons become ultra-cold
+%neutrons via $^4$He single-phonon process~\cite{kolarkar2010}.
 
 
 The UCN source at J-PARC is a Doppler-shifter type of pulsed UCN
@@ -2053,7 +2082,7 @@ repetition frequency of the pulsed UCN is 8.33~Hz and the time width
 of the pulse at production is 4.4~ms. In order to increase the UCN
 flux, a supermirror guide, wide-band monochromatic mirrors, focus
 guides, and a UCN extraction guide have been newly installed or
-improved. This source will be used to search for the nEDM.
+improved. This source will be used to search for a nEDM.
 
 
 The current UCN source at TRIUMF uses a W target to produce spallation
@@ -2085,12 +2114,11 @@ than the ILL turbine source.
 
 To measure the nEDM, an ensemble of polarized UCN are put in the
 presence of aligned electric and magnetic fields. The Hamiltonian of
-the interaction of the UCN with electric and magnetic fields is
-described in Eqn.~(\ref{eqn:hamiltonian}). The Larmor precession
-frequency of UCN is then measured in two orientations of parallel and
-anti-parallel electric and magnetic fields. For the parallel $\bf{E}$
-and $\bf{B}$ fields, the Larmor precession frequency of UCN is written
-as
+the interaction of the UCN with electric and magnetic fields is given
+in eqn.~(\ref{eqn:hamiltonian}). The Larmor precession frequency of
+UCN is then measured in two orientations of parallel and anti-parallel
+electric and magnetic fields. For the parallel $\bf{E}$ and $\bf{B}$
+fields, the Larmor precession frequency of UCN is written as
 \begin{equation}
 \label{eqn:parallelEandB}
   h \nu_{\uparrow \uparrow} = 2 \mu_n \vert {\bf{B^{\uparrow \uparrow}}} \vert+ 2 d_n\vert \bf{ E^{\uparrow \uparrow}} \vert~,
@@ -2102,8 +2130,8 @@ and for anti-parallel  $\bf{E}$ and $\bf{B}$ fields it is
 \end{equation}
 Here $\uparrow \uparrow$ indicates the parallel electric and magnetic
 fields and $\uparrow \downarrow$ represent the anti-parallel
-orientation of those fields.  A nonzero nEDM is then extracted from
-any frequency shift between these two measurements:
+orientation of those fields.  A nonzero nEDM would then be extracted
+from an observed frequency shift between these two measurements:
 \begin{equation}
   \label{eqn:dn}
   d_n = \frac{h \left( \nu_{\uparrow \uparrow} - \nu_{\uparrow \downarrow} \right) - 2 \mu_n \left( \vert {\bf{B^{\uparrow \uparrow}}} \vert -\vert {\bf{B^{\uparrow \downarrow}}} \vert \right)}{2 \left(\vert \bf{ E^{\uparrow \uparrow}} \vert - \vert \bf{ E^{\uparrow \downarrow}} \vert \right)}~.
@@ -2114,12 +2142,12 @@ EDM. These measurements are either performed in two adjacent volumes
 with
 $\vert E^{\uparrow \uparrow} \vert = - \vert E^{\uparrow \downarrow}
 \vert$, and
-$\vert B^{\uparrow \uparrow}\vert - \vert B^{\uparrow \downarrow} \vert= 0
-$, or measured in the same volume where the configuration of the fields
-change in time. In the first case, it is essential to make sure that
-the magnetic field inside both volumes are the same, and there is no
-field gradient, and in the second method it is essential to make sure
-that the magnetic field is stable in time.
+$\vert B^{\uparrow \uparrow}\vert - \vert B^{\uparrow \downarrow}
+\vert= 0 $, or measured in the same volume where the configuration of
+the fields change in time. In the first case, it is essential to make
+sure that the magnitude of the magnetic fields inside both volumes are
+the same, and that there is no field gradient. In the second method it
+is essential to make sure that the magnetic field is stable in time.
 
 \section{Ramsey's Method of Separated Oscillating
   Fields\label{sec:Ramsey}}
@@ -2129,17 +2157,18 @@ measurement technique to extract the nEDM. Ramsey obtained an
 expression for the quantum mechanical transition probability of a
 system between two states, when the system is subjected to separated
 oscillating
-fields~\cite{ramsey1950}. Fig.~\ref{fig:ramsey}~\cite{Schmidt2016}
+fields~\cite{ramsey1950}. Figure~\ref{fig:ramsey}~\cite{Schmidt2016}
 left shows a cycle of measurement. An ensemble of polarized UCN with
 the initial spin $\ket{ \uparrow}$ are exposed to a DC magnetic field
 $B_0$.  A first RF pulse $B_1 \cos (\omega_{rf}t)$, perpendicular to
 the $B_0$ field, tips the spin of the neutrons to the transverse
 plane. The neutrons precess freely with their Larmor precession
 frequency $\omega_0$ for some time $T$, while accumulating a phase
-$\phi = \gamma_n BT$. Then again, the second coherent oscillating
-magnetic field pulse of $B_1 \cos (\omega_{rf}t)$ is applied to the
-neutron ensemble. The essential idea is to compare the phase $\phi$
-with $\omega_{rf}T$, and if they are identical then
+$\phi = \gamma_n BT$, with $\gamma_n$ being the gyromagnetic ratio of
+neutron. Then again, the second coherent oscillating magnetic field
+pulse of $B_1 \cos (\omega_{rf}t)$ is applied to the neutron ensemble
+to completely flip the spin. The essential idea is to compare the
+phase $\phi$ with $\omega_{rf}T$, and if they are identical then
 $B= \omega_{rf} / \gamma_n$.
 
 \begin{figure}[h]
@@ -2160,7 +2189,7 @@ The probability to find the UCN with spin up is
 %~(see full calculationin Appendix~\ref{app:ramsey})
 \begin{align}
   \label{eqn:spinup}
-  P(T, \omega_{rf}) &= \bra{\uparrow} U(T, \omega_{rf}) \ket{\uparrow} \\ \nonumber
+  P(T, \omega_{rf}) &= \left| \bra{\uparrow} U(T, \omega_{rf}) \ket{\uparrow}\right|^2 \\ \nonumber
   &= 1 - \frac{4 \omega_1^2}{\Omega^2} \sin ^2 \frac{\Omega t_{\pi/2}}{2} \left[ \frac{\Delta}{\Omega} \sin  \frac{\Omega t_{\pi/2}}{2} \sin \frac{T\Delta}{2} - \cos  \frac{\Omega t_{\pi/2}}{2} \cos\frac{T\Delta}{2} \right]^2~,
 \end{align}
 where $U(T, \omega_{rf})$ is the time evolutions operator,
@@ -2168,7 +2197,7 @@ $\omega_1 = - \gamma_n B_1$, $\Delta = \omega_{rf} - \omega_0$,
 $\omega_0 = \gamma B_0$, and $\Omega = \sqrt{\Delta^2 +
   \omega_1^2}$. When the spin-flipping pulses are optimized, we would
 have $\gamma_n B_1 t_{\pi/2} = \pi / 2$. In this case, the central
-fringe range ($\Delta \ll \omega_1$), and Eqn.~\ref{eqn:spinup}
+fringe range ($\Delta \ll \omega_1$), and eqn.~\ref{eqn:spinup}
 simplifies to
 \begin{equation}
   P(T, \omega_{rf}) = \frac{1}{2} \left( 1 - \cos(T\Delta) \right)~.
@@ -2186,12 +2215,12 @@ either up or down
   \alpha^{\uparrow /\downarrow} = \frac{N_{max}^{\uparrow /\downarrow} - N_{min}^{\uparrow /\downarrow}}{N_{max}^{\uparrow /\downarrow}+ N_{min}^{\uparrow /\downarrow}}~.
 \end{equation}
 The term $4t_{\pi/2}/\pi$ is necessary since the pulse length
-$t_{\pi/2}$ is finite. The graph in Fig.~\ref{fig:ramsey} shows the
-Ramsey interference pattern by scanning $\omega_{rf}$, while
+$t_{\pi/2}$ is finite. The graph in fig.~\ref{fig:ramsey}~(right)
+shows the Ramsey interference pattern by scanning $\omega_{rf}$, while
 everything else is kept the same~\cite{Schmidt-Wellenburg:2016nfv}. In
-the actual nEDM measurements, only 4 points with the highest
-sensitivity are measured. These points are referred to as the working
-points. For each configuration of the electric and magnetic
+the actual nEDM measurements, only 4 points (for $w_{rf}$) with the
+highest sensitivity are measured. These points are referred to as the
+working points. For each configuration of the electric and magnetic
 fields~(parallel or anti-parallel), Eqn.~\ref{eqn:Nup} is fitted to
 the data to extract the Larmor frequency $\omega_0$. Taking the
 differences of those Larmor frequencies then give access to the nEDM
@@ -2199,35 +2228,45 @@ differences of those Larmor frequencies then give access to the nEDM
   \label{eqn:fitteddn}
   d_n = \frac{\hbar (\omega_0 ^{\uparrow \uparrow} - \omega_0 ^{\uparrow \downarrow})}{2(E^{\uparrow \uparrow} - E^{\uparrow \downarrow})} = \frac{\hbar \Delta \omega}{4E}~
 \end{equation}
-with the assumption that, the magnetic field is constant~(see
-Eqn.~\ref{eqn:dn}).
+with the assumption that, the magnitude of the magnetic field is
+constant~(see eqn.~\ref{eqn:dn}).
 
 
 \section{Statistical and Systematic Errors}
 \subsection{Statistical Sensitivity}
-The statistical sensitivity of the nEDM measurement is
+The statistical sensitivity of the nEDM measurement is given by
 \begin{equation}
   \label{eqn:dnsensitivity}
-  \sigma(d_n) = \frac{\hbar}{2 \alpha T E \sqrt{N}}~,
+  \sigma(d_n) = \frac{\hbar}{2 \alpha T E \sqrt{N}}~.
 \end{equation}
-where visibility $\alpha$ is a factor related to the neutrons
+Where visibility $\alpha$ is a factor related to the neutron
 polarization, $N$ is the number of detected UCN, $T$ is the free
 precession time, and $E$ is the electric field. The visibility
 $\alpha = e^{T/T_2}$ depends on the transverse spin relaxation time
-$T_2$ respectively. The transverse spin relaxation time $T_2$ arises
-from inhomogeneities in the magnetic field 
+$(T_2)$.  In the presence of anhomogeneity in the magnetic field, the
+transverse spin relaxation time becomes
 \begin{equation}
-\frac{1}{T_2} = \frac{1}{T_2^{\prime}}+\frac{1}{T_1}~,
+  \frac{1}{T_2^*} = \frac{1}{T_2^{\prime}} + \frac{1}{T_2}.
 \end{equation}
-where $T_1$ is the longitudinal relaxation time, and $T_2^{\prime}$ is
-the transverse relaxation time only due to the field inhomogeneities.
+Where $T_2^{\prime} = \gamma_n \Delta B_0$ is the transverse
+relaxation time due to the inhomogeneities in the magnetic field.
+
+%The transverse spin relaxation time $T_2$ arises from
+%dephasing in an inhomogeneous magnetic field, and from longitudinal relaxation
+%$T_1$, as
+%\begin{equation}
+%\frac{1}{T_2} = \frac{1}{T_2^{\prime}}+\frac{1}{T_1}~.
+%\end{equation}
+%Where $T_1$ is the longitudinal relaxation time, and $T_2^{\prime}$ is
+%the transverse relaxation time only due to the field inhomogeneities.
 
 \subsection{Systematic Errors~\label{sec:systematics}}
 
 The dominant systematic errors in the previous best experiment arose
-due to magnetic field instability~(uncorrelated with the electric
-field $E$), and magnetic field inhomogeneity which can give rise to a
-false EDM for particle traps~\cite{pendlebury2004}.
+due to magnetic field instability
+% ~(uncorrelated with the electric field $E$),
+and magnetic field inhomogeneity which can give rise to a false EDM
+for particle traps~\cite{pendlebury2004}.
 % ~(seeAppendix~\ref{app:GPE}).
 %The GPE arises due to a combination of magnetic field
 %inhomogeneity and motion of the particles in the electric field during
@@ -2236,15 +2275,24 @@ false EDM for particle traps~\cite{pendlebury2004}.
 %phases relative to one another resulting in a false EDM
 %signal.
 The false EDM could be understood by considering transverse fields
-originating from the gradient of the uniform $B_0$ field in the axial
-direction~($\partial{B_{0z}}/\partial{z}$), and the motion of UCN in
-the electric field~($\bf{B_v} =(\bf{E} \times \bf{v})/c^2 $),
-respectively. Radial fields like these rotate as the particle moves in
-the EDM cell.  These fields rotate with the same frequency as
-particles move in the EDM cell, thereby inducing a Bloch-Siegert shift
-on the resonant frequency. The false EDM arises from a cross term
+originating from the gradient of the uniform $B_0 \hat{z}$ field in
+the axial $\hat{z}$ direction along the nEDM
+cell~($\partial{B_{0z}}/\partial{z}$), and the motion of UCN in the
+electric field~($\bf{B_v} =(\bf{E} \times \bf{v})/c^2 $),
+respectively.
+%Radial fields like these rotate as the particle moves in
+%the EDM cell.  These fields rotate with the same frequency as
+%particles move in the EDM cell, thereby inducing a Bloch-Siegert shift
+%on the resonant frequency.
+The false EDM arises from a cross term
 between the radial component of the applied $B_0$ field, and $B_v$ in
-the Bloch-Siegert shift.
+the Bloch-Siegert shift~\cite{pendlebury2004}.
+
+
+
+
+
+
 
 The false EDM could be corrected by the frequency ratio of the
 neutrons to the co-magnetometer atoms~($^{199}$Hg) used to sense the
@@ -2256,12 +2304,12 @@ supplemented by gradient determination using surrounding Cs
 magnetometers~\cite{afach2015measurement}.
 
 
-Pendlebury {\it{et.~al.,}}~\cite{Pendlebury2015} measured the nEDM by
-the Ramsey technique and using mercury as a comagnetometer to make
-cycle-by-cycle corrections.  As they show, the measured nEDM has a
-downward~(upward) slope as a function of the relative frequency shift
-of neutrons and Hg when the applied $\bf{B_0}$ field is
-upward~(downward),
+Pendlebury {\it{et.~al.,}}~\cite{Pendlebury2015} found an upper limit
+for the nEDM by the Ramsey technique, using mercury as a
+comagnetometer to make cycle-by-cycle corrections.  As they show, the
+measured nEDM has a downward~(upward) slope as a function of the
+relative frequency shift of neutrons and Hg when the applied
+$\bf{B_0}$ field is upward~(downward),
 \begin{equation}
   d_{\mathrm {meas}}= d_n \pm d_{\mathrm{false}}~.
 \end{equation}
@@ -2319,14 +2367,16 @@ description of each effect is briefly listed below:
   fit $\chi^2_{\nu}$.
   
 \item{$\bullet$ \bf{Quadrupole fields and Earth's rotation:}} In the
-  presence of a field with gradient in the $x$ and $y$ direction only,
-  the neutron spins follow the total field direction adiabatically
-  while the nonadiabatic Hg atoms stay insensitive to such
-  changes. This affect the neutron to Hg frequency ratio, which in
-  turn causes a false nEDM. The rotation of the Earth shifts all of
-  the frequency ratio measurements of neutron and Hg to lower values
-  when the $\bf{B_0}$ field is upwards, and to higher values by the
-  same amount when the $\bf{B_0}$ field is downwards.
+  presence of a field with gradient in the $x$ and $y$ direction
+  only~(as usual, $B_0$ is in the $\hat{z}$ direction which is a long
+  the axis of symmetry of the cylindrical nEDM cell), the neutron
+  spins follow the total field direction adiabatically while the
+  nonadiabatic Hg atoms stay insensitive to such changes. This affect
+  the neutron to Hg frequency ratio, which in turn causes a false
+  nEDM. The rotation of the Earth shifts all of the frequency ratio
+  measurements of neutron and Hg to lower values when the $\bf{B_0}$
+  field is upwards, and to higher values by the same amount when the
+  $\bf{B_0}$ field is downwards.
   
 \item{$\bullet$\bf{Dipole field:}} The field of a permanent magnetic
   dipole near the UCN storage results in a field gradient which can
@@ -2362,7 +2412,7 @@ description of each effect is briefly listed below:
 \item{$\bullet$ \bf{AC fields:}} An oscillation in the high voltage
   can generate an oscillating displacement current in the nEDM cell
   which causes an oscillating $\bf{B}$ field. This can make a change
-  in the frequency shift and therefore the nEDM.
+  in the frequency shift and therefore induce a false nEDM.
 
 \item{$\bullet$\bf{Non-uniform Hg depolarization:}} If the average
   depolarization time of the Hg atoms are different for two
@@ -2393,22 +2443,24 @@ description of each effect is briefly listed below:
 % saved it on my laptop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{nEDM Status Worldwide\label{sec:nedmWW}}
-In 1950, the first upper limit on neutron EDM was discussed by Purcell
-and Ramsey to be $3 \times 10^{-18}$~e$\cdot$cm~\cite{PhysRev.78.807}. Since then
-many groups around the world attempted to measure the nEDM and
-increase its sensitivity~(see Fig.~\ref{fig:nEDMhistory}).
+In 1950, the first upper limit on neutron EDM was presented by Purcell
+and Ramsey to be $3 \times
+10^{-18}$~e$\cdot$cm~\cite{PhysRev.78.807}. Since then many groups
+around the world attempted to measure the nEDM and increase its
+sensitivity~(see fig.~\ref{fig:nEDMhistory}).
 
-The most recent nEDM measurement at ILL found that to be
-$d_n< 3.0 \times 10^{-26}$~e$\cdot$cm (90\%
-CL)~\cite{Baker2006, Pendlebury2015}. The new $^{199}$Hg EDM measurement
-constrains the nEDM better than direct nEDM measurements,
+The most recent nEDM measurement at ILL reduced the upper limit to
+$d_n< 3.0 \times 10^{-26}$~e$\cdot$cm (90\% CL)~\cite{Baker2006,
+  Pendlebury2015}. The most recent $^{199}$Hg EDM
+measurement~\cite{graner2016reduced} constrains the nEDM better than
+direct nEDM measurements, giving
 $d_n < 1.6 \times 10^{-26}$~e$\cdot$cm, although subject to
-uncertainty from Schiff screening~\cite{graner2016reduced}.
+uncertainty from Schiff screening.
 
 There are several ongoing experiments seeking to measure the
-nEDM. Most groups are aiming initially for an improvement of the
-uncertainty on $d_n$ to the $10^{-27}$~e$\cdot$cm level, ultimately
-improving to the $10^{-28}$~e$\cdot$cm level over time.
+nEDM. Most groups are aiming initially for an improvement of the limit
+on $d_n$ to the $10^{-27}$~e$\cdot$cm level, ultimately improving to
+the $10^{-28}$~e$\cdot$cm level over time.
 
 
 \begin{figure}[h!]
@@ -2428,87 +2480,74 @@ improving to the $10^{-28}$~e$\cdot$cm level over time.
 \end{figure}
 
 The PSI nEDM experiment uses an improved version of the former Sussex-
-RAL-ILL single-cell apparatus. Several innovations have been made at
-PSI, including a new SD$_2$ spallation-driven UCN source. The
-experiment employs several Cs magnetometers outside the EDM cell, and
-a $^{199}$Hg comagnetometer. Active magnetic shielding and other
-environmental controls have been improved. A new detector that can
-simultaneously count both spin states of UCN has also been
-implemented. The final sensitivity expected is
+RAL-ILL single-cell apparatus~\cite{Altarev2010}. The upgraded ILL
+nEDM aparatus, where the current upper limit on the nEDM was measured
+with, was moved to PSI at 2009 to improve the sensitivity of the
+nEDM. The improvements include having a higher UCN intensity, improved
+magentometery and magenetic field control, and using a double nEDM
+cell.  Several innovations have been made at PSI, including a new
+SD$_2$ spallation-driven UCN source. The experiment employs several Cs
+magnetometers outside the EDM cell, and a $^{199}$Hg
+comagnetometer. Active magnetic shielding and other environmental
+controls have been improved. A new detector that can simultaneously
+count both spin states of UCN has also been implemented~(see
+section~\ref{sec:Ramsey} and chapter~\ref{chap:nedm}). Their final
+expected sensitivity is
 $\simeq 10^{-26}$~e$\cdot$cm~\cite{Schmidt2016}. Some of the chief
 improvements made at PSI recently have been in the area of nearby
 alkali atom~(Cs) magnetometry, Hg comagnetometry, and neutron
-magnetometry. A recent achievement at PSI is the understanding of the
-Cs magnetometer signals in terms of magnetic field gradients internal
-to the magnetic shielding. This has led to a detailed understanding of
-the false EDM of the Hg comagnetometer~\cite{Afach2015_2}. Another
-recent achievement is in using the neutrons themselves to measure
-gradients~\cite{Afach2015_3}. PSI also aims to improve their
-magnetometry with $^3$He magnetometers inside the electrodes of the
-double EDM measurement cells for their future n2EDM effort. They have
-performed R\&D using Cs magnetometers to sense the free-induction
-decay signal from $^3$He, which resulted in a new high-precision
-magnetometer possessing excellent long-term
+magnetometry~\cite{AFACH2014128}. A recent achievement at PSI is the
+understanding of the Cs magnetometer signals in terms of magnetic
+field gradients internal to the magnetic shielding. This has led to a
+detailed understanding of the false EDM of the Hg
+comagnetometer~\cite{Afach2015_2}.
+%Another recent achievement is in using the neutrons themselves to measure
+%gradients~\cite{Afach2015_3}.
+PSI also aims to improve their magnetometry with $^3$He magnetometers
+inside the electrodes of the double EDM measurement cells for their
+future n2EDM effort. They have performed R\&D using Cs magnetometers
+to sense the free-induction decay signal from $^3$He, which resulted
+in a new high-precision magnetometer possessing excellent long-term
 stability~\cite{Koch2015}. The precision goal for n2EDM is
 $5 \times 10^{-28}$~e$\cdot$ cm~\cite{Bernhard_talk,baker2011search}.
 
 
-The nEDM collaboration at SNS plans to measure
+The nEDM collaboration at SNS plans to measure down to the limit of
 $\ d_n\approx 2 \times 10^{-28} $~e$\cdot$cm, two orders of magnitude
 improvement from the current limit~\cite{peng2008neutron}.  They plan
-to use a unique experimental technique. A Cold Neutron~(CN) beam from
-the SNS will impinge upon a volume of superfluid $^4$He creating
-UCN. The nEDM measurement will also be conducted in the superfluid. A
-small amount of polarized $^3$He introduced into the superfluid $^4$He
-will act as both a comagnetometer and spin analyzer for the UCN. The
-$^3$He neutron capture rate is strongly spin dependent, and will beat
-at the difference of the Larmor precession frequencies of the neutrons
-and $^3$He. A non-zero EDM would change the beat frequency with
-E-reversal. Scintillation light produced in the superfluid will be
-used to detect the capture products. The target precision is
-$10^{-28}$~e$\cdot$cm. The false EDM of the $^3$He comagnetometer may
-be reduced by collisions in the surrounding
-$^4$He~\cite{LamGol2005}. The group aims to commission the experiment
-at SNS by 2020.
+to use a unique experimental technique. A CN beam from the SNS will
+impinge upon a volume of superfluid $^4$He creating UCN. The nEDM
+measurement will then be conducted in the superfluid. A small amount
+of polarized $^3$He introduced into the superfluid $^4$He will act as
+both a comagnetometer and spin analyzer for the UCN. The $^3$He
+neutron capture rate is strongly spin dependent. A non-zero EDM would
+change the beat frequency with E-reversal. Scintillation light
+produced in the superfluid will be used to detect the capture
+products. The false EDM of the $^3$He comagnetometer may be reduced by
+collisions in the surrounding $^4$He~\cite{LamGol2005}. The group aims
+to commission the experiment at SNS by 2020.
 
 
 A new room-temperature nEDM experiment will be conducted using an
 upgraded LANL UCN source~\cite{Steven_talk}. The aim of the project is
 to increase the UCN density by a factor of five to ten, which could
-then be used to carry out a $\sim 10^{-27}$~ e$\cdot$cm determination
-of the nEDM.  The experiment aims for completion of a $10^{-27}$-level
-result, to be completed in the years prior to the SNS nEDM experiment,
-which shares a number of collaborators.  Two other room temperature
-nEDM experiments are being pursued at the FRM2 reactor in
-Munich~\cite{altarev2012} and at ILL~\cite{Serebrov2015}. Both
-experiments feature double measurement cells and Cs magnetometers
-internal to the innermost magnetic shield. The Munich effort features
-an impressive new effort in active and passive magnetic
-shielding~\cite{altarev2014magnetically,
+then be used to carry out a $\sim 10^{-27}$~ e$\cdot$cm limit of the
+nEDM.  The experiment aims for completion of a $10^{-27}$-level
+result, to be completed in the years prior to the SNS nEDM
+experiment. Two other room temperature nEDM experiments are being
+pursued at the FRM2 reactor in Munich~\cite{altarev2012} and at
+ILL~\cite{Serebrov2015}. Both experiments feature double measurement
+cells and Cs magnetometers internal to the innermost magnetic
+shield. The Munich effort features an impressive new effort in active
+and passive magnetic shielding~\cite{altarev2014magnetically,
   altarev2015large,altarev2015minimizing,altarev2012next}, and uses
 $^{199}$Hg comagnetometry. The ILL/Gatchina experiment has produced
 results at ILL~\cite{Serebrov2015}. This could be improved in further
 runs at ILL in the EDM position, or in runs using the superfluid He
-UCN source at ILL, where a statistical sensitivity of
+UCN source at ILL, where a statistical limit of
 $3.5 \times 10^{-27}$~e$\cdot$cm could be
 obtained~\cite{Serebrov_talk}. The group will build a UCN source at
 the WWR-M reactor in Gatchina in order to increase the UCN flux.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2611,7 +2650,7 @@ the WWR-M reactor in Gatchina in order to increase the UCN flux.
 
 \section{Summary}
 Precision experiments involving the UCN provide an attractive avenue
-to investigate physics beyond the standard model. Measurement of the
+to investigate physics beyond the standard model. Measurements of the
 neutron EDM is an example of such experiments. For such studies high
 densities of UCN are needed.
 
@@ -2628,12 +2667,12 @@ Both $^4$He and solid D$_2$ UCN sources use quantum excitations in the
 converter medium to create the UCN; these are phonons in the case of
 superfluid sD$_2$ and phonons and rotons in the case of $^4$He. Since
 $^4$He does not capture neutrons, and has a small upscattering
-probability for UCN, the superfluid $^4$He source can be operated at
-lower currents for longer times, allowing a large density of neutrons
-to accumulate. In the case of superfluid helium, the storage times of
+probability for UCN, a superfluid $^4$He source can be operated at
+lower fluxes for longer times, allowing a large density of neutrons to
+accumulate. In the case of superfluid helium, storage times of
 hundreds of seconds are achievable. The production rate in sD$_2$ is
-higher than in supefluid $^4$He, however, the neutron storage lifetime is
-only tens of milliseconds.
+higher than in supefluid $^4$He, however, the neutron storage lifetime
+is only tens of milliseconds.
 
 The TRIUMF UCN project is the only spallation-driven superfluid-$^4$He
 source proposed at this time in the world~\cite{Ruediger}. The
@@ -2644,20 +2683,21 @@ alternative method of UCN production.
 %the neutron storage lifetime of the latter is much longer (hundreds
 %of seconds compared to milliseconds) if the phonon density is
 %suppressed by cooling to $<$ 1~K.
-The TRIUMF's UCN source uses an optimum proton beam structure on the
-minute scale to produce the highest density of UCN in the world, while
-sD$_2$ spallation sources benefit from pulsing the beam, then isolate
-any UCN produced as quickly as possible to achieve high UCN densities.
-The detail of the current UCN facility at TRIUMF is presented in
-Chapter~\ref{chap:UCNattriumf} and the result of the first UCN
-production with the vertical UCN source is discussed in
+The TRIUMF's UCN source uses an optimum proton beam structure~(see
+section~\ref{sec:bl1u}) on the minute scale to produce the highest
+density of UCN in the world, while sD$_2$ spallation sources benefit
+from pulsing the beam, then isolate any UCN produced as quickly as
+possible to achieve high UCN densities.  The details of the present
+UCN facility at TRIUMF are described in Chapter~\ref{chap:UCNattriumf}
+and the result of the first UCN production with a vertical UCN
+source~(since UCN is extracted vertically) is discussed in
 Chapter~\ref{chap:UCNresult}.
 
 The neutron EDM is measured using the Ramsey method of separated
 oscillatory fields. In this technique, polarized UCN are trapped in a
 material bottle in the presence of aligned electric and magnetic
-fields. The Larmor precision frequency of UCN is measured when the $E$
-and $B$ fields are parallel and once when they are anti-parallel. Any
-frequency shift in the Larmor frequency of UCN is then an indicative
-of a non-zero nEDM. The components of the future nEDM measurement at
-TRIUMF are described in Chapter~\ref{chap:nedm}.
+fields. The Larmor precision frequency of UCN is measured with the $E$
+and $B$ fields are parallel and anti-parallel. Any frequency shift in
+the Larmor frequency of UCN is then indicative of a non-zero nEDM. The
+components of the future nEDM measurement at TRIUMF are described in
+Chapter~\ref{chap:nedm}.
