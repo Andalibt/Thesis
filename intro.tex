@@ -932,7 +932,7 @@ phase is the normal fluid phase. The He-II phase can be described by
 the so-called ``two-fluid model'', which consists of normal liquid
 helium and superfluid helium.
 % with zero viscosity, and zero entropy.
-fig.~\ref{fig:phasetransition} shows the phase transition diagram of
+Figure~\ref{fig:phasetransition} shows the phase transition diagram of
 $^4$He. The two phases are separated out by the $\lambda$-line. The
 phase transition happens at 2.172~K. Below 1~K, the liquid is mostly
 the superfluid component of the two-fluid model.
@@ -1014,7 +1014,7 @@ while creating a phonon.
     \label{fig:FIG1}
     \end{center}
 \end{figure} 
-fig.~\ref{fig:FIG1} shows the dispersion relation of the superfluid
+Figure~\ref{fig:FIG1} shows the dispersion relation of the superfluid
 helium and a free neutron. A neutron with energy
 \begin{equation}
   \label{eqn:neutron_energy}
@@ -2262,11 +2262,20 @@ relaxation time due to the inhomogeneities in the magnetic field.
 
 \subsection{Systematic Errors~\label{sec:systematics}}
 
+Improved sensitivity of the nEDM experiments gave rise to discovery of
+the new systematic effects as incorporated by Pendlebury {\it{et
+    al.,}} in Ref.~\cite{Pendlebury2015} as briefly described in this
+section. The systematic effects include either direct false effect
+such as leakage currents~(described below), or indirect false effect
+such as $\bf{v}\times\bf{E}$ effect.
 The dominant systematic errors in the previous best experiment arose
-due to magnetic field instability
-% ~(uncorrelated with the electric field $E$),
-and magnetic field inhomogeneity which can give rise to a false EDM
-for particle traps~\cite{pendlebury2004}.
+due to magnetic field instability and magnetic field inhomogeneity
+which can give rise to a false EDM for particle
+traps~\cite{pendlebury2004}.
+
+
+
+
 % ~(seeAppendix~\ref{app:GPE}).
 %The GPE arises due to a combination of magnetic field
 %inhomogeneity and motion of the particles in the electric field during
@@ -2274,33 +2283,60 @@ for particle traps~\cite{pendlebury2004}.
 %confined in the trap. The spins of the species in the trap acquire
 %phases relative to one another resulting in a false EDM
 %signal.
-The false EDM could be understood by considering transverse fields
-originating from the gradient of the uniform $B_0 \hat{z}$ field in
-the axial $\hat{z}$ direction along the nEDM
-cell~($\partial{B_{0z}}/\partial{z}$), and the motion of UCN in the
-electric field~($\bf{B_v} =(\bf{E} \times \bf{v})/c^2 $),
-respectively.
+
+Following the discussio from Ref.~\ref{pendlebury2004}, UCN move with
+velocity $\bf{v}$ in the cell in the presence of an electric field
+$\bf{E}$ creating an effective magnetic field
+$\bf{B_v} =(\bf{E} \times \bf{v})/c^2 $. This field is much smaller
+than the applied $B_0 \hat{z}$ field and is in the $xy$ plane
+considering the $z$ direction along the axis of symmetry of the
+cylindrical EDM cell. Another magnetic field lies in the $xy$ plane
+which comes from the inhomogeneity in the $B_0$ field
+$B_{0xy} = - \left( \frac{\partial B_{0z}}{\partial z}
+\right)\frac{\bf{r}}{2}$ in cylindrical coordinate system.  Therefore,
+the total magnetic field in radial direction is
+$\bf{B_{xy}} = \bf{B_{0xy}} + \bf{B_v}$ which causes a shift in the
+Larmor frequency and therfore a false EDM.
+
+
+
+
+
+
+
+
+%The false EDM could be understood by considering transverse fields
+%originating from the gradient of the uniform $B_0 \hat{z}$ field in
+%the axial $\hat{z}$ direction along the nEDM
+%cell~($\partial{B_{0z}}/\partial{z}$), and the motion of UCN in the
+%electric field~($\bf{B_v} =(\bf{E} \times \bf{v})/c^2 $),
+%respectively.
+
 %Radial fields like these rotate as the particle moves in
 %the EDM cell.  These fields rotate with the same frequency as
 %particles move in the EDM cell, thereby inducing a Bloch-Siegert shift
 %on the resonant frequency.
-The false EDM arises from a cross term
-between the radial component of the applied $B_0$ field, and $B_v$ in
-the Bloch-Siegert shift~\cite{pendlebury2004}.
-
-
-
+%The false EDM arises from a cross term
+%between the radial component of the applied $B_0$ field, and $B_v$ in
+%the Bloch-Siegert shift~\cite{pendlebury2004}.
 
 
 
 The false EDM could be corrected by the frequency ratio of the
 neutrons to the co-magnetometer atoms~($^{199}$Hg) used to sense the
-gradient~(see section~\ref{sec:comag}). The $^{199}$Hg false EDM is
-larger than for the neutrons because of its larger~(thermal) velocity.
-Graphing the measured neutron EDM as a function of this ratio then
-allows to correct to the zero gradient and hence discover the true
-neutron EDM. This is also supplemented by gradient determination using
-surrounding Cs magnetometers~\cite{afach2015measurement}.
+gradient~(see section~\ref{sec:comag}).  This is because, inside the
+nEDM cell, there is no direct measurement of the magnetic field
+gradients. But, since the neutrons have lower centre of mass than the
+thermal mercury atoms, any change in the magnetic field grandient
+results in a change in the neutron to mercury frequency
+ratio~\cite{Pendlebury2015}.
+%The $^{199}$Hg false EDM is
+%larger than for the neutrons because of its larger~(thermal) velocity.
+Graphing the measured neutron EDM as a function of this frequency
+ratio then allows to correct to the zero gradient and hence discover
+the true neutron EDM. This is also supplemented by gradient
+determination using surrounding Cs
+magnetometers~\cite{afach2015measurement}.
 
 
 Pendlebury {\it{et.~al.,}}~\cite{Pendlebury2015} found an upper limit
@@ -2700,3 +2736,30 @@ and $B$ fields are parallel and anti-parallel. Any frequency shift in
 the Larmor frequency of UCN is then indicative of a non-zero nEDM. The
 components of the future nEDM measurement at TRIUMF are described in
 Chapter~\ref{chap:nedm}.
+
+\subsubsection{My Contribution}
+My research towards the R\&D projects for the future nEDM experiment
+at TRIUMF is focused on the magnetic fields stability and UCN
+production aspects.
+
+From September 2013 to February 2017, I worked on measuring the
+temperature dependence of magnetic permeability $\mu$ in various
+methods with the prototype magnetic shields available at the
+University of Winnipeg. The result of my work is presented in
+chapter~\ref{chap:muofT} and Ref.~\cite{Andalib:2016ahj}.
+
+In February of 2017, I moved to TRIUMF in Vancouver to contribute to
+the UCN project. I started by working on the DAQ aspect. I made Altium
+drawings for the sensors, and I wired them all in the PLC~(see
+section~\ref{sec:DAQ}).  The first cryostat cool down happen in the
+April of 2017~(with no proton beam), and the first UCN production
+happend in the November of 2017.  Running the cryostat requires
+extensive manpower, since it has to be monitored at all
+times. Therefore, all collaborators including students, had to take
+8-9 hour shifts. I took shifts in all cool down and UCN experimental
+runs, including the 2018 UCN production, which will be presented in
+future publications. This means, the UCN data presented in
+chapter~\ref{chap:UCNresult} is collected by all the members of the
+TUCAN collaboration and is not an individual effort. However, I
+performed all the UCN data analysis for the storage lifetime and UCN
+yield measurements presented in chapter~\ref{chap:UCNresult}.
