@@ -10,9 +10,9 @@ and secondary) were wound on the witness cylinder using multistranded
 20-gauge copper wire.  The windings were made as tight as possible,
 but not so tight as to potentially stress the material.  The windings
 were not potted in place.  Three witness cylinders were tested.  Data
-were acquired using different numbers of turns on both the primary and
-secondary coils (from 6 to 48 on the primary, and from 7 to 24 on the
-secondary).
+were acquired using different numbers of turns on both the primary
+($N_p$)and secondary ($N_s$) coils (from 6 to 48 on the primary, and
+from 7 to 24 on the secondary).
 
 Fig.~\ref{fig:transformer} shows a picture of one of the witness
 cylinders, wound as described.  It also shows a schematic diagram of
@@ -125,16 +125,16 @@ Jiles~\cite{jiles1994frequency} was used.
 %The model contains a number
 %of adjustable parameters.
 The anhysteretic magnetization of a material in the presence of
-magnetic field could be written as
+magnetic field could be written as the solution of
 \begin{equation}
 M_{an}(H) =  M_s \ell \left( \frac{H + \alpha M_{an}(H)}{a} \right)
 \end{equation}
-where $\ell$ is the Langevin function $\ell = \coth(x) - 1/x$, $M_s$
-is the saturation magnetization, $\alpha$ is a coupling coefficient,
-$a = k_BT/\mu_0 <m> $ with $k_B$ being the Bolzmann constant, $T$
-being the temperature, $\mu_0$ being the permeability of free space,
-and $<m>$ being the effective domain size. The equation for hysteresis
-can then be derived from the energy-balance equation
+where $\ell = \ell(x)= \coth(x) - 1/x$ is the Langevin function ,
+$M_s$ is the saturation magnetization, $\alpha$ is a coupling
+coefficient, and $a = k_BT/\mu_0 \langle m \rangle $ with $k_B$ being the Bolzmann
+constant, $T$ being the temperature, $\mu_0$ being the permeability of
+free space, and $\langle m \rangle$ being the effective domain size. The equation
+for hysteresis can then be derived from the energy-balance equation
 \begin{equation}
 \mu_0 \int M_{an} dH_e  = \mu_0 \int M dH_e + \mu_0 k \delta(1-c) \int \frac{dM_{irr}}{dH_e}~,
 \end{equation}
@@ -163,7 +163,7 @@ losses we get
 \end{equation}
 where $\rho$ is the resistivity, $d$ is the cross-sectional dimension
 in meters, $\beta$ is a geometric factor, $G$ is a dimensionless
-constant of value 0.1356, $w$ is the width of the laminations, $H_0$
+constant of value 0.1356, $w$ is the width of the laminations, and $H_0$
 is a parameter representing the fluctuating internal potential
 experienced by domain walls. This equation can be solved numerically.
 
@@ -172,7 +172,7 @@ We adjusted the parameters based on our
 measurements of $B_m-H_m$ loops including the initial magnetization
 curve.  These measurements were performed separately from our lock-in
 amplifier measurements, using an arbitrary function generator and a
-digital oscilloscope to acquire them.  The measurements were done at
+digital oscilloscope.  The measurements were done at
 frequencies from 0.01 to 10~Hz.  It was found that the frequency
 dependence predicted by Ref.~\cite{jiles1994frequency} gave relatively good
 agreement with the measured $B_m-H_m$ loops once the five original
@@ -219,8 +219,8 @@ which ensure that $\dot{B}_{m,Y}$ dominates over $\dot{B}_{m,X}$.
 
 We assign no additional systematic error for this simplification, and
 all our results are subject to this caveat.  We comment further that
-in our measurements of the axial shielding factor (presented in
-Section~\ref{sec:axial}), the same caveat exists.  In that case the
+the same caveat exists in our measurements of the axial shielding
+factor (presented in Section~\ref{sec:axial}).  In that case the
 in-phase component dominates the demodulated fluxgate signal.  In a
 sense, measuring $\mu(T)$ itself is always an approximation, because
 it is actually the parameters of minor loops in a hysteresis curve
@@ -237,7 +237,7 @@ measurements were also observed, for example: (a) when the temperature
 slope changed sign, $\dot{B}_{m,Y}$ would temporarily give a different
 slope with temperature, (b) the measured value of
 $\frac{1}{\dot{B}_{m,Y}}\frac{d\dot{B}_{m,Y}}{dT}$ depended on a
-variety of factors, most notably a dependence on which of the three
+variety of factors, most notably which of the three
 witness cylinders was used for the measurement, and on differences
 between subsequent measurements using the same cylinder.
 
@@ -290,7 +290,7 @@ cylinders (referred to as $\beta$ in Table~\ref{tab:transformer}) gave
 temperature slopes consistently larger
 $\frac{1}{\mu}\frac{d\mu}{dT}\sim 0.88-2.15$\%/K than the other two
 $\frac{1}{\mu}\frac{d\mu}{dT}\sim 0.03-0.77$\%/K (referred to as
-$\alpha$ and $\gamma$, with some evidence that $\gamma$ had a larger
+$\alpha$ and $\gamma$), with some evidence that $\gamma$ had a larger
 slope than $\alpha$).  We expect this indicates some difference in the
 annealing process or subsequent treatment of the cylinders, although
 to our knowledge the treatment was controlled the same as for all
@@ -319,7 +319,7 @@ were: motion of the primary and secondary windings, stability of the
 lock-in amplifier and its current source, and stability of background
 noise sources.
 
-To summarize, the dominant systematic effects arose due to different
+To summarize, the dominant systematic effects arose due to the different
 similarly prepared cores giving different results, and due to
 variations in the measured slopes in multiple measurements on the same
 core.  The second of these is essentially the same error encountered
